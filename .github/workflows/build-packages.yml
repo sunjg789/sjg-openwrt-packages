@@ -63,9 +63,12 @@ jobs:
           echo "SDK25: $SDK25"
           cd "$SDK25"
           make defconfig >/tmp/defconfig.log 2>&1 || { echo "!! defconfig 失败"; tail -n 15 /tmp/defconfig.log; exit 1; }
-          git clone --depth 1 https://github.com/openwrt/apk-tools.git /tmp/apk-tools-src
+          # apk-tools 源码在 ImmortalWrt 主仓库 package/utils/ 下（无独立仓库），
+          # 稀疏拉取 openwrt-25.12 分支与 SDK 完全匹配
+          git clone --depth 1 --filter=blob:none --sparse -b openwrt-25.12 https://github.com/immortalwrt/immortalwrt.git /tmp/owrt-src
+          (cd /tmp/owrt-src && git sparse-checkout set package/utils/apk-tools)
           mkdir -p feeds/custom
-          cp -r /tmp/apk-tools-src feeds/custom/apk-tools
+          cp -r /tmp/owrt-src/package/utils/apk-tools feeds/custom/apk-tools
           grep -q "^src-link custom" feeds.conf.default || echo "src-link custom $PWD/feeds/custom" >> feeds.conf.default
           ./scripts/feeds update custom >/tmp/feeds-update.log 2>&1 || { tail -n 15 /tmp/feeds-update.log; exit 1; }
           ./scripts/feeds install apk-tools >/tmp/feeds-install.log 2>&1 || { tail -n 15 /tmp/feeds-install.log; exit 1; }
