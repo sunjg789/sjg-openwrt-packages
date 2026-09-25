@@ -37,6 +37,10 @@ echo "==> 更新并安装 feeds（提供 luci-base 等编译依赖源码）"
 ./scripts/feeds install -a >/tmp/feeds-install.log 2>&1 \
   || echo "    (feeds install 警告，继续)"
 
+# ImmortalWrt 25.12 SDK 的 packages feed 中 nginx-mod-ubus 存在递归依赖 bug，
+# 本库不编译 nginx，移除其 feed 源码避免污染全局 Kconfig 配置生成
+rm -rf package/feeds/packages/nginx 2>/dev/null || true
+
 echo "==> [3/4] 克隆插件源码（收录清单: $PLUGINS_CONF）"
 source "$PLUGINS_CONF"
 for entry in "${PLUGINS[@]}"; do
@@ -46,7 +50,8 @@ for entry in "${PLUGINS[@]}"; do
     continue
   fi
   if [ -d "package/$dir" ]; then rm -rf "package/$dir"; fi
-  if git clone --quiet --depth 1 --single-branch "$url" "package/$dir" 2>/dev/null; then
+  if git clone --quiet --depth 1 --single-branch "$url" "package/$dir" 2>/dev/null \
+     || git clone --quiet --depth 1 "$url" "package/$dir" 2>/dev/null; then
     echo "    ✓ $dir  <-  $url"
   else
     echo "    ✗ clone 失败: $dir ($url)，跳过"
@@ -82,6 +87,14 @@ if [ "${#SMALL_DIRS[@]}" -gt 0 ]; then
     done
   fi
 fi
+
+echo "==> 生成默认 .config（make defconfig，避免无终端交互 menuconfig）"
+export TERM=xterm
+make defconfig >/tmp/defconfig.log 2>&1 || {
+  echo "!! defconfig 失败（多为某插件 Kconfig 递归依赖，见尾部）"
+  tail -n 20 /tmp/defconfig.log
+  exit 1
+}
 
 echo "==> [4/4] 逐个编译插件"
 for entry in "${PLUGINS[@]}"; do

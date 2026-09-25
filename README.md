@@ -53,11 +53,11 @@ sjg-openwrt-packages/
 | lucky + luci-app-lucky | gdy666/lucky | 网络工具集（端口转发/DDNS/Web服务） |
 | luci-theme-argon + argon-config | jerrykuku/luci-theme-argon | Argon 主题 |
 | luci-app-adguardhome | rufengsuixing/luci-app-adguardhome | AdGuardHome 插件（主程序运行后手动下载） |
-| luci-app-oaf | destan19/OpenAppFilter | 上网行为管理（kmod 内核模块需官方源/源码编译） |
 | luci-app-diskman | lisaac/luci-app-diskman | 磁盘管理 |
 | luci-app-dockerman | lisaac/luci-app-dockerman | Docker 管理 |
 | luci-app-unblockneteasemusic | UnblockNeteaseMusic/… | 解锁网易云音乐 |
-| luci-app-partexp | gitee open-wrt/openwrt-packages | 分区扩展 |
+
+> 注：oaf（OpenAppFilter）未收录——上游 kmod-oaf 包存在 Kconfig 递归依赖，会破坏整个 SDK 的配置生成；需要可在源码全编译时加入。
 
 ### 同步自 kenzok8/small-package（热门源码合集，稀疏拉取）
 
@@ -81,6 +81,7 @@ sjg-openwrt-packages/
 | luci-app-npc | NPC 内网穿透 |
 | luci-app-ddns-go | DDNS-GO 动态域名 |
 | luci-app-netdata | NetData 实时监控 |
+| luci-app-partexp | 分区扩展（partexp） |
 | luci-app-autoreboot | 定时重启 |
 | luci-app-poweroff | 定时关机 |
 | luci-app-advanced | 高级设置（简化复杂配置） |
