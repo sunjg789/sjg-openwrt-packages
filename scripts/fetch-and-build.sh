@@ -108,11 +108,13 @@ for entry in "${PLUGINS[@]}"; do
     continue
   fi
   echo "==> 编译 $target（$note）"
-  if make -j"$(nproc)" "package/$target/compile" V=s >"/tmp/build-$target.log" 2>&1; then
+  if timeout 1500 make -j"$(nproc)" "package/$target/compile" V=s >"/tmp/build-$target.log" 2>&1; then
     echo "    ✓ $target 成功"
   else
     echo "    ✗ $target 失败（日志尾部见下）"
     tail -n 15 "/tmp/build-$target.log"
+    echo "    --- 诊断：tmp/.config-package.in 中 alist 相关定义 ---"
+    grep -n "PACKAGE_luci-app-alist\|PACKAGE_alist" tmp/.config-package.in 2>/dev/null | head -n 8
   fi
 done
 

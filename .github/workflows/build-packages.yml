@@ -52,7 +52,7 @@ jobs:
         run: |
           bash scripts/fetch-and-build.sh "${{ matrix.sdk }}" \
             "$PWD/repo/${{ matrix.fmt }}/x86_64" "$PWD/plugins.conf"
-        timeout-minutes: 180
+        timeout-minutes: 360
 
       - name: 生成索引与签名
         run: |
