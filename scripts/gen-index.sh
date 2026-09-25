@@ -18,7 +18,14 @@ DIR="${2:?缺少 DIR}"
 KEYS_DIR="${3:?缺少 KEYS_DIR}"
 ROOT="${4:?缺少 ROOT}"
 
-SDK_DIR="$(find "$ROOT" -maxdepth 2 -type d -name '*sdk*' | head -n1)"
+# 按格式定位对应版本的 SDK（opkg 用 24.10 系、apk 用 25.12 系；找不到时回退任意 sdk）
+if [ "$FMT" = "opkg" ]; then
+  SDK_DIR="$(find "$ROOT" -maxdepth 2 -type d -name '*sdk*24.10*' | head -n1)"
+  [ -n "$SDK_DIR" ] || SDK_DIR="$(find "$ROOT" -maxdepth 2 -type d -name '*sdk*' | head -n1)"
+else
+  SDK_DIR="$(find "$ROOT" -maxdepth 2 -type d -name '*sdk*25.12*' | head -n1)"
+  [ -n "$SDK_DIR" ] || SDK_DIR="$(find "$ROOT" -maxdepth 2 -type d -name '*sdk*' | head -n1)"
+fi
 
 mkdir -p "$KEYS_DIR"
 cd "$DIR" || exit 1
