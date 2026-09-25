@@ -67,15 +67,15 @@ sjg-openwrt-packages/
    git add -A
    git commit -m "init"
    git branch -M main
-   git remote add origin https://github.com/<你的用户名>/sjg-openwrt-packages.git
+   git remote add origin https://github.com/sunjg789/sjg-openwrt-packages.git
    git push -u origin main
    ```
 3. **启用 Pages**：仓库 Settings → Pages → Source 选 **Deploy from a branch** → 分支 `gh-pages` / root → Save。
 4. 到 **Actions** 页手动运行一次 `Build SJG Plugin Repo`（点 Run workflow）。opkg 与 apk 两个任务并行编译，首次约 30–60 分钟。
 5. 构建完成后，你的软件源地址为：
    ```text
-   apk 源 : https://<你的用户名>.github.io/sjg-openwrt-packages/apk/x86_64
-   opkg 源: https://<你的用户名>.github.io/sjg-openwrt-packages/opkg/x86_64
+   apk 源 : https://sunjg789.github.io/sjg-openwrt-packages/apk/x86_64
+   opkg 源: https://sunjg789.github.io/sjg-openwrt-packages/opkg/x86_64
    ```
    之后每周一自动重建，也可随时手动触发。
 
@@ -87,10 +87,10 @@ sjg-openwrt-packages/
 
 ```bash
 # 25.12 系（apk）Image Builder —— 编辑 repositories.conf 追加：
-echo "src/gz sjg_custom https://<你的用户名>.github.io/sjg-openwrt-packages/apk/x86_64" >> repositories.conf
+echo "src/gz sjg_custom https://sunjg789.github.io/sjg-openwrt-packages/apk/x86_64" >> repositories.conf
 
 # 24.10 系（opkg）Image Builder —— 同样追加：
-echo "src/gz sjg_custom https://<你的用户名>.github.io/sjg-openwrt-packages/opkg/x86_64" >> repositories.conf
+echo "src/gz sjg_custom https://sunjg789.github.io/sjg-openwrt-packages/opkg/x86_64" >> repositories.conf
 
 # 然后正常 make image，PACKAGES 里加：
 #   PACKAGES="... luci-app-openclash luci-app-passwall luci-app-lucky luci-theme-argon ..."
@@ -100,11 +100,11 @@ echo "src/gz sjg_custom https://<你的用户名>.github.io/sjg-openwrt-packages
 
 ```bash
 # 25.12 系（apk）
-apk add --repository https://<你的用户名>.github.io/sjg-openwrt-packages/apk/x86_64 \
+apk add --repository https://sunjg789.github.io/sjg-openwrt-packages/apk/x86_64 \
   luci-app-openclash luci-app-passwall
 
 # 24.10 系（opkg）
-echo "src/gz sjg_custom https://<你的用户名>.github.io/sjg-openwrt-packages/opkg/x86_64" \
+echo "src/gz sjg_custom https://sunjg789.github.io/sjg-openwrt-packages/opkg/x86_64" \
   >> /etc/opkg/customfeeds.conf
 opkg update
 opkg install luci-app-openclash luci-app-passwall
@@ -117,18 +117,18 @@ opkg install luci-app-openclash luci-app-passwall
 ```bash
 # apk 系
 mkdir -p /etc/apk/keys && wget -O /etc/apk/keys/sjg.pub \
-  https://<你的用户名>.github.io/sjg-openwrt-packages/keys/public.key
+  https://sunjg789.github.io/sjg-openwrt-packages/keys/public.key
 
 # opkg 系
 mkdir -p /etc/opkg/keys && wget -O /etc/opkg/keys/sjg.pub \
-  https://<你的用户名>.github.io/sjg-openwrt-packages/keys/public.key
+  https://sunjg789.github.io/sjg-openwrt-packages/keys/public.key
 ```
 
 > 若 `apk add` 报 untrusted，说明未配置公钥，加 `--allow-untrusted` 或安装公钥后重试。
 
 ## 与「SJG OpenWrt 在线定制站」联动
 
-定制站生成的构建脚本可直接升级为走你的源：在 Image Builder 步骤前插入上面的 `repositories.conf` 追加命令即可。也可以随时回来让我把定制站加一个「自定义源地址」输入框，生成的脚本会自动带上你的源。
+定制站已内置「自定义源地址」输入框（第 3 步「预装插件」底部）：把上面的源地址填入，生成的构建脚本会自动把 `src/gz sjg_custom <地址>` 追加到 `repositories.conf` 并优先安装，openclash / passwall / lucky 等插件即可从你的源装配。留空则回退到发行版官方源。
 
 ## 常见问题
 
