@@ -81,7 +81,7 @@ jobs:
           # rootfs 的 apk-tools 3.0.5 是 OpenWrt 裁剪版（无 index 命令）——
           # 改用 Alpine 官方静态 apk-tools v3（完整版，含 index；包格式同为 v3）
           for BASE in "v3.22" "v3.21" "edge"; do
-            PKG="$(curl -s "https://dl-cdn.alpinelinux.org/alpine/$BASE/main/x86_64/" | grep -o 'apk-tools-static-[0-9a-z._]*\.apk' | sort -V | tail -1)"
+            PKG="$(curl -s "https://dl-cdn.alpinelinux.org/alpine/$BASE/main/x86_64/" | grep -o 'apk-tools-static-[0-9a-z._-]*\.apk' | sort -V | tail -1)"
             [ -n "$PKG" ] || continue
             wget -q "https://dl-cdn.alpinelinux.org/alpine/$BASE/main/x86_64/$PKG" -O /tmp/apk-static.apk
             mkdir -p /tmp/sbin
