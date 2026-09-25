@@ -29,6 +29,8 @@ jobs:
           pattern: repo-*
           merge-multiple: true
           path: merged
+          # 下载来源：指定全量构建那一轮的 artifact（download-artifact 默认只取当前 run）
+          run-id: 36134915068
 
       - name: 下载 SDK（仅取 host 工具，不重编译）
         run: |
