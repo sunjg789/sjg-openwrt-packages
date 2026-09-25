@@ -56,14 +56,8 @@ jobs:
 
       - name: 生成索引与签名
         run: |
-          # Ubuntu 官方源无 usign/apk-tools，从 SDK 自带 host 工具补齐
-          SDK_DIR="$(find "$PWD" -maxdepth 2 -type d -name '*sdk*' | head -n1)"
-          for t in usign apk; do
-            for c in "$SDK_DIR/staging_dir/host/bin/$t" "$SDK_DIR/staging_dir/host/usr/bin/$t"; do
-              if [ -x "$c" ]; then sudo cp "$c" /usr/local/bin/; echo "  已安装 $t"; break; fi
-            done
-          done
-          command -v usign >/dev/null && echo "usign OK" || echo "usign 不可用（gen-index.sh 将跳过签名）"
+          # 注：SDK 的 usign/apk 是动态链接（依赖 SDK 内 staging_dir/host/lib），
+          # 不能 cp 到 /usr/local/bin（会破坏 ld 路径）；gen-index.sh 直接调用 SDK 原始路径。
           bash scripts/gen-index.sh "${{ matrix.fmt }}" \
             "$PWD/repo/${{ matrix.fmt }}/x86_64" "$PWD/keys" "$PWD"
 

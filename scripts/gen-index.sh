@@ -23,13 +23,16 @@ SDK_DIR="$(find "$ROOT" -maxdepth 2 -type d -name '*sdk*' | head -n1)"
 mkdir -p "$KEYS_DIR"
 cd "$DIR" || exit 1
 
-# ---------- 定位工具 ----------
-USIGN="$(command -v usign || true)"
-if [ -z "$USIGN" ] && [ -n "$SDK_DIR" ]; then
+# ---------- 定位工具（优先 SDK 原始路径：其动态链接依赖 SDK 内 lib，cp 到 /usr/local/bin 会破坏） ----------
+USIGN=""
+if [ -n "$SDK_DIR" ]; then
   for cand in "$SDK_DIR/staging_dir/host/bin/usign" \
               "$SDK_DIR/staging_dir/host/usr/bin/usign"; do
     if [ -x "$cand" ]; then USIGN="$cand"; break; fi
   done
+fi
+if [ -z "$USIGN" ]; then
+  USIGN="$(command -v usign || true)"
 fi
 if [ -z "$USIGN" ]; then
   echo "!! 未找到 usign，跳过签名（未签名源在多数固件中仍可用）"
@@ -47,8 +50,9 @@ if [ "$FMT" = "opkg" ]; then
   IPKG_INDEX="$(find "$SDK_DIR/scripts" -maxdepth 1 -name 'ipkg-make-index.sh' -type f 2>/dev/null | head -n1)"
   if [ -n "$IPKG_INDEX" ]; then
     "$IPKG_INDEX" "$DIR" > Packages
-  else
-    echo "!! 未找到 ipkg-make-index.sh，尝试用脚本内简易生成器"
+  fi
+  if [ ! -s Packages ]; then
+    echo "!! ipkg-make-index.sh 输出为空，使用脚本内简易生成器"
     {
       for f in *.ipk; do
         [ -f "$f" ] || continue
@@ -72,12 +76,15 @@ if [ "$FMT" = "opkg" ]; then
 
 elif [ "$FMT" = "apk" ]; then
   echo "==> 生成 apk 索引（APKINDEX.tar.gz）"
-  APK_TOOL="$(command -v apk || true)"
-  if [ -z "$APK_TOOL" ] && [ -n "$SDK_DIR" ]; then
+  APK_TOOL=""
+  if [ -n "$SDK_DIR" ]; then
     for cand in "$SDK_DIR/staging_dir/host/bin/apk" \
                 "$SDK_DIR/staging_dir/host/usr/bin/apk"; do
       if [ -x "$cand" ]; then APK_TOOL="$cand"; break; fi
     done
+  fi
+  if [ -z "$APK_TOOL" ]; then
+    APK_TOOL="$(command -v apk || true)"
   fi
   if [ -z "$APK_TOOL" ]; then
     echo "!! 未找到 apk-tools，无法生成 APKINDEX（请在 runner 安装 apk-tools）"
