@@ -55,42 +55,36 @@ jobs:
             "$PWD/repo/${{ matrix.fmt }}/x86_64" "$PWD/plugins.conf"
         timeout-minutes: 360
 
-      - name: 编译 apk-tools v3（挂载 openwrt/apk-tools 源码为本地 feed）
+      - name: 提取 apk-tools v3（官方 rootfs 基系统组件，与 25.12 完全匹配）
         if: matrix.fmt == 'apk'
         run: |
           set -e
-          SDK25="$(find . -maxdepth 1 -type d -name '*sdk*25.12*' | head -n1)"
-          echo "SDK25: $SDK25"
-          cd "$SDK25"
-          make defconfig >/tmp/defconfig.log 2>&1 || { echo "!! defconfig 失败"; tail -n 15 /tmp/defconfig.log; exit 1; }
-          # apk-tools 源码在 ImmortalWrt 主仓库 package/utils/ 下（无独立仓库），
-          # 稀疏拉取 openwrt-25.12 分支与 SDK 完全匹配
-          git clone --depth 1 --filter=blob:none --sparse -b openwrt-25.12 https://github.com/immortalwrt/immortalwrt.git /tmp/owrt-src
-          (cd /tmp/owrt-src && git sparse-checkout set package/utils/apk-tools)
-          mkdir -p feeds/custom
-          cp -r /tmp/owrt-src/package/utils/apk-tools feeds/custom/apk-tools
-          grep -q "^src-link custom" feeds.conf.default || echo "src-link custom $PWD/feeds/custom" >> feeds.conf.default
-          ./scripts/feeds update custom >/tmp/feeds-update.log 2>&1 || { tail -n 15 /tmp/feeds-update.log; exit 1; }
-          ./scripts/feeds install apk-tools >/tmp/feeds-install.log 2>&1 || { tail -n 15 /tmp/feeds-install.log; exit 1; }
-          make package/apk-tools/compile V=s >/tmp/apktools-build.log 2>&1 \
-            || { echo "!! apk-tools 编译失败"; tail -n 25 /tmp/apktools-build.log; exit 1; }
-          PKG="$(find bin/packages -name 'apk-tools_*.apk' | head -n1)"
-          echo "apk-tools 包: $PKG"
-          [ -n "$PKG" ] || { echo "!! 未找到 apk-tools 包"; exit 1; }
-          mkdir -p /tmp/apktools-extract
-          tar -xzf "$PKG" -C /tmp/apktools-extract
-          BIN="$(find /tmp/apktools-extract -type f -name 'apk-tools' | head -n1)"
-          echo "二进制: $BIN"
-          [ -n "$BIN" ] || { find /tmp/apktools-extract -type f | head; exit 1; }
-          chmod +x "$BIN"
-          if "$BIN" --version 2>/dev/null; then
+          wget -q "https://dl.wrt.moe/releases/25.12.2/targets/x86/64/immortalwrt-25.12.2-x86-64-generic-ext4-rootfs.img.gz" -O /tmp/rootfs.img.gz
+          gunzip -f /tmp/rootfs.img.gz
+          sudo mkdir -p /mnt/sjg-rootfs
+          sudo mount -o loop /tmp/rootfs.img /mnt/sjg-rootfs
+          BIN="$(sudo find /mnt/sjg-rootfs -type f \( -name 'apk-tools' -o -name 'apk' \) 2>/dev/null | head -n1)"
+          echo "rootfs 内 apk 工具: $BIN"
+          [ -n "$BIN" ] || { echo "!! rootfs 未找到 apk-tools"; sudo find /mnt/sjg-rootfs -name '*apk*' 2>/dev/null | head; exit 1; }
+          REL="$(echo "$BIN" | sed 's|/mnt/sjg-rootfs/||')"
+          sudo mkdir -p /tmp/apkroot
+          sudo tar -C /mnt/sjg-rootfs -cf - "$REL" 2>/dev/null | sudo tar -C /tmp/apkroot -xf -
+          # 动态链接依赖（libapk/musl/ssl，若存在）
+          sudo tar -C /mnt/sjg-rootfs -cf - usr/lib/libapk* lib/ld-musl* usr/lib/libcrypto* usr/lib/libssl* 2>/dev/null | sudo tar -C /tmp/apkroot -xf - || true
+          sudo umount /mnt/sjg-rootfs
+          sudo rm -rf /mnt/sjg-rootfs
+          sudo chmod -R +x /tmp/apkroot
+          B="/tmp/apkroot/$REL"
+          echo "提取到: $B"
+          if "$B" --version 2>/dev/null; then
             echo "apk-tools 可直接运行"
-            cp "$BIN" /tmp/apk-run
+            cp "$B" /tmp/apk-run
           else
-            echo "动态链接，用 SDK musl loader 包装"
-            LDR="$(find "$PWD" -path '*toolchain*' -name 'ld-musl-*.so.1' | head -n1)"
+            echo "动态链接，用 SDK musl loader + LD_LIBRARY_PATH 包装"
+            SDK25="$(find . -maxdepth 1 -type d -name '*sdk*25.12*' | head -n1)"
+            LDR="$(find "$SDK25" -path '*toolchain*' -name 'ld-musl-*.so.1' | head -n1)"
             [ -n "$LDR" ] || { echo "!! 未找到 musl loader"; exit 1; }
-            printf '#!/bin/sh\nexec "%s" "%s" "$@"\n' "$LDR" "$BIN" > /tmp/apk-run
+            printf '#!/bin/sh\nexport LD_LIBRARY_PATH="/tmp/apkroot/usr/lib:/tmp/apkroot/lib:$LD_LIBRARY_PATH"\nexec "%s" "%s" "$@"\n' "$LDR" "$B" > /tmp/apk-run
             chmod +x /tmp/apk-run
             /tmp/apk-run --version
           fi
