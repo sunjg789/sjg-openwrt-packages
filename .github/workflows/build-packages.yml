@@ -69,7 +69,8 @@ jobs:
           wget -q "https://downloads.openwrt.org/releases/25.12.2/targets/x86/64/openwrt-sdk-25.12.2-x86-64_gcc-14.3.0_musl.Linux-x86_64.tar.zst" -O /tmp/owrt-sdk.tar.zst
           mkdir -p /tmp/owrt-sdk
           tar --zstd -xf /tmp/owrt-sdk.tar.zst -C /tmp/owrt-sdk
-          OWRT_APK="$(find /tmp/owrt-sdk -maxdepth 3 -path '*staging_dir/host/bin/apk' | head -n1)"
+          OWRT_APK="$(find /tmp/owrt-sdk -path '*staging_dir/host/bin/apk' -type f | head -n1)"
+          [ -z "$OWRT_APK" ] && OWRT_APK="$(find /tmp/owrt-sdk -path '*staging_dir/host/usr/bin/apk' -type f | head -n1)"
           [ -n "$OWRT_APK" ] || { echo "!! 未找到 OpenWrt SDK host apk"; exit 1; }
           echo "==> OpenWrt SDK apk: $OWRT_APK"
           "$OWRT_APK" --version
