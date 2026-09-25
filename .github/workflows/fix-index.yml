@@ -78,6 +78,7 @@ jobs:
           SDK25="$(find . -maxdepth 1 -type d -name '*sdk*25.12*' | head -n1)"
           echo "SDK25: $SDK25"
           cd "$SDK25"
+          make defconfig >/tmp/defconfig.log 2>&1 || { echo "!! defconfig 失败"; tail -n 15 /tmp/defconfig.log; exit 1; }
           ./scripts/feeds install apk-tools >/tmp/feeds-apk.log 2>&1 || true
           make package/apk-tools/compile V=s >/tmp/apktools-build.log 2>&1 \
             || { echo "!! apk-tools 编译失败"; tail -n 25 /tmp/apktools-build.log; exit 1; }
