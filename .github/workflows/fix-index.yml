@@ -82,11 +82,12 @@ jobs:
           gunzip -f /tmp/rootfs.img.gz
           sudo mkdir -p /mnt/sjg-rootfs
           sudo mount -o loop /tmp/rootfs.img /mnt/sjg-rootfs
+          # bind-mount 宿主 apk 目录进 chroot（rootfs 镜像小，拷不进去 400MB）
           sudo mkdir -p /mnt/sjg-rootfs/tmp/apks
-          sudo cp "$APKS_DIR"/*.apk /mnt/sjg-rootfs/tmp/apks/
+          sudo mount --bind "$APKS_DIR" /mnt/sjg-rootfs/tmp/apks
           sudo chroot /mnt/sjg-rootfs /bin/sh -c \
             "cd /tmp/apks && /usr/bin/apk index --allow-untrusted -o APKINDEX.tar.gz ./*.apk && ls -la APKINDEX.tar.gz"
-          sudo cp /mnt/sjg-rootfs/tmp/apks/APKINDEX.tar.gz "$APKS_DIR/"
+          sudo umount /mnt/sjg-rootfs/tmp/apks
           sudo umount /mnt/sjg-rootfs
           # 用 SDK usign 签名（SDK 原始路径，勿 cp）
           SDK25="$(find "$ROOT" -maxdepth 1 -type d -name '*sdk*25.12*' | head -n1)"
