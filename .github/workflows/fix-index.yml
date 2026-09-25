@@ -72,14 +72,19 @@ jobs:
           tar -xzf /tmp/apk-static.apk -C /tmp sbin/apk.static
           /tmp/sbin/apk.static --version
 
-      - name: 用 SDK 编译 apk-tools v3（25.12 包为 v3 格式，须同版本工具生成索引）
+      - name: 编译 apk-tools v3（挂载 openwrt/apk-tools 源码为本地 feed）
         run: |
           set -e
           SDK25="$(find . -maxdepth 1 -type d -name '*sdk*25.12*' | head -n1)"
           echo "SDK25: $SDK25"
           cd "$SDK25"
           make defconfig >/tmp/defconfig.log 2>&1 || { echo "!! defconfig 失败"; tail -n 15 /tmp/defconfig.log; exit 1; }
-          ./scripts/feeds install apk-tools >/tmp/feeds-apk.log 2>&1 || true
+          git clone --depth 1 https://github.com/openwrt/apk-tools.git /tmp/apk-tools-src
+          mkdir -p feeds/custom
+          cp -r /tmp/apk-tools-src feeds/custom/apk-tools
+          grep -q "^src-link custom" feeds.conf.default || echo "src-link custom $PWD/feeds/custom" >> feeds.conf.default
+          ./scripts/feeds update custom >/tmp/feeds-update.log 2>&1 || { tail -n 15 /tmp/feeds-update.log; exit 1; }
+          ./scripts/feeds install apk-tools >/tmp/feeds-install.log 2>&1 || { tail -n 15 /tmp/feeds-install.log; exit 1; }
           make package/apk-tools/compile V=s >/tmp/apktools-build.log 2>&1 \
             || { echo "!! apk-tools 编译失败"; tail -n 25 /tmp/apktools-build.log; exit 1; }
           PKG="$(find bin/packages -name 'apk-tools_*.apk' | head -n1)"
@@ -89,9 +94,19 @@ jobs:
           tar -xzf "$PKG" -C /tmp/apktools-extract
           BIN="$(find /tmp/apktools-extract -type f -name 'apk-tools' | head -n1)"
           echo "二进制: $BIN"
-          [ -n "$BIN" ] || { echo "!! 未找到 apk-tools 二进制"; find /tmp/apktools-extract -type f | head; exit 1; }
+          [ -n "$BIN" ] || { find /tmp/apktools-extract -type f | head; exit 1; }
           chmod +x "$BIN"
-          "$BIN" --version || { echo "直接运行失败，尝试 musl loader"; LDR="$(find "$PWD" -path '*toolchain*' -name 'ld-musl-*.so.1' | head -n1)"; echo "loader: $LDR"; "$LDR" "$BIN" --version; }
+          if "$BIN" --version 2>/dev/null; then
+            echo "apk-tools 可直接运行"
+            cp "$BIN" /tmp/apk-run
+          else
+            echo "动态链接，用 SDK musl loader 包装"
+            LDR="$(find "$PWD" -path '*toolchain*' -name 'ld-musl-*.so.1' | head -n1)"
+            [ -n "$LDR" ] || { echo "!! 未找到 musl loader"; exit 1; }
+            printf '#!/bin/sh\nexec "%s" "%s" "$@"\n' "$LDR" "$BIN" > /tmp/apk-run
+            chmod +x /tmp/apk-run
+            /tmp/apk-run --version
+          fi
 
       - name: 生成索引与签名（复用 gen-index.sh，SDK 原始工具）
         run: |

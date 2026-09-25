@@ -80,9 +80,10 @@ if [ "$FMT" = "opkg" ]; then
 elif [ "$FMT" = "apk" ]; then
   echo "==> 生成 apk 索引（APKINDEX.tar.gz）"
   APK_TOOL=""
-  # 优先 SDK 编译出的 apk-tools v3（25.12 系包为 v3 格式；Alpine 静态 apk-tools 2.14 读不了，
-  # SDK host apk 是裁剪 applet）。兼容静态版路径。
-  for cand in "/tmp/apktools-extract/usr/bin/apk-tools" \
+  # 优先 SDK 编译/官方源拿到的 apk-tools v3（25.12 系包为 v3 格式；Alpine 静态 apk-tools 2.14
+  # 读不了 v3，SDK host apk 是裁剪 applet）。/tmp/apk-run 是包装脚本（支持 musl loader）。
+  for cand in "/tmp/apk-run" \
+              "/tmp/apktools-extract/usr/bin/apk-tools" \
               "/tmp/sbin/apk.static" "$(pwd)/apk.static" \
               "$SDK_DIR/staging_dir/host/bin/apk" \
               "$SDK_DIR/staging_dir/host/usr/bin/apk"; do
