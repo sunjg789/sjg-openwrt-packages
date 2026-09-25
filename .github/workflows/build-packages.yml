@@ -40,7 +40,7 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq build-essential zstd wget git file gawk gettext \
             python3 unzip rsync patch diffutils cpio perl \
-            libncurses5-dev zlib1g-dev libssl-dev usign apk-tools
+            libncurses5-dev zlib1g-dev libssl-dev
 
       - name: 复用既有签名密钥（首次为空则构建时自动生成）
         run: |
@@ -56,6 +56,14 @@ jobs:
 
       - name: 生成索引与签名
         run: |
+          # Ubuntu 官方源无 usign/apk-tools，从 SDK 自带 host 工具补齐
+          SDK_DIR="$(find "$PWD" -maxdepth 2 -type d -name '*sdk*' | head -n1)"
+          for t in usign apk; do
+            for c in "$SDK_DIR/staging_dir/host/bin/$t" "$SDK_DIR/staging_dir/host/usr/bin/$t"; do
+              if [ -x "$c" ]; then sudo cp "$c" /usr/local/bin/; echo "  已安装 $t"; break; fi
+            done
+          done
+          command -v usign >/dev/null && echo "usign OK" || echo "usign 不可用（gen-index.sh 将跳过签名）"
           bash scripts/gen-index.sh "${{ matrix.fmt }}" \
             "$PWD/repo/${{ matrix.fmt }}/x86_64" "$PWD/keys" "$PWD"
 
