@@ -94,7 +94,9 @@ elif [ "$FMT" = "apk" ]; then
     exit 1
   fi
   # 包文件需与索引同目录；*.apk 已在 DIR 内
-  "$APK_TOOL" index -o APKINDEX.tar.gz ./*.apk
+  # --allow-untrusted：SDK 构建的包由 SDK 构建密钥签名，本机无对应公钥，
+  # 校验会报 UNTRUSTED 导致索引生成失败；签名在源级由下方 usign 完成。
+  "$APK_TOOL" index --allow-untrusted -o APKINDEX.tar.gz ./*.apk
   if [ -n "$USIGN" ] && [ -f "$KEYS_DIR/secret.key" ]; then
     "$USIGN" -S -m APKINDEX.tar.gz -s "$KEYS_DIR/secret.key"
     echo "    APKINDEX.tar.gz.sig 已生成"

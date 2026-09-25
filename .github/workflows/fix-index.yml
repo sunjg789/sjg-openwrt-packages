@@ -79,20 +79,19 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -e
+          ROOT="$PWD"
           git config user.name "sjg-packages-bot"
           git config user.email "actions@github.com"
+          # 用 worktree 避免与工作区未跟踪文件（merged/、SDK 目录）冲突
           git fetch origin gh-pages --depth 1 || true
-          if git rev-parse --verify origin/gh-pages >/dev/null 2>&1; then
-            git checkout gh-pages
-          else
-            git checkout --orphan gh-pages
-          fi
+          git worktree add /tmp/gh-pages-wt gh-pages 2>/dev/null || git worktree add /tmp/gh-pages-wt --orphan gh-pages 2>/dev/null || true
+          cd /tmp/gh-pages-wt
           rm -rf apk opkg keys .nojekyll
-          cp -r merged/repo/* .
-          if [ -d merged/keys ]; then cp -r merged/keys .; fi
+          cp -r "$ROOT/merged/repo/"* .
+          if [ -d "$ROOT/merged/keys" ]; then cp -r "$ROOT/merged/keys" .; fi
           touch .nojekyll
-          echo "--- 发布内容预览（前 40 文件） ---"
-          find apk opkg keys -type f 2>/dev/null | head -n 40
+          echo "--- 发布内容预览（前 30 文件） ---"
+          find apk opkg keys -type f 2>/dev/null | head -n 30
           git add -A
           if git diff --cached --quiet; then
             echo "无变更，跳过提交"
@@ -100,3 +99,5 @@ jobs:
             git commit -m "fix: 补齐索引与签名 $(date -u +%F-%H%M)"
             git push origin gh-pages
           fi
+          cd "$ROOT"
+          git worktree remove /tmp/gh-pages-wt --force 2>/dev/null || true
