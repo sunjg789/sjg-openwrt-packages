@@ -47,26 +47,22 @@ fi
 # ---------- 生成索引 ----------
 if [ "$FMT" = "opkg" ]; then
   echo "==> 生成 opkg 索引（Packages / Packages.gz）"
-  IPKG_INDEX="$(find "$SDK_DIR/scripts" -maxdepth 1 -name 'ipkg-make-index.sh' -type f 2>/dev/null | head -n1)"
-  if [ -n "$IPKG_INDEX" ]; then
-    "$IPKG_INDEX" "$DIR" > Packages
-  fi
-  if [ ! -s Packages ]; then
-    echo "!! ipkg-make-index.sh 输出为空，使用脚本内简易生成器"
-    {
-      for f in *.ipk; do
-        [ -f "$f" ] || continue
-        base="${f%.ipk}"
-        name="${base%%_*}"
-        rest="${base#*_}"
-        ver_arch="${rest%_*}"
-        arch="${rest##*_}"
-        printf 'Package: %s\nVersion: %s\nArchitecture: %s\nFilename: %s\nSize: %s\nSHA256sum: %s\n\n' \
-          "$name" "$ver_arch" "$arch" "$f" \
-          "$(stat -c%s "$f")" "$(sha256sum "$f" | awk '{print $1}')"
-      done
-    } > Packages
-  fi
+  # opkg 索引：直接用简易生成器（解析 OpenWrt 标准 ipk 命名 name_version_arch.ipk）。
+  # 不依赖 SDK 的 ipkg-make-index.sh——它需要 `sha256` 命令（OpenBSD 工具，Ubuntu 无），
+  # 且在不同构建机行为不一致。
+  {
+    for f in *.ipk; do
+      [ -f "$f" ] || continue
+      base="${f%.ipk}"
+      name="${base%%_*}"
+      rest="${base#*_}"
+      ver_arch="${rest%_*}"
+      arch="${rest##*_}"
+      printf 'Package: %s\nVersion: %s\nArchitecture: %s\nFilename: %s\nSize: %s\nSHA256sum: %s\n\n' \
+        "$name" "$ver_arch" "$arch" "$f" \
+        "$(stat -c%s "$f")" "$(sha256sum "$f" | awk '{print $1}')"
+    done
+  } > Packages
   gzip -9c Packages > Packages.gz
   if [ -n "$USIGN" ] && [ -f "$KEYS_DIR/secret.key" ]; then
     "$USIGN" -S -m Packages -s "$KEYS_DIR/secret.key"
