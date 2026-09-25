@@ -80,12 +80,13 @@ if [ "$FMT" = "opkg" ]; then
 elif [ "$FMT" = "apk" ]; then
   echo "==> 生成 apk 索引（APKINDEX.tar.gz）"
   APK_TOOL=""
-  if [ -n "$SDK_DIR" ]; then
-    for cand in "$SDK_DIR/staging_dir/host/bin/apk" \
-                "$SDK_DIR/staging_dir/host/usr/bin/apk"; do
-      if [ -x "$cand" ]; then APK_TOOL="$cand"; break; fi
-    done
-  fi
+  # 优先静态完整版 apk-tools（SDK 的 host apk 是裁剪 applet，无 index 功能，
+  # 报 "file format not supported (in this applet)"）
+  for cand in "/tmp/sbin/apk.static" "$(pwd)/apk.static" \
+              "$SDK_DIR/staging_dir/host/bin/apk" \
+              "$SDK_DIR/staging_dir/host/usr/bin/apk"; do
+    if [ -x "$cand" ]; then APK_TOOL="$cand"; break; fi
+  done
   if [ -z "$APK_TOOL" ]; then
     APK_TOOL="$(command -v apk || true)"
   fi

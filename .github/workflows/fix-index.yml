@@ -61,6 +61,17 @@ jobs:
           done
           echo "SDK 目录: $(find . -maxdepth 1 -type d -name '*sdk*' | tr '\n' ' ')"
 
+      - name: 下载 apk-tools-static（完整 apk，SDK host apk 无 index 功能）
+        run: |
+          set -e
+          PKG="$(curl -s "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/" | grep -o 'apk-tools-static-[0-9.]*-r[0-9]*\.apk' | sort -V | tail -1)"
+          echo "apk-tools-static: $PKG"
+          [ -n "$PKG" ] || { echo "!! 未找到 apk-tools-static"; exit 1; }
+          wget -q "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/$PKG" -O /tmp/apk-static.apk
+          mkdir -p /tmp/sbin
+          tar -xzf /tmp/apk-static.apk -C /tmp sbin/apk.static
+          /tmp/sbin/apk.static --version
+
       - name: 生成索引与签名（复用 gen-index.sh，SDK 原始工具）
         run: |
           set -e

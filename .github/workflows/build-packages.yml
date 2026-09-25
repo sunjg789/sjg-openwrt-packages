@@ -55,6 +55,18 @@ jobs:
             "$PWD/repo/${{ matrix.fmt }}/x86_64" "$PWD/plugins.conf"
         timeout-minutes: 360
 
+      - name: 下载 apk-tools-static（apk 系完整 apk 工具，SDK host apk 无 index 功能）
+        if: matrix.fmt == 'apk'
+        run: |
+          set -e
+          PKG="$(curl -s "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/" | grep -o 'apk-tools-static-[0-9.]*-r[0-9]*\.apk' | sort -V | tail -1)"
+          echo "apk-tools-static: $PKG"
+          [ -n "$PKG" ] || { echo "!! 未找到 apk-tools-static"; exit 1; }
+          wget -q "https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/$PKG" -O /tmp/apk-static.apk
+          mkdir -p /tmp/sbin
+          tar -xzf /tmp/apk-static.apk -C /tmp sbin/apk.static
+          /tmp/sbin/apk.static --version
+
       - name: 生成索引与签名
         run: |
           # 注：SDK 的 usign/apk 是动态链接（依赖 SDK 内 staging_dir/host/lib），
