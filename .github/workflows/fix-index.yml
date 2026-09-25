@@ -86,7 +86,7 @@ jobs:
           sudo mkdir -p /mnt/sjg-rootfs/tmp/apks
           sudo mount --bind "$APKS_DIR" /mnt/sjg-rootfs/tmp/apks
           sudo chroot /mnt/sjg-rootfs /bin/sh -c \
-            "echo '== apk 版本 =='; /usr/bin/apk --version 2>&1 | head -2; echo '== index 帮助 =='; /usr/bin/apk index --help 2>&1 | head -12; echo '== 尝试生成 =='; cd /tmp/apks && /usr/bin/apk index --allow-untrusted -o APKINDEX.tar.gz ./*.apk 2>&1 | tail -5; ls -la APKINDEX.tar.gz"
+            "echo '== apk 版本 =='; /usr/bin/apk --version 2>&1 | head -2; echo '== index 帮助 =='; /usr/bin/apk index --help 2>&1 | head -60"
           sudo umount /mnt/sjg-rootfs/tmp/apks
           sudo umount /mnt/sjg-rootfs
           # 用 SDK usign 签名（SDK 原始路径，勿 cp）
