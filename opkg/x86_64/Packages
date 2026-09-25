@@ -1,0 +1,5586 @@
+Package: 3proxy-lib-pam
+Version: 0.9.5-r4_x86
+Architecture: 64
+Filename: 3proxy-lib-pam_0.9.5-r4_x86_64.ipk
+Size: 2718
+SHA256sum: fcc0406a0fd10a3864ec2b7afb9ce47ddaf8eabd530ce373b519e31f95aedc1f
+
+Package: 3proxy-lib-pcre
+Version: 0.9.5-r4_x86
+Architecture: 64
+Filename: 3proxy-lib-pcre_0.9.5-r4_x86_64.ipk
+Size: 63177
+SHA256sum: a5796ea5b03635e118eb0c1f0d7619fa067d1e2dbe34139516cdf5e0dcc58f38
+
+Package: 3proxy-lib-ssl
+Version: 0.9.5-r4_x86
+Architecture: 64
+Filename: 3proxy-lib-ssl_0.9.5-r4_x86_64.ipk
+Size: 11526
+SHA256sum: a21c9a0fa852ead6bcbb9b3873e0a1a4c98fc7b031de75be7c2fd0f59cc24ee8
+
+Package: 3proxy-lib-strings
+Version: 0.9.5-r4_x86
+Architecture: 64
+Filename: 3proxy-lib-strings_0.9.5-r4_x86_64.ipk
+Size: 3962
+SHA256sum: 080951f18bb425bdcabee67b56f41b9ba870dd29a14ad3eba476f31e19fc03b1
+
+Package: 3proxy-lib-traffic
+Version: 0.9.5-r4_x86
+Architecture: 64
+Filename: 3proxy-lib-traffic_0.9.5-r4_x86_64.ipk
+Size: 4241
+SHA256sum: 8476c476ff4f131efc461379ccbffd3f52dd675cd383b3dee2daaa756ebcb93e
+
+Package: 3proxy-lib-transparent
+Version: 0.9.5-r4_x86
+Architecture: 64
+Filename: 3proxy-lib-transparent_0.9.5-r4_x86_64.ipk
+Size: 2495
+SHA256sum: 125dde8b569c29334a3469adb42ad41ed536ee79ea16c2762ed6e1c8ba4f1a28
+
+Package: 3proxy-mod-ftppr
+Version: 0.9.5-r4_x86
+Architecture: 64
+Filename: 3proxy-mod-ftppr_0.9.5-r4_x86_64.ipk
+Size: 26971
+SHA256sum: 349901de144110628ab10097dd9ac2fad683db9ab484440b0136105af7f8dd50
+
+Package: 3proxy-mod-mycrypt
+Version: 0.9.5-r4_x86
+Architecture: 64
+Filename: 3proxy-mod-mycrypt_0.9.5-r4_x86_64.ipk
+Size: 8013
+SHA256sum: 67168e039d3ecdab34a100833ef8cd74d113b8969105014f09efdec4633f52c5
+
+Package: 3proxy-mod-pop3p
+Version: 0.9.5-r4_x86
+Architecture: 64
+Filename: 3proxy-mod-pop3p_0.9.5-r4_x86_64.ipk
+Size: 23466
+SHA256sum: 8377f900851fcb7597793fa5fb525a567d2d63282f2316e3ae4f745126512315
+
+Package: 3proxy-mod-proxy
+Version: 0.9.5-r4_x86
+Architecture: 64
+Filename: 3proxy-mod-proxy_0.9.5-r4_x86_64.ipk
+Size: 34691
+SHA256sum: e1f4790d5a518d5c8830114216558e1f3f028e0f9fb0ad2cf5addcb912964686
+
+Package: 3proxy-mod-smtpp
+Version: 0.9.5-r4_x86
+Architecture: 64
+Filename: 3proxy-mod-smtpp_0.9.5-r4_x86_64.ipk
+Size: 25830
+SHA256sum: f0abf6791d534278426c2b76b319498766a91775872b9cdfd0216b0e59774deb
+
+Package: 3proxy-mod-socks
+Version: 0.9.5-r4_x86
+Architecture: 64
+Filename: 3proxy-mod-socks_0.9.5-r4_x86_64.ipk
+Size: 26575
+SHA256sum: 458381474c5f1afc74838ba440add566acf58eae132168b234d8ddca3ed2a7cf
+
+Package: 3proxy-mod-tcppm
+Version: 0.9.5-r4_x86
+Architecture: 64
+Filename: 3proxy-mod-tcppm_0.9.5-r4_x86_64.ipk
+Size: 22986
+SHA256sum: d86d75cf0a4d3506f641e3a322aa7dc3096ed85b23b1e66ee98712a368694251
+
+Package: 3proxy-mod-tlspr
+Version: 0.9.5-r4_x86
+Architecture: 64
+Filename: 3proxy-mod-tlspr_0.9.5-r4_x86_64.ipk
+Size: 25091
+SHA256sum: 7b78ead42312b5e5128d69bdfea62c8ab57a0148c35e869f1a2bb6042e232eb0
+
+Package: 3proxy-mod-udppm
+Version: 0.9.5-r4_x86
+Architecture: 64
+Filename: 3proxy-mod-udppm_0.9.5-r4_x86_64.ipk
+Size: 23443
+SHA256sum: b98a8ed362767a20c225a184cafe2642072d19cb8943a81cd55f0644a2a8e4a2
+
+Package: 3proxy
+Version: 0.9.5-r4_x86
+Architecture: 64
+Filename: 3proxy_0.9.5-r4_x86_64.ipk
+Size: 104339
+SHA256sum: 1338e3ca1e486ac2e7aa8f372ed45728f17307cd88cc80089fe6e5e33a7326fc
+
+Package: acl
+Version: 2.3.2-r2_x86
+Architecture: 64
+Filename: acl_2.3.2-r2_x86_64.ipk
+Size: 20321
+SHA256sum: 5594e78f0a4dba1f518add44ac427a8a1582f50973b136c732c54ad7fe948fed
+
+Package: adguardhome
+Version: 0.107.57-r1_x86
+Architecture: 64
+Filename: adguardhome_0.107.57-r1_x86_64.ipk
+Size: 10894437
+SHA256sum: fb0b3a6e120dd297b383ac40d434b7c5d20e7f4d1f1e934752aac3942fdc26de
+
+Package: agetty
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: agetty_2.40.2-r1_x86_64.ipk
+Size: 34241
+SHA256sum: b84c1c45694f5863f738fb0d9c89a20851f9fad79968a3675bad5765fb7a9206
+
+Package: aircard-pcmcia-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: aircard-pcmcia-firmware_20241110-r2_x86_64.ipk
+Size: 1213
+SHA256sum: 2e2fed864a6dae25fb2294d0749e1e6216adc2ab13938a9c64d59c010a0df276
+
+Package: airoha-en8811h-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: airoha-en8811h-firmware_20241110-r2_x86_64.ipk
+Size: 56980
+SHA256sum: 556f751f05031cecfb69d917b449a489549744fe892fb74a1e2651ab5e51f7bb
+
+Package: amd64-microcode
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: amd64-microcode_20241110-r2_x86_64.ipk
+Size: 56720
+SHA256sum: e0c4fe4ac3865c23d0c715bd1895dd8af29bd322c5f230b82d5d28d502d8662d
+
+Package: amdgpu-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: amdgpu-firmware_20241110-r2_x86_64.ipk
+Size: 32465965
+SHA256sum: cdba2bb77b68600dfb8a6a08d4969598e50ff05f95e2e3a9e559a4242375cf79
+
+Package: ar3k-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ar3k-firmware_20241110-r2_x86_64.ipk
+Size: 979772
+SHA256sum: 53aa3dac74abc0535a3aa662111442cc938690e58bac68004f7234feba9a4f4e
+
+Package: argon
+Version: 2.4.7-r20260824
+Architecture: all
+Filename: argon_2.4.7-r20260824_all.ipk
+Size: 394025
+SHA256sum: e5c4462257034370eab59af2413a1d9df7e150dc6dd4919c4b50dcea5fc00cf6
+
+Package: aria2-openssl
+Version: 1.37.0-r3_x86
+Architecture: 64
+Filename: aria2-openssl_1.37.0-r3_x86_64.ipk
+Size: 911
+SHA256sum: 33c393b3e5bc49d77f252de60224dfdb9846373e19ba97346b34bd944be6e72b
+
+Package: aria2
+Version: 1.37.0-r3_x86
+Architecture: 64
+Filename: aria2_1.37.0-r3_x86_64.ipk
+Size: 631407
+SHA256sum: 272ff0da1459a760b06744f6980465a68e305c74c5e15123ab2aeaecbce9ec58
+
+Package: ariang-nginx
+Version: 1.3.6-r1
+Architecture: all
+Filename: ariang-nginx_1.3.6-r1_all.ipk
+Size: 1008139
+SHA256sum: 33cadc20d4545d4c82ff487ee0be9cd50e9b34b31ce55c4e03fc8e5fdb8a55be
+
+Package: ariang
+Version: 1.3.6-r1
+Architecture: all
+Filename: ariang_1.3.6-r1_all.ipk
+Size: 1008217
+SHA256sum: 369c2567874cd09cc18c2ffdc3eac629454da45bafd8bd17fe4a199288c9dd09
+
+Package: ath10k-board-qca4019
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath10k-board-qca4019_20241110-r2_x86_64.ipk
+Size: 81359
+SHA256sum: 5636dfd026529e7623408ad97f9b7454627af5b0313dc546402b3aab57936faa
+
+Package: ath10k-board-qca9377-sdio
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath10k-board-qca9377-sdio_20241110-r2_x86_64.ipk
+Size: 2312
+SHA256sum: d214108ad9266fbe245fe7fc852d30b7d72891e0362be8db957f155157aae1d4
+
+Package: ath10k-board-qca9377
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath10k-board-qca9377_20241110-r2_x86_64.ipk
+Size: 8116
+SHA256sum: 8c18410896984c0b844671fcc879a3784d962f9d79043362aa89bf33f9a9a48d
+
+Package: ath10k-board-qca9887
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath10k-board-qca9887_20241110-r2_x86_64.ipk
+Size: 1471
+SHA256sum: 3a160142f426767302e4ee93ebb7e4aceab86af5fb78361009197f41443b3f74
+
+Package: ath10k-board-qca9888
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath10k-board-qca9888_20241110-r2_x86_64.ipk
+Size: 8595
+SHA256sum: 06c9277fa0f8b6f6bba287fe65aa3514b7d97219fa3746b7290fb0eb0f83d7ed
+
+Package: ath10k-board-qca988x
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath10k-board-qca988x_20241110-r2_x86_64.ipk
+Size: 1581
+SHA256sum: 3c3b1377c5bffe53519b7bb691c1ebdf2df58b71c7d66fde0f403e025babe0b6
+
+Package: ath10k-board-qca9984
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath10k-board-qca9984_20241110-r2_x86_64.ipk
+Size: 15132
+SHA256sum: e19ea1f931ee7f607e4ca619a1eba4a250b6047cce95597dba0a1655141b42b1
+
+Package: ath10k-board-qca99x0
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath10k-board-qca99x0_20241110-r2_x86_64.ipk
+Size: 8248
+SHA256sum: 3be7a77e2d673e86422166318b7bc8f1c0ca2256e84a96dec26c0d0f255d9b5d
+
+Package: ath10k-firmware-qca4019
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath10k-firmware-qca4019_20241110-r2_x86_64.ipk
+Size: 466366
+SHA256sum: 8b565a9d439b2737e3b9f64dea88b4d62909a471e5ab14dc85ac6654d5ca6825
+
+Package: ath10k-firmware-qca6174
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath10k-firmware-qca6174_20241110-r2_x86_64.ipk
+Size: 876004
+SHA256sum: ed16b1f860685e4361adab56ce54358a0982df8216aa2002453db0c6269b6169
+
+Package: ath10k-firmware-qca9377-sdio
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath10k-firmware-qca9377-sdio_20241110-r2_x86_64.ipk
+Size: 411506
+SHA256sum: 2458cfc8ac9585a0675c7361a2ad9449ab7de91452273e26f59e5446a39ff447
+
+Package: ath10k-firmware-qca9377
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath10k-firmware-qca9377_20241110-r2_x86_64.ipk
+Size: 524337
+SHA256sum: 1df74b89124b2d173f947fe632f39122865ddf87e3ae47cf363b8c42ea23b9a2
+
+Package: ath10k-firmware-qca9887
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath10k-firmware-qca9887_20241110-r2_x86_64.ipk
+Size: 209827
+SHA256sum: 1459c2930baf8505239fa42e87fae8826d76da67b51e3c2b7d4acd4dc353c60f
+
+Package: ath10k-firmware-qca9888
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath10k-firmware-qca9888_20241110-r2_x86_64.ipk
+Size: 528907
+SHA256sum: 086d590a28d1cde5d0ef2bb4a21662b30ba086c80b55f373db86f33c54b88c59
+
+Package: ath10k-firmware-qca988x
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath10k-firmware-qca988x_20241110-r2_x86_64.ipk
+Size: 219813
+SHA256sum: 03f18ecd23859d5a1b232bb9513b3b2b19ae36e400ed3f1cfb33ba6885355af0
+
+Package: ath10k-firmware-qca9984
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath10k-firmware-qca9984_20241110-r2_x86_64.ipk
+Size: 520024
+SHA256sum: 74afac7e5a109d58561f84b15f2d7293cb763169fa20c61bc55e4686c1968f11
+
+Package: ath10k-firmware-qca99x0
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath10k-firmware-qca99x0_20241110-r2_x86_64.ipk
+Size: 371974
+SHA256sum: d6f415a46a5795974c94bdf70ae725973d21871c1e68df1c375a42dc62b5eb3f
+
+Package: ath11k-firmware-qca6390
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath11k-firmware-qca6390_20241110-r2_x86_64.ipk
+Size: 1751730
+SHA256sum: a7f3d13c4ac276a33afc4f4f5310bf05e6da2d73bc0b2d74e863c1a44954dc55
+
+Package: ath11k-firmware-wcn6750
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath11k-firmware-wcn6750_20241110-r2_x86_64.ipk
+Size: 3661559
+SHA256sum: ddf0abf5f554b76e1797ab3bce3f2430af435c5885e06ede7907617ab90bf913
+
+Package: ath11k-firmware-wcn6855
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath11k-firmware-wcn6855_20241110-r2_x86_64.ipk
+Size: 3176596
+SHA256sum: febcb609740e067f5daa47f22e3d229b77225044aea8f6539eec78e71c6f98c6
+
+Package: ath12k-firmware-wcn7850
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath12k-firmware-wcn7850_20241110-r2_x86_64.ipk
+Size: 3420937
+SHA256sum: 03ae267b9399ae64e40bf889aecc243b40e18b71c801aa88928184ffa091dfa4
+
+Package: ath6k-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath6k-firmware_20241110-r2_x86_64.ipk
+Size: 712857
+SHA256sum: 31eeff91c230b47062e983f1040ae87afe2d03910fea2cc341c217fc6ca01aad
+
+Package: ath9k-htc-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ath9k-htc-firmware_20241110-r2_x86_64.ipk
+Size: 62359
+SHA256sum: 72082d97d997477c3fd7efc6f36a196c933d9eda6726b563a7c3ec76a6aafeda
+
+Package: attr
+Version: 2.5.2-r3_x86
+Architecture: 64
+Filename: attr_2.5.2-r3_x86_64.ipk
+Size: 12637
+SHA256sum: c37f46f6d88b946c5a2cef1789f06f0666b8c046651e1d85a40cc2b334174495
+
+Package: badblocks
+Version: 1.47.0-r2_x86
+Architecture: 64
+Filename: badblocks_1.47.0-r2_x86_64.ipk
+Size: 9962
+SHA256sum: 6d159d800ed8b22390943e618e3d90272434547dd500a4285d2681b88b17e75a
+
+Package: bash
+Version: 5.2.37-r1_x86
+Architecture: 64
+Filename: bash_5.2.37-r1_x86_64.ipk
+Size: 480801
+SHA256sum: 3c7b9eca092c41a128debc4f216900f892a1f18c91725b8478f2afd22d52894e
+
+Package: bc
+Version: 1.07.1-r1_x86
+Architecture: 64
+Filename: bc_1.07.1-r1_x86_64.ipk
+Size: 37165
+SHA256sum: 624f102997b95c00afd30e2729ac15c37cf51e73a0a53aa5dc749afcca45ddf9
+
+Package: blkdiscard
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: blkdiscard_2.40.2-r1_x86_64.ipk
+Size: 11638
+SHA256sum: c587fb5664045b2d53c17ec4c25de2761ad6f92263013fbe4fec845e9e8e3486
+
+Package: blkid
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: blkid_2.40.2-r1_x86_64.ipk
+Size: 49469
+SHA256sum: 4ef54783f7445463ed27205970b6759f8687cc443c031a4462fe85ecfa6ad228
+
+Package: blockdev
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: blockdev_2.40.2-r1_x86_64.ipk
+Size: 31215
+SHA256sum: 6663a761896fff6254c9cf013eaa228a76261d50f65bb36512c3f2923d2ae7cb
+
+Package: bnx2-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: bnx2-firmware_20241110-r2_x86_64.ipk
+Size: 105856
+SHA256sum: 6922318d7fda29fac53245e0820490476c8aa4004117c66b92a648eec6b4641d
+
+Package: bnx2x-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: bnx2x-firmware_20241110-r2_x86_64.ipk
+Size: 2415451
+SHA256sum: 4bdac8bcd658b406ea5f6090f94e6a983efe5a1b49b8981e76bfb709d5bf2bf4
+
+Package: brcmfmac-firmware-4329-sdio
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: brcmfmac-firmware-4329-sdio_20241110-r2_x86_64.ipk
+Size: 177887
+SHA256sum: 70942abaaa7bbdd710b7efac78952bd7a98c5e452e24ad752d2de28909ceedd8
+
+Package: brcmfmac-firmware-4339-sdio
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: brcmfmac-firmware-4339-sdio_20241110-r2_x86_64.ipk
+Size: 342463
+SHA256sum: 072bd9ece805d90acdb0c6dd46b1f0b3af5951356e31edf3a58c7d32e3ef67a8
+
+Package: brcmfmac-firmware-43430a0-sdio
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: brcmfmac-firmware-43430a0-sdio_20241110-r2_x86_64.ipk
+Size: 259964
+SHA256sum: eb58a1b1b312bcb3c8ff14144af27600a030f5317b4425292fdd9a84ef618f78
+
+Package: brcmfmac-firmware-43602a1-pcie
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: brcmfmac-firmware-43602a1-pcie_20241110-r2_x86_64.ipk
+Size: 370462
+SHA256sum: de55c0df7f0b76c6bd51f72aefbe035257d331919c62ac4e10cf7874bde5cdea
+
+Package: brcmfmac-firmware-4366b1-pcie
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: brcmfmac-firmware-4366b1-pcie_20241110-r2_x86_64.ipk
+Size: 637098
+SHA256sum: 79f24d5906b81cbd15dd429bf3958f8cd56ebc10fcc35541a52864b4cba71225
+
+Package: brcmfmac-firmware-4366c0-pcie
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: brcmfmac-firmware-4366c0-pcie_20241110-r2_x86_64.ipk
+Size: 647310
+SHA256sum: 41cf66931cccc818f85487400c608111c50dbc1a2d2468c7ce79300e825c6455
+
+Package: brcmfmac-firmware-usb
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: brcmfmac-firmware-usb_20241110-r2_x86_64.ipk
+Size: 503754
+SHA256sum: 22589f5c24f5e8c9c31df05d31af8795ca38ca7f881116deaa524ef7443e173b
+
+Package: brcmfmac-nvram-43430-sdio
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: brcmfmac-nvram-43430-sdio_20241110-r2_x86_64.ipk
+Size: 2195
+SHA256sum: 7c083f49dbb76efd030310b05c7ef77df4b77829f18fcea8f2f5e6a33c7ca952
+
+Package: brcmfmac-nvram-43455-sdio
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: brcmfmac-nvram-43455-sdio_20241110-r2_x86_64.ipk
+Size: 3417
+SHA256sum: e382495d0b43a7bfca4586588edf1963852009aa9ae5cad4d5ab84d0dbde32ac
+
+Package: brcmsmac-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: brcmsmac-firmware_20241110-r2_x86_64.ipk
+Size: 42538
+SHA256sum: f43468f1c913a9fd83bb997f7a525bef2c81e64b054da104c0f32708a99513b1
+
+Package: btrfs-progs
+Version: 6.11-r1_x86
+Architecture: 64
+Filename: btrfs-progs_6.11-r1_x86_64.ipk
+Size: 1158865
+SHA256sum: 9a6a7e544befac0e3ad51ea27bae431b510fd32a7beb471b4867a02e971679fd
+
+Package: ca-bundle
+Version: 20250419-r1
+Architecture: all
+Filename: ca-bundle_20250419-r1_all.ipk
+Size: 131153
+SHA256sum: d34f66d977246ccb764a4c34ed9bf5e12f14d8b21c626e748c9d2145b8f4c4b8
+
+Package: ca-certificates
+Version: 20250419-r1
+Architecture: all
+Filename: ca-certificates_20250419-r1_all.ipk
+Size: 142364
+SHA256sum: 014d03fc77efbb14ab004e2d8edf768da94f0a6541ad5c450f3030182405136e
+
+Package: cal
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: cal_2.40.2-r1_x86_64.ipk
+Size: 25369
+SHA256sum: 105713460a4ae262dc1f0fca7ab3ebfe473deff423b064ee8ef7fa62dd8c5308
+
+Package: carl9170-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: carl9170-firmware_20241110-r2_x86_64.ipk
+Size: 10552
+SHA256sum: 570bee88e3f88ae2ac22f7f3242c74d76bb8e45083fbb4737ff1185bcbed235f
+
+Package: cfdisk
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: cfdisk_2.40.2-r1_x86_64.ipk
+Size: 37755
+SHA256sum: 40fd84ade119a24592d6da7d349a340bfee4e050a0ea086dfdbf07407e53f4bf
+
+Package: cgi-io
+Version: 2022.08.10~901b0f04-r21_x86
+Architecture: 64
+Filename: cgi-io_2022.08.10~901b0f04-r21_x86_64.ipk
+Size: 9630
+SHA256sum: d342577219304a0ae44987efe435bc92d08b5daf9f1ca024f890c8897e069975
+
+Package: chattr
+Version: 1.47.0-r2_x86
+Architecture: 64
+Filename: chattr_1.47.0-r2_x86_64.ipk
+Size: 3735
+SHA256sum: 23fd09bc655f5247b1892087b392ca1d6f122ae9c57f2e2908e3df6732ba4642
+
+Package: chkcon
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: chkcon_3.5-r1_x86_64.ipk
+Size: 2292
+SHA256sum: 10bcc36429faa4dcea0a3ebf29753a0067c2031ee10039e352b5675719f99cb9
+
+Package: colrm
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: colrm_2.40.2-r1_x86_64.ipk
+Size: 9420
+SHA256sum: 1dfb886fb05825b9ef2722dd3d848fc12f319d3cd753f82cf6e5929604cf0bb9
+
+Package: coreutils-b2sum
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-b2sum_9.7-r1_x86_64.ipk
+Size: 23453
+SHA256sum: 899aaaab49ab0e4293ad22114ae219d2789dc80024d11ac5e3853807e4e651d4
+
+Package: coreutils-base32
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-base32_9.7-r1_x86_64.ipk
+Size: 17931
+SHA256sum: 4d21f1d0f824cb34ac776716ad3278f4f73e34b86e8c630f77d8acb6bcc77d96
+
+Package: coreutils-base64
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-base64_9.7-r1_x86_64.ipk
+Size: 17966
+SHA256sum: db457a3692f0df0a31b911063642da1c52f97bfc922f541b1a09adc325872f5b
+
+Package: coreutils-basename
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-basename_9.7-r1_x86_64.ipk
+Size: 14814
+SHA256sum: 623972b016a6669019579027f4fbbc2a05f6b5702d4f2fc2e67f09a5cf89a32f
+
+Package: coreutils-basenc
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-basenc_9.7-r1_x86_64.ipk
+Size: 21403
+SHA256sum: b36a9ec11050310a4c263572a44b144cab01eb4fe88e2c05d5844968472531be
+
+Package: coreutils-cat
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-cat_9.7-r1_x86_64.ipk
+Size: 17663
+SHA256sum: e2a85cdff8263bb4dc40db4fca2d0dfa97d15b1411f3c8537fd9d061d6812838
+
+Package: coreutils-chcon
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-chcon_9.7-r1_x86_64.ipk
+Size: 27344
+SHA256sum: 53bbea38bdd38dad4d1e99fb2fea7f4602549ced4b1ecd7e5a487cc7e325cb1d
+
+Package: coreutils-chgrp
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-chgrp_9.7-r1_x86_64.ipk
+Size: 31009
+SHA256sum: 41f49347f8754a383a80dc9d7f50bd5fa1be2d83e6a82263bc180f3a97e300fc
+
+Package: coreutils-chmod
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-chmod_9.7-r1_x86_64.ipk
+Size: 27129
+SHA256sum: 33400f5b22a29aa19932a32ade5473a4136af843665f06b6dedbfc5dd1632208
+
+Package: coreutils-chown
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-chown_9.7-r1_x86_64.ipk
+Size: 31005
+SHA256sum: 10bcf05c9d1332bc961c3d2ac14c203d8b0d15f13fe206949b0cc8b1471a9bf4
+
+Package: coreutils-chroot
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-chroot_9.7-r1_x86_64.ipk
+Size: 23301
+SHA256sum: 294335061c7b778dc7bc3e6d14fb64cd854e056919617739666b01fbf68ae209
+
+Package: coreutils-cksum
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-cksum_9.7-r1_x86_64.ipk
+Size: 78652
+SHA256sum: c77a881078bf3fc485b1506979b947a993a9722a1bd0aa990189fc350008010a
+
+Package: coreutils-comm
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-comm_9.7-r1_x86_64.ipk
+Size: 18248
+SHA256sum: 5acdc3dcc0d0aac1c6c4555a7af750ec0280c0ef8ebab8bf6a3486e364fc8df2
+
+Package: coreutils-cp
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-cp_9.7-r1_x86_64.ipk
+Size: 49411
+SHA256sum: 208e7ee69c0e2f88e6c82876f1c8433876ab1ea9069f7245359d57458d9819fc
+
+Package: coreutils-csplit
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-csplit_9.7-r1_x86_64.ipk
+Size: 51372
+SHA256sum: f7496ff5f595028677395ec1725d18beb64f22bb4fbf0dfdc53d16e727b719ed
+
+Package: coreutils-cut
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-cut_9.7-r1_x86_64.ipk
+Size: 19142
+SHA256sum: f0ae71e8f89235783621f887b7fe589376e66151173be5ebaf31dee0ed1697ff
+
+Package: coreutils-date
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-date_9.7-r1_x86_64.ipk
+Size: 36422
+SHA256sum: 875561ff39277d30920e633ab0159e6b327a4c372dd28894e083c03a96f4c156
+
+Package: coreutils-dd
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-dd_9.7-r1_x86_64.ipk
+Size: 28382
+SHA256sum: b22deeb73bfd8cd3785e15619aef4e7e3f37deca8b3ced83321b98d07a0a548e
+
+Package: coreutils-df
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-df_9.7-r1_x86_64.ipk
+Size: 44647
+SHA256sum: a7ff8507c004393549e6d289e8ed6843751477a3c6533c47cd98cbba40dd5dd5
+
+Package: coreutils-dir
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-dir_9.7-r1_x86_64.ipk
+Size: 62546
+SHA256sum: a122d833a21f196d9980441a091213616d87ec207b7fd4e6ac59779c8f848cf7
+
+Package: coreutils-dircolors
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-dircolors_9.7-r1_x86_64.ipk
+Size: 26084
+SHA256sum: 5ce9ab86b768a9f1b4b185ad6537b77f1529b1581c9dbcd5e440eb0363405d8f
+
+Package: coreutils-dirname
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-dirname_9.7-r1_x86_64.ipk
+Size: 14497
+SHA256sum: 0a6d50a5eb4438ad937539be85f611ed507930b083c8b5e9efe004e87ae10f4e
+
+Package: coreutils-du
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-du_9.7-r1_x86_64.ipk
+Size: 79076
+SHA256sum: 0c8637d3f8d376da869637fc327c5d911fe9b1c99235f6698fec2ba0742ffe4c
+
+Package: coreutils-echo
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-echo_9.7-r1_x86_64.ipk
+Size: 13057
+SHA256sum: 05a3cd8a168a886070a844bc814210e8e934575c8444eaa463e49e6725213451
+
+Package: coreutils-env
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-env_9.7-r1_x86_64.ipk
+Size: 19943
+SHA256sum: 9e90d1a71bd14b9d509576ba7f930164730a8b184b836273e807042a06f2ddee
+
+Package: coreutils-expand
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-expand_9.7-r1_x86_64.ipk
+Size: 16616
+SHA256sum: 14e86ba9f4bc33fa735097b263afa64e3fed8a0bdc38c60038b6b649725e7bbd
+
+Package: coreutils-expr
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-expr_9.7-r1_x86_64.ipk
+Size: 48966
+SHA256sum: 93bdb19fdf4ed88f3adaae8f869321af653fce0d037fccb990ff7692624e8c8c
+
+Package: coreutils-factor
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-factor_9.7-r1_x86_64.ipk
+Size: 34837
+SHA256sum: 58a206b30abc49da5842f68a538084b54b2525aed28fe1986751b29944cb9b9d
+
+Package: coreutils-false
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-false_9.7-r1_x86_64.ipk
+Size: 11972
+SHA256sum: 4c916feee9c6d820d368518cbaf990a86739d0fbf3feeeebe03561b68b21c915
+
+Package: coreutils-fmt
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-fmt_9.7-r1_x86_64.ipk
+Size: 18821
+SHA256sum: 33993f28f960d44446f98a17279ee1b7afd6e40a08a338c8bff5123c59addf69
+
+Package: coreutils-fold
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-fold_9.7-r1_x86_64.ipk
+Size: 16403
+SHA256sum: 63817419d624ab6614c5ea4f913466342d442647bbfd44de5e4896b8433b2b3d
+
+Package: coreutils-groups
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-groups_9.7-r1_x86_64.ipk
+Size: 15257
+SHA256sum: 9968ffca4d9eef3687e9291075752455cdb9002c42c08a1d36cc290c22c9d8b6
+
+Package: coreutils-head
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-head_9.7-r1_x86_64.ipk
+Size: 18910
+SHA256sum: ef31a5a68949959ad845bbbde4884de635addccb2e91a0aebf6411e929365c2a
+
+Package: coreutils-hostid
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-hostid_9.7-r1_x86_64.ipk
+Size: 14243
+SHA256sum: cfdc993a9f99db6837fa9a55e92a2ae2bb9845c2e464a73b8e99410f72052aea
+
+Package: coreutils-id
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-id_9.7-r1_x86_64.ipk
+Size: 17901
+SHA256sum: e43e3c70d4b5af0ae2d7ffb6461a32f86afcd22d09b274d3319c88d82e37d4e3
+
+Package: coreutils-install
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-install_9.7-r1_x86_64.ipk
+Size: 51244
+SHA256sum: bb77d0cf802fc24978bdd6af2a18c8851be93aebbb1dfab4275563447264acf1
+
+Package: coreutils-join
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-join_9.7-r1_x86_64.ipk
+Size: 22212
+SHA256sum: 475dfb49b992f92afc01ee33d061f261bac3ba3ce0ff9b19f9882e4aba1723f9
+
+Package: coreutils-kill
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-kill_9.7-r1_x86_64.ipk
+Size: 16319
+SHA256sum: cae59c0729f6fc1ffd20f3e661dd2498dec78202806c7e60f8f365c4909b38cf
+
+Package: coreutils-link
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-link_9.7-r1_x86_64.ipk
+Size: 14380
+SHA256sum: 04eefe9d069200cbc87b0004a742697562c6f933d971275929d888089a83e6dc
+
+Package: coreutils-ln
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-ln_9.7-r1_x86_64.ipk
+Size: 28835
+SHA256sum: 1da11e5acd3dacbea5e1f4d574266e97d3450133221ac242fc4ab832e8bdff5e
+
+Package: coreutils-logname
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-logname_9.7-r1_x86_64.ipk
+Size: 14247
+SHA256sum: 4e1840e6c453ab536f3bbe59ca03164699a6ac9751a479cba41036ec5ce0d520
+
+Package: coreutils-ls
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-ls_9.7-r1_x86_64.ipk
+Size: 62583
+SHA256sum: 11bf91ae5f08dedfddf716ee0f47223505eee3ccdff1572af93f55c3ce56203e
+
+Package: coreutils-md5sum
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-md5sum_9.7-r1_x86_64.ipk
+Size: 20944
+SHA256sum: 1b2ae1b6c29cd40c17894e4e57446261356003a1975da235de548d4bdc109047
+
+Package: coreutils-mkdir
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-mkdir_9.7-r1_x86_64.ipk
+Size: 18460
+SHA256sum: 2c1d5983d7b00482c0b21e0ad5cedb46c3d974f215fa8b18967fd88364444442
+
+Package: coreutils-mkfifo
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-mkfifo_9.7-r1_x86_64.ipk
+Size: 15500
+SHA256sum: d99c112f63534ed3c5c49b6acdf14878086486f65ad678cf5e92fb33031501f1
+
+Package: coreutils-mknod
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-mknod_9.7-r1_x86_64.ipk
+Size: 16908
+SHA256sum: 4b6d5f9c8e2aafd08091526110cc52043608bc33a56cc5afafbee8cbca25535a
+
+Package: coreutils-mktemp
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-mktemp_9.7-r1_x86_64.ipk
+Size: 16550
+SHA256sum: 024cacde9fee2f73826462eb72218d95de582f87da856a92214580f9301662b9
+
+Package: coreutils-mv
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-mv_9.7-r1_x86_64.ipk
+Size: 53382
+SHA256sum: 3ab4c3fad32f4139aa27ae0a41a57a47741784dde6bb90cee7bdd81c29664201
+
+Package: coreutils-nice
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-nice_9.7-r1_x86_64.ipk
+Size: 15438
+SHA256sum: 58c54c6067ec6db5719fa9930c83e5b177aea6934d9a909174df4f1f8909db0e
+
+Package: coreutils-nl
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-nl_9.7-r1_x86_64.ipk
+Size: 48142
+SHA256sum: 99ff8f4cc7860e3db3c92d29a7e434fab216c9f1f9055d38d48c05917f01c989
+
+Package: coreutils-nohup
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-nohup_9.7-r1_x86_64.ipk
+Size: 16031
+SHA256sum: a55b5f59260fcd03a1d53c2095cd0e60cf12d167b8dfea0b615c3bb5e6a6f375
+
+Package: coreutils-nproc
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-nproc_9.7-r1_x86_64.ipk
+Size: 15548
+SHA256sum: f25281246f5c95752ecd331d38899f8105d395679d31a47d5708960f629c453a
+
+Package: coreutils-numfmt
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-numfmt_9.7-r1_x86_64.ipk
+Size: 25281
+SHA256sum: 1c9b88327e55e05b69669d0c8b76403839538300eadadbf3caff8dcc0c113f6a
+
+Package: coreutils-od
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-od_9.7-r1_x86_64.ipk
+Size: 36605
+SHA256sum: 4418ad4d3f1d40f5e435c8951b4aa34fdd115180d7347ab625069531c19538a6
+
+Package: coreutils-paste
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-paste_9.7-r1_x86_64.ipk
+Size: 16209
+SHA256sum: d81a9789bc263cb7cb2101fec3e8fda7d012c870ac962f91e9537b39b14a2871
+
+Package: coreutils-pathchk
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-pathchk_9.7-r1_x86_64.ipk
+Size: 15088
+SHA256sum: 87083c4aec8ec70ed8c4e2cf6e08b9890d376983bfc4c5fab25a81901bfe6af4
+
+Package: coreutils-pinky
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-pinky_9.7-r1_x86_64.ipk
+Size: 18990
+SHA256sum: 682ebe9a4108816869c565a309b645368fce109c8cb2d48fd05d0615aca7c918
+
+Package: coreutils-pr
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-pr_9.7-r1_x86_64.ipk
+Size: 31114
+SHA256sum: 18fd67ebb44b8fcc5de20b0c7f4161da954ac7502b3ced8fb80b939c93fe7c76
+
+Package: coreutils-printenv
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-printenv_9.7-r1_x86_64.ipk
+Size: 14416
+SHA256sum: 4dc0c627d999ff4ece1e84eeb91c39f6a81651bf9f80bb8f7b0d257d5af9a4c1
+
+Package: coreutils-printf
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-printf_9.7-r1_x86_64.ipk
+Size: 27574
+SHA256sum: 1c4e1ae136847181060198ad9eb9b23a60f4ab5353fc4700484866da8eed5a92
+
+Package: coreutils-ptx
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-ptx_9.7-r1_x86_64.ipk
+Size: 53151
+SHA256sum: 87dc7c37d10f0c08bfc9771916ce69c87a288a8f5c9e2492da3622ba11063c6f
+
+Package: coreutils-pwd
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-pwd_9.7-r1_x86_64.ipk
+Size: 18114
+SHA256sum: 2085acd461c6305a10528120dd7ba34304bf78a072f2983c2aa1104b515eacc8
+
+Package: coreutils-readlink
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-readlink_9.7-r1_x86_64.ipk
+Size: 20757
+SHA256sum: 8ca372ab1ae5e936fa786011f29e7bbe2a1898cb1c9eb192d589c16588ec2c8d
+
+Package: coreutils-realpath
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-realpath_9.7-r1_x86_64.ipk
+Size: 21375
+SHA256sum: 6a34911234731a72cea560b595fd4ce98c8e2385703ec16a696140bf682bfbe2
+
+Package: coreutils-rm
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-rm_9.7-r1_x86_64.ipk
+Size: 28299
+SHA256sum: 9011f0d62194c0c01a3cc8d14ebbedae481e3670c5603d77031b8d1363b8bbb2
+
+Package: coreutils-rmdir
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-rmdir_9.7-r1_x86_64.ipk
+Size: 15255
+SHA256sum: bf28bab8ca395c1f8504e6b843499be919250a569680fa40d778ae94d769894a
+
+Package: coreutils-runcon
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-runcon_9.7-r1_x86_64.ipk
+Size: 14654
+SHA256sum: 08b958236fa582beffa7a42c2a3d927091fe88c5da6f8a317d71ee92f5881031
+
+Package: coreutils-seq
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-seq_9.7-r1_x86_64.ipk
+Size: 28706
+SHA256sum: 5e7197b3899bafd072b2f8f0646612cda5abb919debdd8505a232363b7e826e4
+
+Package: coreutils-sha1sum
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-sha1sum_9.7-r1_x86_64.ipk
+Size: 22631
+SHA256sum: 18477979bf6e8b58a1594b436f0c724db223dad85d6aff3e55381fe817549927
+
+Package: coreutils-sha224sum
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-sha224sum_9.7-r1_x86_64.ipk
+Size: 25904
+SHA256sum: fc07d8849a840091edb35579d5f9c58d413d27fe685c49419fb1a9d626bdcb30
+
+Package: coreutils-sha256sum
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-sha256sum_9.7-r1_x86_64.ipk
+Size: 25938
+SHA256sum: de9b1a2ddf08dee735732aa3d507566e27e58ee1fda77bf9ece1c0bfb87c30a8
+
+Package: coreutils-sha384sum
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-sha384sum_9.7-r1_x86_64.ipk
+Size: 27663
+SHA256sum: 15d7a12956163f43eccaad7b4ca3c1e4be6bc8e69e016f7f45e20d4c36a33d1e
+
+Package: coreutils-sha512sum
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-sha512sum_9.7-r1_x86_64.ipk
+Size: 27700
+SHA256sum: 8be5daf42ae653d610aaeded94471b28a229eea8bbdd65e26a8f9f305373e83e
+
+Package: coreutils-shred
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-shred_9.7-r1_x86_64.ipk
+Size: 25868
+SHA256sum: 35504fd096b52678912449afa62317a2873ab914bd6208bcfca20fe180d07a3e
+
+Package: coreutils-shuf
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-shuf_9.7-r1_x86_64.ipk
+Size: 24409
+SHA256sum: 126c178b7166b8858f509f328e1298404c1a177af671acd8881803e92857b3fd
+
+Package: coreutils-sleep
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-sleep_9.7-r1_x86_64.ipk
+Size: 16753
+SHA256sum: 98152c47e224187c1408631906ff195db96489e5d6a812c5de66234b95e34b5e
+
+Package: coreutils-sort
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-sort_9.7-r1_x86_64.ipk
+Size: 49530
+SHA256sum: ec722aae0e081718a4c7883acf9f90e2d238c3f280ccc05217217ee3a51b75f7
+
+Package: coreutils-split
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-split_9.7-r1_x86_64.ipk
+Size: 26167
+SHA256sum: 03a0cb158f7ae8c6fc8b4626a8afcbc56e93486a958d348519e85640eeb9fed9
+
+Package: coreutils-stat
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-stat_9.7-r1_x86_64.ipk
+Size: 49454
+SHA256sum: 2597c96f05bbf33e908b9f17b0c5eda8e6ab10501cecb81a44ab0a4e29af7870
+
+Package: coreutils-stdbuf
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-stdbuf_9.7-r1_x86_64.ipk
+Size: 27653
+SHA256sum: 608f99e1349bbb76ae3f297076c3fbac24f363b085902a507c68a58b37fcd80a
+
+Package: coreutils-stty
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-stty_9.7-r1_x86_64.ipk
+Size: 34232
+SHA256sum: b905d28b7a79244f31fa9afd5516213bb3027fa768252b442a4e0e81848366e6
+
+Package: coreutils-sum
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-sum_9.7-r1_x86_64.ipk
+Size: 19395
+SHA256sum: 0c6cfa5895ad17246b2acb70da61bcf61c9f7ccb6aeb7d19ec788952203abb2b
+
+Package: coreutils-sync
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-sync_9.7-r1_x86_64.ipk
+Size: 14917
+SHA256sum: 64099b23f3a15ce69c9423ff5ae3968f1a1c84dac844f26a2ae32ce4dc4d7921
+
+Package: coreutils-tac
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-tac_9.7-r1_x86_64.ipk
+Size: 47396
+SHA256sum: 7d4b5bd1b26f7ec5adda692111ae3e2c7d7cc71a1e03bd2b7f00cdef280aeeaa
+
+Package: coreutils-tail
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-tail_9.7-r1_x86_64.ipk
+Size: 33007
+SHA256sum: f16e0e91406e6c8e551327b4a6c084a9b5de1bd6c9a88501847eddc881084b58
+
+Package: coreutils-tee
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-tee_9.7-r1_x86_64.ipk
+Size: 17847
+SHA256sum: 3a2c9fefad1fd9412535d46bc33fc449f6c279842ad409205539fdaa409279de
+
+Package: coreutils-test
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-test_9.7-r1_x86_64.ipk
+Size: 15706
+SHA256sum: 7037a16abc9b492a20fee641fdadb51131693b8418336ddfca55e6ae2b4888bd
+
+Package: coreutils-timeout
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-timeout_9.7-r1_x86_64.ipk
+Size: 19666
+SHA256sum: ee3457951511624fda990562d69ce29c0a75285936713853b209e7ebea4a4c5b
+
+Package: coreutils-touch
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-touch_9.7-r1_x86_64.ipk
+Size: 31720
+SHA256sum: b181365e8f7bcfca967ca1f7a4de1c57459724e78b77d575e122da1ac3c09658
+
+Package: coreutils-tr
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-tr_9.7-r1_x86_64.ipk
+Size: 20636
+SHA256sum: 456473708ee43861fad984e1bca1a9f2da921f623d32bb918357fc46cd077494
+
+Package: coreutils-true
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-true_9.7-r1_x86_64.ipk
+Size: 11982
+SHA256sum: 6dbca8537007e1e1ec5da80eb8aca2469ee59a7c729a321eb9e60067af05a79b
+
+Package: coreutils-truncate
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-truncate_9.7-r1_x86_64.ipk
+Size: 16734
+SHA256sum: 51d2fa578792f46e80a76dbdc9d1613d280e32302d92030d99d1139639a24950
+
+Package: coreutils-tsort
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-tsort_9.7-r1_x86_64.ipk
+Size: 16556
+SHA256sum: f95fd046c46fc04df28aabeccb8b5d573a6159aff95cef1a1d28b4b76690de77
+
+Package: coreutils-tty
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-tty_9.7-r1_x86_64.ipk
+Size: 14114
+SHA256sum: 5343deeb431b2063b7a00f5bc5365591da8d53c6fa580b1f7d66d4fa440d7070
+
+Package: coreutils-uname
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-uname_9.7-r1_x86_64.ipk
+Size: 14840
+SHA256sum: 463c01bdbb53349634b550477eea3d115bf84a2ae4aec2384cefe06d61404e63
+
+Package: coreutils-unexpand
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-unexpand_9.7-r1_x86_64.ipk
+Size: 16888
+SHA256sum: d7b53fbacda5b72fb1c4418ceffb6e3b44691aa32bf60295183a3f5db7e61a2d
+
+Package: coreutils-uniq
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-uniq_9.7-r1_x86_64.ipk
+Size: 19680
+SHA256sum: dafe4ec7ed79231a6c149e127954012ed6566270c70ee41b4ff39a88a3ac1146
+
+Package: coreutils-unlink
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-unlink_9.7-r1_x86_64.ipk
+Size: 14311
+SHA256sum: a4ed017e01bc52aefbccd2e283640caecf1e602770630287ea7c71bf6b6ea857
+
+Package: coreutils-uptime
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-uptime_9.7-r1_x86_64.ipk
+Size: 22827
+SHA256sum: ddb2e0143ea00a39f16ddd4e04d25f4b81e828df62ab048494ad86881fd9ed47
+
+Package: coreutils-users
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-users_9.7-r1_x86_64.ipk
+Size: 16998
+SHA256sum: 4275386ef34427eb8584a98d4e572bbf4ff1e7c7dbf100df76a84c071d8173e6
+
+Package: coreutils-vdir
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-vdir_9.7-r1_x86_64.ipk
+Size: 62545
+SHA256sum: 3fdae58489dd0c7be7429778fd3feef61c2ab23e300995d4ff90cac299f3f56f
+
+Package: coreutils-wc
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-wc_9.7-r1_x86_64.ipk
+Size: 24495
+SHA256sum: c779abe7aac1ed500e07d9baada570fe43de385253ebefd19a774bd8044289c0
+
+Package: coreutils-who
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-who_9.7-r1_x86_64.ipk
+Size: 29093
+SHA256sum: 4169125d200f43af9bd4c34c2e2e7163a1f8c8ee7ca41ea204deb919fc6b7982
+
+Package: coreutils-whoami
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-whoami_9.7-r1_x86_64.ipk
+Size: 14357
+SHA256sum: da806e31d089de1adddaafdc4042d528a2e4d75fbc27218621af4d23b0f651cf
+
+Package: coreutils-yes
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils-yes_9.7-r1_x86_64.ipk
+Size: 14675
+SHA256sum: 6d0344441b74dcf3549cb28489169ed5968a8e360f3bf28f96b80b67f5201155
+
+Package: coreutils
+Version: 9.7-r1_x86
+Architecture: 64
+Filename: coreutils_9.7-r1_x86_64.ipk
+Size: 993
+SHA256sum: e75b82d613e751afef0e030f0889303be8f8fea6f8c154cba00156b2f6955650
+
+Package: curl
+Version: 8.12.1-r1_x86
+Architecture: 64
+Filename: curl_8.12.1-r1_x86_64.ipk
+Size: 68394
+SHA256sum: af3941dd6155aea14586ed7be0fb99e2a1ef09d00e76540a1f23711ec4f83d78
+
+Package: dc
+Version: 1.07.1-r1_x86
+Architecture: 64
+Filename: dc_1.07.1-r1_x86_64.ipk
+Size: 20733
+SHA256sum: 7730f75dca67234472827b83f15a06937db127d731ce9d83c717a85e432bf544
+
+Package: ddns-go
+Version: 6.11.2-r1_x86
+Architecture: 64
+Filename: ddns-go_6.11.2-r1_x86_64.ipk
+Size: 4242297
+SHA256sum: 64949225edc4e8cd1df04ab24f91038efc124f84c9ba53937eaa5e5dfe39bd5b
+
+Package: debugfs
+Version: 1.47.0-r2_x86
+Architecture: 64
+Filename: debugfs_1.47.0-r2_x86_64.ipk
+Size: 71074
+SHA256sum: 05018cc542cf8615ba58c26027fa8005066b05a4d2488b8d81e991b1f3d6cdbf
+
+Package: dmesg
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: dmesg_2.40.2-r1_x86_64.ipk
+Size: 29554
+SHA256sum: 6be5f6dd4568363c866838f37a394acb37c7ff469a30437dae265eb1fcf61cd3
+
+Package: dnsmasq-dhcpv6
+Version: 2.90-r5_x86
+Architecture: 64
+Filename: dnsmasq-dhcpv6_2.90-r5_x86_64.ipk
+Size: 177963
+SHA256sum: 45460a148607dc187189913c9a7dd76617962b3f4bd6715533343e1bd094069f
+
+Package: dnsmasq-full
+Version: 2.90-r5_x86
+Architecture: 64
+Filename: dnsmasq-full_2.90-r5_x86_64.ipk
+Size: 206584
+SHA256sum: a9d094bbde6f8d5f544625edff55fdac417aaaa376a4f060b1ca4c3f12057500
+
+Package: dnsmasq
+Version: 2.90-r5_x86
+Architecture: 64
+Filename: dnsmasq_2.90-r5_x86_64.ipk
+Size: 149809
+SHA256sum: f7821732b4300bd2750ac94d8341099fa3dd4c4a77252596aa113924c8183522
+
+Package: dnsproxy
+Version: 0.75.0-r1_x86
+Architecture: 64
+Filename: dnsproxy_0.75.0-r1_x86_64.ipk
+Size: 4318342
+SHA256sum: f45990ff16fdeecccaf08a886e15e454084e16e9bf19353c70a87ed275a2c9be
+
+Package: dumpe2fs
+Version: 1.47.0-r2_x86
+Architecture: 64
+Filename: dumpe2fs_1.47.0-r2_x86_64.ipk
+Size: 8930
+SHA256sum: b9bb401567294584894c783548035937169887a7b3b897e2a1f5d527adfdaf17
+
+Package: e100-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: e100-firmware_20241110-r2_x86_64.ipk
+Size: 1586
+SHA256sum: f8afd35c0b1de316297501d6f1c36a24606338c7cadfa57c08f320a5d31890a0
+
+Package: e2freefrag
+Version: 1.47.0-r2_x86
+Architecture: 64
+Filename: e2freefrag_1.47.0-r2_x86_64.ipk
+Size: 4561
+SHA256sum: 23f5b357b4fd737a71eb35dcbb22008921f23482cdbe83a2b2b33c83f7c0d952
+
+Package: e2fsprogs
+Version: 1.47.0-r2_x86
+Architecture: 64
+Filename: e2fsprogs_1.47.0-r2_x86_64.ipk
+Size: 175176
+SHA256sum: e05b2c743c192ecde51370a5b5946fe6299c7ebc9e6122cca17082b4d56be3fc
+
+Package: e4crypt
+Version: 1.47.0-r2_x86
+Architecture: 64
+Filename: e4crypt_1.47.0-r2_x86_64.ipk
+Size: 8123
+SHA256sum: 67ce69cc344da671b3afc57b601ededb6eeeac7eb9ede65fa875b4273cd0db93
+
+Package: edgeport-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: edgeport-firmware_20241110-r2_x86_64.ipk
+Size: 19627
+SHA256sum: 15a20cf028681d822f40934f7f6d176cb53eacec30cba5a71ac1b5178fc9a1d3
+
+Package: eip197-mini-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: eip197-mini-firmware_20241110-r2_x86_64.ipk
+Size: 1192
+SHA256sum: e5feeb7ee13c5dd360431c059f12778ea256dc191754681e2cc3777c026c18fa
+
+Package: eject
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: eject_2.40.2-r1_x86_64.ipk
+Size: 32700
+SHA256sum: b2efa453be9f4b0ff014eb7370eab6910d6de5892b9f2a2598e0c8be419fed14
+
+Package: etherwake
+Version: 1.09-r5_x86
+Architecture: 64
+Filename: etherwake_1.09-r5_x86_64.ipk
+Size: 5952
+SHA256sum: 9e64c5a0468a4741fe7d8fb3504a2a5a80f570e263daa9df3beebc45cd0998c9
+
+Package: f2fs-tools-selinux
+Version: 1.16.0-r3_x86
+Architecture: 64
+Filename: f2fs-tools-selinux_1.16.0-r3_x86_64.ipk
+Size: 5248
+SHA256sum: 0ee61bfc4975403228c00479e5bba1484eacabc08a547eb763080801be76ba49
+
+Package: f2fs-tools
+Version: 1.16.0-r3_x86
+Architecture: 64
+Filename: f2fs-tools_1.16.0-r3_x86_64.ipk
+Size: 5231
+SHA256sum: b949d8af042760310dec30f4cb5046dd0cbfe738926bd89b6420eef058c00dd3
+
+Package: f2fsck-selinux
+Version: 1.16.0-r3_x86
+Architecture: 64
+Filename: f2fsck-selinux_1.16.0-r3_x86_64.ipk
+Size: 91792
+SHA256sum: 8ce7c1ea7b610781677404fa0ce06c5c0c3db3285d358adce874491babb87fbd
+
+Package: f2fsck
+Version: 1.16.0-r3_x86
+Architecture: 64
+Filename: f2fsck_1.16.0-r3_x86_64.ipk
+Size: 91323
+SHA256sum: 765f8da4c7e990dfb3d1ccbcb760da29251071dd8935ee8b6c2932cd6ee9c152
+
+Package: fdisk
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: fdisk_2.40.2-r1_x86_64.ipk
+Size: 56651
+SHA256sum: 281be1b6d9f456996f639a7bc29fbb13f44979bcb93d0b7cc2be7b0307a76391
+
+Package: filefrag
+Version: 1.47.0-r2_x86
+Architecture: 64
+Filename: filefrag_1.47.0-r2_x86_64.ipk
+Size: 5959
+SHA256sum: e45ad8ffa3463b23d8d44cab268f2ded906903dc2af1f810dc3931bcb8aa9aaf
+
+Package: findfs
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: findfs_2.40.2-r1_x86_64.ipk
+Size: 3190
+SHA256sum: c1e19ddf02f319216aef49f83f51c4df2c27aca4870cfca4c25978e036f3d26c
+
+Package: firewall4
+Version: 2024.12.18~18fc0ead-r1_x86
+Architecture: 64
+Filename: firewall4_2024.12.18~18fc0ead-r1_x86_64.ipk
+Size: 30556
+SHA256sum: f4fa9937e5a392c408a33506dbdc226e1258d42907bf345ca5afd5cab953ac0b
+
+Package: flock
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: flock_2.40.2-r1_x86_64.ipk
+Size: 11944
+SHA256sum: 9f82b5f74e35adc859623654f9ffd4c8f38f7918bed2d76424fce89ba4e701a8
+
+Package: fstrim
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: fstrim_2.40.2-r1_x86_64.ipk
+Size: 30771
+SHA256sum: 1af5429216c9c0c68373517686ca5b1304f442a6aad2fcacf270400e4539ced6
+
+Package: getopt
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: getopt_2.40.2-r1_x86_64.ipk
+Size: 11291
+SHA256sum: 111ac7e0d875fc141fd6c214691f98f7bb82a0bd8efa021a7b129f9b0fad110f
+
+Package: getrandom
+Version: 2024.04.26~85f10530-r1_x86
+Architecture: 64
+Filename: getrandom_2024.04.26~85f10530-r1_x86_64.ipk
+Size: 2249
+SHA256sum: 68bc616fa0f3dda8f2c2547f875082b2440c115d6c9b9ee0d603f97719f83ea8
+
+Package: gost
+Version: 3.2.0-r1_x86
+Architecture: 64
+Filename: gost_3.2.0-r1_x86_64.ipk
+Size: 12678892
+SHA256sum: 861ff7ccea7965da5b0983f48a663be9fa03f4c1afaf201fe34c5d38f80a7bee
+
+Package: hwclock
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: hwclock_2.40.2-r1_x86_64.ipk
+Size: 38334
+SHA256sum: d8c90eecc3edceefef8921c0e162cb887debb64a919fddb536e06efafc4ad657
+
+Package: i915-firmware-dmc
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: i915-firmware-dmc_20241110-r2_x86_64.ipk
+Size: 233212
+SHA256sum: b13d1df02cf899e4376070ce9930973a4cc2a1aeb449392f63ca26e920b3cefe
+
+Package: i915-firmware-gsc
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: i915-firmware-gsc_20241110-r2_x86_64.ipk
+Size: 758740
+SHA256sum: c7cce6e59027e30ee01c2178c234179c8cff3a3bcbfc50651057bf1840b70f76
+
+Package: i915-firmware-guc
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: i915-firmware-guc_20241110-r2_x86_64.ipk
+Size: 7217994
+SHA256sum: d9f208666fdd12dcd5a878a49662238521c8dfb0d2d7ddce410026657f69fd12
+
+Package: i915-firmware-huc
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: i915-firmware-huc_20241110-r2_x86_64.ipk
+Size: 3128273
+SHA256sum: cdd877ad547966a63de17c4e7de5aa78583a68329b2e1581d8dff51c18952c05
+
+Package: i915-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: i915-firmware_20241110-r2_x86_64.ipk
+Size: 885
+SHA256sum: e206d105511ec5ae9ca50f3de00c9241285ab88f4ad38fcf7718536d3a52c664
+
+Package: ibt-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ibt-firmware_20241110-r2_x86_64.ipk
+Size: 22332140
+SHA256sum: 29318bfe1c9cbf3712ab8a74dfc6e103b04c1d80871f4948d0d61daf1e165579
+
+Package: idn2
+Version: 2.3.7-r1_x86
+Architecture: 64
+Filename: idn2_2.3.7-r1_x86_64.ipk
+Size: 11181
+SHA256sum: 5eb9f5be429a90442a592656531d0050114a2b80063d1cbd594bfe1129bc9594
+
+Package: ipcs
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: ipcs_2.40.2-r1_x86_64.ipk
+Size: 25427
+SHA256sum: 3b0853113ccea22a8fce444858133244bbb84edc1c79f1cf142e4588dbee2940
+
+Package: ipset
+Version: 7.21-r1_x86
+Architecture: 64
+Filename: ipset_7.21-r1_x86_64.ipk
+Size: 2188
+SHA256sum: 1bc00d154ecc1886e033121af181bde84ef425e6842eabc20c117475c2aa430f
+
+Package: iwinfo
+Version: 2024.10.20~b94f066e-r1_x86
+Architecture: 64
+Filename: iwinfo_2024.10.20~b94f066e-r1_x86_64.ipk
+Size: 7637
+SHA256sum: 429ce00c4401ab8884d7f2545841c7b9ad74533427ae83675dc3bd5725b3e4a6
+
+Package: iwl3945-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwl3945-firmware_20241110-r2_x86_64.ipk
+Size: 64236
+SHA256sum: 9d55a7a85d1b0656fd4e49f52ea3db3f284dff669808da42923b4be06de8ab3a
+
+Package: iwl4965-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwl4965-firmware_20241110-r2_x86_64.ipk
+Size: 79224
+SHA256sum: 49230664ccf96e2ab12f9f1d24265a40706c7ecf73d1abfe6de7f8c0d6a944cf
+
+Package: iwlwifi-firmware-ax101
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-ax101_20241110-r2_x86_64.ipk
+Size: 588869
+SHA256sum: bfd4e222ff3bb02bf7b58b9ee2a2abf37737dd5281fb1fdcd28cf2601aa951cc
+
+Package: iwlwifi-firmware-ax200
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-ax200_20241110-r2_x86_64.ipk
+Size: 549432
+SHA256sum: 46a9935326955bf2bfc94d792c2fbbdcaf36d1bf3c1bb22252d6807f4763103b
+
+Package: iwlwifi-firmware-ax201
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-ax201_20241110-r2_x86_64.ipk
+Size: 558048
+SHA256sum: 81b6b08223d48852e5957cea043f5fc71c1c976ab5a343bf27e01cfb338d6c71
+
+Package: iwlwifi-firmware-ax210
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-ax210_20241110-r2_x86_64.ipk
+Size: 658388
+SHA256sum: 8a6417d800ebb2159629c9fbfc6d15bfb80feddbf25c2629344d234e82df2dec
+
+Package: iwlwifi-firmware-ax411
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-ax411_20241110-r2_x86_64.ipk
+Size: 602296
+SHA256sum: 596755b84eb287ddc3890fa10e7d4cbc0f0c124467b18486ea5dc9dceff8ec39
+
+Package: iwlwifi-firmware-be200
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-be200_20241110-r2_x86_64.ipk
+Size: 747997
+SHA256sum: 4e6711f444a12aa9aed8e8e656d9dd37ea3b3c1f2629831ef0b3d65bf799b554
+
+Package: iwlwifi-firmware-iwl1000
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl1000_20241110-r2_x86_64.ipk
+Size: 177680
+SHA256sum: 58e97f7b77918b6f019a06cded0fd2cc46f59d0031d8da2c651cc7cd2b775e51
+
+Package: iwlwifi-firmware-iwl100
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl100_20241110-r2_x86_64.ipk
+Size: 177698
+SHA256sum: e5c47fd6cb8820fa02d971e0a783c4acce1b7b37068ca1a58835dfe0bd0091c1
+
+Package: iwlwifi-firmware-iwl105
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl105_20241110-r2_x86_64.ipk
+Size: 333307
+SHA256sum: adf6c592ae870512c58756a48557903f571228a359f8058c2885a40f6de54928
+
+Package: iwlwifi-firmware-iwl135
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl135_20241110-r2_x86_64.ipk
+Size: 342035
+SHA256sum: 2c56c097c1cd6813969f7a54ef1fe33dffa9e9adac68d70991b17e63390727ff
+
+Package: iwlwifi-firmware-iwl2000
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl2000_20241110-r2_x86_64.ipk
+Size: 339110
+SHA256sum: 5fa34f1575033a9be8701bca9121b83964b58230c8db8193a672359c81e3ea9d
+
+Package: iwlwifi-firmware-iwl2030
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl2030_20241110-r2_x86_64.ipk
+Size: 347803
+SHA256sum: 536ec1847833d62588ed97856d6a94446c344b7927f0742a81143da00983b23d
+
+Package: iwlwifi-firmware-iwl3160
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl3160_20241110-r2_x86_64.ipk
+Size: 466055
+SHA256sum: 800be985320063bf1ee17f9b03b2ee8dec2abff0a43e74be74083a6a9f37ac68
+
+Package: iwlwifi-firmware-iwl3168
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl3168_20241110-r2_x86_64.ipk
+Size: 451432
+SHA256sum: 11e5bd8f74d0b3f6d9877142043fc65f228a4cb107e84246f88d94238429318e
+
+Package: iwlwifi-firmware-iwl5000
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl5000_20241110-r2_x86_64.ipk
+Size: 177826
+SHA256sum: f713b12f18d9b5d384137c514fa167834b259a3c7c1435aa7a37670b21761ca6
+
+Package: iwlwifi-firmware-iwl5150
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl5150_20241110-r2_x86_64.ipk
+Size: 174815
+SHA256sum: 809c61ee1a9f23e96c91af648c2cc199ed1d8c000e04864daac1c4bf61f6dd62
+
+Package: iwlwifi-firmware-iwl6000g2
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl6000g2_20241110-r2_x86_64.ipk
+Size: 213387
+SHA256sum: 1abd84961a2bce5b82b366b3529248ec632723d2930e5de4794bd8334500f1e5
+
+Package: iwlwifi-firmware-iwl6000g2a
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl6000g2a_20241110-r2_x86_64.ipk
+Size: 324235
+SHA256sum: 89e393a697f7653435c4a17469be42c4e747d6dd699b16629ce0cf998305e34e
+
+Package: iwlwifi-firmware-iwl6000g2b
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl6000g2b_20241110-r2_x86_64.ipk
+Size: 328111
+SHA256sum: 58ed93d685cc6d209a2489fd96c42b87e559f397750183081e0090314f29f573
+
+Package: iwlwifi-firmware-iwl6050
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl6050_20241110-r2_x86_64.ipk
+Size: 219630
+SHA256sum: cc91621989717fb103f5207c58a6e9fcb5c64a63f316656670488b67b1ca70e9
+
+Package: iwlwifi-firmware-iwl7260
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl7260_20241110-r2_x86_64.ipk
+Size: 492651
+SHA256sum: 5a1149d4271779e2554c0c7f6c7d2444cf00e8fad36f4b36fe9bd49b065fadea
+
+Package: iwlwifi-firmware-iwl7265
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl7265_20241110-r2_x86_64.ipk
+Size: 533783
+SHA256sum: c7ce6317e7f573b1085cf48e56ffd0661834f6fbdec7289f1c52325071d3d253
+
+Package: iwlwifi-firmware-iwl7265d
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl7265d_20241110-r2_x86_64.ipk
+Size: 462759
+SHA256sum: a0457fcfa7a224e78c3a60e0f1cd651674260cb28a5b99b2b3288b71eebe0f7f
+
+Package: iwlwifi-firmware-iwl8260c
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl8260c_20241110-r2_x86_64.ipk
+Size: 958354
+SHA256sum: f76ab16417bb4723d390f24dffb2d1ee1c8bfe7105a5bba8a60b53c93ca248f7
+
+Package: iwlwifi-firmware-iwl8265
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl8265_20241110-r2_x86_64.ipk
+Size: 965785
+SHA256sum: 72f8ea743ce782b014d2acc67e725bbf4b47be807cb177f67339836d99c69277
+
+Package: iwlwifi-firmware-iwl9000
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl9000_20241110-r2_x86_64.ipk
+Size: 629357
+SHA256sum: b2c15bc68191dc49a677ee21e415b1307c0b01bd990cac31d33e9bb6c4230be5
+
+Package: iwlwifi-firmware-iwl9260
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: iwlwifi-firmware-iwl9260_20241110-r2_x86_64.ipk
+Size: 623992
+SHA256sum: 723f48ccd11daeaa9e3ae9f3fd9e085c844ba2ecb1beb3983c1b9ac5d3c97076
+
+Package: jansson4
+Version: 2.14-r3_x86
+Architecture: 64
+Filename: jansson4_2.14-r3_x86_64.ipk
+Size: 23792
+SHA256sum: 85241f0df0dbb67ad2f17225208d34ec18a4c7991fb554cb0a9334eb1f155ea8
+
+Package: jq-full
+Version: 1.8.1-r1_x86
+Architecture: 64
+Filename: jq-full_1.8.1-r1_x86_64.ipk
+Size: 434407
+SHA256sum: 9b9bd57b2da031dd975df2ec236d71efa18512ed68f0c6108765f8ea81d8edbe
+
+Package: jq
+Version: 1.8.1-r1_x86
+Architecture: 64
+Filename: jq_1.8.1-r1_x86_64.ipk
+Size: 427428
+SHA256sum: 51d182515c186d2f2c10321616022825405e0c413debffed6ccba48e3b2c77e2
+
+Package: jshn
+Version: 2025.07.23~49056d17-r1_x86
+Architecture: 64
+Filename: jshn_2025.07.23~49056d17-r1_x86_64.ipk
+Size: 7193
+SHA256sum: ad1dea8885a223c85f345f1ba2fe650d443807c243adf6620e6636ffa38e59ef
+
+Package: jsonfilter
+Version: 2025.04.18~8a86fb78-r1_x86
+Architecture: 64
+Filename: jsonfilter_2025.04.18~8a86fb78-r1_x86_64.ipk
+Size: 10442
+SHA256sum: 57beef1acd71b6ba696d0a8d006cadf822d3684a96927071bb2b4e54305cc6ad
+
+Package: libacl
+Version: 2.3.2-r2_x86
+Architecture: 64
+Filename: libacl_2.3.2-r2_x86_64.ipk
+Size: 12867
+SHA256sum: aa9c9f7169bc5e1a6ced068a632c988b2323b420d7a5c8adf6dd2667c4b3f0d2
+
+Package: libattr
+Version: 2.5.2-r3_x86
+Architecture: 64
+Filename: libattr_2.5.2-r3_x86_64.ipk
+Size: 7176
+SHA256sum: 8e50fff05724c452387a2d88108b969ada4f6092b7da2bfebec21a82f6e30614
+
+Package: libblkid1
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: libblkid1_2.40.2-r1_x86_64.ipk
+Size: 115279
+SHA256sum: db693b3c0996645e264623832ac9bf5bd2d5f0c5a58e429137da1330d06f075d
+
+Package: libblobmsg-json20240329
+Version: 2025.07.23~49056d17-r1_x86
+Architecture: 64
+Filename: libblobmsg-json20240329_2025.07.23~49056d17-r1_x86_64.ipk
+Size: 4484
+SHA256sum: 14831ca29c68970819aad29165bcf669d3ef10824f0c9eb58f2d840f6311bdd6
+
+Package: libcap-bin
+Version: 2.69-r1_x86
+Architecture: 64
+Filename: libcap-bin_2.69-r1_x86_64.ipk
+Size: 21007
+SHA256sum: 89aca5d6ccb860b53fbcf7357cfa0986c5cae3dba49e707467030bcf0519f666
+
+Package: libcap
+Version: 2.69-r1_x86
+Architecture: 64
+Filename: libcap_2.69-r1_x86_64.ipk
+Size: 15886
+SHA256sum: 0c246084eb9a9c884b122d777bec7e35925f382c9f5e73deb1484cec8c975a7c
+
+Package: libcares
+Version: 1.34.6-r1_x86
+Architecture: 64
+Filename: libcares_1.34.6-r1_x86_64.ipk
+Size: 93141
+SHA256sum: de5f55c1f96cbba75bc93b77515c5aa5d65104f4f9a2b37d16231a842a1b29cf
+
+Package: libcomerr0
+Version: 1.47.0-r2_x86
+Architecture: 64
+Filename: libcomerr0_1.47.0-r2_x86_64.ipk
+Size: 4856
+SHA256sum: 265afe5c479a33db13384a436e001de64aed50a91a81dbbf5dc97de1701ddf52
+
+Package: libcurl4
+Version: 8.12.1-r1_x86
+Architecture: 64
+Filename: libcurl4_8.12.1-r1_x86_64.ipk
+Size: 247672
+SHA256sum: 5b7349585946ed52326c18b3b8b68fe9bfc4ee4982e3f10b8b1194ad36c67985
+
+Package: libdeflate
+Version: 1.22-r1_x86
+Architecture: 64
+Filename: libdeflate_1.22-r1_x86_64.ipk
+Size: 47224
+SHA256sum: ba10e315a68cce0f2fd71bb36bc7e6ce8d2b3a3c80447884bb06ad80f0c30efe
+
+Package: libdht
+Version: 2022.04.27~11123089-r1_x86
+Architecture: 64
+Filename: libdht_2022.04.27~11123089-r1_x86_64.ipk
+Size: 19216
+SHA256sum: 429c757c7ce8cd83fd0fc04205095f19dab8cc1d6dfb6a493d0ad10372ff953d
+
+Package: libe2p2
+Version: 1.47.0-r2_x86
+Architecture: 64
+Filename: libe2p2_1.47.0-r2_x86_64.ipk
+Size: 13603
+SHA256sum: fbe7d6c691b4679866118569615b326ae17d192e9061fb15728746818687de5f
+
+Package: libertas-sdio-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: libertas-sdio-firmware_20241110-r2_x86_64.ipk
+Size: 349484
+SHA256sum: 0d399d3cb4a07ad29058f9d5419c24c67f04e6ef084fbb9c9b00b92d4d8012ba
+
+Package: libertas-spi-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: libertas-spi-firmware_20241110-r2_x86_64.ipk
+Size: 93109
+SHA256sum: 3a13a1ce44b68949f2755b211d50d8d528eca7f4d4c052766881d21ae99daeb4
+
+Package: libertas-usb-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: libertas-usb-firmware_20241110-r2_x86_64.ipk
+Size: 217350
+SHA256sum: 67d19c94dcea5fb665765e9fe4b35c3d14d3dabbe77034540b603be8d082e88c
+
+Package: libevent2-7
+Version: 2.1.12-r2_x86
+Architecture: 64
+Filename: libevent2-7_2.1.12-r2_x86_64.ipk
+Size: 107721
+SHA256sum: fc845f6d22191f576565339024662228096ebc33d29ba0a2e4a6771cdcd44249
+
+Package: libevent2-core7
+Version: 2.1.12-r2_x86
+Architecture: 64
+Filename: libevent2-core7_2.1.12-r2_x86_64.ipk
+Size: 63419
+SHA256sum: c0332c86b37302de4fe6ca896db93968da1fe9e309f150a2a60716184ee07a35
+
+Package: libevent2-extra7
+Version: 2.1.12-r2_x86
+Architecture: 64
+Filename: libevent2-extra7_2.1.12-r2_x86_64.ipk
+Size: 49903
+SHA256sum: f7d6fbb5bd0e80832fa05079a22c2925d9bea5400f629b7f78e9f214a848c126
+
+Package: libevent2-openssl7
+Version: 2.1.12-r2_x86
+Architecture: 64
+Filename: libevent2-openssl7_2.1.12-r2_x86_64.ipk
+Size: 9315
+SHA256sum: f82ee83063781980d6043532de8f129d8f1151464718101e4eb860767b080fbb
+
+Package: libevent2-pthreads7
+Version: 2.1.12-r2_x86
+Architecture: 64
+Filename: libevent2-pthreads7_2.1.12-r2_x86_64.ipk
+Size: 3021
+SHA256sum: 9c324e5ec727653bf05668281e5f530475028fbcb5e2abb3e23c7e1c62e1e32a
+
+Package: libext2fs2
+Version: 1.47.0-r2_x86
+Architecture: 64
+Filename: libext2fs2_1.47.0-r2_x86_64.ipk
+Size: 180841
+SHA256sum: 8e40719622f2f75cae91cd8a8f332225680f8b31ee8eef9746da31df01f96b1e
+
+Package: libf2fs-selinux6
+Version: 1.16.0-r3_x86
+Architecture: 64
+Filename: libf2fs-selinux6_1.16.0-r3_x86_64.ipk
+Size: 42256
+SHA256sum: 85f96a52201bf85cd4f0971b4dcde1cfd2c25a526c9249382df0a430a5b84d4c
+
+Package: libf2fs6
+Version: 1.16.0-r3_x86
+Architecture: 64
+Filename: libf2fs6_1.16.0-r3_x86_64.ipk
+Size: 42236
+SHA256sum: e774ae0e59d7b372465975174873a3f56f1cd5c42ca7949b8866d46450df39f6
+
+Package: libfdisk1
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: libfdisk1_2.40.2-r1_x86_64.ipk
+Size: 152299
+SHA256sum: d93defa12e70560a3b4e71e85d798b726b8c61b7c9b0be8bd3e7172e9dd1ed68
+
+Package: libgmp10
+Version: 6.3.0-r1_x86
+Architecture: 64
+Filename: libgmp10_6.3.0-r1_x86_64.ipk
+Size: 218268
+SHA256sum: 8fdb46259972526e56908dceaaefcee25740db9d0fdefbe25a2a19dd7f993f3e
+
+Package: libidn2
+Version: 2.3.7-r1_x86
+Architecture: 64
+Filename: libidn2_2.3.7-r1_x86_64.ipk
+Size: 101632
+SHA256sum: 27842743f23fc364603d85ada911bbf33f0281aa41d6d25c8fc8df7a7c9c0739
+
+Package: libipset13
+Version: 7.21-r1_x86
+Architecture: 64
+Filename: libipset13_7.21-r1_x86_64.ipk
+Size: 51451
+SHA256sum: 7a4e7ed243b5f8dcb3cb96ea9b23e582e64b464c0421e3a4c09d7d2ef930a5c6
+
+Package: libiwinfo-data
+Version: 2024.10.20~b94f066e-r1_x86
+Architecture: 64
+Filename: libiwinfo-data_2024.10.20~b94f066e-r1_x86_64.ipk
+Size: 3942
+SHA256sum: 6764354684f56bcc14b850ab6d8d148f1bb04240970641b5d05be51e0c9e9e6d
+
+Package: libiwinfo-lua
+Version: 2024.10.20~b94f066e-r1_x86
+Architecture: 64
+Filename: libiwinfo-lua_2024.10.20~b94f066e-r1_x86_64.ipk
+Size: 7332
+SHA256sum: d3d0e7c794ec86b3d0729f104405b8a863859dda33f10aee3db469326cf738aa
+
+Package: libiwinfo20230701
+Version: 2024.10.20~b94f066e-r1_x86
+Architecture: 64
+Filename: libiwinfo20230701_2024.10.20~b94f066e-r1_x86_64.ipk
+Size: 27117
+SHA256sum: 941b29fb0599e7b15bb75b2561c70a59ebe4504be35111fe5ce39e51765ed40a
+
+Package: libjson-c5
+Version: 0.18-r1_x86
+Architecture: 64
+Filename: libjson-c5_0.18-r1_x86_64.ipk
+Size: 30402
+SHA256sum: f2d69c8ddc3d86c87b640d40dc3f8180a826c58c347e04c8c68204f9df5685f3
+
+Package: libjson-script20240329
+Version: 2025.07.23~49056d17-r1_x86
+Architecture: 64
+Filename: libjson-script20240329_2025.07.23~49056d17-r1_x86_64.ipk
+Size: 5964
+SHA256sum: 0f92abb5f7a9f1f8f9e311922eecb3568f2347e6e70eeea31df808de7914e986
+
+Package: libltdl7
+Version: 2.4.7-r1_x86
+Architecture: 64
+Filename: libltdl7_2.4.7-r1_x86_64.ipk
+Size: 15444
+SHA256sum: 3993e71822d5dd2b95f6718be70995fefa2b98acf7f018089ba5b7aea7fea13b
+
+Package: liblua5.1.5
+Version: 5.1.5-r11_x86
+Architecture: 64
+Filename: liblua5.1.5_5.1.5-r11_x86_64.ipk
+Size: 74330
+SHA256sum: 53875655f43c24dc00fe3f94a1a9e15294be48b80ee32d9fd5d6cddc65b01a70
+
+Package: liblucihttp-lua
+Version: 2023.03.15~9b5b683f-r1_x86
+Architecture: 64
+Filename: liblucihttp-lua_2023.03.15~9b5b683f-r1_x86_64.ipk
+Size: 4362
+SHA256sum: 91caf183e965e75360f0fb4ed22beec3b9b2f6f2fafaf130d5fa329d611f69e5
+
+Package: liblucihttp-ucode
+Version: 2023.03.15~9b5b683f-r1_x86
+Architecture: 64
+Filename: liblucihttp-ucode_2023.03.15~9b5b683f-r1_x86_64.ipk
+Size: 4830
+SHA256sum: 44e56038f8c475719d7681a818c3e3c6419b7c2c09fa54494cb2bf8d682874bf
+
+Package: liblucihttp0
+Version: 2023.03.15~9b5b683f-r1_x86
+Architecture: 64
+Filename: liblucihttp0_2023.03.15~9b5b683f-r1_x86_64.ipk
+Size: 8608
+SHA256sum: f95555ed5088c91b7b01c0c754db194efb94539fdd2c7c1f5100e9343dc9d990
+
+Package: liblzo2
+Version: 2.10-r4_x86
+Architecture: 64
+Filename: liblzo2_2.10-r4_x86_64.ipk
+Size: 38265
+SHA256sum: 4fdb41cab35faa58e2b84e33766d2ceb7afd40b7b7a237bae347a575eb1bb73a
+
+Package: libmbedtls21
+Version: 3.6.5-r1_x86
+Architecture: 64
+Filename: libmbedtls21_3.6.5-r1_x86_64.ipk
+Size: 311847
+SHA256sum: 2f50e4a01acfee6aab9eb361cecfa3f8a24e4836918e78a46127f7f147d6b75f
+
+Package: libminiupnpc
+Version: 2.2.8-r1_x86
+Architecture: 64
+Filename: libminiupnpc_2.2.8-r1_x86_64.ipk
+Size: 21233
+SHA256sum: fe5b82178a078f68da2b0d54e36849193eccabab8cbd0fc48f720009565238da
+
+Package: libmnl0
+Version: 1.0.5-r1_x86
+Architecture: 64
+Filename: libmnl0_1.0.5-r1_x86_64.ipk
+Size: 8265
+SHA256sum: 6c182b2e8956adbbf2006dc6160c60e35d93b977c1f7141eca89fc9c1b08a788
+
+Package: libmount1
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: libmount1_2.40.2-r1_x86_64.ipk
+Size: 149484
+SHA256sum: 34f22c481f9425113e6ae012ba249e3a56a8962d5ef5e81c107b74c48e767632
+
+Package: libnatpmp1
+Version: 20230423-r2_x86
+Architecture: 64
+Filename: libnatpmp1_20230423-r2_x86_64.ipk
+Size: 4265
+SHA256sum: db29b66dec9c7bfe47268e310a6cba82fa3f9b92166ea5fdbb552655b8bc4c9d
+
+Package: libncurses-dev
+Version: 6.4-r2_x86
+Architecture: 64
+Filename: libncurses-dev_6.4-r2_x86_64.ipk
+Size: 269768
+SHA256sum: f658650aab7cf22e767c932c3bf2a49d8effeca3dc07ed0a13ca08deacc2e41c
+
+Package: libncurses6
+Version: 6.4-r2_x86
+Architecture: 64
+Filename: libncurses6_6.4-r2_x86_64.ipk
+Size: 181355
+SHA256sum: 55cd5c252579b0d96656efe840222f70a6fd92532067e470d9c060d642a4577e
+
+Package: libnetfilter-conntrack3
+Version: 1.0.9-r2_x86
+Architecture: 64
+Filename: libnetfilter-conntrack3_1.0.9-r2_x86_64.ipk
+Size: 40657
+SHA256sum: 59f7a37009e39794af3996eea2bba6bd08b3931300bf7721fb266d5a5189d021
+
+Package: libnettle8
+Version: 3.9.1-r1_x86
+Architecture: 64
+Filename: libnettle8_3.9.1-r1_x86_64.ipk
+Size: 340278
+SHA256sum: b40c89cc1cdd8d430e1e8395c5cde8730ddc608bc00d1ab77d48ce01e5c28b59
+
+Package: libnfnetlink0
+Version: 1.0.2-r1_x86
+Architecture: 64
+Filename: libnfnetlink0_1.0.2-r1_x86_64.ipk
+Size: 11395
+SHA256sum: e3c78698569317490a01ff33fead9d38681de0a48ce4b9c380392cf2ae75a0e5
+
+Package: libnftnl11
+Version: 1.2.8-r1_x86
+Architecture: 64
+Filename: libnftnl11_1.2.8-r1_x86_64.ipk
+Size: 64991
+SHA256sum: bc5971bdca1047507524e0571e6cfc77112e1e484ebd77ed60505406fd293c60
+
+Package: libnghttp2-14
+Version: 1.63.0-r1_x86
+Architecture: 64
+Filename: libnghttp2-14_1.63.0-r1_x86_64.ipk
+Size: 70578
+SHA256sum: 5af3825205790876972eeb82ac5e40449d7f68b27b66858ff16c0ca15c349d5c
+
+Package: libnl-tiny1
+Version: 2025.03.19~c0df580a-r1_x86
+Architecture: 64
+Filename: libnl-tiny1_2025.03.19~c0df580a-r1_x86_64.ipk
+Size: 16261
+SHA256sum: d3fb330318a0876bd0df522f59ac822526e5ea4ce490f8d3a71860455cfde9e3
+
+Package: libopenssl-afalg
+Version: 3.0.19-r1_x86
+Architecture: 64
+Filename: libopenssl-afalg_3.0.19-r1_x86_64.ipk
+Size: 7979
+SHA256sum: 474ce6b1f4d50784af9fd215580cb235570953a2bd92777d61574deff6c9a9ed
+
+Package: libopenssl-conf
+Version: 3.0.19-r1_x86
+Architecture: 64
+Filename: libopenssl-conf_3.0.19-r1_x86_64.ipk
+Size: 6492
+SHA256sum: ec69c266d940f6807ba8c525c4c72f32fb613f093f9cb76d21b01ae590018a06
+
+Package: libopenssl-devcrypto
+Version: 3.0.19-r1_x86
+Architecture: 64
+Filename: libopenssl-devcrypto_3.0.19-r1_x86_64.ipk
+Size: 12485
+SHA256sum: cd2e78f424d5c8901cce223ed6d817c5fe8752176ce0d1f2fccdc4e8dd13694d
+
+Package: libopenssl-legacy
+Version: 3.0.19-r1_x86
+Architecture: 64
+Filename: libopenssl-legacy_3.0.19-r1_x86_64.ipk
+Size: 38543
+SHA256sum: d00ccf3f4821008c4e0f6d1196e97183eba0ae33559ab4de237d5309e7d8cb05
+
+Package: libopenssl-padlock
+Version: 3.0.19-r1_x86
+Architecture: 64
+Filename: libopenssl-padlock_3.0.19-r1_x86_64.ipk
+Size: 11338
+SHA256sum: 02d73442c97ebd087b2c43bc3dda54dcd5b011af1a5174ccaed4fc5d0b74b41d
+
+Package: libopenssl3
+Version: 3.0.19-r1_x86
+Architecture: 64
+Filename: libopenssl3_3.0.19-r1_x86_64.ipk
+Size: 2099541
+SHA256sum: 56398b5e49beccde5a397762aeaef050eb46771172adc02f6bd5a974f4a5a567
+
+Package: libpam
+Version: 1.5.2-r1_x86
+Architecture: 64
+Filename: libpam_1.5.2-r1_x86_64.ipk
+Size: 183052
+SHA256sum: 9b7209ffcba596345f817b948295725519d161ef333290cfeae46d6de9c30fcd
+
+Package: libparted
+Version: 3.6-r1_x86
+Architecture: 64
+Filename: libparted_3.6-r1_x86_64.ipk
+Size: 188797
+SHA256sum: 6b23ea36be859b923e624ff62fbee90ecca1086d2c74aa6a6646cb1bb9fbf448
+
+Package: libpcre2-16
+Version: 10.42-r1_x86
+Architecture: 64
+Filename: libpcre2-16_10.42-r1_x86_64.ipk
+Size: 172457
+SHA256sum: 919b8e6c4e08fc05d548bc22745a528a51c01c5e5278db14158f789abb04639a
+
+Package: libpcre2-32
+Version: 10.42-r1_x86
+Architecture: 64
+Filename: libpcre2-32_10.42-r1_x86_64.ipk
+Size: 162883
+SHA256sum: ddf5f490e1c5d5b90988edd0d801a0cee7d77a6924630ff3d5a9b2f158d523f6
+
+Package: libpcre2
+Version: 10.42-r1_x86
+Architecture: 64
+Filename: libpcre2_10.42-r1_x86_64.ipk
+Size: 188707
+SHA256sum: a46620d240f631da9db9ad3fa34620c82d9d0a8c34f06c5e0b244de6cfefc62a
+
+Package: libpsl5
+Version: 0.21.5-r1_x86
+Architecture: 64
+Filename: libpsl5_0.21.5-r1_x86_64.ipk
+Size: 53236
+SHA256sum: e972a9283301eb7df7d119820ab8a43f0082ecfa9696e9f1a1af9162dc7c6af6
+
+Package: libreadline8
+Version: 8.2-r2_x86
+Architecture: 64
+Filename: libreadline8_8.2-r2_x86_64.ipk
+Size: 136059
+SHA256sum: e14fd9f47d733b723947285eb9d6ab91d67e81bcad71d526940d02db0236960f
+
+Package: libselinux-avcstat
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: libselinux-avcstat_3.5-r1_x86_64.ipk
+Size: 4128
+SHA256sum: 8091fd2c43d17d104addedef98a9e55132cca69dbb96996e6d104414916e3feb
+
+Package: libselinux-compute
+Version: av_3.5-r1_x86
+Architecture: 64
+Filename: libselinux-compute_av_3.5-r1_x86_64.ipk
+Size: 2441
+SHA256sum: 944613aff370de8e05b7cc6566e7dd2fbc6a19f9486ea82341a7d3afef1076d9
+
+Package: libselinux-compute
+Version: create_3.5-r1_x86
+Architecture: 64
+Filename: libselinux-compute_create_3.5-r1_x86_64.ipk
+Size: 2364
+SHA256sum: 8b3fd0daef4d4175ed807ea510d476a4230a929ca3426128c5bb0a75c4732743
+
+Package: libselinux-compute
+Version: member_3.5-r1_x86
+Architecture: 64
+Filename: libselinux-compute_member_3.5-r1_x86_64.ipk
+Size: 2324
+SHA256sum: 459b56675c3a6a2e00f4f5cd96799c5b5711ed16d4b2d9dcfc33914d350f3548
+
+Package: libselinux-compute
+Version: relabel_3.5-r1_x86
+Architecture: 64
+Filename: libselinux-compute_relabel_3.5-r1_x86_64.ipk
+Size: 2322
+SHA256sum: 07a3292d6fa40e3bf86d24c4199f2974785e964d17466de8c1233e9bf4abbe15
+
+Package: libselinux-getconlist
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: libselinux-getconlist_3.5-r1_x86_64.ipk
+Size: 2880
+SHA256sum: 7b405533cd7055d49aa49dcb079ede960ba39a502e81004b211873e14c214ebf
+
+Package: libselinux-getdefaultcon
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: libselinux-getdefaultcon_3.5-r1_x86_64.ipk
+Size: 3008
+SHA256sum: 3a754c5070ed580a75be4def22418d092526b78198b18e997c0486ac382d02e0
+
+Package: libselinux-getenforce
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: libselinux-getenforce_3.5-r1_x86_64.ipk
+Size: 2172
+SHA256sum: 6484f76a4533cd5fd2923c04a3a7235ca39c3e020d48e449d767efc5ed9fd697
+
+Package: libselinux-getfilecon
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: libselinux-getfilecon_3.5-r1_x86_64.ipk
+Size: 2178
+SHA256sum: 5c95db986d62e9e918cb8210a12d00845f4e21220381a95c4dcfcb492a94e882
+
+Package: libselinux-getpidcon
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: libselinux-getpidcon_3.5-r1_x86_64.ipk
+Size: 2207
+SHA256sum: 9e7e1c23e59073b48d485d50d5fad8f83cb699b12714d69aa743a9529a38ed65
+
+Package: libselinux-getsebool
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: libselinux-getsebool_3.5-r1_x86_64.ipk
+Size: 2953
+SHA256sum: cd8cc5d3a731551785e1049e72644cdf04fe2b01e0626691f32591e62b9397a1
+
+Package: libselinux-getseuser
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: libselinux-getseuser_3.5-r1_x86_64.ipk
+Size: 2536
+SHA256sum: 74fe32b3d88f51a2f1b29917b6835d946721a748d9cf5b301b09fbf5d910b360
+
+Package: libselinux-matchpathcon
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: libselinux-matchpathcon_3.5-r1_x86_64.ipk
+Size: 3516
+SHA256sum: 10031c719c3a35ecf33279afe1dfade5f6f28e38eeb777b12a9dd6ee08a07319
+
+Package: libselinux-policyvers
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: libselinux-policyvers_3.5-r1_x86_64.ipk
+Size: 2063
+SHA256sum: 45985603482b26c33134d1061e5261722a24273df41c1e10ed8699633c08ca69
+
+Package: libselinux-sefcontext
+Version: compile_3.5-r1_x86
+Architecture: 64
+Filename: libselinux-sefcontext_compile_3.5-r1_x86_64.ipk
+Size: 28189
+SHA256sum: 278797973811ff5a7ceb0269e9ef0eea471975735c2556c0ba5aa8642b8924cf
+
+Package: libselinux-selabel
+Version: digest_3.5-r1_x86
+Architecture: 64
+Filename: libselinux-selabel_digest_3.5-r1_x86_64.ipk
+Size: 3746
+SHA256sum: c1dab4ad80a1cbb0f4784b388dd6b8ebc25bdf13afb2a062aef32e589d0e4548
+
+Package: libselinux-selabel
+Version: get_digests_all_partial_matches_3.5-r1_x86
+Architecture: 64
+Filename: libselinux-selabel_get_digests_all_partial_matches_3.5-r1_x86_64.ipk
+Size: 3377
+SHA256sum: d057f63a62a4fba2f3caa890d520d75cb9e4bbc30e50703afc28de023be716e2
+
+Package: libselinux-selabel
+Version: lookup_3.5-r1_x86
+Architecture: 64
+Filename: libselinux-selabel_lookup_3.5-r1_x86_64.ipk
+Size: 3282
+SHA256sum: c05df5b9d4f02c488e06c41cae4d272586f09694321a19d2c386ee04ff83f30c
+
+Package: libselinux-selabel
+Version: lookup_best_match_3.5-r1_x86
+Architecture: 64
+Filename: libselinux-selabel_lookup_best_match_3.5-r1_x86_64.ipk
+Size: 3403
+SHA256sum: 1e21e32ee803efa2b2e659aa8f8b7333de2074b50e7fee088f623f6d1faf5dee
+
+Package: libselinux-selabel
+Version: partial_match_3.5-r1_x86
+Architecture: 64
+Filename: libselinux-selabel_partial_match_3.5-r1_x86_64.ipk
+Size: 2693
+SHA256sum: 726c28f65a0a6a949e4bb55886342db872c60f41b9b6c075d51fb21ed2c7f523
+
+Package: libselinux-selinux
+Version: check_access_3.5-r1_x86
+Architecture: 64
+Filename: libselinux-selinux_check_access_3.5-r1_x86_64.ipk
+Size: 2394
+SHA256sum: cf101e40fe1b3f81b58f2a55b04582582b456daa75c5d0e3c704a5ec950a1a22
+
+Package: libselinux-selinux
+Version: check_securetty_context_3.5-r1_x86
+Architecture: 64
+Filename: libselinux-selinux_check_securetty_context_3.5-r1_x86_64.ipk
+Size: 2079
+SHA256sum: be4a690cb03562dd02e1c85f67351cdbe073b491c26214de31ff64dcbe45b0bb
+
+Package: libselinux-selinuxenabled
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: libselinux-selinuxenabled_3.5-r1_x86_64.ipk
+Size: 1888
+SHA256sum: 13968d99a0d188e17d8f2155cc4a2818fa801d4dfc3b6a16d7577e3a2d3f8d17
+
+Package: libselinux-selinuxexeccon
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: libselinux-selinuxexeccon_3.5-r1_x86_64.ipk
+Size: 2445
+SHA256sum: 583a4c6a3f18a2e2e898d6d2c9f433e377ce4cb4243ac1206c3f3858e407b0a8
+
+Package: libselinux-setenforce
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: libselinux-setenforce_3.5-r1_x86_64.ipk
+Size: 2386
+SHA256sum: e7a0a16bb7a1c1c90b9110887f76818e67e30101e86cbb231739e3a438bea9e9
+
+Package: libselinux-setfilecon
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: libselinux-setfilecon_3.5-r1_x86_64.ipk
+Size: 2129
+SHA256sum: 5b2f7d792fd603bee9f0e022b259bfe5c069f5e20bf36d85acdc00bd2957a756
+
+Package: libselinux-togglesebool
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: libselinux-togglesebool_3.5-r1_x86_64.ipk
+Size: 2690
+SHA256sum: 61c867e9bfbe2725b9a362b373e8b7f7517dfe5727eca055606c5930e5de7a55
+
+Package: libselinux-validatetrans
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: libselinux-validatetrans_3.5-r1_x86_64.ipk
+Size: 2333
+SHA256sum: 118c8a6cfa2c087529f8931600ddeb86f7342a2db6144b00e84fb5394c65ba15
+
+Package: libselinux
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: libselinux_3.5-r1_x86_64.ipk
+Size: 68355
+SHA256sum: 46ea886bf280ff74475eadccdeb1cef7243cfe2937fdf249c339f5ed92873375
+
+Package: libsepol
+Version: 3.5-r1_x86
+Architecture: 64
+Filename: libsepol_3.5-r1_x86_64.ipk
+Size: 263059
+SHA256sum: 58200320a58abd0047bda10d16e5d1b98b20773f3eda6112909ecd92a6afefe4
+
+Package: libsmartcols1
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: libsmartcols1_2.40.2-r1_x86_64.ipk
+Size: 62010
+SHA256sum: 962cb521e9b61b82de27956a97b305db40906c649201b53aa5a286098cdfadfd
+
+Package: libss2
+Version: 1.47.0-r2_x86
+Architecture: 64
+Filename: libss2_1.47.0-r2_x86_64.ipk
+Size: 9514
+SHA256sum: bd3bed02f83cb3ff829f243867af099f288d76a52d9f7a43cd4b808631c23bf1
+
+Package: libubox-lua
+Version: 2025.07.23~49056d17-r1_x86
+Architecture: 64
+Filename: libubox-lua_2025.07.23~49056d17-r1_x86_64.ipk
+Size: 6384
+SHA256sum: 0debf055db49eed40785ee9aa2e554d8ede1facbdcaf682bd6ee0a32aec1368f
+
+Package: libubox20240329
+Version: 2025.07.23~49056d17-r1_x86
+Architecture: 64
+Filename: libubox20240329_2025.07.23~49056d17-r1_x86_64.ipk
+Size: 29057
+SHA256sum: 2129f92e30b38ae6d74618fbf5fddd0ea910d4c5b9d38f07004765dcd8019162
+
+Package: libubus-lua
+Version: 2025.10.17~60e04048-r1_x86
+Architecture: 64
+Filename: libubus-lua_2025.10.17~60e04048-r1_x86_64.ipk
+Size: 7879
+SHA256sum: ed95348ae8fd9a6a057b6296d87ba6c8ac7ed64d55b7b753736f730df0910ce2
+
+Package: libubus20250102
+Version: 2025.10.17~60e04048-r1_x86
+Architecture: 64
+Filename: libubus20250102_2025.10.17~60e04048-r1_x86_64.ipk
+Size: 12415
+SHA256sum: d4adddbd3bea025e38026e187f96ac156cea68e6279a49fb03a504f4beddce22
+
+Package: libuci-lua
+Version: 2025.01.20~16ff0bad-r1_x86
+Architecture: 64
+Filename: libuci-lua_2025.01.20~16ff0bad-r1_x86_64.ipk
+Size: 7807
+SHA256sum: ebfc1091f7d5787ae8167675e4571862961c13bb8e249dd6311e5ab787323e27
+
+Package: libuci20250120
+Version: 2025.01.20~16ff0bad-r1_x86
+Architecture: 64
+Filename: libuci20250120_2025.01.20~16ff0bad-r1_x86_64.ipk
+Size: 18292
+SHA256sum: a77a8531351bf19f5eecb1a383ab8c40ea6fd52ea9c9566d13c13f606db9d539
+
+Package: libuclient20201210
+Version: 2024.10.22~88ae8f20-r1_x86
+Architecture: 64
+Filename: libuclient20201210_2024.10.22~88ae8f20-r1_x86_64.ipk
+Size: 11560
+SHA256sum: c350d3280127e28be137c19b4e830e90cb51d1c4818827b900c1929b4a65d992
+
+Package: libucode20230711
+Version: 2025.07.18~3f64c808-r1_x86
+Architecture: 64
+Filename: libucode20230711_2025.07.18~3f64c808-r1_x86_64.ipk
+Size: 77983
+SHA256sum: 50c0db8a9c82acf1c8cf036549beeb53fe05381f52d8cc0773560945b83f1605
+
+Package: libudebug
+Version: 2025.08.24~edeb4d6d_x86
+Architecture: 64
+Filename: libudebug_2025.08.24~edeb4d6d_x86_64.ipk
+Size: 4924
+SHA256sum: f2775c444014f9d1698235645966fbd37b177e94e872014041921bc062e9293a
+
+Package: libunistring
+Version: 1.2-r1_x86
+Architecture: 64
+Filename: libunistring_1.2-r1_x86_64.ipk
+Size: 675186
+SHA256sum: 3e073a39c6132e32493255dab9e16049b1512ec4fc0e158c43bc9d4e33e2b10a
+
+Package: libustream-mbedtls20201210
+Version: 2026.03.01~99f1c0db-r1_x86
+Architecture: 64
+Filename: libustream-mbedtls20201210_2026.03.01~99f1c0db-r1_x86_64.ipk
+Size: 6416
+SHA256sum: 1dd1233def741084c52bb006b301c7a2ea1dd85bf72a1fba463881a224822f44
+
+Package: libustream-openssl20201210
+Version: 2026.03.01~99f1c0db-r1_x86
+Architecture: 64
+Filename: libustream-openssl20201210_2026.03.01~99f1c0db-r1_x86_64.ipk
+Size: 6087
+SHA256sum: 1593cf30a9727f59d6ae135f5d122a468246b12e31d16fa8116e12e8efd83c66
+
+Package: libustream-wolfssl20201210
+Version: 2026.03.01~99f1c0db-r1_x86
+Architecture: 64
+Filename: libustream-wolfssl20201210_2026.03.01~99f1c0db-r1_x86_64.ipk
+Size: 5098
+SHA256sum: f02a6432b1bcfa1bce85d8390958b55fd200bae34a777bed8bdc2d46ba3f5dab
+
+Package: libutp
+Version: 2023.02.14~c95738b1-r1_x86
+Architecture: 64
+Filename: libutp_2023.02.14~c95738b1-r1_x86_64.ipk
+Size: 20327
+SHA256sum: ec723ef11f706ed27363c8310324558bfe17e319c12cc82bfd37e5a552d22b3e
+
+Package: libuuid1
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: libuuid1_2.40.2-r1_x86_64.ipk
+Size: 13661
+SHA256sum: ed06d09526ebf145ded53e3085267b8a491b8a5c624d907ef738d9928df20bf2
+
+Package: libuv1
+Version: 1.48.0-r1_x86
+Architecture: 64
+Filename: libuv1_1.48.0-r1_x86_64.ipk
+Size: 69329
+SHA256sum: b689bd2ad9d185b73a05fd476ca1714b936bf7a5787e7465d1cf6ee9fdb91c89
+
+Package: libwolfssl-benchmark
+Version: 5.7.6-r1_x86
+Architecture: 64
+Filename: libwolfssl-benchmark_5.7.6-r1_x86_64.ipk
+Size: 20609
+SHA256sum: 1b9e1cb4f9dad9e4ce569233fa501a023de824a34f81f507d59cece6aefc6dd5
+
+Package: libwolfssl5.7.6.e624513f
+Version: 5.7.6-r1_x86
+Architecture: 64
+Filename: libwolfssl5.7.6.e624513f_5.7.6-r1_x86_64.ipk
+Size: 577030
+SHA256sum: abf3128ce072041e944fb74e95c93d1a9f9abda5eb1eb17e4b8c35c327d737cc
+
+Package: libwolfsslcpu-crypto5.7.6.e624513f
+Version: 5.7.6-r1_x86
+Architecture: 64
+Filename: libwolfsslcpu-crypto5.7.6.e624513f_5.7.6-r1_x86_64.ipk
+Size: 622652
+SHA256sum: bfbd02770790cb97985bbdabb4ec46f1ab547e6d887bed94fb9b7842c6fbb9f6
+
+Package: logd
+Version: 2024.04.26~85f10530-r1_x86
+Architecture: 64
+Filename: logd_2024.04.26~85f10530-r1_x86_64.ipk
+Size: 11940
+SHA256sum: 5464d070ef051d5d5af8499121b483a15e187df04542a4d9915de2d7ebfc4069
+
+Package: logger
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: logger_2.40.2-r1_x86_64.ipk
+Size: 17897
+SHA256sum: 790cfde8984c1ac6afb99c8b61832bfae0272c75c400bf40c1cbf1c93366c1f7
+
+Package: look
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: look_2.40.2-r1_x86_64.ipk
+Size: 4341
+SHA256sum: 5f1b1876a8872fa66f230cf56fe8cb230a4d67628d9ef598df1941a213f0fb41
+
+Package: losetup
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: losetup_2.40.2-r1_x86_64.ipk
+Size: 46876
+SHA256sum: c12e8db6a26a4f617500404d9496bd6314b8183aebaad989edc21e3c0dd676f2
+
+Package: lsattr
+Version: 1.47.0-r2_x86
+Architecture: 64
+Filename: lsattr_1.47.0-r2_x86_64.ipk
+Size: 3277
+SHA256sum: c3795d6eac21dc3b48125771e4d59fc8b7c1321f1d21fca83275a51aad34ba8a
+
+Package: lsblk
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: lsblk_2.40.2-r1_x86_64.ipk
+Size: 78849
+SHA256sum: 18f17c21caa4f52fde2d171b037441482eaecfb65e70d6c993a4e11dbedbdec3
+
+Package: lscpu
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: lscpu_2.40.2-r1_x86_64.ipk
+Size: 54363
+SHA256sum: a9222977849fc2b6cc48fc50a66e69538fac365f92a66f028837ed18e1dbfc31
+
+Package: lslocks
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: lslocks_2.40.2-r1_x86_64.ipk
+Size: 26318
+SHA256sum: 564cf95fad4b4d768eed304c1ffbca5283a0efde3a7226d48767b80b0eeab44d
+
+Package: lsns
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: lsns_2.40.2-r1_x86_64.ipk
+Size: 29104
+SHA256sum: dc19c8ce1c9121586f704e15322b164b5004baacb8c508fa66224460ea121939
+
+Package: lua-examples
+Version: 5.1.5-r11_x86
+Architecture: 64
+Filename: lua-examples_5.1.5-r11_x86_64.ipk
+Size: 6193
+SHA256sum: 405bb63e52219c39cf11493d1b022d979a8b81ecf1824f8f44a302cda32a10a2
+
+Package: lua
+Version: 5.1.5-r11_x86
+Architecture: 64
+Filename: lua_5.1.5-r11_x86_64.ipk
+Size: 5412
+SHA256sum: 164795e16b225d71e776a5aa584f6b3af239a0012724da63de58dd808f6a3165
+
+Package: luac
+Version: 5.1.5-r11_x86
+Architecture: 64
+Filename: luac_5.1.5-r11_x86_64.ipk
+Size: 6062
+SHA256sum: 5e8ddb7d37af8aef86517f8ec69d2893c73e8fbfae08ce6004ea757a039bc149
+
+Package: luci-app-3cat
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-app-3cat_26.114.29114~adb3df4_all.ipk
+Size: 3248
+SHA256sum: 3f28a037693e44ca72ad3aa390fba9bf26b0a639a351b9669c438b0d6be5af27
+
+Package: luci-app-advanced
+Version: 1.20-r20220218
+Architecture: all
+Filename: luci-app-advanced_1.20-r20220218_all.ipk
+Size: 13281
+SHA256sum: 30749a5526f96305f4cc9d994fb5f6a944be205fabdda3358e9beace52af89f1
+
+Package: luci-app-aria2
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-app-aria2_26.114.29114~adb3df4_all.ipk
+Size: 9314
+SHA256sum: 8235b9f1d669b7bbfab7f98a24d8ff9bd270c89610cf7a6598fb7e9605396e1e
+
+Package: luci-app-autoreboot
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-app-autoreboot_26.114.29114~adb3df4_all.ipk
+Size: 2971
+SHA256sum: d3f5e73c98d5c760aa95329014409c7d61cc692110189941f3f553b939eaa461
+
+Package: luci-app-ddns-go
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-app-ddns-go_26.114.29114~adb3df4_all.ipk
+Size: 2471
+SHA256sum: d7cc7bd3bc80306a86d72c94c84c5ee3a8cbe4ebdbc2c7bf8a500725efc57f9f
+
+Package: luci-app-dnsproxy
+Version: 0
+Architecture: all
+Filename: luci-app-dnsproxy_0_all.ipk
+Size: 5788
+SHA256sum: 763820ee2431ccb6f915bb12e88db55967d572b525d4969f158bf7b4c24ae34b
+
+Package: luci-app-fchomo
+Version: 0
+Architecture: all
+Filename: luci-app-fchomo_0_all.ipk
+Size: 305471
+SHA256sum: 7a722646510a667d7d1e5dc76adf3f381eb3e7956cedcf35239d91c307b740cc
+
+Package: luci-app-filebrowser
+Version: 1.1.0-r1
+Architecture: all
+Filename: luci-app-filebrowser_1.1.0-r1_all.ipk
+Size: 1732
+SHA256sum: f57bf0d59074e86d8616c90dd5d63fec7fe7bf94c188f6f3b2dcd808811f69c5
+
+Package: luci-app-gost
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-app-gost_26.114.29114~adb3df4_all.ipk
+Size: 2382
+SHA256sum: 84bde536322969172623bba7c4703d5163ebb7dafe88ae82b57009e879392c95
+
+Package: luci-app-homeproxy
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-app-homeproxy_26.114.29114~adb3df4_all.ipk
+Size: 608809
+SHA256sum: 936e8d44ca1597d574c949b2b85fe05d79c3890bc73038092de499f92ea3b82c
+
+Package: luci-app-mosdns
+Version: 1.7.14-r1
+Architecture: all
+Filename: luci-app-mosdns_1.7.14-r1_all.ipk
+Size: 118066
+SHA256sum: f31e8abf505525aaa0b636ef05447c593be6a466a2916d209e7c7df572738859
+
+Package: luci-app-natmap
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-app-natmap_26.114.29114~adb3df4_all.ipk
+Size: 2717
+SHA256sum: c201bce9d40596a19ee998bdf5aa57b310075e4bdc46ee83ff930fb9db9c8ec0
+
+Package: luci-app-netdata
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-app-netdata_26.114.29114~adb3df4_all.ipk
+Size: 1632
+SHA256sum: 768ad73fd51203c4938f3391d3da70e829c7bc816aa06b4df6fb1cb3a2bc0878
+
+Package: luci-app-nikki
+Version: 1.26.1-r1
+Architecture: all
+Filename: luci-app-nikki_1.26.1-r1_all.ipk
+Size: 10839
+SHA256sum: f66976edaddfad456faf57455773f334d578cde30e1a8ebae94ea4b5af077947
+
+Package: luci-app-npc
+Version: 1.3-r2
+Architecture: all
+Filename: luci-app-npc_1.3-r2_all.ipk
+Size: 3635
+SHA256sum: f0b720f5388135a2f026c5515d2d9c6cff47f7326cb13dd472d07747a12a8342
+
+Package: luci-app-partexp
+Version: 2.0.5-r20260318
+Architecture: all
+Filename: luci-app-partexp_2.0.5-r20260318_all.ipk
+Size: 15669
+SHA256sum: e9d20fd1b28f087d8b1fbbb271cdad7aa85ee50f7ad37d776abe1123c5b52cff
+
+Package: luci-app-poweroff
+Version: 20200726-r1
+Architecture: all
+Filename: luci-app-poweroff_20200726-r1_all.ipk
+Size: 2134
+SHA256sum: 9153d1d0537d515f620d497bf7568fb8324319f6fb04cedcbf5d691032f29a40
+
+Package: luci-app-socat
+Version: 1.0-r6
+Architecture: all
+Filename: luci-app-socat_1.0-r6_all.ipk
+Size: 4367
+SHA256sum: 806925573ae3c5afd92401c55fa10a4d1a891fa87c91ceea56572f25ab4d5415
+
+Package: luci-app-transmission
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-app-transmission_26.114.29114~adb3df4_all.ipk
+Size: 3889
+SHA256sum: b5b0b3cab2482b355b7d244c7f894007184d062e290149eb04f8042adf1a484a
+
+Package: luci-app-udp2raw
+Version: 1.0.0-r4
+Architecture: all
+Filename: luci-app-udp2raw_1.0.0-r4_all.ipk
+Size: 7801
+SHA256sum: e41b9209a2a079370ad824c8fe67d4273b52beee5282b9f7e78384e3ad16c661
+
+Package: luci-app-v2raya
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-app-v2raya_26.114.29114~adb3df4_all.ipk
+Size: 3316
+SHA256sum: a5638c0fbae39817ad2fbf7e86be72ded3ef5bcd5293d470ce859e89661bf5c8
+
+Package: luci-app-wolplus
+Version: 1.1-r20230724
+Architecture: all
+Filename: luci-app-wolplus_1.1-r20230724_all.ipk
+Size: 3207
+SHA256sum: 6a35fff0ec62b33cb2a671de02080a22a38774bb254d49614163efd1d478dc7b
+
+Package: luci-base
+Version: 26.114.29114~adb3df4_x86
+Architecture: 64
+Filename: luci-base_26.114.29114~adb3df4_x86_64.ipk
+Size: 152414
+SHA256sum: 037cad6f65cec1f1dab00b655df78c7c65a375a292ac477a072aca880f20c814
+
+Package: luci-i18n-3cat-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-3cat-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 1720
+SHA256sum: f400017a113ecbcd527c0aa35e3f54b8bb7fbebc87f4548a1accbe1124db9eae
+
+Package: luci-i18n-aria2-ar
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-ar_26.114.29114~adb3df4_all.ipk
+Size: 1693
+SHA256sum: c6ee960cf5fb46395f1983e9ea877f263998d961c46e7ac86e0317b55855f392
+
+Package: luci-i18n-aria2-bg
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-bg_26.114.29114~adb3df4_all.ipk
+Size: 2367
+SHA256sum: 2232f0747b8f0d080279c1ba3c156169f83adcaa10667c89b27f53bb6ff3ee79
+
+Package: luci-i18n-aria2-bn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-bn_26.114.29114~adb3df4_all.ipk
+Size: 1478
+SHA256sum: 9ceba0f4c13daba057d7b0c448a9d621ff14ff48945fd2ee0dfa9eb69a486989
+
+Package: luci-i18n-aria2-ca
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-ca_26.114.29114~adb3df4_all.ipk
+Size: 1894
+SHA256sum: a844cbc6cf7048450c525cc6b978ce01d10984249ee250da2f7e8d804e9c11c7
+
+Package: luci-i18n-aria2-cs
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-cs_26.114.29114~adb3df4_all.ipk
+Size: 7116
+SHA256sum: 64662fec464344f7cbf8e6e29d3ed2637c9d4c56a3dbaa6536ae1f2b6416fac5
+
+Package: luci-i18n-aria2-da
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-da_26.114.29114~adb3df4_all.ipk
+Size: 1528
+SHA256sum: ea3690982aa0882b7aedb22f4221fd5ad70f97d2e20c9e2c2187899b6e8eb796
+
+Package: luci-i18n-aria2-de
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-de_26.114.29114~adb3df4_all.ipk
+Size: 6810
+SHA256sum: b7e063e48223a4eefba9446651cc32c91332980b374fd217462cfe3a9183eee3
+
+Package: luci-i18n-aria2-el
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-el_26.114.29114~adb3df4_all.ipk
+Size: 2080
+SHA256sum: 7c07342887310a00dd27be17e7fbb4a80451462d588578c439ea127fa4b22185
+
+Package: luci-i18n-aria2-es
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-es_26.114.29114~adb3df4_all.ipk
+Size: 6754
+SHA256sum: 99a7aed057a209b49d99f6c018c1a880b1d3653d1bb4b2532d16237c936ee834
+
+Package: luci-i18n-aria2-fi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-fi_26.114.29114~adb3df4_all.ipk
+Size: 1909
+SHA256sum: 4fa1d2b5981495b0275807b4a68b0dc7f0565c08087ddac0eb30257d6fd289a5
+
+Package: luci-i18n-aria2-fr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-fr_26.114.29114~adb3df4_all.ipk
+Size: 6889
+SHA256sum: 977b09e335ce8b910bd81ddf4b294751282a39c61b30931f0a4552ed0136ef0e
+
+Package: luci-i18n-aria2-ga
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-ga_26.114.29114~adb3df4_all.ipk
+Size: 6899
+SHA256sum: 5289d34dc8cc5eaf778809cb547873ecefcce83385aaaf60782a63e31ecf593b
+
+Package: luci-i18n-aria2-he
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-he_26.114.29114~adb3df4_all.ipk
+Size: 1341
+SHA256sum: 0d5dc36c5085812079f3b87b0182a025a536668136ddfff6743c1eae18c6f210
+
+Package: luci-i18n-aria2-hi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-hi_26.114.29114~adb3df4_all.ipk
+Size: 1109
+SHA256sum: 77607cccacbf4629d974bd4c5f20486082d7f0355006e4bc608653498c06316c
+
+Package: luci-i18n-aria2-hu
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-hu_26.114.29114~adb3df4_all.ipk
+Size: 7012
+SHA256sum: 10a11dcdcfc08f9540f769d0a9312ace72a60f27262cb2c2a0884a415866da0a
+
+Package: luci-i18n-aria2-it
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-it_26.114.29114~adb3df4_all.ipk
+Size: 6577
+SHA256sum: a010ec2e88e62ee1ec638b84861ccea55f74e150903fbd3f2c9164194dab18c4
+
+Package: luci-i18n-aria2-ja
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-ja_26.114.29114~adb3df4_all.ipk
+Size: 3263
+SHA256sum: 9acf69b626480908e722b82a7b406e8ea310e14012f89925f9a729a7ec4348e8
+
+Package: luci-i18n-aria2-ko
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-ko_26.114.29114~adb3df4_all.ipk
+Size: 2525
+SHA256sum: b76529c44e980876c8be3c2ce61200b9dbc31ba56f8ba1c934632c43984832eb
+
+Package: luci-i18n-aria2-lt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-lt_26.114.29114~adb3df4_all.ipk
+Size: 7574
+SHA256sum: 45a0ed41f169a34584c0433d438c7fd1488b76b1a623c0fd140a6e2350f79ee9
+
+Package: luci-i18n-aria2-mr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-mr_26.114.29114~adb3df4_all.ipk
+Size: 1428
+SHA256sum: a6c26a140e1648a0e92873660337634fb861ff9ef324575cfb3eced2b187c8b3
+
+Package: luci-i18n-aria2-ms
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-ms_26.114.29114~adb3df4_all.ipk
+Size: 1239
+SHA256sum: 4358f569cec2345f106c062569daf729e4e426c11a66ee8969ea32de1fafe98d
+
+Package: luci-i18n-aria2-nl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-nl_26.114.29114~adb3df4_all.ipk
+Size: 6728
+SHA256sum: dca1bfdbae428cff85d1fcaa292875aa0ef167cfd0666590a0fbe095a560c3e9
+
+Package: luci-i18n-aria2-no
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-no_26.114.29114~adb3df4_all.ipk
+Size: 1479
+SHA256sum: 3f0d3d0491a15006916b80fc3d0915852ad52af1b4ed9bbbc529c3a3a2b67d85
+
+Package: luci-i18n-aria2-pl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-pl_26.114.29114~adb3df4_all.ipk
+Size: 6898
+SHA256sum: b0563741e350aee8b8df316da89a91e4ff10de520c0d21ad9fe6344f58c0655a
+
+Package: luci-i18n-aria2-pt-br
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-pt-br_26.114.29114~adb3df4_all.ipk
+Size: 7011
+SHA256sum: 0dac949caedc13564261a4f01802c6bdfcbd955c8d2093ba9f2d80b70bef3e7e
+
+Package: luci-i18n-aria2-pt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-pt_26.114.29114~adb3df4_all.ipk
+Size: 6786
+SHA256sum: 5a93936c611be29052264923b3317130bf613d3370e1ea566b32d9d13337207f
+
+Package: luci-i18n-aria2-ro
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-ro_26.114.29114~adb3df4_all.ipk
+Size: 6902
+SHA256sum: c777431652a69c63578a526d505d7f8a06049ff903eaa02346504e60cd059b72
+
+Package: luci-i18n-aria2-ru
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-ru_26.114.29114~adb3df4_all.ipk
+Size: 7801
+SHA256sum: 5ff49d254bf8fc332cf7140d281c2194081f6040e4642f14036455c3bd968718
+
+Package: luci-i18n-aria2-sk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-sk_26.114.29114~adb3df4_all.ipk
+Size: 2543
+SHA256sum: d02a2c558cb85f288fe2e3a6d6bf0118c93f41c9fb4806e0deaaa71f104624ef
+
+Package: luci-i18n-aria2-sv
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-sv_26.114.29114~adb3df4_all.ipk
+Size: 3370
+SHA256sum: c0592eff339bc627bb3c07830cb90eceea1b0a42dec7f394af25292bdab2e831
+
+Package: luci-i18n-aria2-tr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-tr_26.114.29114~adb3df4_all.ipk
+Size: 6644
+SHA256sum: 40f33e78d35cbccfdee326b491ecdf339dc8d958d4f65ec93a3267e621c4e087
+
+Package: luci-i18n-aria2-uk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-uk_26.114.29114~adb3df4_all.ipk
+Size: 7850
+SHA256sum: f384e53fb98abacf346cf1139b4a831ea20dfc71d9271827a73dc82231a5d778
+
+Package: luci-i18n-aria2-vi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-vi_26.114.29114~adb3df4_all.ipk
+Size: 6477
+SHA256sum: 52fb3017d700ee0ab531bd147600a8897804e8a04b01768b744c9b539593ccf3
+
+Package: luci-i18n-aria2-yua
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-yua_26.114.29114~adb3df4_all.ipk
+Size: 6741
+SHA256sum: 558d91e321311114f8d55fead25ee6eb9e1664c11dc1ca34caeac5f9cc25f3ed
+
+Package: luci-i18n-aria2-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 6348
+SHA256sum: ba436ee4ce045b66bafabc95f8843c3169e8b5551a9e7fd1c46bc3f49d6a7d42
+
+Package: luci-i18n-aria2-zh-tw
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-zh-tw_26.114.29114~adb3df4_all.ipk
+Size: 6293
+SHA256sum: c3f800010aebe63fd893e56dfa17fe70415005440ae91045c55633da8bc9dda2
+
+Package: luci-i18n-autoreboot-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-autoreboot-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 1791
+SHA256sum: 187104945d28925e4ddabc007bbb9b669395c48bd4a69c72d244eb404a65eef1
+
+Package: luci-i18n-base-ar
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-ar_26.114.29114~adb3df4_all.ipk
+Size: 59649
+SHA256sum: 13429091839ff2e92762f1ae2812c8cb7b688f17b56353b1fd2d6246f600104c
+
+Package: luci-i18n-base-bg
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-bg_26.114.29114~adb3df4_all.ipk
+Size: 10238
+SHA256sum: 5b4832d00e83881a53b18ae7904ff4a3904dc38059bb8bd374de28ce26b74bcb
+
+Package: luci-i18n-base-bn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-bn_26.114.29114~adb3df4_all.ipk
+Size: 2694
+SHA256sum: bea3c59fe2f5d4a11a505ab4b36e963d7c1b6e92fffec8b6737457ec6fbea8bf
+
+Package: luci-i18n-base-ca
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-ca_26.114.29114~adb3df4_all.ipk
+Size: 19941
+SHA256sum: c9680797b6891b857208bbb5c15c2ac14b938d305e8bdc22e338d0c2e7e644c1
+
+Package: luci-i18n-base-cs
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-cs_26.114.29114~adb3df4_all.ipk
+Size: 65854
+SHA256sum: 424df9b24eb82481bd514b45816c28508e12dddeeca04635f37242647867ac3b
+
+Package: luci-i18n-base-da
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-da_26.114.29114~adb3df4_all.ipk
+Size: 47289
+SHA256sum: 387a9875c50b0b0e107126f7b39cc34938ed2db35730af880d0c3c464a0bce9d
+
+Package: luci-i18n-base-de
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-de_26.114.29114~adb3df4_all.ipk
+Size: 62698
+SHA256sum: 34a047c6758a091480355630955cc2d286aa64710cf9ed9ae3ba0bfc97464ab7
+
+Package: luci-i18n-base-el
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-el_26.114.29114~adb3df4_all.ipk
+Size: 16532
+SHA256sum: 386c5cfee8bd43f81ec983ff6578ce8d13f86a79ed22093b9154ba8b316ea1ab
+
+Package: luci-i18n-base-es
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-es_26.114.29114~adb3df4_all.ipk
+Size: 63212
+SHA256sum: 8fac091ca73e1af867f9a76dd2eba1a3859c0db3f9f7d9fbd89f7e885504fc9d
+
+Package: luci-i18n-base-fa
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-fa_26.114.29114~adb3df4_all.ipk
+Size: 6095
+SHA256sum: 4f9790e1c9690bcd4ce1d4476e77744348d29737d84505c3057e5a0c4091e2e7
+
+Package: luci-i18n-base-fi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-fi_26.114.29114~adb3df4_all.ipk
+Size: 35523
+SHA256sum: f1d823acb5a104f75dc65d2c0d578d52478e51e9caf336e10508869812793fa5
+
+Package: luci-i18n-base-fil
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-fil_26.114.29114~adb3df4_all.ipk
+Size: 6479
+SHA256sum: 36294c33c067175ed0bc20c2086b15ad6431dddeacb6583642572ccacf1314a7
+
+Package: luci-i18n-base-fr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-fr_26.114.29114~adb3df4_all.ipk
+Size: 49709
+SHA256sum: fdb0792cfc3d1bdfd58007533b91e6b7468f7ee8ce93000ffbac1fd41f9ff0ee
+
+Package: luci-i18n-base-ga
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-ga_26.114.29114~adb3df4_all.ipk
+Size: 65066
+SHA256sum: 266ccdb66c140d46950ea1ba4740ea334785ec63e76d521b8e51d39819d22e51
+
+Package: luci-i18n-base-he
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-he_26.114.29114~adb3df4_all.ipk
+Size: 6218
+SHA256sum: eb8dd42f1acb3779bc715c4369ed80c4c7368c19c28cd190b37aac6c213f5f8e
+
+Package: luci-i18n-base-hi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-hi_26.114.29114~adb3df4_all.ipk
+Size: 3181
+SHA256sum: 5b77e9849cd2e0ee6e034873fa286c07805d707fbd09b03e57d586932a88c2d3
+
+Package: luci-i18n-base-hu
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-hu_26.114.29114~adb3df4_all.ipk
+Size: 60487
+SHA256sum: 21f49e15b02c40a250315a6ba93ea14c520bf45995a6b5afdeef16ef4c4a94a6
+
+Package: luci-i18n-base-it
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-it_26.114.29114~adb3df4_all.ipk
+Size: 54786
+SHA256sum: 072b0aebd0e8c0fb38775bf13599a332437d9c44ada51954955031424243c6b6
+
+Package: luci-i18n-base-ja
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-ja_26.114.29114~adb3df4_all.ipk
+Size: 41287
+SHA256sum: e3e8106f0e0942749dc3f4a5fe06557dc21de00dc7a7bdfa5f98c16185b43a3b
+
+Package: luci-i18n-base-ko
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-ko_26.114.29114~adb3df4_all.ipk
+Size: 50407
+SHA256sum: 3874204ec68d429e1d8f53872fe968a4ca7389892f861f771af167fe89ca69f6
+
+Package: luci-i18n-base-lt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-lt_26.114.29114~adb3df4_all.ipk
+Size: 69338
+SHA256sum: 65ba8c5557f1c137af630c2f623a49a5ef93ea703057b6ec8023faa4b21bda1c
+
+Package: luci-i18n-base-mr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-mr_26.114.29114~adb3df4_all.ipk
+Size: 2213
+SHA256sum: 19d90badb1b7fb3a6e1e8105ddc762cd81e8daf432f0309c5fb9285fa2ed7317
+
+Package: luci-i18n-base-ms
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-ms_26.114.29114~adb3df4_all.ipk
+Size: 6684
+SHA256sum: ad5f128aa5171c7e50860960337bd2fc91d887ef854cd6fdbdcb8269840fb67a
+
+Package: luci-i18n-base-nl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-nl_26.114.29114~adb3df4_all.ipk
+Size: 47128
+SHA256sum: 1557e05862cbc4aa801f5d4c7c5dbe87ec0086937ff1c13034e1ce44dabb6020
+
+Package: luci-i18n-base-no
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-no_26.114.29114~adb3df4_all.ipk
+Size: 16985
+SHA256sum: f63680f74c28911729e0e3114c0683b7a9b4d391fb19abf8f79575e7f87ade61
+
+Package: luci-i18n-base-pl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-pl_26.114.29114~adb3df4_all.ipk
+Size: 64406
+SHA256sum: 5877bd06218688821b102dff9778753cca02abb2d328978bbf14a38a583dc98d
+
+Package: luci-i18n-base-pt-br
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-pt-br_26.114.29114~adb3df4_all.ipk
+Size: 63894
+SHA256sum: c19930c0741a2e1430583b45e6d27f75f722ca999fd76867c58d28b120bbbc42
+
+Package: luci-i18n-base-pt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-pt_26.114.29114~adb3df4_all.ipk
+Size: 62973
+SHA256sum: 60cc97aeb56f0256b35f60d7365c5fe56ff17bbfa21fd8fe62e6e9cb843be11c
+
+Package: luci-i18n-base-ro
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-ro_26.114.29114~adb3df4_all.ipk
+Size: 58609
+SHA256sum: 03ceedd9f6e0a15203a4ed9a457c201e9d4c53ec706bb89c8db3400643388b6a
+
+Package: luci-i18n-base-ru
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-ru_26.114.29114~adb3df4_all.ipk
+Size: 76893
+SHA256sum: b60cddc5a091948efa8e028547ccb5cd47c2de1d84c7b5a380c5a39fa141d9e8
+
+Package: luci-i18n-base-sk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-sk_26.114.29114~adb3df4_all.ipk
+Size: 24354
+SHA256sum: 2f0db058e46e23fd1cc4cbcddbe27da5866d123dfe199772c6f59411b77f0e31
+
+Package: luci-i18n-base-sv
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-sv_26.114.29114~adb3df4_all.ipk
+Size: 19358
+SHA256sum: d6cb049dc38bc07da1f5094796287bd7048775d1867528afd28ac7720c428013
+
+Package: luci-i18n-base-tr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-tr_26.114.29114~adb3df4_all.ipk
+Size: 55278
+SHA256sum: 85f26320e80735648c57bb49612a7746ca09fa6b1d66ccee31fcdaefe4fb8daa
+
+Package: luci-i18n-base-uk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-uk_26.114.29114~adb3df4_all.ipk
+Size: 74182
+SHA256sum: 02cb62f45763d727f26ad53d4884066271348c55668a6acdf25439799476689a
+
+Package: luci-i18n-base-vi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-vi_26.114.29114~adb3df4_all.ipk
+Size: 55409
+SHA256sum: 5938eb689092eb0f12ae48501f7dc740b591f9cb72a859829c03113cfe232067
+
+Package: luci-i18n-base-yua
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-yua_26.114.29114~adb3df4_all.ipk
+Size: 56359
+SHA256sum: 429a2efac5ec30a17450f1a7ff886c9b0f061020b400d39ec387b2596dc5f528
+
+Package: luci-i18n-base-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 59737
+SHA256sum: ddb17d0de396321b7ad62360e5718328700ed02d0b489a650ee7f0d5f1846595
+
+Package: luci-i18n-base-zh-tw
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-zh-tw_26.114.29114~adb3df4_all.ipk
+Size: 56654
+SHA256sum: 39d02cc0282d7d5a6eff3debc7f83fcddb6d56ada3373542a6508891e0517046
+
+Package: luci-i18n-ddns-go-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-ddns-go-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 1544
+SHA256sum: 760b6cef75503178ccfb31805c03b0d33b0ae0652ca75c135903fe4ef8b38a20
+
+Package: luci-i18n-ddns-go-zh-tw
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-ddns-go-zh-tw_26.114.29114~adb3df4_all.ipk
+Size: 1525
+SHA256sum: 71a3f27081caa329d47c1a0cb043ae695ed0bde7ecbc56014411932f7b899048
+
+Package: luci-i18n-fchomo-zh-cn
+Version: 0
+Architecture: all
+Filename: luci-i18n-fchomo-zh-cn_0_all.ipk
+Size: 16473
+SHA256sum: 54627f90dde5754bc3b5e77f9ed3c06218ce5eb47a5909658d6b660cf854e485
+
+Package: luci-i18n-fchomo-zh-tw
+Version: 0
+Architecture: all
+Filename: luci-i18n-fchomo-zh-tw_0_all.ipk
+Size: 16542
+SHA256sum: adb860f8a6a953ace66b170118c97bbb279fd8564bc8d2bb2909b190d25b1d33
+
+Package: luci-i18n-filebrowser-ar
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-ar_26.114.29114~adb3df4_all.ipk
+Size: 1305
+SHA256sum: 5d3c7b328f5277af8a3f2a1d56bd1855a9f453bf1645b57dcc2d7f6dee1ebcab
+
+Package: luci-i18n-filebrowser-cs
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-cs_26.114.29114~adb3df4_all.ipk
+Size: 1272
+SHA256sum: 156d3b921dbe2d7533a528d84f85ee9b42eff0f276e22d174c676282bc63e7c0
+
+Package: luci-i18n-filebrowser-da
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-da_26.114.29114~adb3df4_all.ipk
+Size: 1076
+SHA256sum: d84863a0dccb379eb97800e481afdf80e6f065e3f63a420bfa61173e29ea6876
+
+Package: luci-i18n-filebrowser-de
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-de_26.114.29114~adb3df4_all.ipk
+Size: 1208
+SHA256sum: 3215523b49364eb31e4db7c5b0e5833a1680d8a2464c1526eb49d47153935d00
+
+Package: luci-i18n-filebrowser-es
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-es_26.114.29114~adb3df4_all.ipk
+Size: 1218
+SHA256sum: 3b9a1b75e099e2815fa9093520b1c4fce73d8072cdfcbeca64af81355b08ed7e
+
+Package: luci-i18n-filebrowser-fa
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-fa_26.114.29114~adb3df4_all.ipk
+Size: 1234
+SHA256sum: d27ddccb66dd24fa7a5be333149b9519647e8749cf68bf9bcd82e7948fc6020b
+
+Package: luci-i18n-filebrowser-fi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-fi_26.114.29114~adb3df4_all.ipk
+Size: 1212
+SHA256sum: a91de72af47ae15b54218912c1afacc6ad4fdfb363bd9a4d55d9ad914e0f3f5c
+
+Package: luci-i18n-filebrowser-fr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-fr_26.114.29114~adb3df4_all.ipk
+Size: 1218
+SHA256sum: d48370251d6b00b2417fcd8f9af8542ce4dcc3d19d8c66c9d87f3b3c2550387e
+
+Package: luci-i18n-filebrowser-ga
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-ga_26.114.29114~adb3df4_all.ipk
+Size: 1253
+SHA256sum: d56a931f1357c354f2635ee0284fa302098b3d06e559091bbb0f31053c4dc8b1
+
+Package: luci-i18n-filebrowser-hu
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-hu_26.114.29114~adb3df4_all.ipk
+Size: 1245
+SHA256sum: 83e087ac456b504b057c9fc7aaed433ec2fe8a4ec86ed90f5aa06216c9dd13d4
+
+Package: luci-i18n-filebrowser-it
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-it_26.114.29114~adb3df4_all.ipk
+Size: 1189
+SHA256sum: ef9961747c72a4593f849bdb2bbb46b4e6e396f1e7318630fbba9a3f05268148
+
+Package: luci-i18n-filebrowser-ja
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-ja_26.114.29114~adb3df4_all.ipk
+Size: 1274
+SHA256sum: 3e8e11e822dfd6c572e0210b5cfecb8871ccf666862f487006e49458990c8eac
+
+Package: luci-i18n-filebrowser-lt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-lt_26.114.29114~adb3df4_all.ipk
+Size: 1284
+SHA256sum: 610e5805d7a0a7694da3de15e870626ae436daadeb20b4fe74a3a98da101405c
+
+Package: luci-i18n-filebrowser-nl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-nl_26.114.29114~adb3df4_all.ipk
+Size: 1206
+SHA256sum: 49b2d7189313e5f7982a1640682ed4f67fd5367ee043988167409e85983392c7
+
+Package: luci-i18n-filebrowser-pl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-pl_26.114.29114~adb3df4_all.ipk
+Size: 1256
+SHA256sum: a2422ffb9c5342435ca26b6680e7704bcff236aecddd532bf8b199bc40ab4c21
+
+Package: luci-i18n-filebrowser-pt-br
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-pt-br_26.114.29114~adb3df4_all.ipk
+Size: 1276
+SHA256sum: ae80058d8ff90df68dd4e07ed9581ca028c85adc7a7940e10e3c337103584a1a
+
+Package: luci-i18n-filebrowser-pt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-pt_26.114.29114~adb3df4_all.ipk
+Size: 1213
+SHA256sum: c13418423bd71d0d5ba961c6946ff9bfb59fabea9b8a43c55b47f3f89d36701d
+
+Package: luci-i18n-filebrowser-ro
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-ro_26.114.29114~adb3df4_all.ipk
+Size: 1270
+SHA256sum: 9121c05fee83ee64884c880975edf5a441a81c879d3fc4683c5f0c3186ee3794
+
+Package: luci-i18n-filebrowser-ru
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-ru_26.114.29114~adb3df4_all.ipk
+Size: 1330
+SHA256sum: 0ac690cb51133d4e515381e62f02fc8d1272405bc84819d2f51e2759ea621e48
+
+Package: luci-i18n-filebrowser-sk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-sk_26.114.29114~adb3df4_all.ipk
+Size: 1213
+SHA256sum: 739367fc244c85bf97e8fc9f6228eef5ecb682d86186973fbe8e2c225630d9dd
+
+Package: luci-i18n-filebrowser-sv
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-sv_26.114.29114~adb3df4_all.ipk
+Size: 1202
+SHA256sum: 9bd841f453a47b9df1003ce64348e6d959a1be65da31f49f67c83e49f686fae3
+
+Package: luci-i18n-filebrowser-tr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-tr_26.114.29114~adb3df4_all.ipk
+Size: 1222
+SHA256sum: 8ec5cb4d7977aeafa2e0251cdbd64580d922d58dca77eb575ecc696ab3c131d8
+
+Package: luci-i18n-filebrowser-uk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-uk_26.114.29114~adb3df4_all.ipk
+Size: 1345
+SHA256sum: c457593af5427dd3539ced198b59322e2585525c419f993bf0a0f3ee691a417a
+
+Package: luci-i18n-filebrowser-vi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-vi_26.114.29114~adb3df4_all.ipk
+Size: 1205
+SHA256sum: 0ad0b87bdacdc5bc5b44e006f1735823a61516ef236cf341df2b47d6883e2504
+
+Package: luci-i18n-filebrowser-yua
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-yua_26.114.29114~adb3df4_all.ipk
+Size: 1217
+SHA256sum: 6c6074786b40cbec1a55c886a35e1e5b79fd245e90e98554c8cce5bb30cd71cf
+
+Package: luci-i18n-filebrowser-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 1286
+SHA256sum: 387b1d65932aa2733a19c6b3c875de47610a29f036e418cd0925ae07e1970498
+
+Package: luci-i18n-filebrowser-zh-tw
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-zh-tw_26.114.29114~adb3df4_all.ipk
+Size: 1289
+SHA256sum: e8b2d82c1177f7934db073c8e50b6f20048e3c6dacd58f34056d2159a10820b5
+
+Package: luci-i18n-gost-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-gost-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 1424
+SHA256sum: 94f9b486c77779d0bdb77586e5cdb21e84b92fe1e547140a1996706b5c28774f
+
+Package: luci-i18n-homeproxy-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-homeproxy-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 13636
+SHA256sum: f9b155a169d17fe8a824207ba0da80ea3d751ade5aa955a684b31cbd7ce12390
+
+Package: luci-i18n-mosdns-zh-cn
+Version: 0
+Architecture: all
+Filename: luci-i18n-mosdns-zh-cn_0_all.ipk
+Size: 7094
+SHA256sum: b71f25b737eb3db88ec9730cab4de9adfeddc18eda8e2fa56bb4cefcb03ee8b6
+
+Package: luci-i18n-natmap-ar
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-ar_26.114.29114~adb3df4_all.ipk
+Size: 1242
+SHA256sum: 440b37429f862f18f27c19a7d2a6af6e934a4998891d188f13ef4af6da389ab9
+
+Package: luci-i18n-natmap-bg
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-bg_26.114.29114~adb3df4_all.ipk
+Size: 1376
+SHA256sum: 5c186ae71e1874e377204d2be8dd59cb629823052d48ab5192223039c935fc99
+
+Package: luci-i18n-natmap-bn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-bn_26.114.29114~adb3df4_all.ipk
+Size: 1722
+SHA256sum: f93729945d7596d1d610e731858f36494cd650586cfb20eae8c37dc083d1e102
+
+Package: luci-i18n-natmap-ca
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-ca_26.114.29114~adb3df4_all.ipk
+Size: 1159
+SHA256sum: d1d5a08646c417770600d0772c324a4111ee4b54eaf698acaf8a712ffc5371ea
+
+Package: luci-i18n-natmap-cs
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-cs_26.114.29114~adb3df4_all.ipk
+Size: 1801
+SHA256sum: d81e33d9920aaf2e11412c8fa0ea14a6eacc30a6568c6e6be9a24f59c90b5e6a
+
+Package: luci-i18n-natmap-da
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-da_26.114.29114~adb3df4_all.ipk
+Size: 1471
+SHA256sum: 939418887bd3423f8d9b59f93ea20c0f0bdabfefa560de2083bab2e2b56eea09
+
+Package: luci-i18n-natmap-de
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-de_26.114.29114~adb3df4_all.ipk
+Size: 1860
+SHA256sum: 8ae94997eb99339cad695f0311aa5bff63332f895bcb0db0898dd95897ac7650
+
+Package: luci-i18n-natmap-el
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-el_26.114.29114~adb3df4_all.ipk
+Size: 1165
+SHA256sum: c38bc4248b99025d1ee20a4b05b032948b7500dba6e4ee986591b6beccb3af39
+
+Package: luci-i18n-natmap-es
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-es_26.114.29114~adb3df4_all.ipk
+Size: 1806
+SHA256sum: b67aff6c3d83bbb0e7108b69b99c902b392f4c108d0486ba47f89f9b90e0c63b
+
+Package: luci-i18n-natmap-fi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-fi_26.114.29114~adb3df4_all.ipk
+Size: 1571
+SHA256sum: 21bc3fde1419770785a4104675fee6ec2fb67b09f4f8007815b757a994bd070c
+
+Package: luci-i18n-natmap-fr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-fr_26.114.29114~adb3df4_all.ipk
+Size: 1671
+SHA256sum: 0ded787b2b727a3189db18aeddf9f9a9134f12cb6818b9f56db72c38fe03ec06
+
+Package: luci-i18n-natmap-ga
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-ga_26.114.29114~adb3df4_all.ipk
+Size: 1828
+SHA256sum: 6298101549b15a50dcf688d953579b9112d9067644e68873ba283e446ec734d9
+
+Package: luci-i18n-natmap-he
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-he_26.114.29114~adb3df4_all.ipk
+Size: 1177
+SHA256sum: 96411c53675d0476ad6c273d62e8eada5e72d77d844293c63e0a97b6c2885121
+
+Package: luci-i18n-natmap-hi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-hi_26.114.29114~adb3df4_all.ipk
+Size: 1112
+SHA256sum: c361ee05f005632178299d00c120810863a789694f421de98a8ace4eb926c8dd
+
+Package: luci-i18n-natmap-hu
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-hu_26.114.29114~adb3df4_all.ipk
+Size: 1371
+SHA256sum: bc2cb249fcc1cd509642e6283fd97c7c4d2a3b3634e46e398fe0e43534ce0174
+
+Package: luci-i18n-natmap-it
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-it_26.114.29114~adb3df4_all.ipk
+Size: 1450
+SHA256sum: 24b760e5fa4b33d88547c00f3c19c1d6f5c500f0d6861cae8da80b979781780f
+
+Package: luci-i18n-natmap-ja
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-ja_26.114.29114~adb3df4_all.ipk
+Size: 1280
+SHA256sum: b000058ab11a270e7e408bbdb380e857ef19cb01bdb661a121cddaab76b727ab
+
+Package: luci-i18n-natmap-ko
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-ko_26.114.29114~adb3df4_all.ipk
+Size: 1844
+SHA256sum: 2dce6c83fbc0e544e72c570cdbc2804ff5fb805f294731880eeb49eb85150ab1
+
+Package: luci-i18n-natmap-lt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-lt_26.114.29114~adb3df4_all.ipk
+Size: 1973
+SHA256sum: 532eec9b5bcec49c504302a7ea26923ec2cfb03ab205f625f6d7ba1f7e20ad8a
+
+Package: luci-i18n-natmap-mr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-mr_26.114.29114~adb3df4_all.ipk
+Size: 1107
+SHA256sum: e60bfb391e9066a5a14ed71dd6fffb285daca29366dada1427c3c90a64f61814
+
+Package: luci-i18n-natmap-ms
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-ms_26.114.29114~adb3df4_all.ipk
+Size: 1202
+SHA256sum: b4131b44757b8d72fba1e342e32f4178428f4965902993f0a0dcee99a91677c6
+
+Package: luci-i18n-natmap-nl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-nl_26.114.29114~adb3df4_all.ipk
+Size: 1543
+SHA256sum: 1dd522a775e8521a2b284fb344bf7986f8da3e75f4431e10ac2ac88f1ce179c0
+
+Package: luci-i18n-natmap-no
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-no_26.114.29114~adb3df4_all.ipk
+Size: 1162
+SHA256sum: fd34ab6a3b0d09cd8eff5d4ba4171c3da7bfa1edf895fc1e2bff7549155fd9bf
+
+Package: luci-i18n-natmap-pl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-pl_26.114.29114~adb3df4_all.ipk
+Size: 1833
+SHA256sum: 7814712be8e763c37844d2bdb99fa41974d04dadb06b0e005a8bf6ee1617e63f
+
+Package: luci-i18n-natmap-pt-br
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-pt-br_26.114.29114~adb3df4_all.ipk
+Size: 1703
+SHA256sum: 28e9dd3bcc4a89a1593cad06a1a5693af4a30faf936fcc3ef48b62b14f6a22c6
+
+Package: luci-i18n-natmap-pt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-pt_26.114.29114~adb3df4_all.ipk
+Size: 1774
+SHA256sum: 319463914704c02cc5858b223830d5c8a7c05d6ac9883c151e69894d03c4d9ce
+
+Package: luci-i18n-natmap-ro
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-ro_26.114.29114~adb3df4_all.ipk
+Size: 1711
+SHA256sum: cdb30e04cb99dee97f7229e1cad5e4f06152ade55e13f0d0e948a25dbdc202bd
+
+Package: luci-i18n-natmap-ru
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-ru_26.114.29114~adb3df4_all.ipk
+Size: 2126
+SHA256sum: 8e089b8eb1d9936398e9903cb0395b5abeb35905ac2d7ee415d59431cf0f41ff
+
+Package: luci-i18n-natmap-sk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-sk_26.114.29114~adb3df4_all.ipk
+Size: 1169
+SHA256sum: d3247c8fb3991f8aca724bdd5c4412c5169519df86e1aeac93a87965a05cfed1
+
+Package: luci-i18n-natmap-sv
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-sv_26.114.29114~adb3df4_all.ipk
+Size: 1698
+SHA256sum: 44ec393017913f4e158e9523921b8003dd55bfe9a043fd9384a88147d97d1979
+
+Package: luci-i18n-natmap-tr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-tr_26.114.29114~adb3df4_all.ipk
+Size: 1675
+SHA256sum: 060eda9d85d77e66930e2faf2186e5ea9c9879fd8babbb65f2ec8e5ca9d244a8
+
+Package: luci-i18n-natmap-uk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-uk_26.114.29114~adb3df4_all.ipk
+Size: 2050
+SHA256sum: c8452c3c3c86100b3a5f1a03854e6980dbae6fe4dd98993b0dc73ed285bf1682
+
+Package: luci-i18n-natmap-vi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-vi_26.114.29114~adb3df4_all.ipk
+Size: 1642
+SHA256sum: bea66bb0cb66fbc72ab9c6349f5d938394d4e48c2a1ed4c3d049640a1426288e
+
+Package: luci-i18n-natmap-yua
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-yua_26.114.29114~adb3df4_all.ipk
+Size: 1593
+SHA256sum: f0899464649f473f328350033a7074569ea38fdeee9b410b3d03aecff5a4110d
+
+Package: luci-i18n-natmap-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 1830
+SHA256sum: c1e8050a9c39e6f8af75e02252db4cf4196541016f70a069936240159fb8f2c8
+
+Package: luci-i18n-natmap-zh-tw
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-natmap-zh-tw_26.114.29114~adb3df4_all.ipk
+Size: 1845
+SHA256sum: c6d7abc6e2205f7a5260a7e0cd72091374659b935f0c0973b350bedec5ef0984
+
+Package: luci-i18n-netdata-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-netdata-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 1225
+SHA256sum: 4dfb0b783a0af14637459a3fb26b89e573374d2b41cb93daa516706852056576
+
+Package: luci-i18n-nikki-ru
+Version: 0
+Architecture: all
+Filename: luci-i18n-nikki-ru_0_all.ipk
+Size: 5728
+SHA256sum: 0f48dc9d8a3132421bb803956796840c97f71a8a1ee2464bdd72e2593a43e290
+
+Package: luci-i18n-nikki-zh-cn
+Version: 0
+Architecture: all
+Filename: luci-i18n-nikki-zh-cn_0_all.ipk
+Size: 5244
+SHA256sum: 68c2316619fbdbd962ed297b22dc4ae1408255db93d4e7f89f4a56637285e874
+
+Package: luci-i18n-nikki-zh-tw
+Version: 0
+Architecture: all
+Filename: luci-i18n-nikki-zh-tw_0_all.ipk
+Size: 5269
+SHA256sum: 0a2328bb0654616adfc56dbc3d4c4d246e849287c53c499e1dbcb6327a92e20d
+
+Package: luci-i18n-npc-zh-cn
+Version: 0
+Architecture: all
+Filename: luci-i18n-npc-zh-cn_0_all.ipk
+Size: 1743
+SHA256sum: 1d1af71082db6e32b39d11619104a55824e83a0dabf22949277d96474d62b483
+
+Package: luci-i18n-partexp-zh-cn
+Version: 0
+Architecture: all
+Filename: luci-i18n-partexp-zh-cn_0_all.ipk
+Size: 2528
+SHA256sum: 375ba8e74add3736558ef1e72ba52ec04aa70cdf158df5eb50d428f7b7562db9
+
+Package: luci-i18n-poweroff-ja
+Version: 0
+Architecture: all
+Filename: luci-i18n-poweroff-ja_0_all.ipk
+Size: 1325
+SHA256sum: b4b369bd88230b222761ea417787820fd727168d56bfd18044a2bb85a5433c0a
+
+Package: luci-i18n-poweroff-zh-cn
+Version: 0
+Architecture: all
+Filename: luci-i18n-poweroff-zh-cn_0_all.ipk
+Size: 1407
+SHA256sum: c229e36be64723b2e8a1a8bbfc4564356b949ea2e2da6063b0145d3ae7e8d7d1
+
+Package: luci-i18n-socat-zh-cn
+Version: 0
+Architecture: all
+Filename: luci-i18n-socat-zh-cn_0_all.ipk
+Size: 1593
+SHA256sum: d6b6214a999999920b80a2fc9b60930374fecf9d3c6a2106d0ba9e14c3c8db7d
+
+Package: luci-i18n-transmission-ar
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-ar_26.114.29114~adb3df4_all.ipk
+Size: 1487
+SHA256sum: 069a495b5b9bfa98e05b4f6233466ed2b2332e2c9390629af97e9f4539cdf32e
+
+Package: luci-i18n-transmission-bg
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-bg_26.114.29114~adb3df4_all.ipk
+Size: 1555
+SHA256sum: 97b573d2c0e8eb42ffbf0c5a87233519d06d32a234c96b309e8ad3e5387e1e20
+
+Package: luci-i18n-transmission-bn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-bn_26.114.29114~adb3df4_all.ipk
+Size: 1385
+SHA256sum: c3e192d4649169f98f1546583e225cd3075aa20cb9d2fa9bdfcdda045470abda
+
+Package: luci-i18n-transmission-ca
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-ca_26.114.29114~adb3df4_all.ipk
+Size: 2386
+SHA256sum: 3d662f9e6ee14f996a6e56cf9cbec35b67c21114f4f82f4b00accae422a3ff01
+
+Package: luci-i18n-transmission-cs
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-cs_26.114.29114~adb3df4_all.ipk
+Size: 3720
+SHA256sum: a177197c796f9c025d1f78ea252bc6e6ac6299e3d2cca10ada861dce8c1521f3
+
+Package: luci-i18n-transmission-da
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-da_26.114.29114~adb3df4_all.ipk
+Size: 3281
+SHA256sum: 267772cb9fcca5bd1d044f21c19b3782737fba4fc5d69e563cc40e34c02d219f
+
+Package: luci-i18n-transmission-de
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-de_26.114.29114~adb3df4_all.ipk
+Size: 3521
+SHA256sum: b3171c6bc7b4cf5639aa6fa6a7c061668a3a219cf8d5cab166e9e9739f8d5b94
+
+Package: luci-i18n-transmission-el
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-el_26.114.29114~adb3df4_all.ipk
+Size: 1441
+SHA256sum: dc856eb879933962aa78fcfbda709ce85e329436d1119d4681b5aa7726a5c28f
+
+Package: luci-i18n-transmission-es
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-es_26.114.29114~adb3df4_all.ipk
+Size: 3467
+SHA256sum: fca9ddf5ca6ed7a8edc6c9d66fbaf2bb7f15ad4308608a7401c638fc3d17bf9e
+
+Package: luci-i18n-transmission-fi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-fi_26.114.29114~adb3df4_all.ipk
+Size: 1940
+SHA256sum: 8e3f4f65871a62dccbea4abb9d98bbe675f364925dd2516723db3dfe8373dbf3
+
+Package: luci-i18n-transmission-fr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-fr_26.114.29114~adb3df4_all.ipk
+Size: 3594
+SHA256sum: ae9d9dc9861233964ae5241ea2eb58ae91230f0dbf88da38152e78d8ebba0df6
+
+Package: luci-i18n-transmission-ga
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-ga_26.114.29114~adb3df4_all.ipk
+Size: 3572
+SHA256sum: 07a1608a3baa64c17a1744d41c441c9862bb120db001178a24f463c4ab051247
+
+Package: luci-i18n-transmission-he
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-he_26.114.29114~adb3df4_all.ipk
+Size: 1307
+SHA256sum: 250f8802f855c43ccab877e0aefe636508c04a5af5ddf6fb44c4e7a7f47a848b
+
+Package: luci-i18n-transmission-hi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-hi_26.114.29114~adb3df4_all.ipk
+Size: 1121
+SHA256sum: c9f6ad980ddef193cdd4059c15eff26a7091410c96eb1c9854ac510ab96ef675
+
+Package: luci-i18n-transmission-hu
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-hu_26.114.29114~adb3df4_all.ipk
+Size: 3356
+SHA256sum: d37e83aece6c2e966dc777b0ad69d9ae02ebb8ef176ef9aa47ce0923cd92be0a
+
+Package: luci-i18n-transmission-it
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-it_26.114.29114~adb3df4_all.ipk
+Size: 1677
+SHA256sum: de2e2c90c7bf8ae526a75c0cc4ac5620379b62fd2545b82534dae4b4d5a758e3
+
+Package: luci-i18n-transmission-ja
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-ja_26.114.29114~adb3df4_all.ipk
+Size: 2897
+SHA256sum: 4f6a8fafa88f13919e0289cd904be2cf3a3e5f5fb2120a3894cfaed739fe867c
+
+Package: luci-i18n-transmission-ko
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-ko_26.114.29114~adb3df4_all.ipk
+Size: 2732
+SHA256sum: 0d019c3f0d560773c6cd739495d9fc1fe4df4ae665c3b851c2644a477307df4a
+
+Package: luci-i18n-transmission-lt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-lt_26.114.29114~adb3df4_all.ipk
+Size: 3946
+SHA256sum: 7fe5aabd537ef17c53e1da97a10cd522cad3b39e94efb43ad629fa3b290cfdad
+
+Package: luci-i18n-transmission-mr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-mr_26.114.29114~adb3df4_all.ipk
+Size: 1267
+SHA256sum: c75be153aada606a11c6a18690f5243460d1a4ee9b700b9ce4b3bcb1608d017f
+
+Package: luci-i18n-transmission-ms
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-ms_26.114.29114~adb3df4_all.ipk
+Size: 1186
+SHA256sum: 011dd94ca98323fbcf774eec7a6dd763452319a56e2b0bb678f654ba4f6fea94
+
+Package: luci-i18n-transmission-nl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-nl_26.114.29114~adb3df4_all.ipk
+Size: 3410
+SHA256sum: 9187c88306df4453056c986817d432df0ae85128e7b6dbcb228d4da49f2e3b97
+
+Package: luci-i18n-transmission-no
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-no_26.114.29114~adb3df4_all.ipk
+Size: 2911
+SHA256sum: af092ccc8e28f45bf76ad8d0162f3710e4dcffd4c08f7038aeac570992bc7a66
+
+Package: luci-i18n-transmission-pl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-pl_26.114.29114~adb3df4_all.ipk
+Size: 3652
+SHA256sum: da9f0d5d8f70f1ca2f2227d7ab1fa129ec0e2419710dfa2e3aacf761fa62467c
+
+Package: luci-i18n-transmission-pt-br
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-pt-br_26.114.29114~adb3df4_all.ipk
+Size: 3638
+SHA256sum: 6faee689addbf13c1bcfa95da4e17f8343f52e44b98368f35805d155bd892251
+
+Package: luci-i18n-transmission-pt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-pt_26.114.29114~adb3df4_all.ipk
+Size: 3594
+SHA256sum: 2746dff2f008e5dcd617aecdc23a63f8aca643c3c673854cda3bd1980c32361e
+
+Package: luci-i18n-transmission-ro
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-ro_26.114.29114~adb3df4_all.ipk
+Size: 3680
+SHA256sum: f15a55f52a44db4778d76bd6b31c84d6e53a98fc28a2acc3f1980b49d5168f21
+
+Package: luci-i18n-transmission-ru
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-ru_26.114.29114~adb3df4_all.ipk
+Size: 4311
+SHA256sum: e079fd4fb8d15aca733fb35e6f0b484909577c05065c2aa416b2f14386c43505
+
+Package: luci-i18n-transmission-sk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-sk_26.114.29114~adb3df4_all.ipk
+Size: 2543
+SHA256sum: 3626a760e6676f88ea6a5a9d95c7dbd2bffe46b2e7c157ce3fb05d65769f7cd7
+
+Package: luci-i18n-transmission-sv
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-sv_26.114.29114~adb3df4_all.ipk
+Size: 2356
+SHA256sum: 9c35c7e701db6c88e6e7066a6efe645ae8f6acc360ea0abf949b960e533b9ff7
+
+Package: luci-i18n-transmission-tr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-tr_26.114.29114~adb3df4_all.ipk
+Size: 3600
+SHA256sum: 41cf75ebfec6974c570bb9e2072559e4130a1547c89891c444179c6bbf7a824d
+
+Package: luci-i18n-transmission-uk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-uk_26.114.29114~adb3df4_all.ipk
+Size: 4079
+SHA256sum: da2a75ae1f3848a8cb4b38c25bd1add47969e388cb8109e9445de011f5867cfe
+
+Package: luci-i18n-transmission-vi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-vi_26.114.29114~adb3df4_all.ipk
+Size: 3615
+SHA256sum: 5902b5c2a5a4206c36d47b31444cd7b091fa79a889d5774660fd4b78b69fae7c
+
+Package: luci-i18n-transmission-yua
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-yua_26.114.29114~adb3df4_all.ipk
+Size: 1148
+SHA256sum: 282b69f445751fb8284ef368a8ab8764aa1d102d302838527ed53426c75ba897
+
+Package: luci-i18n-transmission-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 3427
+SHA256sum: cbfbf165df93250e6d048b82a27cc12bdef73096555f721a8eac40455e1450b4
+
+Package: luci-i18n-transmission-zh-tw
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-zh-tw_26.114.29114~adb3df4_all.ipk
+Size: 3476
+SHA256sum: 431ddfcb0ea7172194d41d8e03bb170740ebce025e75686976cf6f3704571c61
+
+Package: luci-i18n-v2raya-ar
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-ar_26.114.29114~adb3df4_all.ipk
+Size: 1377
+SHA256sum: e498f8e6a4fb8ddf6f5942813cafdab177bce264e03aefdb6588ce85eb2c213c
+
+Package: luci-i18n-v2raya-bg
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-bg_26.114.29114~adb3df4_all.ipk
+Size: 1445
+SHA256sum: deeff1afa7a5b4a97e0679d2ff5b27b22a906a0af817b5eecc72258651db657a
+
+Package: luci-i18n-v2raya-bn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-bn_26.114.29114~adb3df4_all.ipk
+Size: 1226
+SHA256sum: 519ce4be4f7aa3f46c778b3ff6dd2384532bc9b36466566b21a6c4ecabb5e729
+
+Package: luci-i18n-v2raya-ca
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-ca_26.114.29114~adb3df4_all.ipk
+Size: 1189
+SHA256sum: 04dd08dc21d0098b5774d3ad085a23dd696c5e1b60e01ff6879f2e4416cdb05a
+
+Package: luci-i18n-v2raya-cs
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-cs_26.114.29114~adb3df4_all.ipk
+Size: 2061
+SHA256sum: 07919b90655f1df849cde39d706212a52013e1f90242521fcf64d03c0a14cc79
+
+Package: luci-i18n-v2raya-da
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-da_26.114.29114~adb3df4_all.ipk
+Size: 1124
+SHA256sum: f444ae8d66b63f137e47c369ac039d1e1fa79bf76721c1539bb68d7009e7b2fc
+
+Package: luci-i18n-v2raya-de
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-de_26.114.29114~adb3df4_all.ipk
+Size: 1933
+SHA256sum: 408e5e4f0d6a76809b766c55aeeb79601858fb0ef28630de4767ac23506ec107
+
+Package: luci-i18n-v2raya-el
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-el_26.114.29114~adb3df4_all.ipk
+Size: 1282
+SHA256sum: 7e981b28f575dfca8751a8107fa7c5bd5db97ea0860e90934372085dfb9ff3dc
+
+Package: luci-i18n-v2raya-es
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-es_26.114.29114~adb3df4_all.ipk
+Size: 1957
+SHA256sum: e6a35a1ec305bd28849e7eb7555c881c87fc7a76752c7568505ef62449000374
+
+Package: luci-i18n-v2raya-fi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-fi_26.114.29114~adb3df4_all.ipk
+Size: 1965
+SHA256sum: fa2425940257bbf4c10c7c4f1b6791de1d9f0e8f073e4910ad08771c79c708c2
+
+Package: luci-i18n-v2raya-fr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-fr_26.114.29114~adb3df4_all.ipk
+Size: 1415
+SHA256sum: 1db2fad78ec64e92296c8cad07fe374c989178cd3d66bc3010489e67ddf113e8
+
+Package: luci-i18n-v2raya-ga
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-ga_26.114.29114~adb3df4_all.ipk
+Size: 1984
+SHA256sum: eed1076b410a997b93eb70a4a0f3b7f27bd8dedb468e99d45e4df3189a3b8c53
+
+Package: luci-i18n-v2raya-he
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-he_26.114.29114~adb3df4_all.ipk
+Size: 1179
+SHA256sum: 4a238441903466cd3c50853da4382480152ea2f1f18a22a01ec3546b87e5ac8f
+
+Package: luci-i18n-v2raya-hi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-hi_26.114.29114~adb3df4_all.ipk
+Size: 1122
+SHA256sum: eb29370551df3a272b2199f1bf348fe0a96273d1569212a002378dece29abcf1
+
+Package: luci-i18n-v2raya-hu
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-hu_26.114.29114~adb3df4_all.ipk
+Size: 1371
+SHA256sum: 1a410911f3881ad70d41107532f92c3844b82f5289c72946b98b558d73badf72
+
+Package: luci-i18n-v2raya-it
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-it_26.114.29114~adb3df4_all.ipk
+Size: 1555
+SHA256sum: 0aedd5ae0c1d92043b3277f0189446d22f0b99ee5969b5f99029a9406837e39f
+
+Package: luci-i18n-v2raya-ja
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-ja_26.114.29114~adb3df4_all.ipk
+Size: 1477
+SHA256sum: 65295c395254e6c3f0f1418d73b7ff6e142dc5e3d9d3108f83861e30257aeef7
+
+Package: luci-i18n-v2raya-ko
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-ko_26.114.29114~adb3df4_all.ipk
+Size: 2079
+SHA256sum: 0e8048987239f747cda347bc0cf4761580f6793a85fb2951a7a8e0472650dbe6
+
+Package: luci-i18n-v2raya-lt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-lt_26.114.29114~adb3df4_all.ipk
+Size: 2162
+SHA256sum: 333ff9f945a33096a2046d908e35f222381360e92224d77561edc3b09fb9bcc0
+
+Package: luci-i18n-v2raya-mr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-mr_26.114.29114~adb3df4_all.ipk
+Size: 1113
+SHA256sum: e3fac715322eff0e99206ab25b23a196c2874935790183303da576c6d6af896b
+
+Package: luci-i18n-v2raya-ms
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-ms_26.114.29114~adb3df4_all.ipk
+Size: 1085
+SHA256sum: 3213e1ed0d1c2386ef7b7b0c7c840598eaedf6897969699b6bd60dbf3cbcf97a
+
+Package: luci-i18n-v2raya-nl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-nl_26.114.29114~adb3df4_all.ipk
+Size: 1237
+SHA256sum: db92ab873c32420e045012ef494e7309ba9acb4ea5cf5d139c8efb687253ea79
+
+Package: luci-i18n-v2raya-no
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-no_26.114.29114~adb3df4_all.ipk
+Size: 1875
+SHA256sum: 6748c981c383ac3950fda11cee30bbecfec4d5aaf8d36f3281b06e2bf58ff67a
+
+Package: luci-i18n-v2raya-pl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-pl_26.114.29114~adb3df4_all.ipk
+Size: 1991
+SHA256sum: bfbdbb4c5c4363aa2535b96509b7822316a2860912d746e30af5abd8af3a1213
+
+Package: luci-i18n-v2raya-pt-br
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-pt-br_26.114.29114~adb3df4_all.ipk
+Size: 1724
+SHA256sum: 84ace9665fcd965a5a8d74dbe2a494bd52e9f85e938b2854ab2048404950d326
+
+Package: luci-i18n-v2raya-pt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-pt_26.114.29114~adb3df4_all.ipk
+Size: 1563
+SHA256sum: e655f7fdac253fe277e7203232d90e433129d5ec96d54cc311c28fe1783638e1
+
+Package: luci-i18n-v2raya-ro
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-ro_26.114.29114~adb3df4_all.ipk
+Size: 1525
+SHA256sum: 319b405168b0f6fa8a64bc6ef38238665f72ae17db6bcb79793b4487a6a7722f
+
+Package: luci-i18n-v2raya-ru
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-ru_26.114.29114~adb3df4_all.ipk
+Size: 2213
+SHA256sum: e08cd0c702c0fcbe86e5a1358c3a4d52631056afb2f62c1e0838c58bf4f55983
+
+Package: luci-i18n-v2raya-sk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-sk_26.114.29114~adb3df4_all.ipk
+Size: 1197
+SHA256sum: e43ac299727568228c1062fcc60347ddbb1b6da9d247f0b78e1ea3c699a55500
+
+Package: luci-i18n-v2raya-sv
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-sv_26.114.29114~adb3df4_all.ipk
+Size: 1487
+SHA256sum: 699420162be25418186b4b4b936260a4867dd3dccff0cc41d4d751eea8741b8c
+
+Package: luci-i18n-v2raya-tr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-tr_26.114.29114~adb3df4_all.ipk
+Size: 1984
+SHA256sum: 9dbcdfcdefe5b94c6a546661c06caea8ca4185e6f3fd53cb630f5c8feee9a0f4
+
+Package: luci-i18n-v2raya-uk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-uk_26.114.29114~adb3df4_all.ipk
+Size: 2220
+SHA256sum: 1f8aa42a19447ca31afe9f8a7308838814c0e7d5cebc2fad6224851809b825e0
+
+Package: luci-i18n-v2raya-vi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-vi_26.114.29114~adb3df4_all.ipk
+Size: 1321
+SHA256sum: 4433574f076196240845877ed9e389e05b0e2a5ebfc730beb5bfa2e413ea2c10
+
+Package: luci-i18n-v2raya-yua
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-yua_26.114.29114~adb3df4_all.ipk
+Size: 1938
+SHA256sum: 7d7a8ea2c2d6ed909db49e63f260c74cc71b99a775c9967d743468986f8f2dff
+
+Package: luci-i18n-v2raya-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 2042
+SHA256sum: ac678f38470fa3b6597d0477e0e55c9d682d92682a9cb89168f3322bf0803b91
+
+Package: luci-i18n-v2raya-zh-tw
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-zh-tw_26.114.29114~adb3df4_all.ipk
+Size: 2017
+SHA256sum: e2c8d0c1fa840e8b33d1aa9293ef23752f42d0892075d1eeb27f474a800839a1
+
+Package: luci-i18n-wolplus-zh-cn
+Version: 0
+Architecture: all
+Filename: luci-i18n-wolplus-zh-cn_0_all.ipk
+Size: 1378
+SHA256sum: ae6fd9aff9d614628f3fa9e9c6e7222f3436d93cc8be3d7afa8e70e10f0db9fd
+
+Package: luci-lib-base
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-lib-base_26.114.29114~adb3df4_all.ipk
+Size: 10536
+SHA256sum: 6a280372d676c926de6e3d2f992374d012c95ec9fa86993bebd3e24ea0ca43a6
+
+Package: luci-lib-ip
+Version: 26.114.29114~adb3df4_x86
+Architecture: 64
+Filename: luci-lib-ip_26.114.29114~adb3df4_x86_64.ipk
+Size: 12675
+SHA256sum: 5d6cc1dfd5104de160681a787299039ee1220e45d695144bd3f0858b6112bc9e
+
+Package: luci-lib-jsonc
+Version: 26.114.29114~adb3df4_x86
+Architecture: 64
+Filename: luci-lib-jsonc_26.114.29114~adb3df4_x86_64.ipk
+Size: 5163
+SHA256sum: cab1bc920f864699df96fae7e3c5b9cbaee1747c470ca653bc673ddf860d31b2
+
+Package: luci-lib-nixio
+Version: 26.114.29114~adb3df4_x86
+Architecture: 64
+Filename: luci-lib-nixio_26.114.29114~adb3df4_x86_64.ipk
+Size: 34185
+SHA256sum: 82b45557f5961bb95f76796d06fd6869ac11a0daca4d96a12d708044de111e9f
+
+Package: luci-lua-runtime
+Version: 26.114.29114~adb3df4_x86
+Architecture: 64
+Filename: luci-lua-runtime_26.114.29114~adb3df4_x86_64.ipk
+Size: 30647
+SHA256sum: 40da460ce09d38202958ab66492473e6155560ba2bc960dc8222b865006b55dd
+
+Package: luci-theme-design
+Version: 5.8.0-20240106-r1
+Architecture: all
+Filename: luci-theme-design_5.8.0-20240106-r1_all.ipk
+Size: 302764
+SHA256sum: 3d898508841ecbef15f432dc9e86855cfe3b246c062db4416b9c0babaa9cf8a0
+
+Package: luci-theme-edge
+Version: 2.5-r20210107
+Architecture: all
+Filename: luci-theme-edge_2.5-r20210107_all.ipk
+Size: 228560
+SHA256sum: 9cc8dd242badf69fdd316aeb939a89d87d4e78653503817c23fbd046828bc301
+
+Package: mbedtls-util
+Version: 3.6.5-r1_x86
+Architecture: 64
+Filename: mbedtls-util_3.6.5-r1_x86_64.ipk
+Size: 9035
+SHA256sum: c30220e956299c288b832314fdbea8d423382fe40cce94956c0586f69fda5756
+
+Package: mcookie
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: mcookie_2.40.2-r1_x86_64.ipk
+Size: 12639
+SHA256sum: 0570078547f3e990fef443fcf19726b9f9bb88e621ac34c725ac75ab54696d87
+
+Package: mihomo
+Version: 1.19.31-r1_x86
+Architecture: 64
+Filename: mihomo_1.19.31-r1_x86_64.ipk
+Size: 22499983
+SHA256sum: 585dd4b8b14b53edcf4bd509b05182149f97858f26140efee20df43bd11f5b80
+
+Package: miniupnpc
+Version: 2.2.8-r1_x86
+Architecture: 64
+Filename: miniupnpc_2.2.8-r1_x86_64.ipk
+Size: 11361
+SHA256sum: be77fae8238e5d24a419dcb2e1bfc8ae711890e0935b4986f95ec3c104713155
+
+Package: mkf2fs-selinux
+Version: 1.16.0-r3_x86
+Architecture: 64
+Filename: mkf2fs-selinux_1.16.0-r3_x86_64.ipk
+Size: 17528
+SHA256sum: 3c9e5066dce69c490ebcb7777811044bfbb77743194f5049aef92f82e8800424
+
+Package: mkf2fs
+Version: 1.16.0-r3_x86
+Architecture: 64
+Filename: mkf2fs_1.16.0-r3_x86_64.ipk
+Size: 17513
+SHA256sum: d4edbdf1879a6a314bce7f69efbba99a2453974f1b0a4b4856b5e8b5217f3261
+
+Package: mlxsw
+Version: spectrum-firmware_20241110-r2_x86
+Architecture: 64
+Filename: mlxsw_spectrum-firmware_20241110-r2_x86_64.ipk
+Size: 33411921
+SHA256sum: 8315bf90455c29d9d7476b2ba6a7c32f808c7dd64ed8f0ae0cb052e3483823f2
+
+Package: mlxsw
+Version: spectrum2-firmware_20241110-r2_x86
+Architecture: 64
+Filename: mlxsw_spectrum2-firmware_20241110-r2_x86_64.ipk
+Size: 21480396
+SHA256sum: 52a18734d28b2c23f04c10a44c3a59f977e9946c98220ced0a56cf53d6243dba
+
+Package: mlxsw
+Version: spectrum3-firmware_20241110-r2_x86
+Architecture: 64
+Filename: mlxsw_spectrum3-firmware_20241110-r2_x86_64.ipk
+Size: 17481772
+SHA256sum: 63aed314352c53a980b5ba99e458fcceb49eb91febe9ea9b6a6f03288b466788
+
+Package: mlxsw
+Version: spectrum4-firmware_20241110-r2_x86
+Architecture: 64
+Filename: mlxsw_spectrum4-firmware_20241110-r2_x86_64.ipk
+Size: 8430573
+SHA256sum: 3db2264ff4009186a049b20f9b4b379a4fae3701108eda6f94ba19774d3e0810
+
+Package: more
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: more_2.40.2-r1_x86_64.ipk
+Size: 20280
+SHA256sum: 36e1a0e0df3e016e10dbe4c489edd1fee221e32e0a8b5b05055a0ee3d5630339
+
+Package: mosdns
+Version: 5.3.3-r1_x86
+Architecture: 64
+Filename: mosdns_5.3.3-r1_x86_64.ipk
+Size: 6724563
+SHA256sum: bf41a852d280f1e9373c64d8dc41502633e9d6f9142ff9a1c4f4828dc315aded
+
+Package: mount-utils
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: mount-utils_2.40.2-r1_x86_64.ipk
+Size: 59331
+SHA256sum: 4dd9e9e89c662d221e724db4b2dafa94c60cc31ce56bb06f965696c592469a69
+
+Package: mt7601u-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: mt7601u-firmware_20241110-r2_x86_64.ipk
+Size: 27209
+SHA256sum: 40f94d9a823d492d568473c24e76886b6b74902d969652a9f2ec321e13fa346e
+
+Package: mt7622bt-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: mt7622bt-firmware_20241110-r2_x86_64.ipk
+Size: 54770
+SHA256sum: 5baa39b175d26fb1fdb06d1da7119d4a149aa7457fdac47aa41717f072ac8756
+
+Package: mt7921bt-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: mt7921bt-firmware_20241110-r2_x86_64.ipk
+Size: 402464
+SHA256sum: e097a675d6dc7eb180cc3137674319d03eaac3c44f3af6c39e900fdadb4f25b8
+
+Package: mt7922bt-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: mt7922bt-firmware_20241110-r2_x86_64.ipk
+Size: 516303
+SHA256sum: 0a39067157a89007d0ae9c4c3a4a024cbc93c895b64c5f80684bb77f539e26b9
+
+Package: mt7981-wo-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: mt7981-wo-firmware_20241110-r2_x86_64.ipk
+Size: 48355
+SHA256sum: 4be200c13914e05ef8881da464f895a2ba9291fead348c728008ee00002efbcd
+
+Package: mt7986-wo-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: mt7986-wo-firmware_20241110-r2_x86_64.ipk
+Size: 96387
+SHA256sum: 7f58b939edc44162727ad9b84179b4b164a463e296df64e47588a64e6ecff4f8
+
+Package: mt7988-2p5g-phy-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: mt7988-2p5g-phy-firmware_20241110-r2_x86_64.ipk
+Size: 40794
+SHA256sum: 4c4129f7a455103839d31bf82012c0272e26b946c5b814326734f83bd128a042
+
+Package: mt7988-wo-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: mt7988-wo-firmware_20241110-r2_x86_64.ipk
+Size: 94035
+SHA256sum: c4ced9dadb90c3b2540fd850ff822abf5da42d531df280bef4a7da8790bc987f
+
+Package: musl-fts
+Version: 1.2.7-r1_x86
+Architecture: 64
+Filename: musl-fts_1.2.7-r1_x86_64.ipk
+Size: 5679
+SHA256sum: 304b7f07d108d26f784b6f26cac0800b940b12df0b7f23e3c7de55c2b8fb58ce
+
+Package: mwifiex-pcie-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: mwifiex-pcie-firmware_20241110-r2_x86_64.ipk
+Size: 515541
+SHA256sum: 91be253ecb531d2c4e47ea58b31dc5a5df199692a369a560f047feba170cdb36
+
+Package: mwifiex-sdio-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: mwifiex-sdio-firmware_20241110-r2_x86_64.ipk
+Size: 877099
+SHA256sum: 2cbfcfe7912ff9cf6b48199c52d01de25340a85d310c8bad8a26557d56a9e0c4
+
+Package: mwl8k-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: mwl8k-firmware_20241110-r2_x86_64.ipk
+Size: 193244
+SHA256sum: 3dbd213b82c40c207e6f2b5def1fa2948edded880fa6f3bfaa6c2cdc76f87fc6
+
+Package: namei
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: namei_2.40.2-r1_x86_64.ipk
+Size: 11691
+SHA256sum: bfbeadb7f4465dcbae607cc4d3f825fc371d696d96b5a55cd63beb11a69638a4
+
+Package: natmap
+Version: 20240813-r3_x86
+Architecture: 64
+Filename: natmap_20240813-r3_x86_64.ipk
+Size: 24914
+SHA256sum: f24f0d0c4fc8cf5e9f95a8e375eecc240dbd6d3e7d0fc681f05c1c3095cace76
+
+Package: natpmpc
+Version: 20230423-r2_x86
+Architecture: 64
+Filename: natpmpc_20230423-r2_x86_64.ipk
+Size: 4278
+SHA256sum: 5d10d13c3dfd9854c33424e18452ad788d133405bab6eeda1a4e853bce41b93f
+
+Package: netdata
+Version: 1.38.1-r3_x86
+Architecture: 64
+Filename: netdata_1.38.1-r3_x86_64.ipk
+Size: 9702360
+SHA256sum: 9ab9278104628c2f3f7b6f718d6eb9227bdc1e9c6b0eed59c8648dd205ccb860
+
+Package: nftables-json
+Version: 1.1.1-r1_x86
+Architecture: 64
+Filename: nftables-json_1.1.1-r1_x86_64.ipk
+Size: 321581
+SHA256sum: 5ecff99327efb5a3c585f29a3dd839903a8c45df33772fa855b158fb202daa06
+
+Package: nftables-nojson
+Version: 1.1.1-r1_x86
+Architecture: 64
+Filename: nftables-nojson_1.1.1-r1_x86_64.ipk
+Size: 285250
+SHA256sum: 23fa7a8ac397746ac97e87646c63fea2271f464e4ad4b0aa84ec93465c1eaab5
+
+Package: npc
+Version: 0.26.24-r1_x86
+Architecture: 64
+Filename: npc_0.26.24-r1_x86_64.ipk
+Size: 4761235
+SHA256sum: 299e6d97e4588200f178bfa4a1c1e2cd16936c810fc4dc634cd38e1c5f31850a
+
+Package: nps
+Version: 0.26.24-r1_x86
+Architecture: 64
+Filename: nps_0.26.24-r1_x86_64.ipk
+Size: 5208706
+SHA256sum: dce0024f0a4613d8090ea8507e3d977f1f8b04926178ed383ff6d519bd92e63c
+
+Package: nsenter
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: nsenter_2.40.2-r1_x86_64.ipk
+Size: 26060
+SHA256sum: 08ca99239afeafeed4606afe420bb96abf32ab8796a3cd5191f70b29aad0d5ef
+
+Package: oniguruma5
+Version: 6.9.9-r1_x86
+Architecture: 64
+Filename: oniguruma5_6.9.9-r1_x86_64.ipk
+Size: 184511
+SHA256sum: c76a8eb91d8cbe7921c975ba2834b7052e0d0f73104821fb2aa18fa05da5462d
+
+Package: openssl-util
+Version: 3.0.19-r1_x86
+Architecture: 64
+Filename: openssl-util_3.0.19-r1_x86_64.ipk
+Size: 343830
+SHA256sum: 06fe0e2ab38c3813dac0fc8544c62fb47342611a3bb82483f23ccfae5821cef8
+
+Package: parted
+Version: 3.6-r1_x86
+Architecture: 64
+Filename: parted_3.6-r1_x86_64.ipk
+Size: 29901
+SHA256sum: 127b04ad2603d58b8d63522946cc0f97e8459f3fbea056eb255dd9323d2577cc
+
+Package: partx-utils
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: partx-utils_2.40.2-r1_x86_64.ipk
+Size: 56331
+SHA256sum: 7a820ee2e2cc9524aeb2098f1af36e22e4ded4a8c08b7cf1e8d0dce229587f02
+
+Package: prlimit
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: prlimit_2.40.2-r1_x86_64.ipk
+Size: 12928
+SHA256sum: 5a62c6bf60b7983c16c61a6c058a5ea6104c1f639adc0fe3e1b9cb364888b0a4
+
+Package: protobuf-lite
+Version: 3.17.3-r2_x86
+Architecture: 64
+Filename: protobuf-lite_3.17.3-r2_x86_64.ipk
+Size: 149288
+SHA256sum: 98cb9efc886c15277bd45e212b0ab93bc8713437b922c367064a114f8e8bfe79
+
+Package: protobuf
+Version: 3.17.3-r2_x86
+Architecture: 64
+Filename: protobuf_3.17.3-r2_x86_64.ipk
+Size: 1411759
+SHA256sum: 123702b905c010e381a56a1c001f20da07e04b2ba5ac9091e79821eca2cede1e
+
+Package: r8152-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: r8152-firmware_20241110-r2_x86_64.ipk
+Size: 10914
+SHA256sum: 8464f1e1045841218e7b45d4611c0c229dda36c7658b86376c393a059e30619e
+
+Package: r8169-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: r8169-firmware_20241110-r2_x86_64.ipk
+Size: 42318
+SHA256sum: d1a76f77c084b595d9fb00010efc36b25202fa3d239d085207dc136c77f42e25
+
+Package: radeon-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: radeon-firmware_20241110-r2_x86_64.ipk
+Size: 3518002
+SHA256sum: 837c07a8bb2a4eb9656a62199fff5c1e4b1f9a74f5680aae1689c7d436ac3372
+
+Package: rename
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: rename_2.40.2-r1_x86_64.ipk
+Size: 7702
+SHA256sum: 7b83be0bbdbb2e5e12885b9c24dddadc63758db1f4dd94c5a864557d87f2b218
+
+Package: resize2fs
+Version: 1.47.0-r2_x86
+Architecture: 64
+Filename: resize2fs_1.47.0-r2_x86_64.ipk
+Size: 22651
+SHA256sum: 7366c89a396ed094310ca0690cb93c1290b0e6a3bf55319669429f3b55fe76c4
+
+Package: rev
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: rev_2.40.2-r1_x86_64.ipk
+Size: 3709
+SHA256sum: 4a94a0764c8b1d98748f252024bf9889bfc7398be17c4d92468e14c2208d0801
+
+Package: rpcd-mod-file
+Version: 2025.09.01~bba95191-r1_x86
+Architecture: 64
+Filename: rpcd-mod-file_2025.09.01~bba95191-r1_x86_64.ipk
+Size: 7923
+SHA256sum: ead4dd32f0bee2948ff83444261e9d78c5f3b4830904023f6e719c22e3c50521
+
+Package: rpcd-mod-iwinfo
+Version: 2025.09.01~bba95191-r1_x86
+Architecture: 64
+Filename: rpcd-mod-iwinfo_2025.09.01~bba95191-r1_x86_64.ipk
+Size: 8296
+SHA256sum: 49eca981de35c7b9034553a634a31413914f544b5cee103b8cd97e275979280d
+
+Package: rpcd-mod-luci
+Version: 20240305-r1_x86
+Architecture: 64
+Filename: rpcd-mod-luci_20240305-r1_x86_64.ipk
+Size: 14540
+SHA256sum: de33b69e402b30ec614d15f9454a33fc3e39bcdaf064002324662d59ba3c642b
+
+Package: rpcd-mod-rpcsys
+Version: 2025.09.01~bba95191-r1_x86
+Architecture: 64
+Filename: rpcd-mod-rpcsys_2025.09.01~bba95191-r1_x86_64.ipk
+Size: 4687
+SHA256sum: 5a6f2079f55282701079efcc0f58de128b79098f5b07d259a784c6f6ec24559f
+
+Package: rpcd-mod-ucode
+Version: 2025.09.01~bba95191-r1_x86
+Architecture: 64
+Filename: rpcd-mod-ucode_2025.09.01~bba95191-r1_x86_64.ipk
+Size: 8493
+SHA256sum: b6a1e234588d983f7d7fcfec0258c5f7bce4339acf5a5d4ad2927d68c12050e5
+
+Package: rpcd
+Version: 2025.09.01~bba95191-r1_x86
+Architecture: 64
+Filename: rpcd_2025.09.01~bba95191-r1_x86_64.ipk
+Size: 25982
+SHA256sum: 3672cbb2cd7b3cc4dc9f1ff549a6fd24ec125cf1998faf428cf534d93dcddd98
+
+Package: rs9113-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rs9113-firmware_20241110-r2_x86_64.ipk
+Size: 85249
+SHA256sum: 3c0306a196129acb2b5520ae9d5256349d6435947251b7c4eb13231eea055fe3
+
+Package: rt2800-pci-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rt2800-pci-firmware_20241110-r2_x86_64.ipk
+Size: 4719
+SHA256sum: 2086128a91d55ddf173cd225de41351e317c28410c2f0a21c956c23530498e73
+
+Package: rt2800-usb-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rt2800-usb-firmware_20241110-r2_x86_64.ipk
+Size: 3677
+SHA256sum: 8121aa620d781c8b0fb029e40ed38ecbc4871fbfa30d0cbd4dd4b113d66c34e5
+
+Package: rt61-pci-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rt61-pci-firmware_20241110-r2_x86_64.ipk
+Size: 7301
+SHA256sum: 10bffedb26719e1c701428240ff46039236d7ff4911bd223de432bd4e6ff6257
+
+Package: rt73-usb-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rt73-usb-firmware_20241110-r2_x86_64.ipk
+Size: 2071
+SHA256sum: cc08b529527cade183287f84344fc6cdb01bd46bcc545d34f1d77e6e4f27d4b1
+
+Package: rtl8188eu-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8188eu-firmware_20241110-r2_x86_64.ipk
+Size: 11229
+SHA256sum: 101dbcbb411f8f9b12a52f3e0b7aeffcfc78eb926cfb8e4b35455f994094ff15
+
+Package: rtl8188fu-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8188fu-firmware_20241110-r2_x86_64.ipk
+Size: 14820
+SHA256sum: 43a972842e7ca82ae0dfffdc94268b8cb692f5c1679dac932ee3df2e54812b2a
+
+Package: rtl8192ce-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8192ce-firmware_20241110-r2_x86_64.ipk
+Size: 21520
+SHA256sum: 6493490254681b0d2ed0553fe269ba52de743b7fcf3cbfb989a3db15bb60b72b
+
+Package: rtl8192cu-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8192cu-firmware_20241110-r2_x86_64.ipk
+Size: 19517
+SHA256sum: 19fab02ef79b9cff1e4f53b730e1b169ccb5b22b61dfb5be05ced6fe55ea9191
+
+Package: rtl8192de-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8192de-firmware_20241110-r2_x86_64.ipk
+Size: 14311
+SHA256sum: 001409a80ae7301ea4b59666273f7e47f1deb51266ac2b2b7407f4c95540fd2f
+
+Package: rtl8192du-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8192du-firmware_20241110-r2_x86_64.ipk
+Size: 14539
+SHA256sum: e8d831834f97b112437f41e6962e8cdd773a121c352ae531f5e9c1b70b0c2d65
+
+Package: rtl8192eu-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8192eu-firmware_20241110-r2_x86_64.ipk
+Size: 21737
+SHA256sum: 6f6b3cbd81a08ca74243caf22f82e49fa92b5a5e51fa39ee190ca82ff94d4ff4
+
+Package: rtl8192se-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8192se-firmware_20241110-r2_x86_64.ipk
+Size: 37512
+SHA256sum: 2fe56f1e9292de2a6203073fb4208d560f1a0615377d43dd47b7492abe26234b
+
+Package: rtl8723au-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8723au-firmware_20241110-r2_x86_64.ipk
+Size: 28767
+SHA256sum: 95e6a2310bf8cd1e87c62c51b3c3536414aac502390f020ee87f0c59320bd44c
+
+Package: rtl8723be-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8723be-firmware_20241110-r2_x86_64.ipk
+Size: 36818
+SHA256sum: 9e1118d70581cdef596c8123658f2c2920eb0b7c455dc07517bb1bc871c1a4dd
+
+Package: rtl8723bu-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8723bu-firmware_20241110-r2_x86_64.ipk
+Size: 22203
+SHA256sum: d920d7f6872b446b0c635da9c6a2fcca4337fbffe1a315de3e143df1070e5a22
+
+Package: rtl8723de-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8723de-firmware_20241110-r2_x86_64.ipk
+Size: 19611
+SHA256sum: a264a71a07a3de3fc037e8e7ee5062570b51da670efb25fbe6f4609729ebe549
+
+Package: rtl8761a-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8761a-firmware_20241110-r2_x86_64.ipk
+Size: 43558
+SHA256sum: e1a60d347239921dfefc4370d5f1007d1316e753a82adf07b5944cd3cd057165
+
+Package: rtl8761b-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8761b-firmware_20241110-r2_x86_64.ipk
+Size: 32598
+SHA256sum: a95b6c93315c69acbad80ca70d55199a6b622950760ad8057a9c13d0498fa620
+
+Package: rtl8761bu-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8761bu-firmware_20241110-r2_x86_64.ipk
+Size: 31939
+SHA256sum: 137df495a8812448804d9fbe509e91815a1a00dc36d6adc6b193ca1489fcbbef
+
+Package: rtl8812a-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8812a-firmware_20241110-r2_x86_64.ipk
+Size: 18321
+SHA256sum: 77ec015baaca2de22d5ed93d738baa0d798ff5f1541d50d48c61248ac3376ce0
+
+Package: rtl8821a-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8821a-firmware_20241110-r2_x86_64.ipk
+Size: 21234
+SHA256sum: 75975cae2f864175b17e0a29d705cfbf9c2d551cac99a026a91bdbda2a87c05e
+
+Package: rtl8821ae-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8821ae-firmware_20241110-r2_x86_64.ipk
+Size: 28651
+SHA256sum: c8479c5b045418200cba22fe3f097e9db33ea736e22a100e5f638bf59ca8e09b
+
+Package: rtl8821ce-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8821ce-firmware_20241110-r2_x86_64.ipk
+Size: 58049
+SHA256sum: 3137d8762e4c5d57bc74870225b5d9f8587b0bc953b8ed9463c8b535d916bbdc
+
+Package: rtl8822be-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8822be-firmware_20241110-r2_x86_64.ipk
+Size: 83003
+SHA256sum: 8c5a0990b80dac1e23a951068358cbe369b99f4ff78773486a01ad48f0ca725e
+
+Package: rtl8822ce-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8822ce-firmware_20241110-r2_x86_64.ipk
+Size: 162622
+SHA256sum: c3af26c15afa9917deb7ebfc32419f1dff51c9ef6881609155f437d57a5d1950
+
+Package: rtl8851be-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8851be-firmware_20241110-r2_x86_64.ipk
+Size: 597735
+SHA256sum: 3a4550d8004aa83764bbea2cf4947f8657092434fe861f7197a8c71f8fcf11f7
+
+Package: rtl8852ae-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8852ae-firmware_20241110-r2_x86_64.ipk
+Size: 667291
+SHA256sum: 840a5538e28302e3d36da7cd3022031a3aead4c2de2b22239a9f267364252c90
+
+Package: rtl8852be-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8852be-firmware_20241110-r2_x86_64.ipk
+Size: 638993
+SHA256sum: 646963bb8ae463c25360fc688e7205248819ac0b0145ab28474a5978d3b58076
+
+Package: rtl8852ce-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8852ce-firmware_20241110-r2_x86_64.ipk
+Size: 829663
+SHA256sum: 2d1ebe4081bf37f8a0b2190ecbe5d015fc0810784c9a27a968ab0f385e7b5474
+
+Package: rtl8922ae-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: rtl8922ae-firmware_20241110-r2_x86_64.ipk
+Size: 804639
+SHA256sum: 1d35d027352033e66b1fff4b682ff01249c83662ae5b9cdd7117f3f30c91837f
+
+Package: script-utils
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: script-utils_2.40.2-r1_x86_64.ipk
+Size: 40675
+SHA256sum: c7109a281cd1e029169457af84dd7b368e5265e6684b31506f90bacdd553c419
+
+Package: setterm
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: setterm_2.40.2-r1_x86_64.ipk
+Size: 15962
+SHA256sum: 7480dae9331b3faeacce9204eff950e4fffa907d19bbe7c041c4306483ced9d3
+
+Package: sfdisk
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: sfdisk_2.40.2-r1_x86_64.ipk
+Size: 55756
+SHA256sum: 038187e8679a73470c98433be2f3f101733666be1184b1cd0b9ca13d34845244
+
+Package: sing-box-tiny
+Version: 1.12.25-r1_x86
+Architecture: 64
+Filename: sing-box-tiny_1.12.25-r1_x86_64.ipk
+Size: 11461701
+SHA256sum: 9b220214e44774a20f35def319a74fad6466695d75312ba5bb104afe1ad9ea40
+
+Package: sing-box
+Version: 1.12.25-r1_x86
+Architecture: 64
+Filename: sing-box_1.12.25-r1_x86_64.ipk
+Size: 16208811
+SHA256sum: b7c6aaf5194e5cb9f93299fb1f47437ab0951209f805f545efea0b745ce656e5
+
+Package: socat
+Version: 1.8.0.3-r2_x86
+Architecture: 64
+Filename: socat_1.8.0.3-r2_x86_64.ipk
+Size: 129671
+SHA256sum: 7f7d04dee81924c3482b68b7068760ced1bd7a49fb7b540ac3b201583c5fd476
+
+Package: swap-utils
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: swap-utils_2.40.2-r1_x86_64.ipk
+Size: 50325
+SHA256sum: 82c216a05f66c14709bdf91f7d83aca9a4c8b93698d2fd3707b6e58d3f25b9b7
+
+Package: taskset
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: taskset_2.40.2-r1_x86_64.ipk
+Size: 21631
+SHA256sum: c45c099f74d2864cc80f5d11cbe18f8e4c73918f4f7aeea2582b0968c1aa454a
+
+Package: terminfo
+Version: 6.4-r2_x86
+Architecture: 64
+Filename: terminfo_6.4-r2_x86_64.ipk
+Size: 9499
+SHA256sum: b66087925682e5810bdb6653107c9a987c5c6f024f85236eb8659bffa559d77e
+
+Package: ti-3410-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ti-3410-firmware_20241110-r2_x86_64.ipk
+Size: 8650
+SHA256sum: 5c18af55cd4ac9d0b5a8265b030062b485371c4c2b784df19c3fa75c3a52293f
+
+Package: ti-5052-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: ti-5052-firmware_20241110-r2_x86_64.ipk
+Size: 8627
+SHA256sum: d86994ae6502191520d5461af39507d1804e6bfdb5e78929afc2c4b67bcd9b38
+
+Package: transmission-cli
+Version: 4.0.6-r2_x86
+Architecture: 64
+Filename: transmission-cli_4.0.6-r2_x86_64.ipk
+Size: 674417
+SHA256sum: 6a50ccf668169954bd8e5486c6e60309515be71dee521b92e921dd608c71d4a8
+
+Package: transmission-daemon
+Version: 4.0.6-r2_x86
+Architecture: 64
+Filename: transmission-daemon_4.0.6-r2_x86_64.ipk
+Size: 437516
+SHA256sum: 6a13b19da9f1db7b271c2920d49155b245d795e03f982678fd1a5e06451386fe
+
+Package: transmission-remote
+Version: 4.0.6-r2_x86
+Architecture: 64
+Filename: transmission-remote_4.0.6-r2_x86_64.ipk
+Size: 120300
+SHA256sum: 72bc4abe8648763713a177a5811017a7c585f3cccc505831a3dec90a7fe53a06
+
+Package: transmission-web-control
+Version: 2021.09.25~4b2e1858-r3
+Architecture: all
+Filename: transmission-web-control_2021.09.25~4b2e1858-r3_all.ipk
+Size: 1170513
+SHA256sum: 3a100aa9eb03f0ae81298194e53d82798348285b9052b5cfe1f955c0a90e0d75
+
+Package: transmission-web
+Version: 4.0.6-r2
+Architecture: all
+Filename: transmission-web_4.0.6-r2_all.ipk
+Size: 88909
+SHA256sum: 78462540b0dc596ea3cc80b717415e0aefb07146dff0743b73f88bce65d5ad5b
+
+Package: tune2fs
+Version: 1.47.0-r2_x86
+Architecture: 64
+Filename: tune2fs_1.47.0-r2_x86_64.ipk
+Size: 38999
+SHA256sum: da73c0795bf350c096194aa0edcb38c0e7cd8426544398d470046d57bafd1800
+
+Package: ubox
+Version: 2024.04.26~85f10530-r1_x86
+Architecture: 64
+Filename: ubox_2024.04.26~85f10530-r1_x86_64.ipk
+Size: 18530
+SHA256sum: 09a60e115f8f2007acd9a5bcd78e3ae93421e9eee42fe76e9048b6371e7afa89
+
+Package: ubus
+Version: 2025.10.17~60e04048-r1_x86
+Architecture: 64
+Filename: ubus_2025.10.17~60e04048-r1_x86_64.ipk
+Size: 6958
+SHA256sum: d8cbd2f206b4f2b4a89a205483d1fe8d148466c97390f9039723c9b77205d2c9
+
+Package: ubusd
+Version: 2025.10.17~60e04048-r1_x86
+Architecture: 64
+Filename: ubusd_2025.10.17~60e04048-r1_x86_64.ipk
+Size: 13769
+SHA256sum: 3d30b637eb7fe47ec03d571bfc387167e4fe2e9af94a63eb47a935fdde2079a1
+
+Package: uci
+Version: 2025.01.20~16ff0bad-r1_x86
+Architecture: 64
+Filename: uci_2025.01.20~16ff0bad-r1_x86_64.ipk
+Size: 7871
+SHA256sum: 2a66fd550376f04bdd267b9000a86cab53c98045e26ee1bcfdc0b80749007d04
+
+Package: uclient-fetch
+Version: 2024.10.22~88ae8f20-r1_x86
+Architecture: 64
+Filename: uclient-fetch_2024.10.22~88ae8f20-r1_x86_64.ipk
+Size: 8530
+SHA256sum: 70a28550a54823a58168e20baae70e0491e82346427929510fc41f79ffd2a035
+
+Package: ucode-mod-debug
+Version: 2025.07.18~3f64c808-r1_x86
+Architecture: 64
+Filename: ucode-mod-debug_2025.07.18~3f64c808-r1_x86_64.ipk
+Size: 9027
+SHA256sum: 2f4a9f7b58d28eaf3d0b9b1173d5de634f97ef27f09c09c3455c87c047a73f0b
+
+Package: ucode-mod-digest
+Version: 2025.07.18~3f64c808-r1_x86
+Architecture: 64
+Filename: ucode-mod-digest_2025.07.18~3f64c808-r1_x86_64.ipk
+Size: 18915
+SHA256sum: f03c94a9fe9fc2912df2c825f6b04b4dda3c2443cc8814982d8a289a34a7b6d6
+
+Package: ucode-mod-fs
+Version: 2025.07.18~3f64c808-r1_x86
+Architecture: 64
+Filename: ucode-mod-fs_2025.07.18~3f64c808-r1_x86_64.ipk
+Size: 12504
+SHA256sum: f029dbd26bb4cf4cea2be2ce094bdb0e5f45ced73874dfd7347037f476e09b2e
+
+Package: ucode-mod-html
+Version: 1_x86
+Architecture: 64
+Filename: ucode-mod-html_1_x86_64.ipk
+Size: 30261
+SHA256sum: e1ba131b9e14c081296061fc3810a267dab297f07089b4da685fda1f8ddfbc78
+
+Package: ucode-mod-log
+Version: 2025.07.18~3f64c808-r1_x86
+Architecture: 64
+Filename: ucode-mod-log_2025.07.18~3f64c808-r1_x86_64.ipk
+Size: 5178
+SHA256sum: dc0ce8fdf0429e0949aaa397aa498824dcbcf1ed75860aa1bb8f7ce1e561824b
+
+Package: ucode-mod-lua
+Version: 1_x86
+Architecture: 64
+Filename: ucode-mod-lua_1_x86_64.ipk
+Size: 9521
+SHA256sum: 1e0775c672dbb5bb1954771b18a86b5d6cf36eae4fb201b26b5f3393165581c5
+
+Package: ucode-mod-math
+Version: 2025.07.18~3f64c808-r1_x86
+Architecture: 64
+Filename: ucode-mod-math_2025.07.18~3f64c808-r1_x86_64.ipk
+Size: 3453
+SHA256sum: 5516dd3a34c834540cb5558f640c483097485eb3a1b482e3d1073630e1a1c004
+
+Package: ucode-mod-nl80211
+Version: 2025.07.18~3f64c808-r1_x86
+Architecture: 64
+Filename: ucode-mod-nl80211_2025.07.18~3f64c808-r1_x86_64.ipk
+Size: 23550
+SHA256sum: 0168910df8be3a5ccb9a71e05611d500bcd05f5067361822cbfe8fd40a9e9ff9
+
+Package: ucode-mod-resolv
+Version: 2025.07.18~3f64c808-r1_x86
+Architecture: 64
+Filename: ucode-mod-resolv_2025.07.18~3f64c808-r1_x86_64.ipk
+Size: 8492
+SHA256sum: a4cb4586667efc1e6f752f337d4db09492cb296fffb557ccaa95523e203f8acd
+
+Package: ucode-mod-rtnl
+Version: 2025.07.18~3f64c808-r1_x86
+Architecture: 64
+Filename: ucode-mod-rtnl_2025.07.18~3f64c808-r1_x86_64.ipk
+Size: 29406
+SHA256sum: 38e1e70f4ffdc372e63055e02a24814bbc099298ed23c699d946118254d4dbdd
+
+Package: ucode-mod-socket
+Version: 2025.07.18~3f64c808-r1_x86
+Architecture: 64
+Filename: ucode-mod-socket_2025.07.18~3f64c808-r1_x86_64.ipk
+Size: 25772
+SHA256sum: 4b776b244a346875a399d1b848dd02e8af20e6e2c4d7b4288e1a94f25554b461
+
+Package: ucode-mod-struct
+Version: 2025.07.18~3f64c808-r1_x86
+Architecture: 64
+Filename: ucode-mod-struct_2025.07.18~3f64c808-r1_x86_64.ipk
+Size: 13104
+SHA256sum: c7aedf8533fdb70d85986fd976e5b1bf4b6619c7ab5d6b17d8d93e2dfc803e66
+
+Package: ucode-mod-ubus
+Version: 2025.07.18~3f64c808-r1_x86
+Architecture: 64
+Filename: ucode-mod-ubus_2025.07.18~3f64c808-r1_x86_64.ipk
+Size: 18241
+SHA256sum: f0a85f51501516931c4aaf596f39c7febd83d06cec2a54d643896d9024dbb43b
+
+Package: ucode-mod-uci
+Version: 2025.07.18~3f64c808-r1_x86
+Architecture: 64
+Filename: ucode-mod-uci_2025.07.18~3f64c808-r1_x86_64.ipk
+Size: 8922
+SHA256sum: 0a12a48ce43e1c2b8ecde1dfe7956fe07398b74ce97803a4f9eb53ba820f8267
+
+Package: ucode-mod-uclient
+Version: 2024.10.22~88ae8f20-r1_x86
+Architecture: 64
+Filename: ucode-mod-uclient_2024.10.22~88ae8f20-r1_x86_64.ipk
+Size: 5984
+SHA256sum: ea6b9af0348d76885b43815700abbf304370e5e5069cf555882c874d72a33d9a
+
+Package: ucode-mod-udebug
+Version: 2025.08.24~edeb4d6d_x86
+Architecture: 64
+Filename: ucode-mod-udebug_2025.08.24~edeb4d6d_x86_64.ipk
+Size: 11184
+SHA256sum: ed940f518157a1005782d792f5b965771d36e537e2ca91895bf18429bebfc3cb
+
+Package: ucode-mod-uloop
+Version: 2025.07.18~3f64c808-r1_x86
+Architecture: 64
+Filename: ucode-mod-uloop_2025.07.18~3f64c808-r1_x86_64.ipk
+Size: 10050
+SHA256sum: 1c0c07ecd7e820b9a70347284d3c26d4d7760e2224f48e5eadee50a6e0030095
+
+Package: ucode
+Version: 2025.07.18~3f64c808-r1_x86
+Architecture: 64
+Filename: ucode_2025.07.18~3f64c808-r1_x86_64.ipk
+Size: 7263
+SHA256sum: 6b1434299d817750286097e145eaff159aa6bfee8dc2f316709c73c145c6c56c
+
+Package: udebug-cli
+Version: 2025.08.24~edeb4d6d_x86
+Architecture: 64
+Filename: udebug-cli_2025.08.24~edeb4d6d_x86_64.ipk
+Size: 3887
+SHA256sum: c0bbf9f7fd66ff4c1c75ba8e11d6648b0f0b46f759c01fb8dbb78e3df48838c8
+
+Package: udebugd
+Version: 2025.08.24~edeb4d6d_x86
+Architecture: 64
+Filename: udebugd_2025.08.24~edeb4d6d_x86_64.ipk
+Size: 9425
+SHA256sum: 4bce9e9ba5beef2e96f9a463e837c233d1f7c1935c3bb618c53752bc81080f66
+
+Package: uhttpd-mod-lua
+Version: 2025.07.06~7e64e8ba-r4_x86
+Architecture: 64
+Filename: uhttpd-mod-lua_2025.07.06~7e64e8ba-r4_x86_64.ipk
+Size: 4353
+SHA256sum: 14c17d9d1883273a9a53ee18865c9f0777d64f180f63c7d9f2b2f4fbcbbd4f3b
+
+Package: uhttpd-mod-ubus
+Version: 2025.07.06~7e64e8ba-r4_x86
+Architecture: 64
+Filename: uhttpd-mod-ubus_2025.07.06~7e64e8ba-r4_x86_64.ipk
+Size: 9121
+SHA256sum: fa49551c8876fb8cad21616b45f217aeb3143f9fa597e5052e0562b5ac93cdaa
+
+Package: uhttpd-mod-ucode
+Version: 2025.07.06~7e64e8ba-r4_x86
+Architecture: 64
+Filename: uhttpd-mod-ucode_2025.07.06~7e64e8ba-r4_x86_64.ipk
+Size: 5277
+SHA256sum: 68d25c1bc02f078ef7a1ae55bab2f3ba18e5a83765f9a7873d98db3dc64aea0c
+
+Package: uhttpd
+Version: 2025.07.06~7e64e8ba-r4_x86
+Architecture: 64
+Filename: uhttpd_2025.07.06~7e64e8ba-r4_x86_64.ipk
+Size: 30595
+SHA256sum: 039d276bb322bdbdb17190f5e5c3577ef76f8b46b92add7598a31cc5aea1fc93
+
+Package: unshare
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: unshare_2.40.2-r1_x86_64.ipk
+Size: 29444
+SHA256sum: b25632e138f9cb987199dc25f42a2465c14b13e27e3322b1b600a2865fafd008
+
+Package: uuidd
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: uuidd_2.40.2-r1_x86_64.ipk
+Size: 15140
+SHA256sum: 9c1a7ae84c9260fac84863f618135cba83ae3bcbcceefcc19520164a5db29019
+
+Package: uuidgen
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: uuidgen_2.40.2-r1_x86_64.ipk
+Size: 10757
+SHA256sum: 4eff6cf4e16c77994c31f7bf6d1b041e9a2171d4051638a2ddbdbc91df1bb144
+
+Package: v2ray-geoip
+Version: 202603050223-r1
+Architecture: all
+Filename: v2ray-geoip_202603050223-r1_all.ipk
+Size: 3694400
+SHA256sum: 56992925f4c43bdee4e7dbcb6b72b87a936c3579a92b7148ee8fbb878919cf93
+
+Package: v2ray-geosite-ir
+Version: 202603230100-r1
+Architecture: all
+Filename: v2ray-geosite-ir_202603230100-r1_all.ipk
+Size: 1068121
+SHA256sum: ec6880cea0675e44d42953993487cdbe6fde93a9f781630ed8417be8b621a9fb
+
+Package: v2ray-geosite
+Version: 20260326050832-r1
+Architecture: all
+Filename: v2ray-geosite_20260326050832-r1_all.ipk
+Size: 588298
+SHA256sum: c77455172c2ac728661aaa91ee4b4c169e9ebf88f2c5bb643f908f0d669cf73b
+
+Package: v2raya
+Version: 2.2.7.3-r1_x86
+Architecture: 64
+Filename: v2raya_2.2.7.3-r1_x86_64.ipk
+Size: 12046370
+SHA256sum: 01f336711d8072148eb4b3d3df701b65bd159a1df7089a8ba7fe47bfe8659362
+
+Package: wall
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: wall_2.40.2-r1_x86_64.ipk
+Size: 12616
+SHA256sum: 5768a5fa61251609fc0858ab10f5fc84796c46c4176fbe05e8560395f9c65120
+
+Package: wget-nossl
+Version: 1.24.5-r1_x86
+Architecture: 64
+Filename: wget-nossl_1.24.5-r1_x86_64.ipk
+Size: 194745
+SHA256sum: b80941b0eb00251f3cdd799b8e59003b743f76d2743becabeba7d2118179dd44
+
+Package: wget-ssl
+Version: 1.24.5-r1_x86
+Architecture: 64
+Filename: wget-ssl_1.24.5-r1_x86_64.ipk
+Size: 216890
+SHA256sum: 736c6543f345f325af65322eb76d6fe72ca991b97eb794c75c09df2f012892f2
+
+Package: whereis
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: whereis_2.40.2-r1_x86_64.ipk
+Size: 9504
+SHA256sum: 5fcc165045a81fb341ed0ae19ef9d732f5f791118cf7d6e0cdf2c5b95cc621b8
+
+Package: wil6210-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: wil6210-firmware_20241110-r2_x86_64.ipk
+Size: 255773
+SHA256sum: 6ac99c54e206c52d9525913659084ac49712f9f0f0063d845ace3d0659bf1856
+
+Package: wipefs
+Version: 2.40.2-r1_x86
+Architecture: 64
+Filename: wipefs_2.40.2-r1_x86_64.ipk
+Size: 16611
+SHA256sum: c4619ecf002794ac101eece6fbae07720e7ca59a645e82eb93a11a553ef9e546
+
+Package: wl12xx-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: wl12xx-firmware_20241110-r2_x86_64.ipk
+Size: 1175151
+SHA256sum: 8f6c9cb30fd5e372f55db80b8183265a3d94cee1bf1be90dbfdfd108ec528aea
+
+Package: wl18xx-firmware
+Version: 20241110-r2_x86
+Architecture: 64
+Filename: wl18xx-firmware_20241110-r2_x86_64.ipk
+Size: 343971
+SHA256sum: b01525c21dfe0872b116e4912f68e209f2e6ad9daadc673ce55beceb1441a693
+
+Package: xray-core
+Version: 25.2.21-r1_x86
+Architecture: 64
+Filename: xray-core_25.2.21-r1_x86_64.ipk
+Size: 10714154
+SHA256sum: eb85f3e99a0d1c50f7ba81ea34c1f197cf2c57621337692cc0af277cd1a3445f
+
+Package: xray-example
+Version: 25.2.21-r1
+Architecture: all
+Filename: xray-example_25.2.21-r1_all.ipk
+Size: 1430
+SHA256sum: 154db9bcad08b8efe018211dd5a847481249926accaf143f0b240248a3f50778
+
+Package: yq
+Version: 4.45.1-r1_x86
+Architecture: 64
+Filename: yq_4.45.1-r1_x86_64.ipk
+Size: 4182125
+SHA256sum: 7c5d4ccdd3eea3c8abc0bff9030c301a085c16744adb7dbc4678e24a003b7db6
+
+Package: zlib-dev
+Version: 1.3.1-r1_x86
+Architecture: 64
+Filename: zlib-dev_1.3.1-r1_x86_64.ipk
+Size: 80540
+SHA256sum: 0074a844e55dea1427cd0082c07a25490777a03492106342506e6563468ee067
+
+Package: zlib
+Version: 1.3.1-r1_x86
+Architecture: 64
+Filename: zlib_1.3.1-r1_x86_64.ipk
+Size: 44055
+SHA256sum: e37b84681c6b7ab4521a88efa21aa97d832aaa9a4d7aa5d954bffc81d1a542ce
+
