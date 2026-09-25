@@ -1,0 +1,112 @@
+name: Build SJG Plugin Repo
+
+on:
+  workflow_dispatch:          # 手动触发：仓库 Actions 页点 Run workflow
+  schedule:
+    - cron: '0 2 * * 1'       # 每周一 02:00 UTC（自动更新到插件上游最新）
+  push:
+    paths:
+      - 'plugins.conf'
+      - 'scripts/**'
+      - '.github/workflows/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sjg-packages
+  cancel-in-progress: false
+
+jobs:
+  # ============ 编译：apk 系（25.12.2）与 opkg 系（24.10.6）并行 ============
+  build:
+    name: Build ${{ matrix.fmt }} (${{ matrix.version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - fmt: opkg
+            version: '24.10.6'
+            sdk: https://dl.wrt.moe/releases/24.10.6/targets/x86/64/immortalwrt-sdk-24.10.6-x86-64_gcc-13.3.0_musl.Linux-x86_64.tar.zst
+          - fmt: apk
+            version: '25.12.2'
+            sdk: https://dl.wrt.moe/releases/25.12.2/targets/x86/64/immortalwrt-sdk-25.12.2-x86-64_gcc-14.3.0_musl.Linux-x86_64.tar.zst
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 安装构建依赖
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq build-essential zstd wget git file gawk gettext \
+            python3 unzip rsync patch diffutils cpio perl \
+            libncurses5-dev zlib1g-dev libssl-dev usign apk-tools
+
+      - name: 复用既有签名密钥（首次为空则构建时自动生成）
+        run: |
+          git fetch origin gh-pages --depth 1 2>/dev/null || true
+          git checkout gh-pages -- keys/ 2>/dev/null || true
+          ls keys/ 2>/dev/null || echo "无既有密钥，将由 gen-index.sh 自动生成"
+
+      - name: 编译插件包（SDK + 收录清单）
+        run: |
+          bash scripts/fetch-and-build.sh "${{ matrix.sdk }}" \
+            "$PWD/repo/${{ matrix.fmt }}/x86_64" "$PWD/plugins.conf"
+        timeout-minutes: 180
+
+      - name: 生成索引与签名
+        run: |
+          bash scripts/gen-index.sh "${{ matrix.fmt }}" \
+            "$PWD/repo/${{ matrix.fmt }}/x86_64" "$PWD/keys" "$PWD"
+
+      - name: 上传构建产物
+        uses: actions/upload-artifact@v4
+        with:
+          name: repo-${{ matrix.fmt }}
+          path: |
+            repo/
+            keys/
+          retention-days: 7
+
+  # ============ 发布：合并 apk/opkg/keys 推送到 gh-pages（GitHub Pages 源） ============
+  deploy:
+    name: Deploy to gh-pages
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: repo-*
+          merge-multiple: true
+          path: merged
+
+      - name: 合并并推送 gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          git config user.name "sjg-packages-bot"
+          git config user.email "actions@github.com"
+          git fetch origin gh-pages --depth 1 || true
+          if git rev-parse --verify origin/gh-pages >/dev/null 2>&1; then
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+          fi
+          rm -rf apk opkg keys .nojekyll
+          cp -r merged/repo/* .
+          if [ -d merged/keys ]; then cp -r merged/keys .; fi
+          touch .nojekyll
+          echo "--- 发布内容预览 ---"
+          find apk opkg keys -type f 2>/dev/null | head -n 60
+          git add -A
+          if git diff --cached --quiet; then
+            echo "无变更，跳过提交"
+          else
+            git commit -m "build: update packages $(date -u +%F)"
+            git push origin gh-pages
+          fi
