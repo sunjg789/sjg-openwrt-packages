@@ -71,7 +71,7 @@ jobs:
           cd /tmp/immortalwrt-src
           make defconfig
           make tools/compile -j"$(nproc)" V=s
-          make package/system/apk/host-compile -j"$(nproc)" V=s
+          make package/system/apk/host/compile -j"$(nproc)" V=s
           APK_HOST="/tmp/immortalwrt-src/staging_dir/host/bin/apk"
           [ -x "$APK_HOST" ] || { echo "!! host apk 未生成"; exit 1; }
           echo "==> 完整 host apk: $APK_HOST"
