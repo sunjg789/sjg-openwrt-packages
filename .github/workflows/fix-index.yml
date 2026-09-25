@@ -78,22 +78,26 @@ jobs:
           APKS_DIR="$ROOT/merged/repo/apk/x86_64"
           [ -d "$APKS_DIR" ] || { echo "!! 无 apk 包目录 $APKS_DIR"; exit 1; }
           [ -f "$ROOT/merged/keys/secret.key" ] || { echo "!! 无签名密钥，先跑 opkg 索引步骤生成"; exit 1; }
-          wget -q "https://dl.wrt.moe/releases/25.12.2/targets/x86/64/immortalwrt-25.12.2-x86-64-generic-ext4-rootfs.img.gz" -O /tmp/rootfs.img.gz
-          gunzip -f /tmp/rootfs.img.gz
-          sudo mkdir -p /mnt/sjg-rootfs
-          sudo mount -o loop /tmp/rootfs.img /mnt/sjg-rootfs
-          # bind-mount 宿主 apk 目录进 chroot（rootfs 镜像小，拷不进去 400MB）
-          sudo mkdir -p /mnt/sjg-rootfs/tmp/apks
-          sudo mount --bind "$APKS_DIR" /mnt/sjg-rootfs/tmp/apks
-          sudo chroot /mnt/sjg-rootfs /bin/sh -c \
-            "echo '== apk 版本 =='; /usr/bin/apk --version 2>&1 | head -2; echo '== index 帮助 =='; /usr/bin/apk index --help 2>&1 | head -60"
-          sudo umount /mnt/sjg-rootfs/tmp/apks
-          sudo umount /mnt/sjg-rootfs
-          # 用 SDK usign 签名（SDK 原始路径，勿 cp）
+          # rootfs 的 apk-tools 3.0.5 是 OpenWrt 裁剪版（无 index 命令）——
+          # 改用 Alpine 官方静态 apk-tools v3（完整版，含 index；包格式同为 v3）
+          for BASE in "v3.22" "v3.21" "edge"; do
+            PKG="$(curl -s "https://dl-cdn.alpinelinux.org/alpine/$BASE/main/x86_64/" | grep -o 'apk-tools-static-[0-9a-z._]*\.apk' | sort -V | tail -1)"
+            [ -n "$PKG" ] || continue
+            wget -q "https://dl-cdn.alpinelinux.org/alpine/$BASE/main/x86_64/$PKG" -O /tmp/apk-static.apk
+            mkdir -p /tmp/sbin
+            tar -xzf /tmp/apk-static.apk -C /tmp sbin/apk.static
+            VER="$(/tmp/sbin/apk.static --version 2>&1 | head -1)"
+            echo "==> $BASE: $PKG -> $VER"
+            case "$VER" in *3.*) echo "==> v3 OK"; break;; *) echo "==> 非 v3，继续探测";; esac
+          done
+          /tmp/sbin/apk.static --version
+          cd "$APKS_DIR"
+          /tmp/sbin/apk.static --allow-untrusted index -o APKINDEX.tar.gz ./*.apk
+          ls -la APKINDEX.tar.gz
+          # 用 SDK usign 签名（SDK 原始路径，勿 cp；usign 默认输出 <msg>.sig，无 -o 选项）
           SDK25="$(find "$ROOT" -maxdepth 1 -type d -name '*sdk*25.12*' | head -n1)"
           USIGN="$SDK25/staging_dir/host/bin/usign"
-          cd "$APKS_DIR"
-          "$USIGN" -S -m APKINDEX.tar.gz -s "$ROOT/merged/keys/secret.key" -o APKINDEX.tar.gz.sig
+          "$USIGN" -S -m APKINDEX.tar.gz -s "$ROOT/merged/keys/secret.key"
           echo "==> apk 产物"
           ls -la APKINDEX.tar.gz APKINDEX.tar.gz.sig
 
