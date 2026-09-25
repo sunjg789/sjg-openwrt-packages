@@ -41,6 +41,10 @@ echo "==> [3/4] 克隆插件源码（收录清单: $PLUGINS_CONF）"
 source "$PLUGINS_CONF"
 for entry in "${PLUGINS[@]}"; do
   IFS='|' read -r dir url target note <<< "$entry"
+  if [ "$url" = "SMALLPKG" ]; then
+    echo "    · $dir <- small-package（稀疏拉取，见 [2.5/4]）"
+    continue
+  fi
   if [ -d "package/$dir" ]; then rm -rf "package/$dir"; fi
   if git clone --quiet --depth 1 --single-branch "$url" "package/$dir" 2>/dev/null; then
     echo "    ✓ $dir  <-  $url"
@@ -49,11 +53,45 @@ for entry in "${PLUGINS[@]}"; do
   fi
 done
 
+echo "==> [2.5/4] 同步 small-package 收录（kenzok8 热门源码合集，稀疏拉取）..."
+SMALL_SRC="https://github.com/kenzok8/small-package.git"
+SMALL_DIRS=()
+for entry in "${PLUGINS[@]}"; do
+  IFS='|' read -r dir url target note <<< "$entry"
+  if [ "$url" = "SMALLPKG" ]; then
+    IFS=',' read -ra ds <<< "$dir"
+    for d in "${ds[@]}"; do SMALL_DIRS+=("$d"); done
+  fi
+done
+if [ "${#SMALL_DIRS[@]}" -gt 0 ]; then
+  if [ ! -d "$WORK/smallpkg" ]; then
+    git clone --depth 1 --filter=blob:none --sparse "$SMALL_SRC" "$WORK/smallpkg" 2>/dev/null \
+      || git clone --depth 1 "$SMALL_SRC" "$WORK/smallpkg" 2>/dev/null \
+      || { echo "    ✗ small-package clone 失败（跳过全部 SMALLPKG 条目）"; SMALL_DIRS=(); }
+  fi
+  if [ "${#SMALL_DIRS[@]}" -gt 0 ]; then
+    (cd "$WORK/smallpkg" && git sparse-checkout set "${SMALL_DIRS[@]}") 2>/dev/null || true
+    for d in "${SMALL_DIRS[@]}"; do
+      if [ -d "package/$d" ]; then echo "    目录已存在，跳过: $d"; continue; fi
+      if [ -d "$WORK/smallpkg/$d" ]; then
+        cp -r "$WORK/smallpkg/$d" "package/"
+        echo "    ✓ smallpkg: $d"
+      else
+        echo "    ✗ small-package 中无此目录: $d"
+      fi
+    done
+  fi
+fi
+
 echo "==> [4/4] 逐个编译插件"
 for entry in "${PLUGINS[@]}"; do
   IFS='|' read -r dir url target note <<< "$entry"
   if [ "$target" = "-" ]; then
     echo "    - 跳过编译（仅克隆，依赖自动解析）: $dir"
+    continue
+  fi
+  if [ ! -d "package/$target" ]; then
+    echo "    ✗ 源码目录缺失，跳过: $target（依赖未拉取或上游改名）"
     continue
   fi
   echo "==> 编译 $target（$note）"

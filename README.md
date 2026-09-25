@@ -41,12 +41,15 @@ sjg-openwrt-packages/
     └── opkg/x86_64/                   # ImmortalWrt 24.10.6（opkg 包管理器）
 ```
 
-## 已收录插件（plugins.conf）
+## 已收录插件（plugins.conf，36 项）
+
+### 独立上游（逐项跟踪上游仓库）
 
 | 插件 | 上游源 | 说明 |
 |---|---|---|
 | luci-app-openclash | vernesong/OpenClash | Clash 内核客户端 |
 | luci-app-passwall | xiaorouji/openwrt-passwall | 科学上网（依赖 openwrt-passwall-packages 自动解析） |
+| luci-app-passwall2 | xiaorouji/openwrt-passwall2 | PassWall2 科学上网（新一代） |
 | lucky + luci-app-lucky | gdy666/lucky | 网络工具集（端口转发/DDNS/Web服务） |
 | luci-theme-argon + argon-config | jerrykuku/luci-theme-argon | Argon 主题 |
 | luci-app-adguardhome | rufengsuixing/luci-app-adguardhome | AdGuardHome 插件（主程序运行后手动下载） |
@@ -56,7 +59,36 @@ sjg-openwrt-packages/
 | luci-app-unblockneteasemusic | UnblockNeteaseMusic/… | 解锁网易云音乐 |
 | luci-app-partexp | gitee open-wrt/openwrt-packages | 分区扩展 |
 
-> 说明：官方源已内置的（vlmcsd、ramfree、arpbind、ttyd、docker、wireguard、luci-ssl、taskbot、commands、adguardhome 等）不走自建库，直接用官方源即可。想新增插件：在 `plugins.conf` 加一行，推送到 main 分支即自动触发重建。
+### 同步自 kenzok8/small-package（热门源码合集，稀疏拉取）
+
+| 插件 | 说明 |
+|---|---|
+| luci-app-homeproxy | HomeProxy 代理（ImmortalWrt 官方） |
+| luci-app-nikki | Nikki 代理（sing-box 内核） |
+| luci-app-fchomo | mihomo 前端（Clash Meta） |
+| luci-app-v2raya | v2rayA 客户端 |
+| luci-app-mosdns | mosdns 本地 DNS（AdGuard 分流） |
+| luci-app-smartdns | SmartDNS 智能解析 |
+| luci-app-dnsproxy | dnsproxy（AdGuard DNS 代理） |
+| luci-app-alist | Alist 网盘挂载 |
+| luci-app-aria2 | Aria2 下载 |
+| luci-app-filebrowser | FileBrowser 文件管理 |
+| luci-app-transmission | Transmission BT 下载 |
+| luci-app-gost | GOST 隧道/端口转发 |
+| luci-app-udp2raw | udp2raw 隧道（伪装 UDP） |
+| luci-app-socat | socat 端口转发 |
+| luci-app-natmap | NATMap 公网端口映射 |
+| luci-app-npc | NPC 内网穿透 |
+| luci-app-ddns-go | DDNS-GO 动态域名 |
+| luci-app-netdata | NetData 实时监控 |
+| luci-app-autoreboot | 定时重启 |
+| luci-app-poweroff | 定时关机 |
+| luci-app-advanced | 高级设置（简化复杂配置） |
+| luci-app-wolplus | 网络唤醒 WOL Plus |
+| luci-theme-design | Design 主题 |
+| luci-theme-edge | Edge 主题 |
+
+> 说明：官方源已内置的（vlmcsd、ramfree、arpbind、ttyd、docker、wireguard、luci-ssl、taskbot、commands 等）不走自建库，直接用官方源即可。想新增插件：在 `plugins.conf` 加一行（独立上游填仓库 URL；small-package 收录的填 `SMALLPKG`），推送到 main 分支即自动触发重建。
 
 ## 快速开始（约 5 分钟）
 
@@ -71,7 +103,7 @@ sjg-openwrt-packages/
    git push -u origin main
    ```
 3. **启用 Pages**：仓库 Settings → Pages → Source 选 **Deploy from a branch** → 分支 `gh-pages` / root → Save。
-4. 到 **Actions** 页手动运行一次 `Build SJG Plugin Repo`（点 Run workflow）。opkg 与 apk 两个任务并行编译，首次约 30–60 分钟。
+4. 到 **Actions** 页手动运行一次 `Build SJG Plugin Repo`（点 Run workflow）。opkg 与 apk 两个任务并行编译，收录 36 项插件，首次约 60–90 分钟。
 5. 构建完成后，你的软件源地址为：
    ```text
    apk 源 : https://sunjg789.github.io/sjg-openwrt-packages/apk/x86_64
