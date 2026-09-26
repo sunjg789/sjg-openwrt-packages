@@ -71,7 +71,7 @@ jobs:
           ls -la merged/repo/opkg/x86_64/Packages* 2>/dev/null || true
           ls -la merged/keys/ 2>/dev/null || true
 
-      - name: 生成 apk 索引 packages.adb 与签名（编译 ImmortalWrt 源码完整 apk-tools）
+      - name: 生成 apk 索引 packages.adb 与签名（编译完整 apk-tools 3.0.5）
         run: |
           set -e
           ROOT="$PWD"
@@ -79,16 +79,17 @@ jobs:
           [ -d "$APKS_DIR" ] || { echo "!! 无 apk 包目录 $APKS_DIR"; exit 1; }
           [ -f "$ROOT/merged/keys/secret.key" ] || { echo "!! 无签名密钥，先跑 opkg 索引步骤生成"; exit 1; }
           # v3 源的索引文件名是 packages.adb（不是 APKINDEX.tar.gz）。
-          # 包格式为 apk-tools 3 的 ADB 格式；SDK/固件内的 apk 是 minimal 裁剪版（无 index），
-          # 官方 SDK 的 host apk 也因 applet 限制读不了 ImmortalWrt 包。
-          # 从 ImmortalWrt 25.12.2 源码编译完整 host 版（package/system/apk，HOST 构建非 minimal）。
-          git clone --depth 1 --branch v25.12.2 https://github.com/immortalwrt/immortalwrt.git /tmp/immortalwrt-src
-          cd /tmp/immortalwrt-src
-          make defconfig
-          make tools/compile -j"$(nproc)" V=s
-          make package/system/apk/host/compile -j"$(nproc)" V=s
-          APK_HOST="/tmp/immortalwrt-src/staging_dir/host/bin/apk"
-          [ -x "$APK_HOST" ] || { echo "!! host apk 未生成"; exit 1; }
+          # 包格式为 apk-tools 3 的 ADB 格式；SDK/固件内的 apk 是 minimal 裁剪版（无 index 命令）。
+          # 直接克隆与 ImmortalWrt 25.12.2 完全同源（package/system/apk 的 PKG_SOURCE_VERSION=b5a31c0d = 3.0.5）
+          # 的 apk-tools 源码，用系统依赖 meson 编译完整版（非 minimal、带 index）——几分钟完成。
+          sudo apt-get update && sudo apt-get install -y meson ninja-build liblua5.1-0-dev libssl-dev zlib1g-dev pkg-config
+          git clone https://gitlab.alpinelinux.org/alpine/apk-tools.git /tmp/apk-tools
+          cd /tmp/apk-tools
+          git checkout b5a31c0d865342ad80be10d68f1bb3d3ad9b0866
+          meson setup build -Ddocs=disabled -Dhelp=enabled -Dlua_version=5.1 -Ddefault_library=static -Durl_backend=wget -Dzstd=disabled -Dpython=disabled -Dtests=disabled -Dcrypto_backend=openssl
+          ninja -C build
+          APK_HOST="$(find /tmp/apk-tools/build -maxdepth 3 -name apk -type f | head -n1)"
+          [ -n "$APK_HOST" ] || { echo "!! 未找到编译产物 apk"; exit 1; }
           echo "==> 完整 host apk: $APK_HOST"
           "$APK_HOST" --version
           cd "$APKS_DIR"
