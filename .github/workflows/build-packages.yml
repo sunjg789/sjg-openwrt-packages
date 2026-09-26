@@ -43,11 +43,14 @@ jobs:
             python3 unzip rsync patch diffutils cpio perl \
             libncurses5-dev zlib1g-dev libssl-dev
 
-      - name: 复用既有签名密钥（首次为空则构建时自动生成）
+      - name: 校验签名密钥（由仓库 keys/ 持久化提供；缺失时先手动跑 Fix Index 生成）
         run: |
-          git fetch origin gh-pages --depth 1 2>/dev/null || true
-          git checkout gh-pages -- keys/ 2>/dev/null || true
-          ls keys/ 2>/dev/null || echo "无既有密钥，将由 gen-index.sh 自动生成"
+          if [ ! -f keys/secret.key ] || [ ! -f keys/public.key ]; then
+            echo "!! 无签名密钥 keys/secret.key——请先手动触发 Fix Index & Deploy 工作流生成并提交密钥"
+            exit 1
+          fi
+          echo "==> 复用仓库签名密钥"
+          ls -la keys/
 
       - name: 编译插件包（SDK + 收录清单）
         run: |
@@ -80,7 +83,11 @@ jobs:
           echo "==> 完整 host apk: $APK_HOST"
           "$APK_HOST" --version
           cd "$APKS_DIR"
-          "$APK_HOST" index --allow-untrusted --output packages.adb ./*.apk
+          # 关键：必须用 `apk mkndx`（官方构建系统同款命令）而不是 `apk index`——
+          # apk-tools 3.0.5 的 app_index.c 硬编码 apk_pkg_read(..., false) 只读 v2 包，
+          # 对 ImmortalWrt 25.12 的 v3（ADBd 魔数）包全部报 file format not supported；
+          # mkndx（app_mkndx.c）的 extract ops 含 v3meta，支持 v3 包并直接输出 ADB 索引。
+          "$APK_HOST" mkndx --output packages.adb ./*.apk
           ls -la packages.adb
           # usign 签名（SDK 原始路径，勿 cp；usign 默认输出 <msg>.sig，无 -o 选项）
           SDK25="$(find "$ROOT" -maxdepth 1 -type d -name '*sdk*25.12*' | head -n1)"
