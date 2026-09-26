@@ -43,12 +43,19 @@ jobs:
             python3 unzip rsync patch diffutils cpio perl \
             libncurses5-dev zlib1g-dev libssl-dev
 
-      - name: 校验签名密钥（由仓库 keys/ 持久化提供；缺失时先手动跑 Fix Index 生成）
+      - name: 校验签名密钥（仓库 keys/ 或 gh-pages 拉取）
         run: |
+          # 密钥由 Fix Index 工作流生成并随 gh-pages 部署；此处双保险：
+          # main 仓库有 keys/ 用之，否则从 gh-pages 下载，避免 Build 因缺密钥直接失败。
           if [ ! -f keys/secret.key ] || [ ! -f keys/public.key ]; then
-            echo "!! 无签名密钥 keys/secret.key——请先手动触发 Fix Index & Deploy 工作流生成并提交密钥"
-            exit 1
+            echo "==> main 无 keys/，从 gh-pages 拉取签名密钥"
+            mkdir -p keys
+            curl -fsSL --retry 3 -o keys/secret.key \
+              "https://${{ github.repository_owner }}.github.io/sjg-openwrt-packages/keys/secret.key"
+            curl -fsSL --retry 3 -o keys/public.key \
+              "https://${{ github.repository_owner }}.github.io/sjg-openwrt-packages/keys/public.key"
           fi
+          [ -f keys/secret.key ] && [ -f keys/public.key ] || { echo "!! 无签名密钥（main 与 gh-pages 均不可得）"; exit 1; }
           echo "==> 复用仓库签名密钥"
           ls -la keys/
 
