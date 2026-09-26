@@ -15,7 +15,7 @@
                                                       ▼
                               ┌────────────────────────────────────────┐
                               │ gh-pages 分支（GitHub Pages 静态托管）   │
-                              │  repo/apk/x86_64/   *.apk + APKINDEX    │
+                              │  repo/apk/x86_64/   *.apk + packages.adb│
                               │  repo/opkg/x86_64/  *.ipk + Packages    │
                               │  repo/keys/         public.key          │
                               └──────────────┬─────────────────────────┘
@@ -34,14 +34,14 @@ sjg-openwrt-packages/
 ├── plugins.conf                       # 收录清单（增删插件只改这一个文件）
 ├── scripts/
 │   ├── fetch-and-build.sh             # 下载 SDK → 克隆源码 → 编译 → 收集包
-│   └── gen-index.sh                   # 生成 Packages/Packages.gz 或 APKINDEX.tar.gz + 签名
+│   └── gen-index.sh                   # 生成 Packages/Packages.gz + usign 签名（opkg）；apk 侧用 apk mkndx
 ├── .github/workflows/build-packages.yml  # 自动编译 + 发布 gh-pages
 └── repo/                              # 构建产物（CI 生成，推送到 gh-pages 分支）
     ├── apk/x86_64/                    # ImmortalWrt 25.12.2（apk 包管理器）
     └── opkg/x86_64/                   # ImmortalWrt 24.10.6（opkg 包管理器）
 ```
 
-## 已收录插件（plugins.conf，34 项）
+## 已收录插件（plugins.conf，32 项）
 
 ### 独立上游（逐项跟踪上游仓库）
 
@@ -68,7 +68,6 @@ sjg-openwrt-packages/
 | luci-app-fchomo | mihomo 前端（Clash Meta） |
 | luci-app-v2raya | v2rayA 客户端 |
 | luci-app-mosdns | mosdns 本地 DNS（AdGuard 分流） |
-| luci-app-smartdns | SmartDNS 智能解析 |
 | luci-app-dnsproxy | dnsproxy（AdGuard DNS 代理） |
 | luci-app-aria2 | Aria2 下载 |
 | luci-app-filebrowser | FileBrowser 文件管理 |
@@ -85,8 +84,9 @@ sjg-openwrt-packages/
 | luci-app-poweroff | 定时关机 |
 | luci-app-advanced | 高级设置（简化复杂配置） |
 | luci-app-wolplus | 网络唤醒 WOL Plus |
-| luci-theme-design | Design 主题 |
 | luci-theme-edge | Edge 主题 |
+
+> 注：luci-app-smartdns 未收录（依赖 rust 工具链，25.12 SDK 单包编译超时，官方源已有）；luci-theme-design 未收录（上游版本号格式非法，官方源已有）。需要时直接从官方源安装。
 
 > 说明：官方源已内置的（vlmcsd、ramfree、arpbind、ttyd、docker、wireguard、luci-ssl、taskbot、commands 等）不走自建库，直接用官方源即可。想新增插件：在 `plugins.conf` 加一行（独立上游填仓库 URL；small-package 收录的填 `SMALLPKG`），推送到 main 分支即自动触发重建。
 
@@ -103,7 +103,7 @@ sjg-openwrt-packages/
    git push -u origin main
    ```
 3. **启用 Pages**：仓库 Settings → Pages → Source 选 **Deploy from a branch** → 分支 `gh-pages` / root → Save。
-4. 到 **Actions** 页手动运行一次 `Build SJG Plugin Repo`（点 Run workflow）。opkg 与 apk 两个任务并行编译，收录 34 项插件，首次全量约 3–6 小时（多为 Go/Rust 大包与 Node 编译）。
+4. 到 **Actions** 页手动运行一次 `Build SJG Plugin Repo`（点 Run workflow）。opkg 与 apk 两个任务并行编译，收录 32 项插件，首次全量约 3–6 小时（多为 Go/Rust 大包与 Node 编译）。
 5. 构建完成后，你的软件源地址为：
    ```text
    apk 源 : https://sunjg789.github.io/sjg-openwrt-packages/apk/x86_64
