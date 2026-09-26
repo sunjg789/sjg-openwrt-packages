@@ -37,9 +37,11 @@ echo "==> 更新并安装 feeds（提供 luci-base 等编译依赖源码）"
 ./scripts/feeds install -a >/tmp/feeds-install.log 2>&1 \
   || echo "    (feeds install 警告，继续)"
 
-# ImmortalWrt 25.12 SDK 的 packages feed 中 nginx-mod-ubus 存在递归依赖 bug，
-# 本库不编译 nginx，移除其 feed 源码避免污染全局 Kconfig 配置生成
-rm -rf package/feeds/packages/nginx 2>/dev/null || true
+# ImmortalWrt 25.12 SDK 的 packages feed 中存在递归依赖 bug 的包（本库不编译它们），
+# 移除其 feed 源码避免污染全局 Kconfig 配置生成（否则所有依赖它的包都会 No rule to make target）：
+#   nginx-mod-ubus（nginx feed）——已处理
+#   asterisk（asterisk-curl / asterisk-res-stir-shaken / asterisk-res-pjsip-stir-shaken 递归）
+rm -rf package/feeds/packages/nginx package/feeds/packages/asterisk 2>/dev/null || true
 
 echo "==> [3/4] 克隆插件源码（收录清单: $PLUGINS_CONF）"
 source "$PLUGINS_CONF"
@@ -108,7 +110,8 @@ for entry in "${PLUGINS[@]}"; do
     continue
   fi
   echo "==> 编译 $target（$note）"
-  if timeout 1500 make -j"$(nproc)" "package/$target/compile" V=s >"/tmp/build-$target.log" 2>&1; then
+  # unblockneteasemusic 依赖 node 编译，耗时可达 40 分钟；全局给足 2400s 上限
+  if timeout 2400 make -j"$(nproc)" "package/$target/compile" V=s >"/tmp/build-$target.log" 2>&1; then
     echo "    ✓ $target 成功"
   else
     echo "    ✗ $target 失败（日志尾部见下）"
