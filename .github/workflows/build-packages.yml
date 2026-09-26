@@ -65,12 +65,14 @@ jobs:
           [ -f "$ROOT/keys/secret.key" ] || { echo "!! 无签名密钥"; exit 1; }
           # v3 源的索引文件名是 packages.adb（不是 APKINDEX.tar.gz）。
           # 包格式为 apk-tools 3 的 ADB 格式；SDK/固件内的 apk 是 minimal 裁剪版（无 index 命令）。
-          # 直接克隆与 ImmortalWrt 25.12.2 完全同源（package/system/apk 的 PKG_SOURCE_VERSION=b5a31c0d = 3.0.5）
-          # 的 apk-tools 源码，用系统依赖 meson 编译完整版（非 minimal、带 index）——几分钟完成。
+          # 直接取与 ImmortalWrt 25.12.2 完全同源（package/system/apk 的 PKG_SOURCE_VERSION=b5a31c0d = 3.0.5）
+          # 的 apk-tools 源码（Alpine GitLab 官方源在 GitHub Actions 上被 418 拦截，
+          # 改用 Alpine 官方 GitHub mirror alpinelinux/apk-tools），meson 编译完整版（非 minimal、带 index）——几分钟完成。
           sudo apt-get update && sudo apt-get install -y meson ninja-build liblua5.1-0-dev libssl-dev zlib1g-dev pkg-config
-          git clone https://gitlab.alpinelinux.org/alpine/apk-tools.git /tmp/apk-tools
+          mkdir -p /tmp/apk-tools
+          curl -fSL -L "https://codeload.github.com/alpinelinux/apk-tools/tar.gz/b5a31c0d865342ad80be10d68f1bb3d3ad9b0866" -o /tmp/apk-tools.tar.gz
+          tar -xzf /tmp/apk-tools.tar.gz -C /tmp/apk-tools --strip-components=1
           cd /tmp/apk-tools
-          git checkout b5a31c0d865342ad80be10d68f1bb3d3ad9b0866
           meson setup build -Ddocs=disabled -Dhelp=enabled -Dlua_version=5.1 -Ddefault_library=static -Durl_backend=wget -Dzstd=disabled -Dpython=disabled -Dtests=disabled -Dcrypto_backend=openssl
           ninja -C build
           APK_HOST="$(find /tmp/apk-tools/build -maxdepth 3 -name apk -type f | head -n1)"
