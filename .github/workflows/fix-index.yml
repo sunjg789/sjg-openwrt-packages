@@ -110,7 +110,13 @@ jobs:
           echo "==> 完整 host apk: $APK_HOST"
           "$APK_HOST" --version
           cd "$APKS_DIR"
-          "$APK_HOST" mkndx --output packages.adb ./*.apk
+          # 关键：必须用 `apk mkndx`（官方构建系统同款命令）而不是 `apk index`——
+          # apk-tools 3.0.5 的 app_index.c 硬编码 apk_pkg_read(..., false) 只读 v2 包，
+          # 对 ImmortalWrt 25.12 的 v3（ADBd 魔数）包全部报 file format not supported；
+          # mkndx（app_mkndx.c）的 extract ops 含 v3meta，支持 v3 包并直接输出 ADB 索引。
+          # --allow-untrusted：SDK 编译的包由 SDK 自身构建密钥签名，本机无该公钥，
+          # mkndx 默认校验会全部报 UNTRUSTED；索引本身随后用我们的 usign 密钥签名。
+          "$APK_HOST" mkndx --allow-untrusted --output packages.adb ./*.apk
           ls -la packages.adb
           # usign 签名（SDK 原始路径，勿 cp；usign 默认输出 <msg>.sig，无 -o 选项）
           "$USIGN" -S -m packages.adb -s "$ROOT/keys/secret.key"
