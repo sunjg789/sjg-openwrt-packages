@@ -39,12 +39,15 @@ echo "==> 更新并安装 feeds（提供 luci-base 等编译依赖源码）"
 # 必须在 feeds install 之前先从 feeds 源目录删除，install 才不会把软链装进 package/feeds：
 #   nginx-mod-ubus（net/nginx）
 #   asterisk（net/asterisk，asterisk-curl / asterisk-res-stir-shaken / asterisk-res-pjsip-stir-shaken 递归）
+#   gensio（net/gensio，GENSIO_SSHD ↔ PACKAGE_gensio-bin 递归；asterisk 的依赖库）
 # 双保险：install 后再次 find 全量清理（不依赖具体路径，平铺/子目录都覆盖）。
-echo "==> 移除递归依赖 feed 源码（asterisk / nginx）"
-rm -rf feeds/packages/net/asterisk feeds/packages/net/nginx 2>/dev/null || true
-find feeds -maxdepth 4 -type d \( -name 'asterisk' -o -name 'nginx' \) -exec rm -rf {} + 2>/dev/null || true
-if ls feeds/packages/net/ 2>/dev/null | grep -qi "asterisk\|nginx"; then
-  echo "!! feeds 源目录仍有 asterisk/nginx（见上）"
+echo "==> 移除递归依赖 feed 源码（asterisk / gensio / nginx）"
+rm -rf feeds/packages/net/asterisk feeds/packages/net/nginx feeds/packages/net/gensio 2>/dev/null || true
+find feeds -maxdepth 4 -type d \( -name 'asterisk' -o -name 'nginx' -o -name 'gensio' \) -exec rm -rf {} + 2>/dev/null || true
+# 精确诊断：列出 net/ 下仍存在的目标目录（避免 grep 宽匹配误报 nginx-util 等）
+LEFT=$(find feeds/packages/net -maxdepth 1 -type d \( -name 'asterisk' -o -name 'nginx' -o -name 'gensio' \) 2>/dev/null)
+if [ -n "$LEFT" ]; then
+  echo "!! feeds 源目录仍存在: $LEFT"
 else
   echo "    ✓ feeds 源已清理"
 fi
@@ -53,9 +56,9 @@ fi
   || echo "    (feeds install 警告，继续)"
 
 # install 后兜底：包软链若仍存在则删除
-rm -rf package/feeds/packages/asterisk package/feeds/packages/nginx 2>/dev/null || true
-find package/feeds -maxdepth 4 -type d \( -name 'asterisk' -o -name 'nginx' \) -exec rm -rf {} + 2>/dev/null || true
-find package/feeds -maxdepth 4 -type l \( -name '*asterisk*' -o -name '*nginx*' \) -delete 2>/dev/null || true
+rm -rf package/feeds/packages/asterisk package/feeds/packages/nginx package/feeds/packages/gensio 2>/dev/null || true
+find package/feeds -maxdepth 4 -type d \( -name 'asterisk' -o -name 'nginx' -o -name 'gensio' \) -exec rm -rf {} + 2>/dev/null || true
+find package/feeds -maxdepth 4 -type l \( -name '*asterisk*' -o -name '*nginx*' -o -name '*gensio*' \) -delete 2>/dev/null || true
 [ -d package/feeds/packages/asterisk ] && echo "!! package/feeds 仍有 asterisk" || echo "    ✓ package/feeds 已清理"
 
 echo "==> [3/4] 克隆插件源码（收录清单: $PLUGINS_CONF）"
