@@ -9,8 +9,7 @@
 │  plugins.conf（收录清单）     │        │  GitHub Actions（每周一自动） │
 │  OpenClash / PassWall /     │───────▶│  ① 下载 ImmortalWrt SDK       │
 │  Lucky / Argon / AdGuardHome│        │  ② clone 上游源码到 package/  │
-│  OAF / DiskMan / DockerMan  │        │  ③ make .../compile 逐个编译  │
-│  UnblockNeteaseMusic / etc  │        │  ④ 生成索引 + usign 签名      │
+│  DiskMan / DockerMan / etc  │        │  ③ make .../compile 逐个编译  │
 └─────────────────────────────┘        └──────────────┬───────────────┘
                                                       ▼
                               ┌────────────────────────────────────────┐
@@ -41,7 +40,7 @@ sjg-openwrt-packages/
     └── opkg/x86_64/                   # ImmortalWrt 24.10.6（opkg 包管理器）
 ```
 
-## 已收录插件（plugins.conf，32 项）
+## 已收录插件（plugins.conf，30 项）
 
 ### 独立上游（逐项跟踪上游仓库）
 
@@ -55,9 +54,8 @@ sjg-openwrt-packages/
 | luci-app-adguardhome | rufengsuixing/luci-app-adguardhome | AdGuardHome 插件（主程序运行后手动下载） |
 | luci-app-diskman | lisaac/luci-app-diskman | 磁盘管理 |
 | luci-app-dockerman | lisaac/luci-app-dockerman | Docker 管理 |
-| luci-app-unblockneteasemusic | UnblockNeteaseMusic/… | 解锁网易云音乐 |
 
-> 注：oaf（OpenAppFilter）与 alist 未收录——两包在 SDK 编译时均出现 Kconfig 递归自依赖，会破坏整个配置生成；需要可在源码全编译时加入。
+> 注：oaf（OpenAppFilter）与 alist 未收录——两包在 SDK 编译时均出现 Kconfig 递归自依赖，会破坏整个配置生成；需要可在源码全编译时加入。luci-app-unblockneteasemusic 未收录——依赖 node 全量编译超过 Actions 单 job 时长上限，官方源已有，需要时直接从官方源安装。
 
 ### 同步自 kenzok8/small-package（热门源码合集，稀疏拉取）
 
@@ -103,7 +101,7 @@ sjg-openwrt-packages/
    git push -u origin main
    ```
 3. **启用 Pages**：仓库 Settings → Pages → Source 选 **Deploy from a branch** → 分支 `gh-pages` / root → Save。
-4. 到 **Actions** 页手动运行一次 `Build SJG Plugin Repo`（点 Run workflow）。opkg 与 apk 两个任务并行编译，收录 32 项插件，首次全量约 3–6 小时（多为 Go/Rust 大包与 Node 编译）。
+4. 到 **Actions** 页手动运行一次 `Build SJG Plugin Repo`（点 Run workflow）。opkg 与 apk 两个任务并行编译，收录 30 项插件，首次全量约 3–6 小时（多为 Go/Rust 大包编译）。
 5. 构建完成后，你的软件源地址为：
    ```text
    apk 源 : https://sunjg789.github.io/sjg-openwrt-packages/apk/x86_64
