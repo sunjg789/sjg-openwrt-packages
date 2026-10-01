@@ -51,10 +51,11 @@ echo "==> 更新并安装 feeds（提供 luci-base 等编译依赖源码）"
 echo "==> 移除递归依赖 feed 源码（9 包）"
 rm -rf feeds/packages/net/asterisk feeds/packages/net/nginx feeds/packages/net/gensio \
        feeds/packages/net/ifstat feeds/packages/net/kadnode feeds/packages/net/oscam \
-       feeds/packages/multimedia/tvheadend feeds/packages/utils/parted feeds/packages/utils/qemu 2>/dev/null || true
+       feeds/packages/admin/rsyslog feeds/packages/multimedia/tvheadend feeds/packages/utils/parted \
+       feeds/packages/utils/qemu 2>/dev/null || true
 find feeds -maxdepth 5 -type d \( -name 'asterisk' -o -name 'nginx' -o -name 'gensio' -o -name 'ifstat' \
-       -o -name 'kadnode' -o -name 'oscam' -o -name 'tvheadend' -o -name 'parted' -o -name 'qemu' \) \
-       -exec rm -rf {} + 2>/dev/null || true
+       -o -name 'kadnode' -o -name 'oscam' -o -name 'rsyslog' -o -name 'tvheadend' -o -name 'parted' \
+       -o -name 'qemu' \) -exec rm -rf {} + 2>/dev/null || true
 # 精确诊断：列出仍存在的目标目录（避免 grep 宽匹配误报 nginx-util 等）
 LEFT=$(find feeds/packages -maxdepth 3 -type d \( -name 'asterisk' -o -name 'nginx' -o -name 'gensio' -o -name 'ifstat' \
        -o -name 'kadnode' -o -name 'oscam' -o -name 'tvheadend' -o -name 'parted' -o -name 'qemu' \) 2>/dev/null)
@@ -78,6 +79,29 @@ find package/feeds -maxdepth 4 -type l \( -name '*asterisk*' -o -name '*nginx*' 
        -o -name '*kadnode*' -o -name '*oscam*' -o -name '*tvheadend*' -o -name '*parted*' -o -name '*qemu*' \) \
        -delete 2>/dev/null || true
 [ -d package/feeds/packages/asterisk ] && echo "!! package/feeds 仍有 asterisk" || echo "    ✓ package/feeds 已清理"
+
+echo "==> 递归依赖自愈循环（探测 config 生成，发现即自动删除递归包）"
+for round in $(seq 1 30); do
+  rm -f tmp/.config-package.in
+  out=$(make package/base-files/compile 2>&1 || true)
+  rec=$(printf '%s' "$out" | grep -oE 'feeds/[A-Za-z0-9_./-]+/Config[a-z0-9-]*\.in:[0-9]+:[^[:space:]]*symbol[^[:space:]]*depends' | head -1)
+  if [ -z "$rec" ]; then
+    echo "    ✓ config 生成无递归（第 $round 轮探测通过）"
+    rm -f tmp/.config-package.in
+    break
+  fi
+  path=$(printf '%s' "$rec" | sed -E 's|(feeds/[A-Za-z0-9_./-]+)/Config.*|\1|')
+  [ -z "$path" ] && path=$(printf '%s' "$out" | grep -oE 'feeds/[A-Za-z0-9_./-]+(?=/Config)' | head -1)
+  if [ -z "$path" ]; then
+    echo "!! 无法解析递归路径（第 $round 轮），放弃自愈，交编译循环处理"
+    break
+  fi
+  pkg=$(basename "$path")
+  echo "    第 $round 轮: 检测到递归 -> 删除 $path"
+  rm -rf "$path" 2>/dev/null || true
+  find package/feeds -maxdepth 4 -type d -name "$pkg" -exec rm -rf {} + 2>/dev/null || true
+  find package/feeds -maxdepth 4 -type l -name "*$pkg*" -delete 2>/dev/null || true
+done
 
 echo "==> [3/4] 克隆插件源码（收录清单: $PLUGINS_CONF）"
 source "$PLUGINS_CONF"
