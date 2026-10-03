@@ -28,15 +28,17 @@ jobs:
           sudo apt-get install -y -qq cmake meson ninja-build wget file gawk gettext \
             python3 rsync perl pkg-config libssl-dev zlib1g-dev build-essential git
 
-      - name: 源码编译 usign（apt 无此包；libuecc + usign，几秒完成）
+      - name: 源码编译 usign（apt 无此包；libubox + usign，几秒完成）
         run: |
           set -e
-          # libuecc/usign 的权威仓库在 git.openwrt.org（GitHub 的 openwrt 组织无 libuecc 镜像）
-          git clone --depth 1 https://git.openwrt.org/project/libuecc.git /tmp/libuecc
+          # 现行 usign 已改用 libubox（旧依赖 libuecc 已从 OpenWrt 移除）
+          git clone --depth 1 https://git.openwrt.org/project/libubox.git /tmp/libubox
           git clone --depth 1 https://git.openwrt.org/project/usign.git /tmp/usign-src
-          cmake -S /tmp/libuecc -B /tmp/libuecc/build -DCMAKE_INSTALL_PREFIX=/usr/local
-          make -C /tmp/libuecc/build install
-          cmake -S /tmp/usign-src -B /tmp/usign-src/build -DCMAKE_INSTALL_PREFIX=/usr/local
+          cmake -S /tmp/libubox -B /tmp/libubox/build \
+            -DCMAKE_INSTALL_PREFIX=/usr/local -DBUILD_LUA=OFF
+          make -C /tmp/libubox/build install
+          cmake -S /tmp/usign-src -B /tmp/usign-src/build \
+            -DCMAKE_INSTALL_PREFIX=/usr/local -DUSE_LIBUBOX=on
           make -C /tmp/usign-src/build install
           sudo ldconfig
           usign 2>&1 | head -n 2 || true
