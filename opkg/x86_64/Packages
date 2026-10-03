@@ -436,8 +436,8 @@ Package: containerd
 Version: 1.7.22-r1_x86
 Architecture: 64
 Filename: containerd_1.7.22-r1_x86_64.ipk
-Size: 49475077
-SHA256sum: 0779ae6f229d4cc666ce8526b47a07470e90d315caf2db9011c20832eeeeb068
+Size: 49474441
+SHA256sum: f42d21246468eefda096e2cb705f3f361fb4232ba61d3d9dc7c2996dbd0c4270
 
 Package: coreutils-b2sum
 Version: 9.7-r1_x86
@@ -1241,8 +1241,8 @@ Package: dockerd
 Version: 27.3.1-r3_x86
 Architecture: 64
 Filename: dockerd_27.3.1-r3_x86_64.ipk
-Size: 22461833
-SHA256sum: f8f9b785baa2d52af1fc2bd914cad532c0150bf83463430d44d60b8d16fdd5fa
+Size: 22461971
+SHA256sum: 1bffe22eb0c935646c1fd3d9d100924cd5b44d764fc27d647e58ba4a8edbf53a
 
 Package: dosfstools
 Version: 4.2-r4_x86
@@ -1509,20 +1509,6 @@ Architecture: 64
 Filename: jansson4_2.14-r3_x86_64.ipk
 Size: 23792
 SHA256sum: 85241f0df0dbb67ad2f17225208d34ec18a4c7991fb554cb0a9334eb1f155ea8
-
-Package: jq-full
-Version: 1.8.1-r1_x86
-Architecture: 64
-Filename: jq-full_1.8.1-r1_x86_64.ipk
-Size: 434407
-SHA256sum: 9b9bd57b2da031dd975df2ec236d71efa18512ed68f0c6108765f8ea81d8edbe
-
-Package: jq
-Version: 1.8.1-r1_x86
-Architecture: 64
-Filename: jq_1.8.1-r1_x86_64.ipk
-Size: 427428
-SHA256sum: 51d182515c186d2f2c10321616022825405e0c413debffed6ccba48e3b2c77e2
 
 Package: jshn
 Version: 2025.07.23~49056d17-r1_x86
@@ -2623,6 +2609,1630 @@ Filename: luci-compat_26.114.29114~adb3df4_all.ipk
 Size: 46424
 SHA256sum: 652da7f0c609df642299ee8205cf94be1c97c2cbb25c36bce4bff16e5569f77d
 
+Package: luci-i18n-3cat-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-3cat-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 1720
+SHA256sum: f400017a113ecbcd527c0aa35e3f54b8bb7fbebc87f4548a1accbe1124db9eae
+
+Package: luci-i18n-aria2-ar
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-ar_26.114.29114~adb3df4_all.ipk
+Size: 1693
+SHA256sum: c6ee960cf5fb46395f1983e9ea877f263998d961c46e7ac86e0317b55855f392
+
+Package: luci-i18n-aria2-bg
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-bg_26.114.29114~adb3df4_all.ipk
+Size: 2367
+SHA256sum: 2232f0747b8f0d080279c1ba3c156169f83adcaa10667c89b27f53bb6ff3ee79
+
+Package: luci-i18n-aria2-bn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-bn_26.114.29114~adb3df4_all.ipk
+Size: 1478
+SHA256sum: 9ceba0f4c13daba057d7b0c448a9d621ff14ff48945fd2ee0dfa9eb69a486989
+
+Package: luci-i18n-aria2-ca
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-ca_26.114.29114~adb3df4_all.ipk
+Size: 1894
+SHA256sum: a844cbc6cf7048450c525cc6b978ce01d10984249ee250da2f7e8d804e9c11c7
+
+Package: luci-i18n-aria2-cs
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-cs_26.114.29114~adb3df4_all.ipk
+Size: 7116
+SHA256sum: 64662fec464344f7cbf8e6e29d3ed2637c9d4c56a3dbaa6536ae1f2b6416fac5
+
+Package: luci-i18n-aria2-da
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-da_26.114.29114~adb3df4_all.ipk
+Size: 1528
+SHA256sum: ea3690982aa0882b7aedb22f4221fd5ad70f97d2e20c9e2c2187899b6e8eb796
+
+Package: luci-i18n-aria2-de
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-de_26.114.29114~adb3df4_all.ipk
+Size: 6810
+SHA256sum: b7e063e48223a4eefba9446651cc32c91332980b374fd217462cfe3a9183eee3
+
+Package: luci-i18n-aria2-el
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-el_26.114.29114~adb3df4_all.ipk
+Size: 2080
+SHA256sum: 7c07342887310a00dd27be17e7fbb4a80451462d588578c439ea127fa4b22185
+
+Package: luci-i18n-aria2-es
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-es_26.114.29114~adb3df4_all.ipk
+Size: 6754
+SHA256sum: 99a7aed057a209b49d99f6c018c1a880b1d3653d1bb4b2532d16237c936ee834
+
+Package: luci-i18n-aria2-fi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-fi_26.114.29114~adb3df4_all.ipk
+Size: 1909
+SHA256sum: 4fa1d2b5981495b0275807b4a68b0dc7f0565c08087ddac0eb30257d6fd289a5
+
+Package: luci-i18n-aria2-fr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-fr_26.114.29114~adb3df4_all.ipk
+Size: 6889
+SHA256sum: 977b09e335ce8b910bd81ddf4b294751282a39c61b30931f0a4552ed0136ef0e
+
+Package: luci-i18n-aria2-ga
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-ga_26.114.29114~adb3df4_all.ipk
+Size: 6899
+SHA256sum: 5289d34dc8cc5eaf778809cb547873ecefcce83385aaaf60782a63e31ecf593b
+
+Package: luci-i18n-aria2-he
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-he_26.114.29114~adb3df4_all.ipk
+Size: 1341
+SHA256sum: 0d5dc36c5085812079f3b87b0182a025a536668136ddfff6743c1eae18c6f210
+
+Package: luci-i18n-aria2-hi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-hi_26.114.29114~adb3df4_all.ipk
+Size: 1109
+SHA256sum: 77607cccacbf4629d974bd4c5f20486082d7f0355006e4bc608653498c06316c
+
+Package: luci-i18n-aria2-hu
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-hu_26.114.29114~adb3df4_all.ipk
+Size: 7012
+SHA256sum: 10a11dcdcfc08f9540f769d0a9312ace72a60f27262cb2c2a0884a415866da0a
+
+Package: luci-i18n-aria2-it
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-it_26.114.29114~adb3df4_all.ipk
+Size: 6577
+SHA256sum: a010ec2e88e62ee1ec638b84861ccea55f74e150903fbd3f2c9164194dab18c4
+
+Package: luci-i18n-aria2-ja
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-ja_26.114.29114~adb3df4_all.ipk
+Size: 3263
+SHA256sum: 9acf69b626480908e722b82a7b406e8ea310e14012f89925f9a729a7ec4348e8
+
+Package: luci-i18n-aria2-ko
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-ko_26.114.29114~adb3df4_all.ipk
+Size: 2525
+SHA256sum: b76529c44e980876c8be3c2ce61200b9dbc31ba56f8ba1c934632c43984832eb
+
+Package: luci-i18n-aria2-lt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-lt_26.114.29114~adb3df4_all.ipk
+Size: 7574
+SHA256sum: 45a0ed41f169a34584c0433d438c7fd1488b76b1a623c0fd140a6e2350f79ee9
+
+Package: luci-i18n-aria2-mr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-mr_26.114.29114~adb3df4_all.ipk
+Size: 1428
+SHA256sum: a6c26a140e1648a0e92873660337634fb861ff9ef324575cfb3eced2b187c8b3
+
+Package: luci-i18n-aria2-ms
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-ms_26.114.29114~adb3df4_all.ipk
+Size: 1239
+SHA256sum: 4358f569cec2345f106c062569daf729e4e426c11a66ee8969ea32de1fafe98d
+
+Package: luci-i18n-aria2-nl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-nl_26.114.29114~adb3df4_all.ipk
+Size: 6728
+SHA256sum: dca1bfdbae428cff85d1fcaa292875aa0ef167cfd0666590a0fbe095a560c3e9
+
+Package: luci-i18n-aria2-no
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-no_26.114.29114~adb3df4_all.ipk
+Size: 1479
+SHA256sum: 3f0d3d0491a15006916b80fc3d0915852ad52af1b4ed9bbbc529c3a3a2b67d85
+
+Package: luci-i18n-aria2-pl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-pl_26.114.29114~adb3df4_all.ipk
+Size: 6898
+SHA256sum: b0563741e350aee8b8df316da89a91e4ff10de520c0d21ad9fe6344f58c0655a
+
+Package: luci-i18n-aria2-pt-br
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-pt-br_26.114.29114~adb3df4_all.ipk
+Size: 7011
+SHA256sum: 0dac949caedc13564261a4f01802c6bdfcbd955c8d2093ba9f2d80b70bef3e7e
+
+Package: luci-i18n-aria2-pt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-pt_26.114.29114~adb3df4_all.ipk
+Size: 6786
+SHA256sum: 5a93936c611be29052264923b3317130bf613d3370e1ea566b32d9d13337207f
+
+Package: luci-i18n-aria2-ro
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-ro_26.114.29114~adb3df4_all.ipk
+Size: 6902
+SHA256sum: c777431652a69c63578a526d505d7f8a06049ff903eaa02346504e60cd059b72
+
+Package: luci-i18n-aria2-ru
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-ru_26.114.29114~adb3df4_all.ipk
+Size: 7801
+SHA256sum: 5ff49d254bf8fc332cf7140d281c2194081f6040e4642f14036455c3bd968718
+
+Package: luci-i18n-aria2-sk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-sk_26.114.29114~adb3df4_all.ipk
+Size: 2543
+SHA256sum: d02a2c558cb85f288fe2e3a6d6bf0118c93f41c9fb4806e0deaaa71f104624ef
+
+Package: luci-i18n-aria2-sv
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-sv_26.114.29114~adb3df4_all.ipk
+Size: 3370
+SHA256sum: c0592eff339bc627bb3c07830cb90eceea1b0a42dec7f394af25292bdab2e831
+
+Package: luci-i18n-aria2-tr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-tr_26.114.29114~adb3df4_all.ipk
+Size: 6644
+SHA256sum: 40f33e78d35cbccfdee326b491ecdf339dc8d958d4f65ec93a3267e621c4e087
+
+Package: luci-i18n-aria2-uk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-uk_26.114.29114~adb3df4_all.ipk
+Size: 7850
+SHA256sum: f384e53fb98abacf346cf1139b4a831ea20dfc71d9271827a73dc82231a5d778
+
+Package: luci-i18n-aria2-vi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-vi_26.114.29114~adb3df4_all.ipk
+Size: 6477
+SHA256sum: 52fb3017d700ee0ab531bd147600a8897804e8a04b01768b744c9b539593ccf3
+
+Package: luci-i18n-aria2-yua
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-yua_26.114.29114~adb3df4_all.ipk
+Size: 6741
+SHA256sum: 558d91e321311114f8d55fead25ee6eb9e1664c11dc1ca34caeac5f9cc25f3ed
+
+Package: luci-i18n-aria2-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 6348
+SHA256sum: ba436ee4ce045b66bafabc95f8843c3169e8b5551a9e7fd1c46bc3f49d6a7d42
+
+Package: luci-i18n-aria2-zh-tw
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-aria2-zh-tw_26.114.29114~adb3df4_all.ipk
+Size: 6293
+SHA256sum: c3f800010aebe63fd893e56dfa17fe70415005440ae91045c55633da8bc9dda2
+
+Package: luci-i18n-autoreboot-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-autoreboot-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 1791
+SHA256sum: 187104945d28925e4ddabc007bbb9b669395c48bd4a69c72d244eb404a65eef1
+
+Package: luci-i18n-base-ar
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-ar_26.114.29114~adb3df4_all.ipk
+Size: 59649
+SHA256sum: 13429091839ff2e92762f1ae2812c8cb7b688f17b56353b1fd2d6246f600104c
+
+Package: luci-i18n-base-bg
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-bg_26.114.29114~adb3df4_all.ipk
+Size: 10238
+SHA256sum: 5b4832d00e83881a53b18ae7904ff4a3904dc38059bb8bd374de28ce26b74bcb
+
+Package: luci-i18n-base-bn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-bn_26.114.29114~adb3df4_all.ipk
+Size: 2694
+SHA256sum: bea3c59fe2f5d4a11a505ab4b36e963d7c1b6e92fffec8b6737457ec6fbea8bf
+
+Package: luci-i18n-base-ca
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-ca_26.114.29114~adb3df4_all.ipk
+Size: 19941
+SHA256sum: c9680797b6891b857208bbb5c15c2ac14b938d305e8bdc22e338d0c2e7e644c1
+
+Package: luci-i18n-base-cs
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-cs_26.114.29114~adb3df4_all.ipk
+Size: 65854
+SHA256sum: 424df9b24eb82481bd514b45816c28508e12dddeeca04635f37242647867ac3b
+
+Package: luci-i18n-base-da
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-da_26.114.29114~adb3df4_all.ipk
+Size: 47289
+SHA256sum: 387a9875c50b0b0e107126f7b39cc34938ed2db35730af880d0c3c464a0bce9d
+
+Package: luci-i18n-base-de
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-de_26.114.29114~adb3df4_all.ipk
+Size: 62698
+SHA256sum: 34a047c6758a091480355630955cc2d286aa64710cf9ed9ae3ba0bfc97464ab7
+
+Package: luci-i18n-base-el
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-el_26.114.29114~adb3df4_all.ipk
+Size: 16532
+SHA256sum: 386c5cfee8bd43f81ec983ff6578ce8d13f86a79ed22093b9154ba8b316ea1ab
+
+Package: luci-i18n-base-es
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-es_26.114.29114~adb3df4_all.ipk
+Size: 63212
+SHA256sum: 8fac091ca73e1af867f9a76dd2eba1a3859c0db3f9f7d9fbd89f7e885504fc9d
+
+Package: luci-i18n-base-fa
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-fa_26.114.29114~adb3df4_all.ipk
+Size: 6095
+SHA256sum: 4f9790e1c9690bcd4ce1d4476e77744348d29737d84505c3057e5a0c4091e2e7
+
+Package: luci-i18n-base-fi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-fi_26.114.29114~adb3df4_all.ipk
+Size: 35523
+SHA256sum: f1d823acb5a104f75dc65d2c0d578d52478e51e9caf336e10508869812793fa5
+
+Package: luci-i18n-base-fil
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-fil_26.114.29114~adb3df4_all.ipk
+Size: 6479
+SHA256sum: 36294c33c067175ed0bc20c2086b15ad6431dddeacb6583642572ccacf1314a7
+
+Package: luci-i18n-base-fr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-fr_26.114.29114~adb3df4_all.ipk
+Size: 49709
+SHA256sum: fdb0792cfc3d1bdfd58007533b91e6b7468f7ee8ce93000ffbac1fd41f9ff0ee
+
+Package: luci-i18n-base-ga
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-ga_26.114.29114~adb3df4_all.ipk
+Size: 65066
+SHA256sum: 266ccdb66c140d46950ea1ba4740ea334785ec63e76d521b8e51d39819d22e51
+
+Package: luci-i18n-base-he
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-he_26.114.29114~adb3df4_all.ipk
+Size: 6218
+SHA256sum: eb8dd42f1acb3779bc715c4369ed80c4c7368c19c28cd190b37aac6c213f5f8e
+
+Package: luci-i18n-base-hi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-hi_26.114.29114~adb3df4_all.ipk
+Size: 3181
+SHA256sum: 5b77e9849cd2e0ee6e034873fa286c07805d707fbd09b03e57d586932a88c2d3
+
+Package: luci-i18n-base-hu
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-hu_26.114.29114~adb3df4_all.ipk
+Size: 60487
+SHA256sum: 21f49e15b02c40a250315a6ba93ea14c520bf45995a6b5afdeef16ef4c4a94a6
+
+Package: luci-i18n-base-it
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-it_26.114.29114~adb3df4_all.ipk
+Size: 54786
+SHA256sum: 072b0aebd0e8c0fb38775bf13599a332437d9c44ada51954955031424243c6b6
+
+Package: luci-i18n-base-ja
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-ja_26.114.29114~adb3df4_all.ipk
+Size: 41287
+SHA256sum: e3e8106f0e0942749dc3f4a5fe06557dc21de00dc7a7bdfa5f98c16185b43a3b
+
+Package: luci-i18n-base-ko
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-ko_26.114.29114~adb3df4_all.ipk
+Size: 50407
+SHA256sum: 3874204ec68d429e1d8f53872fe968a4ca7389892f861f771af167fe89ca69f6
+
+Package: luci-i18n-base-lt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-lt_26.114.29114~adb3df4_all.ipk
+Size: 69338
+SHA256sum: 65ba8c5557f1c137af630c2f623a49a5ef93ea703057b6ec8023faa4b21bda1c
+
+Package: luci-i18n-base-mr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-mr_26.114.29114~adb3df4_all.ipk
+Size: 2213
+SHA256sum: 19d90badb1b7fb3a6e1e8105ddc762cd81e8daf432f0309c5fb9285fa2ed7317
+
+Package: luci-i18n-base-ms
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-ms_26.114.29114~adb3df4_all.ipk
+Size: 6684
+SHA256sum: ad5f128aa5171c7e50860960337bd2fc91d887ef854cd6fdbdcb8269840fb67a
+
+Package: luci-i18n-base-nl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-nl_26.114.29114~adb3df4_all.ipk
+Size: 47128
+SHA256sum: 1557e05862cbc4aa801f5d4c7c5dbe87ec0086937ff1c13034e1ce44dabb6020
+
+Package: luci-i18n-base-no
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-no_26.114.29114~adb3df4_all.ipk
+Size: 16985
+SHA256sum: f63680f74c28911729e0e3114c0683b7a9b4d391fb19abf8f79575e7f87ade61
+
+Package: luci-i18n-base-pl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-pl_26.114.29114~adb3df4_all.ipk
+Size: 64406
+SHA256sum: 5877bd06218688821b102dff9778753cca02abb2d328978bbf14a38a583dc98d
+
+Package: luci-i18n-base-pt-br
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-pt-br_26.114.29114~adb3df4_all.ipk
+Size: 63894
+SHA256sum: c19930c0741a2e1430583b45e6d27f75f722ca999fd76867c58d28b120bbbc42
+
+Package: luci-i18n-base-pt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-pt_26.114.29114~adb3df4_all.ipk
+Size: 62973
+SHA256sum: 60cc97aeb56f0256b35f60d7365c5fe56ff17bbfa21fd8fe62e6e9cb843be11c
+
+Package: luci-i18n-base-ro
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-ro_26.114.29114~adb3df4_all.ipk
+Size: 58609
+SHA256sum: 03ceedd9f6e0a15203a4ed9a457c201e9d4c53ec706bb89c8db3400643388b6a
+
+Package: luci-i18n-base-ru
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-ru_26.114.29114~adb3df4_all.ipk
+Size: 76893
+SHA256sum: b60cddc5a091948efa8e028547ccb5cd47c2de1d84c7b5a380c5a39fa141d9e8
+
+Package: luci-i18n-base-sk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-sk_26.114.29114~adb3df4_all.ipk
+Size: 24354
+SHA256sum: 2f0db058e46e23fd1cc4cbcddbe27da5866d123dfe199772c6f59411b77f0e31
+
+Package: luci-i18n-base-sv
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-sv_26.114.29114~adb3df4_all.ipk
+Size: 19358
+SHA256sum: d6cb049dc38bc07da1f5094796287bd7048775d1867528afd28ac7720c428013
+
+Package: luci-i18n-base-tr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-tr_26.114.29114~adb3df4_all.ipk
+Size: 55278
+SHA256sum: 85f26320e80735648c57bb49612a7746ca09fa6b1d66ccee31fcdaefe4fb8daa
+
+Package: luci-i18n-base-uk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-uk_26.114.29114~adb3df4_all.ipk
+Size: 74182
+SHA256sum: 02cb62f45763d727f26ad53d4884066271348c55668a6acdf25439799476689a
+
+Package: luci-i18n-base-vi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-vi_26.114.29114~adb3df4_all.ipk
+Size: 55409
+SHA256sum: 5938eb689092eb0f12ae48501f7dc740b591f9cb72a859829c03113cfe232067
+
+Package: luci-i18n-base-yua
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-yua_26.114.29114~adb3df4_all.ipk
+Size: 56359
+SHA256sum: 429a2efac5ec30a17450f1a7ff886c9b0f061020b400d39ec387b2596dc5f528
+
+Package: luci-i18n-base-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 59737
+SHA256sum: ddb17d0de396321b7ad62360e5718328700ed02d0b489a650ee7f0d5f1846595
+
+Package: luci-i18n-base-zh-tw
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-base-zh-tw_26.114.29114~adb3df4_all.ipk
+Size: 56654
+SHA256sum: 39d02cc0282d7d5a6eff3debc7f83fcddb6d56ada3373542a6508891e0517046
+
+Package: luci-i18n-ddns-go-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-ddns-go-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 1544
+SHA256sum: 760b6cef75503178ccfb31805c03b0d33b0ae0652ca75c135903fe4ef8b38a20
+
+Package: luci-i18n-ddns-go-zh-tw
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-ddns-go-zh-tw_26.114.29114~adb3df4_all.ipk
+Size: 1525
+SHA256sum: 71a3f27081caa329d47c1a0cb043ae695ed0bde7ecbc56014411932f7b899048
+
+Package: luci-i18n-diskman-pl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-diskman-pl_26.114.29114~adb3df4_all.ipk
+Size: 2685
+SHA256sum: 304aefd59be06f6bf1c717858d4d1ab2a65c73d5ba328c2483a4fa1aab13066d
+
+Package: luci-i18n-diskman-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-diskman-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 2686
+SHA256sum: 82da1352e1d4a60c6198747fa48196cb185d75446bb19bd76e59578dfd92f4be
+
+Package: luci-i18n-diskman-zh-tw
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-diskman-zh-tw_26.114.29114~adb3df4_all.ipk
+Size: 2691
+SHA256sum: 3fb8544c732b85520900fc8065a7f6344668e9a5e0c4729a8c5b87666d28741f
+
+Package: luci-i18n-dockerman-ar
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-ar_26.114.29114~adb3df4_all.ipk
+Size: 4264
+SHA256sum: 0da1af0f657c547972ed117652ee29e79f89a341ab07c931fa17bfd5ffb3e760
+
+Package: luci-i18n-dockerman-bg
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-bg_26.114.29114~adb3df4_all.ipk
+Size: 1866
+SHA256sum: 52854c036db936c6fa230f7610514f9c6a83ba79321e0162954e3e4b3507a6a4
+
+Package: luci-i18n-dockerman-bn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-bn_26.114.29114~adb3df4_all.ipk
+Size: 1561
+SHA256sum: a0bf2d82797fbdfc914fdba55911ff4e5745ab38c0778f05de7dd3be1e6ea3fa
+
+Package: luci-i18n-dockerman-ca
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-ca_26.114.29114~adb3df4_all.ipk
+Size: 1429
+SHA256sum: a5ea763fff3ca32db36db5a3a8107e5a9a32846c00f24d4389393722f46d6cc9
+
+Package: luci-i18n-dockerman-cs
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-cs_26.114.29114~adb3df4_all.ipk
+Size: 5697
+SHA256sum: 27776e6c67f4cd7f9fd1a0c7aacc0a94e75747d2bed4f5d890ef06d3c13134f7
+
+Package: luci-i18n-dockerman-da
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-da_26.114.29114~adb3df4_all.ipk
+Size: 1856
+SHA256sum: 0f5cb82d9c78634db4c433535da380bf43f91eda305336563f8f0fb093137215
+
+Package: luci-i18n-dockerman-de
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-de_26.114.29114~adb3df4_all.ipk
+Size: 5433
+SHA256sum: ec1b38a9047ab712a7a70f4cd46180f7ea2d7a7fe6c9d1bb3221cf54d77ed3e4
+
+Package: luci-i18n-dockerman-el
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-el_26.114.29114~adb3df4_all.ipk
+Size: 1484
+SHA256sum: 827f41e4d467ee914701038a3f01a6e5f38059835f555555a8fdd1cb59de4941
+
+Package: luci-i18n-dockerman-es
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-es_26.114.29114~adb3df4_all.ipk
+Size: 5490
+SHA256sum: 6118b60e491a8d30dbf0cd1b6e93ef4bb0163ed3a73756a5e9aa2f0515afaeb5
+
+Package: luci-i18n-dockerman-fa
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-fa_26.114.29114~adb3df4_all.ipk
+Size: 5853
+SHA256sum: f28d1d517336baeec0f35a81e19f4812a91fa51497c5d85925429ac535100281
+
+Package: luci-i18n-dockerman-fi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-fi_26.114.29114~adb3df4_all.ipk
+Size: 2147
+SHA256sum: 67bb2c056f7f5ffc5036a41c51b6e519baea38c0020b36a0d985413ad9be8d69
+
+Package: luci-i18n-dockerman-fr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-fr_26.114.29114~adb3df4_all.ipk
+Size: 5363
+SHA256sum: 3ad144060d742d67ab5e3ae88b2ffcfdfc9f37d5a99a16b903761de670ae78e8
+
+Package: luci-i18n-dockerman-ga
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-ga_26.114.29114~adb3df4_all.ipk
+Size: 5609
+SHA256sum: eeda0e35920dbcc1f70027e06ee7f5545260ffc87745a6c966632cab94243926
+
+Package: luci-i18n-dockerman-he
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-he_26.114.29114~adb3df4_all.ipk
+Size: 1604
+SHA256sum: c2f11df2350c5504780079440190c640a4cb14fe9a2cd45e75d2a4b21ea67eae
+
+Package: luci-i18n-dockerman-hi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-hi_26.114.29114~adb3df4_all.ipk
+Size: 1280
+SHA256sum: 03246f0626036f16a0caf02fbfd9a6e74b09ec3102a8b037fe93697ca854bf7d
+
+Package: luci-i18n-dockerman-hu
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-hu_26.114.29114~adb3df4_all.ipk
+Size: 1990
+SHA256sum: bfde97fa60071c5db4b753d3b2cbdf930391e411b3e9ecba06cfe73f9044e731
+
+Package: luci-i18n-dockerman-it
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-it_26.114.29114~adb3df4_all.ipk
+Size: 2372
+SHA256sum: 821e85342e9eaea0070bc90da90ef0d790b718cfad1cd7c383e50b1ca3a238c7
+
+Package: luci-i18n-dockerman-ja
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-ja_26.114.29114~adb3df4_all.ipk
+Size: 4074
+SHA256sum: e75215ca3bb673aaf4915eff8820254c1302774c8fba3a9f309535825f6360e0
+
+Package: luci-i18n-dockerman-ko
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-ko_26.114.29114~adb3df4_all.ipk
+Size: 3776
+SHA256sum: 8ed93cc05fc069bad503ef9e652ea708c37bee30dd6c142ec59b419d66c9d1e8
+
+Package: luci-i18n-dockerman-lt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-lt_26.114.29114~adb3df4_all.ipk
+Size: 6157
+SHA256sum: 01c0f795d5f8afbec086f9cf833a71ad16a736bf5cbac2eb251756aa654b877f
+
+Package: luci-i18n-dockerman-mr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-mr_26.114.29114~adb3df4_all.ipk
+Size: 1125
+SHA256sum: 5d863a76a1d6ae1e43e31e8b9c2740683a2da5218f47688d98c2d118278d8cc7
+
+Package: luci-i18n-dockerman-ms
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-ms_26.114.29114~adb3df4_all.ipk
+Size: 1332
+SHA256sum: 29aa10b701869202be4b4611b0cd833753e69e7ddb54fa63e434d1d89ad75028
+
+Package: luci-i18n-dockerman-nl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-nl_26.114.29114~adb3df4_all.ipk
+Size: 5206
+SHA256sum: def3f3dc67975e144040ccd3f2e32b5185720eee0c2080891fe8ffd10cd69e26
+
+Package: luci-i18n-dockerman-no
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-no_26.114.29114~adb3df4_all.ipk
+Size: 2010
+SHA256sum: de191739c12cdd9bd46d7b4623a0c4cbaabd39d02c6e5675b195079993aa17aa
+
+Package: luci-i18n-dockerman-pl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-pl_26.114.29114~adb3df4_all.ipk
+Size: 5704
+SHA256sum: 2bd831fbec46e7ac512196817958668f57d653c5d007fa8ae17e1b9ac16a2657
+
+Package: luci-i18n-dockerman-pt-br
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-pt-br_26.114.29114~adb3df4_all.ipk
+Size: 5472
+SHA256sum: 470e418dd1370da0fdc30624b6163776795ca1018bc8dd528301c8f576bff474
+
+Package: luci-i18n-dockerman-pt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-pt_26.114.29114~adb3df4_all.ipk
+Size: 5478
+SHA256sum: 2e75d13d97d3b5dd5e95f9550922c86a6a3c4b39037cab68e2f2dea856646a42
+
+Package: luci-i18n-dockerman-ro
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-ro_26.114.29114~adb3df4_all.ipk
+Size: 5705
+SHA256sum: d5db592ca392629409f5ccb07923e22ab5c6ea032e5f9bc158a6c0a48cb8bbcf
+
+Package: luci-i18n-dockerman-ru
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-ru_26.114.29114~adb3df4_all.ipk
+Size: 6318
+SHA256sum: fb7b68fc0196f60b64eed8089352ee75c6bcee6023b1e207e250a7acc06b6ad5
+
+Package: luci-i18n-dockerman-sk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-sk_26.114.29114~adb3df4_all.ipk
+Size: 1648
+SHA256sum: 5013ab92d27f50d54b86a9044bf41a04f2139c02fee69a685f055c8b0a6eb177
+
+Package: luci-i18n-dockerman-sv
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-sv_26.114.29114~adb3df4_all.ipk
+Size: 5258
+SHA256sum: 872db884c0dd34deb066ca251f35491f776b3c2f1b0abafc4931335763a10082
+
+Package: luci-i18n-dockerman-tr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-tr_26.114.29114~adb3df4_all.ipk
+Size: 5538
+SHA256sum: a7ffe0a0017aca7d71d007edcd75d638942186c68d3446b5b5be54a8cee01a5b
+
+Package: luci-i18n-dockerman-uk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-uk_26.114.29114~adb3df4_all.ipk
+Size: 6143
+SHA256sum: 1438747e003348d780f1f719e28ec081247b8a22332b01bac13d113b49982016
+
+Package: luci-i18n-dockerman-vi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-vi_26.114.29114~adb3df4_all.ipk
+Size: 5501
+SHA256sum: 7fd9adbec6392a9ad8e9662ef1959e929db0546da35c68ece4a2b713ff468fed
+
+Package: luci-i18n-dockerman-yua
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-yua_26.114.29114~adb3df4_all.ipk
+Size: 1105
+SHA256sum: 07d007695e9fd3017d6d4b38304cc52c7b8e80458e64e39ea2a2f47fcf7b24c8
+
+Package: luci-i18n-dockerman-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 5730
+SHA256sum: 64a783aea022642d475dbd6e9c5a13f0bdf02d2fc3d53cd91fe009ade4f37aff
+
+Package: luci-i18n-dockerman-zh-tw
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-dockerman-zh-tw_26.114.29114~adb3df4_all.ipk
+Size: 5314
+SHA256sum: 934e58de211f1703a53a39b353ee29b3a66981a7e84f531895d071d9fa6c0cd6
+
+Package: luci-i18n-fchomo-zh-cn
+Version: 0
+Architecture: all
+Filename: luci-i18n-fchomo-zh-cn_0_all.ipk
+Size: 16473
+SHA256sum: 54627f90dde5754bc3b5e77f9ed3c06218ce5eb47a5909658d6b660cf854e485
+
+Package: luci-i18n-fchomo-zh-tw
+Version: 0
+Architecture: all
+Filename: luci-i18n-fchomo-zh-tw_0_all.ipk
+Size: 16542
+SHA256sum: adb860f8a6a953ace66b170118c97bbb279fd8564bc8d2bb2909b190d25b1d33
+
+Package: luci-i18n-filebrowser-ar
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-ar_26.114.29114~adb3df4_all.ipk
+Size: 1305
+SHA256sum: 5d3c7b328f5277af8a3f2a1d56bd1855a9f453bf1645b57dcc2d7f6dee1ebcab
+
+Package: luci-i18n-filebrowser-cs
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-cs_26.114.29114~adb3df4_all.ipk
+Size: 1272
+SHA256sum: 156d3b921dbe2d7533a528d84f85ee9b42eff0f276e22d174c676282bc63e7c0
+
+Package: luci-i18n-filebrowser-da
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-da_26.114.29114~adb3df4_all.ipk
+Size: 1076
+SHA256sum: d84863a0dccb379eb97800e481afdf80e6f065e3f63a420bfa61173e29ea6876
+
+Package: luci-i18n-filebrowser-de
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-de_26.114.29114~adb3df4_all.ipk
+Size: 1208
+SHA256sum: 3215523b49364eb31e4db7c5b0e5833a1680d8a2464c1526eb49d47153935d00
+
+Package: luci-i18n-filebrowser-es
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-es_26.114.29114~adb3df4_all.ipk
+Size: 1218
+SHA256sum: 3b9a1b75e099e2815fa9093520b1c4fce73d8072cdfcbeca64af81355b08ed7e
+
+Package: luci-i18n-filebrowser-fa
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-fa_26.114.29114~adb3df4_all.ipk
+Size: 1234
+SHA256sum: d27ddccb66dd24fa7a5be333149b9519647e8749cf68bf9bcd82e7948fc6020b
+
+Package: luci-i18n-filebrowser-fi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-fi_26.114.29114~adb3df4_all.ipk
+Size: 1212
+SHA256sum: a91de72af47ae15b54218912c1afacc6ad4fdfb363bd9a4d55d9ad914e0f3f5c
+
+Package: luci-i18n-filebrowser-fr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-fr_26.114.29114~adb3df4_all.ipk
+Size: 1218
+SHA256sum: d48370251d6b00b2417fcd8f9af8542ce4dcc3d19d8c66c9d87f3b3c2550387e
+
+Package: luci-i18n-filebrowser-ga
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-ga_26.114.29114~adb3df4_all.ipk
+Size: 1253
+SHA256sum: d56a931f1357c354f2635ee0284fa302098b3d06e559091bbb0f31053c4dc8b1
+
+Package: luci-i18n-filebrowser-hu
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-hu_26.114.29114~adb3df4_all.ipk
+Size: 1245
+SHA256sum: 83e087ac456b504b057c9fc7aaed433ec2fe8a4ec86ed90f5aa06216c9dd13d4
+
+Package: luci-i18n-filebrowser-it
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-it_26.114.29114~adb3df4_all.ipk
+Size: 1189
+SHA256sum: ef9961747c72a4593f849bdb2bbb46b4e6e396f1e7318630fbba9a3f05268148
+
+Package: luci-i18n-filebrowser-ja
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-ja_26.114.29114~adb3df4_all.ipk
+Size: 1274
+SHA256sum: 3e8e11e822dfd6c572e0210b5cfecb8871ccf666862f487006e49458990c8eac
+
+Package: luci-i18n-filebrowser-lt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-lt_26.114.29114~adb3df4_all.ipk
+Size: 1284
+SHA256sum: 610e5805d7a0a7694da3de15e870626ae436daadeb20b4fe74a3a98da101405c
+
+Package: luci-i18n-filebrowser-nl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-nl_26.114.29114~adb3df4_all.ipk
+Size: 1206
+SHA256sum: 49b2d7189313e5f7982a1640682ed4f67fd5367ee043988167409e85983392c7
+
+Package: luci-i18n-filebrowser-pl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-pl_26.114.29114~adb3df4_all.ipk
+Size: 1256
+SHA256sum: a2422ffb9c5342435ca26b6680e7704bcff236aecddd532bf8b199bc40ab4c21
+
+Package: luci-i18n-filebrowser-pt-br
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-pt-br_26.114.29114~adb3df4_all.ipk
+Size: 1276
+SHA256sum: ae80058d8ff90df68dd4e07ed9581ca028c85adc7a7940e10e3c337103584a1a
+
+Package: luci-i18n-filebrowser-pt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-pt_26.114.29114~adb3df4_all.ipk
+Size: 1213
+SHA256sum: c13418423bd71d0d5ba961c6946ff9bfb59fabea9b8a43c55b47f3f89d36701d
+
+Package: luci-i18n-filebrowser-ro
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-ro_26.114.29114~adb3df4_all.ipk
+Size: 1270
+SHA256sum: 9121c05fee83ee64884c880975edf5a441a81c879d3fc4683c5f0c3186ee3794
+
+Package: luci-i18n-filebrowser-ru
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-ru_26.114.29114~adb3df4_all.ipk
+Size: 1330
+SHA256sum: 0ac690cb51133d4e515381e62f02fc8d1272405bc84819d2f51e2759ea621e48
+
+Package: luci-i18n-filebrowser-sk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-sk_26.114.29114~adb3df4_all.ipk
+Size: 1213
+SHA256sum: 739367fc244c85bf97e8fc9f6228eef5ecb682d86186973fbe8e2c225630d9dd
+
+Package: luci-i18n-filebrowser-sv
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-sv_26.114.29114~adb3df4_all.ipk
+Size: 1202
+SHA256sum: 9bd841f453a47b9df1003ce64348e6d959a1be65da31f49f67c83e49f686fae3
+
+Package: luci-i18n-filebrowser-tr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-tr_26.114.29114~adb3df4_all.ipk
+Size: 1222
+SHA256sum: 8ec5cb4d7977aeafa2e0251cdbd64580d922d58dca77eb575ecc696ab3c131d8
+
+Package: luci-i18n-filebrowser-uk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-uk_26.114.29114~adb3df4_all.ipk
+Size: 1345
+SHA256sum: c457593af5427dd3539ced198b59322e2585525c419f993bf0a0f3ee691a417a
+
+Package: luci-i18n-filebrowser-vi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-vi_26.114.29114~adb3df4_all.ipk
+Size: 1205
+SHA256sum: 0ad0b87bdacdc5bc5b44e006f1735823a61516ef236cf341df2b47d6883e2504
+
+Package: luci-i18n-filebrowser-yua
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-yua_26.114.29114~adb3df4_all.ipk
+Size: 1217
+SHA256sum: 6c6074786b40cbec1a55c886a35e1e5b79fd245e90e98554c8cce5bb30cd71cf
+
+Package: luci-i18n-filebrowser-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 1286
+SHA256sum: 387b1d65932aa2733a19c6b3c875de47610a29f036e418cd0925ae07e1970498
+
+Package: luci-i18n-filebrowser-zh-tw
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-filebrowser-zh-tw_26.114.29114~adb3df4_all.ipk
+Size: 1289
+SHA256sum: e8b2d82c1177f7934db073c8e50b6f20048e3c6dacd58f34056d2159a10820b5
+
+Package: luci-i18n-gost-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-gost-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 1424
+SHA256sum: 94f9b486c77779d0bdb77586e5cdb21e84b92fe1e547140a1996706b5c28774f
+
+Package: luci-i18n-homeproxy-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-homeproxy-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 13636
+SHA256sum: f9b155a169d17fe8a824207ba0da80ea3d751ade5aa955a684b31cbd7ce12390
+
+Package: luci-i18n-mosdns-zh-cn
+Version: 0
+Architecture: all
+Filename: luci-i18n-mosdns-zh-cn_0_all.ipk
+Size: 7094
+SHA256sum: b71f25b737eb3db88ec9730cab4de9adfeddc18eda8e2fa56bb4cefcb03ee8b6
+
+Package: luci-i18n-netdata-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-netdata-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 1225
+SHA256sum: 4dfb0b783a0af14637459a3fb26b89e573374d2b41cb93daa516706852056576
+
+Package: luci-i18n-nikki-ru
+Version: 0
+Architecture: all
+Filename: luci-i18n-nikki-ru_0_all.ipk
+Size: 5728
+SHA256sum: 0f48dc9d8a3132421bb803956796840c97f71a8a1ee2464bdd72e2593a43e290
+
+Package: luci-i18n-nikki-zh-cn
+Version: 0
+Architecture: all
+Filename: luci-i18n-nikki-zh-cn_0_all.ipk
+Size: 5244
+SHA256sum: 68c2316619fbdbd962ed297b22dc4ae1408255db93d4e7f89f4a56637285e874
+
+Package: luci-i18n-nikki-zh-tw
+Version: 0
+Architecture: all
+Filename: luci-i18n-nikki-zh-tw_0_all.ipk
+Size: 5269
+SHA256sum: 0a2328bb0654616adfc56dbc3d4c4d246e849287c53c499e1dbcb6327a92e20d
+
+Package: luci-i18n-npc-zh-cn
+Version: 0
+Architecture: all
+Filename: luci-i18n-npc-zh-cn_0_all.ipk
+Size: 1743
+SHA256sum: 1d1af71082db6e32b39d11619104a55824e83a0dabf22949277d96474d62b483
+
+Package: luci-i18n-partexp-zh-cn
+Version: 0
+Architecture: all
+Filename: luci-i18n-partexp-zh-cn_0_all.ipk
+Size: 2528
+SHA256sum: 375ba8e74add3736558ef1e72ba52ec04aa70cdf158df5eb50d428f7b7562db9
+
+Package: luci-i18n-poweroff-ja
+Version: 0
+Architecture: all
+Filename: luci-i18n-poweroff-ja_0_all.ipk
+Size: 1325
+SHA256sum: b4b369bd88230b222761ea417787820fd727168d56bfd18044a2bb85a5433c0a
+
+Package: luci-i18n-poweroff-zh-cn
+Version: 0
+Architecture: all
+Filename: luci-i18n-poweroff-zh-cn_0_all.ipk
+Size: 1407
+SHA256sum: c229e36be64723b2e8a1a8bbfc4564356b949ea2e2da6063b0145d3ae7e8d7d1
+
+Package: luci-i18n-socat-zh-cn
+Version: 0
+Architecture: all
+Filename: luci-i18n-socat-zh-cn_0_all.ipk
+Size: 1593
+SHA256sum: d6b6214a999999920b80a2fc9b60930374fecf9d3c6a2106d0ba9e14c3c8db7d
+
+Package: luci-i18n-transmission-ar
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-ar_26.114.29114~adb3df4_all.ipk
+Size: 1487
+SHA256sum: 069a495b5b9bfa98e05b4f6233466ed2b2332e2c9390629af97e9f4539cdf32e
+
+Package: luci-i18n-transmission-bg
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-bg_26.114.29114~adb3df4_all.ipk
+Size: 1555
+SHA256sum: 97b573d2c0e8eb42ffbf0c5a87233519d06d32a234c96b309e8ad3e5387e1e20
+
+Package: luci-i18n-transmission-bn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-bn_26.114.29114~adb3df4_all.ipk
+Size: 1385
+SHA256sum: c3e192d4649169f98f1546583e225cd3075aa20cb9d2fa9bdfcdda045470abda
+
+Package: luci-i18n-transmission-ca
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-ca_26.114.29114~adb3df4_all.ipk
+Size: 2386
+SHA256sum: 3d662f9e6ee14f996a6e56cf9cbec35b67c21114f4f82f4b00accae422a3ff01
+
+Package: luci-i18n-transmission-cs
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-cs_26.114.29114~adb3df4_all.ipk
+Size: 3720
+SHA256sum: a177197c796f9c025d1f78ea252bc6e6ac6299e3d2cca10ada861dce8c1521f3
+
+Package: luci-i18n-transmission-da
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-da_26.114.29114~adb3df4_all.ipk
+Size: 3281
+SHA256sum: 267772cb9fcca5bd1d044f21c19b3782737fba4fc5d69e563cc40e34c02d219f
+
+Package: luci-i18n-transmission-de
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-de_26.114.29114~adb3df4_all.ipk
+Size: 3521
+SHA256sum: b3171c6bc7b4cf5639aa6fa6a7c061668a3a219cf8d5cab166e9e9739f8d5b94
+
+Package: luci-i18n-transmission-el
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-el_26.114.29114~adb3df4_all.ipk
+Size: 1441
+SHA256sum: dc856eb879933962aa78fcfbda709ce85e329436d1119d4681b5aa7726a5c28f
+
+Package: luci-i18n-transmission-es
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-es_26.114.29114~adb3df4_all.ipk
+Size: 3467
+SHA256sum: fca9ddf5ca6ed7a8edc6c9d66fbaf2bb7f15ad4308608a7401c638fc3d17bf9e
+
+Package: luci-i18n-transmission-fi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-fi_26.114.29114~adb3df4_all.ipk
+Size: 1940
+SHA256sum: 8e3f4f65871a62dccbea4abb9d98bbe675f364925dd2516723db3dfe8373dbf3
+
+Package: luci-i18n-transmission-fr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-fr_26.114.29114~adb3df4_all.ipk
+Size: 3594
+SHA256sum: ae9d9dc9861233964ae5241ea2eb58ae91230f0dbf88da38152e78d8ebba0df6
+
+Package: luci-i18n-transmission-ga
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-ga_26.114.29114~adb3df4_all.ipk
+Size: 3572
+SHA256sum: 07a1608a3baa64c17a1744d41c441c9862bb120db001178a24f463c4ab051247
+
+Package: luci-i18n-transmission-he
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-he_26.114.29114~adb3df4_all.ipk
+Size: 1307
+SHA256sum: 250f8802f855c43ccab877e0aefe636508c04a5af5ddf6fb44c4e7a7f47a848b
+
+Package: luci-i18n-transmission-hi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-hi_26.114.29114~adb3df4_all.ipk
+Size: 1121
+SHA256sum: c9f6ad980ddef193cdd4059c15eff26a7091410c96eb1c9854ac510ab96ef675
+
+Package: luci-i18n-transmission-hu
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-hu_26.114.29114~adb3df4_all.ipk
+Size: 3356
+SHA256sum: d37e83aece6c2e966dc777b0ad69d9ae02ebb8ef176ef9aa47ce0923cd92be0a
+
+Package: luci-i18n-transmission-it
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-it_26.114.29114~adb3df4_all.ipk
+Size: 1677
+SHA256sum: de2e2c90c7bf8ae526a75c0cc4ac5620379b62fd2545b82534dae4b4d5a758e3
+
+Package: luci-i18n-transmission-ja
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-ja_26.114.29114~adb3df4_all.ipk
+Size: 2897
+SHA256sum: 4f6a8fafa88f13919e0289cd904be2cf3a3e5f5fb2120a3894cfaed739fe867c
+
+Package: luci-i18n-transmission-ko
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-ko_26.114.29114~adb3df4_all.ipk
+Size: 2732
+SHA256sum: 0d019c3f0d560773c6cd739495d9fc1fe4df4ae665c3b851c2644a477307df4a
+
+Package: luci-i18n-transmission-lt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-lt_26.114.29114~adb3df4_all.ipk
+Size: 3946
+SHA256sum: 7fe5aabd537ef17c53e1da97a10cd522cad3b39e94efb43ad629fa3b290cfdad
+
+Package: luci-i18n-transmission-mr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-mr_26.114.29114~adb3df4_all.ipk
+Size: 1267
+SHA256sum: c75be153aada606a11c6a18690f5243460d1a4ee9b700b9ce4b3bcb1608d017f
+
+Package: luci-i18n-transmission-ms
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-ms_26.114.29114~adb3df4_all.ipk
+Size: 1186
+SHA256sum: 011dd94ca98323fbcf774eec7a6dd763452319a56e2b0bb678f654ba4f6fea94
+
+Package: luci-i18n-transmission-nl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-nl_26.114.29114~adb3df4_all.ipk
+Size: 3410
+SHA256sum: 9187c88306df4453056c986817d432df0ae85128e7b6dbcb228d4da49f2e3b97
+
+Package: luci-i18n-transmission-no
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-no_26.114.29114~adb3df4_all.ipk
+Size: 2911
+SHA256sum: af092ccc8e28f45bf76ad8d0162f3710e4dcffd4c08f7038aeac570992bc7a66
+
+Package: luci-i18n-transmission-pl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-pl_26.114.29114~adb3df4_all.ipk
+Size: 3652
+SHA256sum: da9f0d5d8f70f1ca2f2227d7ab1fa129ec0e2419710dfa2e3aacf761fa62467c
+
+Package: luci-i18n-transmission-pt-br
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-pt-br_26.114.29114~adb3df4_all.ipk
+Size: 3638
+SHA256sum: 6faee689addbf13c1bcfa95da4e17f8343f52e44b98368f35805d155bd892251
+
+Package: luci-i18n-transmission-pt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-pt_26.114.29114~adb3df4_all.ipk
+Size: 3594
+SHA256sum: 2746dff2f008e5dcd617aecdc23a63f8aca643c3c673854cda3bd1980c32361e
+
+Package: luci-i18n-transmission-ro
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-ro_26.114.29114~adb3df4_all.ipk
+Size: 3680
+SHA256sum: f15a55f52a44db4778d76bd6b31c84d6e53a98fc28a2acc3f1980b49d5168f21
+
+Package: luci-i18n-transmission-ru
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-ru_26.114.29114~adb3df4_all.ipk
+Size: 4311
+SHA256sum: e079fd4fb8d15aca733fb35e6f0b484909577c05065c2aa416b2f14386c43505
+
+Package: luci-i18n-transmission-sk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-sk_26.114.29114~adb3df4_all.ipk
+Size: 2543
+SHA256sum: 3626a760e6676f88ea6a5a9d95c7dbd2bffe46b2e7c157ce3fb05d65769f7cd7
+
+Package: luci-i18n-transmission-sv
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-sv_26.114.29114~adb3df4_all.ipk
+Size: 2356
+SHA256sum: 9c35c7e701db6c88e6e7066a6efe645ae8f6acc360ea0abf949b960e533b9ff7
+
+Package: luci-i18n-transmission-tr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-tr_26.114.29114~adb3df4_all.ipk
+Size: 3600
+SHA256sum: 41cf75ebfec6974c570bb9e2072559e4130a1547c89891c444179c6bbf7a824d
+
+Package: luci-i18n-transmission-uk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-uk_26.114.29114~adb3df4_all.ipk
+Size: 4079
+SHA256sum: da2a75ae1f3848a8cb4b38c25bd1add47969e388cb8109e9445de011f5867cfe
+
+Package: luci-i18n-transmission-vi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-vi_26.114.29114~adb3df4_all.ipk
+Size: 3615
+SHA256sum: 5902b5c2a5a4206c36d47b31444cd7b091fa79a889d5774660fd4b78b69fae7c
+
+Package: luci-i18n-transmission-yua
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-yua_26.114.29114~adb3df4_all.ipk
+Size: 1148
+SHA256sum: 282b69f445751fb8284ef368a8ab8764aa1d102d302838527ed53426c75ba897
+
+Package: luci-i18n-transmission-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 3427
+SHA256sum: cbfbf165df93250e6d048b82a27cc12bdef73096555f721a8eac40455e1450b4
+
+Package: luci-i18n-transmission-zh-tw
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-transmission-zh-tw_26.114.29114~adb3df4_all.ipk
+Size: 3476
+SHA256sum: 431ddfcb0ea7172194d41d8e03bb170740ebce025e75686976cf6f3704571c61
+
+Package: luci-i18n-v2raya-ar
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-ar_26.114.29114~adb3df4_all.ipk
+Size: 1377
+SHA256sum: e498f8e6a4fb8ddf6f5942813cafdab177bce264e03aefdb6588ce85eb2c213c
+
+Package: luci-i18n-v2raya-bg
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-bg_26.114.29114~adb3df4_all.ipk
+Size: 1445
+SHA256sum: deeff1afa7a5b4a97e0679d2ff5b27b22a906a0af817b5eecc72258651db657a
+
+Package: luci-i18n-v2raya-bn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-bn_26.114.29114~adb3df4_all.ipk
+Size: 1226
+SHA256sum: 519ce4be4f7aa3f46c778b3ff6dd2384532bc9b36466566b21a6c4ecabb5e729
+
+Package: luci-i18n-v2raya-ca
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-ca_26.114.29114~adb3df4_all.ipk
+Size: 1189
+SHA256sum: 04dd08dc21d0098b5774d3ad085a23dd696c5e1b60e01ff6879f2e4416cdb05a
+
+Package: luci-i18n-v2raya-cs
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-cs_26.114.29114~adb3df4_all.ipk
+Size: 2061
+SHA256sum: 07919b90655f1df849cde39d706212a52013e1f90242521fcf64d03c0a14cc79
+
+Package: luci-i18n-v2raya-da
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-da_26.114.29114~adb3df4_all.ipk
+Size: 1124
+SHA256sum: f444ae8d66b63f137e47c369ac039d1e1fa79bf76721c1539bb68d7009e7b2fc
+
+Package: luci-i18n-v2raya-de
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-de_26.114.29114~adb3df4_all.ipk
+Size: 1933
+SHA256sum: 408e5e4f0d6a76809b766c55aeeb79601858fb0ef28630de4767ac23506ec107
+
+Package: luci-i18n-v2raya-el
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-el_26.114.29114~adb3df4_all.ipk
+Size: 1282
+SHA256sum: 7e981b28f575dfca8751a8107fa7c5bd5db97ea0860e90934372085dfb9ff3dc
+
+Package: luci-i18n-v2raya-es
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-es_26.114.29114~adb3df4_all.ipk
+Size: 1957
+SHA256sum: e6a35a1ec305bd28849e7eb7555c881c87fc7a76752c7568505ef62449000374
+
+Package: luci-i18n-v2raya-fi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-fi_26.114.29114~adb3df4_all.ipk
+Size: 1965
+SHA256sum: fa2425940257bbf4c10c7c4f1b6791de1d9f0e8f073e4910ad08771c79c708c2
+
+Package: luci-i18n-v2raya-fr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-fr_26.114.29114~adb3df4_all.ipk
+Size: 1415
+SHA256sum: 1db2fad78ec64e92296c8cad07fe374c989178cd3d66bc3010489e67ddf113e8
+
+Package: luci-i18n-v2raya-ga
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-ga_26.114.29114~adb3df4_all.ipk
+Size: 1984
+SHA256sum: eed1076b410a997b93eb70a4a0f3b7f27bd8dedb468e99d45e4df3189a3b8c53
+
+Package: luci-i18n-v2raya-he
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-he_26.114.29114~adb3df4_all.ipk
+Size: 1179
+SHA256sum: 4a238441903466cd3c50853da4382480152ea2f1f18a22a01ec3546b87e5ac8f
+
+Package: luci-i18n-v2raya-hi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-hi_26.114.29114~adb3df4_all.ipk
+Size: 1122
+SHA256sum: eb29370551df3a272b2199f1bf348fe0a96273d1569212a002378dece29abcf1
+
+Package: luci-i18n-v2raya-hu
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-hu_26.114.29114~adb3df4_all.ipk
+Size: 1371
+SHA256sum: 1a410911f3881ad70d41107532f92c3844b82f5289c72946b98b558d73badf72
+
+Package: luci-i18n-v2raya-it
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-it_26.114.29114~adb3df4_all.ipk
+Size: 1555
+SHA256sum: 0aedd5ae0c1d92043b3277f0189446d22f0b99ee5969b5f99029a9406837e39f
+
+Package: luci-i18n-v2raya-ja
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-ja_26.114.29114~adb3df4_all.ipk
+Size: 1477
+SHA256sum: 65295c395254e6c3f0f1418d73b7ff6e142dc5e3d9d3108f83861e30257aeef7
+
+Package: luci-i18n-v2raya-ko
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-ko_26.114.29114~adb3df4_all.ipk
+Size: 2079
+SHA256sum: 0e8048987239f747cda347bc0cf4761580f6793a85fb2951a7a8e0472650dbe6
+
+Package: luci-i18n-v2raya-lt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-lt_26.114.29114~adb3df4_all.ipk
+Size: 2162
+SHA256sum: 333ff9f945a33096a2046d908e35f222381360e92224d77561edc3b09fb9bcc0
+
+Package: luci-i18n-v2raya-mr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-mr_26.114.29114~adb3df4_all.ipk
+Size: 1113
+SHA256sum: e3fac715322eff0e99206ab25b23a196c2874935790183303da576c6d6af896b
+
+Package: luci-i18n-v2raya-ms
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-ms_26.114.29114~adb3df4_all.ipk
+Size: 1085
+SHA256sum: 3213e1ed0d1c2386ef7b7b0c7c840598eaedf6897969699b6bd60dbf3cbcf97a
+
+Package: luci-i18n-v2raya-nl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-nl_26.114.29114~adb3df4_all.ipk
+Size: 1237
+SHA256sum: db92ab873c32420e045012ef494e7309ba9acb4ea5cf5d139c8efb687253ea79
+
+Package: luci-i18n-v2raya-no
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-no_26.114.29114~adb3df4_all.ipk
+Size: 1875
+SHA256sum: 6748c981c383ac3950fda11cee30bbecfec4d5aaf8d36f3281b06e2bf58ff67a
+
+Package: luci-i18n-v2raya-pl
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-pl_26.114.29114~adb3df4_all.ipk
+Size: 1991
+SHA256sum: bfbdbb4c5c4363aa2535b96509b7822316a2860912d746e30af5abd8af3a1213
+
+Package: luci-i18n-v2raya-pt-br
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-pt-br_26.114.29114~adb3df4_all.ipk
+Size: 1724
+SHA256sum: 84ace9665fcd965a5a8d74dbe2a494bd52e9f85e938b2854ab2048404950d326
+
+Package: luci-i18n-v2raya-pt
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-pt_26.114.29114~adb3df4_all.ipk
+Size: 1563
+SHA256sum: e655f7fdac253fe277e7203232d90e433129d5ec96d54cc311c28fe1783638e1
+
+Package: luci-i18n-v2raya-ro
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-ro_26.114.29114~adb3df4_all.ipk
+Size: 1525
+SHA256sum: 319b405168b0f6fa8a64bc6ef38238665f72ae17db6bcb79793b4487a6a7722f
+
+Package: luci-i18n-v2raya-ru
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-ru_26.114.29114~adb3df4_all.ipk
+Size: 2213
+SHA256sum: e08cd0c702c0fcbe86e5a1358c3a4d52631056afb2f62c1e0838c58bf4f55983
+
+Package: luci-i18n-v2raya-sk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-sk_26.114.29114~adb3df4_all.ipk
+Size: 1197
+SHA256sum: e43ac299727568228c1062fcc60347ddbb1b6da9d247f0b78e1ea3c699a55500
+
+Package: luci-i18n-v2raya-sv
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-sv_26.114.29114~adb3df4_all.ipk
+Size: 1487
+SHA256sum: 699420162be25418186b4b4b936260a4867dd3dccff0cc41d4d751eea8741b8c
+
+Package: luci-i18n-v2raya-tr
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-tr_26.114.29114~adb3df4_all.ipk
+Size: 1984
+SHA256sum: 9dbcdfcdefe5b94c6a546661c06caea8ca4185e6f3fd53cb630f5c8feee9a0f4
+
+Package: luci-i18n-v2raya-uk
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-uk_26.114.29114~adb3df4_all.ipk
+Size: 2220
+SHA256sum: 1f8aa42a19447ca31afe9f8a7308838814c0e7d5cebc2fad6224851809b825e0
+
+Package: luci-i18n-v2raya-vi
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-vi_26.114.29114~adb3df4_all.ipk
+Size: 1321
+SHA256sum: 4433574f076196240845877ed9e389e05b0e2a5ebfc730beb5bfa2e413ea2c10
+
+Package: luci-i18n-v2raya-yua
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-yua_26.114.29114~adb3df4_all.ipk
+Size: 1938
+SHA256sum: 7d7a8ea2c2d6ed909db49e63f260c74cc71b99a775c9967d743468986f8f2dff
+
+Package: luci-i18n-v2raya-zh-cn
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-zh-cn_26.114.29114~adb3df4_all.ipk
+Size: 2042
+SHA256sum: ac678f38470fa3b6597d0477e0e55c9d682d92682a9cb89168f3322bf0803b91
+
+Package: luci-i18n-v2raya-zh-tw
+Version: 26.114.29114~adb3df4
+Architecture: all
+Filename: luci-i18n-v2raya-zh-tw_26.114.29114~adb3df4_all.ipk
+Size: 2017
+SHA256sum: e2c8d0c1fa840e8b33d1aa9293ef23752f42d0892075d1eeb27f474a800839a1
+
+Package: luci-i18n-wolplus-zh-cn
+Version: 0
+Architecture: all
+Filename: luci-i18n-wolplus-zh-cn_0_all.ipk
+Size: 1378
+SHA256sum: ae6fd9aff9d614628f3fa9e9c6e7222f3436d93cc8be3d7afa8e70e10f0db9fd
+
 Package: luci-lib-base
 Version: 26.114.29114~adb3df4
 Architecture: all
@@ -2690,8 +4300,8 @@ Package: mihomo
 Version: 1.19.32-r1_x86
 Architecture: 64
 Filename: mihomo_1.19.32-r1_x86_64.ipk
-Size: 22546234
-SHA256sum: a8ae5a4e96a4be42e4ddf1549a1dca0bd344e2f5c836089d021449c4b17db091
+Size: 22546051
+SHA256sum: b982e7f2cd69e43d8ef6bf38da98a21b36c40046a047d59d9741f5ed817168de
 
 Package: miniupnpc
 Version: 2.2.8-r1_x86
@@ -2889,13 +4499,6 @@ Filename: namei_2.40.2-r1_x86_64.ipk
 Size: 11691
 SHA256sum: bfbeadb7f4465dcbae607cc4d3f825fc371d696d96b5a55cd63beb11a69638a4
 
-Package: natmap
-Version: 20240813-r3_x86
-Architecture: 64
-Filename: natmap_20240813-r3_x86_64.ipk
-Size: 24914
-SHA256sum: f24f0d0c4fc8cf5e9f95a8e375eecc240dbd6d3e7d0fc681f05c1c3095cace76
-
 Package: natpmpc
 Version: 20230423-r2_x86
 Architecture: 64
@@ -2944,13 +4547,6 @@ Architecture: 64
 Filename: nsenter_2.40.2-r1_x86_64.ipk
 Size: 26060
 SHA256sum: 08ca99239afeafeed4606afe420bb96abf32ab8796a3cd5191f70b29aad0d5ef
-
-Package: oniguruma5
-Version: 6.9.9-r1_x86
-Architecture: 64
-Filename: oniguruma5_6.9.9-r1_x86_64.ipk
-Size: 184511
-SHA256sum: c76a8eb91d8cbe7921c975ba2834b7052e0d0f73104821fb2aa18fa05da5462d
 
 Package: openssl-util
 Version: 3.0.19-r1_x86
@@ -3292,8 +4888,8 @@ Package: runc
 Version: 1.1.14-r1_x86
 Architecture: 64
 Filename: runc_1.1.14-r1_x86_64.ipk
-Size: 3875140
-SHA256sum: dade1c8c310a2017dcd3f3b6fc7fedc94585d869643ed82d8059930e81b72d04
+Size: 3875018
+SHA256sum: a7133e7a2372e944afb17b24a61ecc44768cb0ebc4da796fafe077ecc5305347
 
 Package: scmp
 Version: sys_resolver_2.5.5-r1_x86
