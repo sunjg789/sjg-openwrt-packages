@@ -31,8 +31,9 @@ jobs:
       - name: 源码编译 usign（apt 无此包；libuecc + usign，几秒完成）
         run: |
           set -e
-          git clone --depth 1 https://github.com/openwrt/libuecc.git /tmp/libuecc
-          git clone --depth 1 https://github.com/openwrt/usign.git /tmp/usign-src
+          # libuecc/usign 的权威仓库在 git.openwrt.org（GitHub 的 openwrt 组织无 libuecc 镜像）
+          git clone --depth 1 https://git.openwrt.org/project/libuecc.git /tmp/libuecc
+          git clone --depth 1 https://git.openwrt.org/project/usign.git /tmp/usign-src
           cmake -S /tmp/libuecc -B /tmp/libuecc/build -DCMAKE_INSTALL_PREFIX=/usr/local
           make -C /tmp/libuecc/build install
           cmake -S /tmp/usign-src -B /tmp/usign-src/build -DCMAKE_INSTALL_PREFIX=/usr/local

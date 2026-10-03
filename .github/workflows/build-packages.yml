@@ -8,7 +8,8 @@ on:
     paths:
       - 'plugins.conf'
       - 'scripts/**'
-      - '.github/workflows/**'
+      - '.github/workflows/build-packages.yml'
+      - '.github/workflows/fix-index.yml'
 
 permissions:
   contents: write
