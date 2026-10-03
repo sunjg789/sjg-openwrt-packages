@@ -25,8 +25,20 @@ jobs:
       - name: 安装依赖
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq usign meson ninja-build wget file gawk gettext \
-            python3 rsync perl pkg-config libssl-dev zlib1g-dev liblua5.1-0-dev lua5.1
+          sudo apt-get install -y -qq cmake meson ninja-build wget file gawk gettext \
+            python3 rsync perl pkg-config libssl-dev zlib1g-dev build-essential git
+
+      - name: 源码编译 usign（apt 无此包；libuecc + usign，几秒完成）
+        run: |
+          set -e
+          git clone --depth 1 https://github.com/openwrt/libuecc.git /tmp/libuecc
+          git clone --depth 1 https://github.com/openwrt/usign.git /tmp/usign-src
+          cmake -S /tmp/libuecc -B /tmp/libuecc/build -DCMAKE_INSTALL_PREFIX=/usr/local
+          make -C /tmp/libuecc/build install
+          cmake -S /tmp/usign-src -B /tmp/usign-src/build -DCMAKE_INSTALL_PREFIX=/usr/local
+          make -C /tmp/usign-src/build install
+          sudo ldconfig
+          usign 2>&1 | head -n 2 || true
 
       - name: 下载源 Run 的两个产物
         env:
@@ -57,7 +69,7 @@ jobs:
           curl -fsSL "https://codeload.github.com/alpinelinux/apk-tools/tar.gz/b5a31c0d865342ad80be10d68f1bb3d3ad9b0866" -o /tmp/apk-tools.tar.gz
           tar -xzf /tmp/apk-tools.tar.gz -C /tmp/apk-tools --strip-components=1
           cd /tmp/apk-tools
-          meson setup build -Ddocs=disabled -Dhelp=enabled -Dlua_version=5.1 \
+          meson setup build -Ddocs=disabled -Dhelp=enabled -Dlua=disabled \
             -Ddefault_library=static -Durl_backend=wget -Dzstd=disabled \
             -Dpython=disabled -Dtests=disabled -Dcrypto_backend=openssl
           ninja -C build
