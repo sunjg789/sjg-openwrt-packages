@@ -27,7 +27,7 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq cmake meson ninja-build wget file gawk gettext \
             python3 rsync perl pkg-config libssl-dev zlib1g-dev build-essential git \
-            libjson-c-dev
+            libjson-c-dev lua5.3 liblua5.3-dev
 
       - name: 源码编译 usign（apt 无此包；libubox + usign，几秒完成）
         run: |
@@ -73,7 +73,7 @@ jobs:
           curl -fsSL "https://codeload.github.com/alpinelinux/apk-tools/tar.gz/b5a31c0d865342ad80be10d68f1bb3d3ad9b0866" -o /tmp/apk-tools.tar.gz
           tar -xzf /tmp/apk-tools.tar.gz -C /tmp/apk-tools --strip-components=1
           cd /tmp/apk-tools
-          meson setup build -Ddocs=disabled -Dhelp=enabled -Dlua=disabled \
+          meson setup build -Ddocs=disabled -Dhelp=enabled -Dlua_version=5.3 \
             -Ddefault_library=static -Durl_backend=wget -Dzstd=disabled \
             -Dpython=disabled -Dtests=disabled -Dcrypto_backend=openssl
           ninja -C build
