@@ -37,10 +37,10 @@ jobs:
           git clone --depth 1 https://git.openwrt.org/project/usign.git /tmp/usign-src
           cmake -S /tmp/libubox -B /tmp/libubox/build \
             -DCMAKE_INSTALL_PREFIX=/usr/local -DBUILD_LUA=OFF
-          make -C /tmp/libubox/build install
+          sudo make -C /tmp/libubox/build install
           cmake -S /tmp/usign-src -B /tmp/usign-src/build \
             -DCMAKE_INSTALL_PREFIX=/usr/local -DUSE_LIBUBOX=on
-          make -C /tmp/usign-src/build install
+          sudo make -C /tmp/usign-src/build install
           sudo ldconfig
           usign 2>&1 | head -n 2 || true
 
