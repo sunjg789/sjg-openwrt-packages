@@ -50,23 +50,25 @@ jobs:
           RID: ${{ github.event.inputs.run_id }}
         run: |
           set -e
-          gh run download "$RID" -R "$GITHUB_REPOSITORY" -n repo-apk -D dl/apk
-          gh run download "$RID" -R "$GITHUB_REPOSITORY" -n repo-opkg -D dl/opkg
-          echo "--- apk 产物 ---"; find dl/apk -maxdepth 3 -type d | sort
-          echo "--- opkg 产物 ---"; find dl/opkg -maxdepth 3 -type d | sort
-          test -d dl/apk/repo/apk/x86_64
-          test -d dl/opkg/repo/opkg/x86_64
+          # 下载到仓库外（$RUNNER_TEMP），避免残留目录被后续 git add 误提交到 gh-pages
+          mkdir -p "$RUNNER_TEMP/dl"
+          gh run download "$RID" -R "$GITHUB_REPOSITORY" -n repo-apk -D "$RUNNER_TEMP/dl/apk"
+          gh run download "$RID" -R "$GITHUB_REPOSITORY" -n repo-opkg -D "$RUNNER_TEMP/dl/opkg"
+          echo "--- apk 产物 ---"; find "$RUNNER_TEMP/dl/apk" -maxdepth 3 -type d | sort
+          echo "--- opkg 产物 ---"; find "$RUNNER_TEMP/dl/opkg" -maxdepth 3 -type d | sort
+          test -d "$RUNNER_TEMP/dl/apk/repo/apk/x86_64"
+          test -d "$RUNNER_TEMP/dl/opkg/repo/opkg/x86_64"
 
       - name: 瘦身（排除 firmware / kmod / 非中文 i18n）
         run: |
-          bash scripts/slim-packages.sh "$PWD/dl/apk/repo/apk/x86_64"
-          bash scripts/slim-packages.sh "$PWD/dl/opkg/repo/opkg/x86_64"
+          bash scripts/slim-packages.sh "$RUNNER_TEMP/dl/apk/repo/apk/x86_64"
+          bash scripts/slim-packages.sh "$RUNNER_TEMP/dl/opkg/repo/opkg/x86_64"
 
       - name: 重建 apk 索引 packages.adb 与签名（完整 apk-tools 3.0.5 mkndx）
         run: |
           set -e
-          APKS_DIR="$PWD/dl/apk/repo/apk/x86_64"
-          KEYS="$PWD/dl/apk/keys"
+          APKS_DIR="$RUNNER_TEMP/dl/apk/repo/apk/x86_64"
+          KEYS="$RUNNER_TEMP/dl/apk/keys"
           [ -f "$KEYS/secret.key" ] || { echo "!! artifact 内无签名密钥"; exit 1; }
           # 与 ImmortalWrt 25.12.2 同源的 apk-tools 3.0.5（v3 包只能用 mkndx 建索引）
           mkdir -p /tmp/apk-tools
@@ -88,13 +90,13 @@ jobs:
         run: |
           # 无 SDK：gen-index.sh 回退使用系统 usign（opkg 索引只依赖 sha256sum/gzip/usign）
           bash scripts/gen-index.sh opkg \
-            "$PWD/dl/opkg/repo/opkg/x86_64" "$PWD/dl/opkg/keys" "$PWD"
+            "$RUNNER_TEMP/dl/opkg/repo/opkg/x86_64" "$RUNNER_TEMP/dl/opkg/keys" "$PWD"
 
       - name: 核心插件双格式自检
         run: |
           set -e
-          A="$PWD/dl/apk/repo/apk/x86_64"
-          O="$PWD/dl/opkg/repo/opkg/x86_64"
+          A="$RUNNER_TEMP/dl/apk/repo/apk/x86_64"
+          O="$RUNNER_TEMP/dl/opkg/repo/opkg/x86_64"
           for p in openclash passwall passwall2 lucky diskman dockerman adguardhome; do
             echo "== $p =="
             echo "  apk : $(ls "$A" | grep -i "$p" | head -4 | tr '\n' ' ')"
@@ -106,24 +108,26 @@ jobs:
           set -e
           git config user.name "sjg-packages-bot"
           git config user.email "actions@github.com"
-          mkdir -p stage
-          cp -r dl/apk/repo/apk   stage/apk
-          cp -r dl/opkg/repo/opkg stage/opkg
-          cp -r dl/apk/keys       stage/keys
+          # 组装目录放仓库外，杜绝 stage/ 被误提交
+          mkdir -p "$RUNNER_TEMP/stage"
+          cp -r "$RUNNER_TEMP/dl/apk/repo/apk"   "$RUNNER_TEMP/stage/apk"
+          cp -r "$RUNNER_TEMP/dl/opkg/repo/opkg" "$RUNNER_TEMP/stage/opkg"
+          cp -r "$RUNNER_TEMP/dl/apk/keys"       "$RUNNER_TEMP/stage/keys"
           git fetch origin gh-pages --depth 1 || true
           if git rev-parse --verify origin/gh-pages >/dev/null 2>&1; then
             git checkout gh-pages
           else
             git checkout --orphan gh-pages
           fi
-          # merged/ 为历史误提交目录，必须一并清除
-          rm -rf apk opkg keys merged .nojekyll
-          cp -r stage/apk stage/opkg stage/keys .
+          # merged/ dl/ stage/ 均为历史误提交目录，必须一并清除
+          rm -rf apk opkg keys merged dl stage .nojekyll
+          cp -r "$RUNNER_TEMP/stage/apk" "$RUNNER_TEMP/stage/opkg" "$RUNNER_TEMP/stage/keys" .
           touch .nojekyll
           echo "--- 发布内容统计 ---"
           echo "apk : $(find apk -name '*.apk' | wc -l) 个, $(du -sh apk | cut -f1)"
           echo "opkg: $(find opkg -name '*.ipk' | wc -l) 个, $(du -sh opkg | cut -f1)"
-          git add -A
+          # 精确添加发布内容，禁止 git add -A（会把工作目录残留一并提交）
+          git add apk opkg keys .nojekyll
           if git diff --cached --quiet; then
             echo "无变更，跳过提交"
           else

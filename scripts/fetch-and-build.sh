@@ -135,6 +135,20 @@ if [ "${#SMALL_DIRS[@]}" -gt 0 ]; then
   fi
 fi
 
+# 克隆/复制完成后的最终防线：第三方合集（small-package 等）可能以不同目录名
+# 携带同一递归包。natmap 已知两个变体目录：官方 feeds 的 net/natmap 与 kenzok8
+# 合集的 openwrt-natmap（包名均为 natmap，Kconfig 自选择递归）。
+echo "==> 克隆后最终扫描递归包（含目录名变体）"
+rm -rf package/natmap package/openwrt-natmap package/luci-app-natmap 2>/dev/null || true
+find package feeds -maxdepth 6 \( -type d -o -type l \) \
+   \( -name 'natmap' -o -name 'openwrt-natmap' \) \
+   -exec rm -rf {} + 2>/dev/null || true
+for r in asterisk nginx gensio ifstat kadnode natmap openwrt-natmap oscam \
+         rsyslog mutt tvheadend parted qemu; do
+  find package feeds -maxdepth 6 \( -type d -o -type l \) -name "$r" \
+    -exec rm -rf {} + 2>/dev/null || true
+done
+
 echo "==> 生成默认 .config（make defconfig，避免无终端交互 menuconfig）"
 export TERM=xterm
 make defconfig >/tmp/defconfig.log 2>&1 || {
@@ -151,6 +165,10 @@ make defconfig >/tmp/defconfig.log 2>&1 || {
 # ============================================================
 heal_recursive() {
   local logfile="$1" curtarget="$2" removed="" p pkg hits
+  # 只截取递归错误块（"recursive dependency detected!" → "For a resolution"），
+  # 避免从 V=s 全量日志的无关位置提取 symbol，误删 base-files/busybox 等核心包
+  local block
+  block="$(awk '/recursive dependency detected!/{f=1} f{print} /For a resolution/{f=0}' "$logfile" 2>/dev/null)"
   # A) feeds Config.in 路径（depends 环里 symbol 所在的包目录）
   while IFS= read -r p; do
     [ -n "$p" ] || continue
@@ -159,20 +177,22 @@ heal_recursive() {
     find package/feeds -maxdepth 4 \( -type d -o -type l \) -name "$pkg" \
       -exec rm -rf {} + 2>/dev/null || true
     removed="$removed $p"
-  done < <(grep -oE 'feeds/[A-Za-z0-9_./-]+/Config[a-z0-9-]*\.in' "$logfile" 2>/dev/null \
+  done < <(printf '%s\n' "$block" | grep -oE 'feeds/[A-Za-z0-9_./-]+/Config[a-z0-9-]*\.in' 2>/dev/null \
              | sed -E 's|/Config.*||' | sort -u)
   # B) symbol PACKAGE_xxx（select 环，如 natmap；错误行不带 feeds 路径）
   while IFS= read -r pkg; do
     [ -n "$pkg" ] || continue
     [ "$pkg" = "$curtarget" ] && continue   # 绝不删除正在编译的目标自身
-    hits="$(find feeds package/feeds -maxdepth 5 \( -type d -o -type l \) -name "$pkg" 2>/dev/null)"
+    # 同时匹配合集变体目录名（small-package 的 openwrt-<pkg>）
+    hits="$(find feeds package/feeds package -maxdepth 6 \( -type d -o -type l \) \
+              \( -name "$pkg" -o -name "openwrt-$pkg" \) 2>/dev/null)"
     if [ -n "$hits" ]; then
       while IFS= read -r h; do rm -rf "$h" 2>/dev/null || true; done <<EOF
 $hits
 EOF
       removed="$removed $pkg(find)"
     fi
-  done < <(grep -oE 'symbol PACKAGE_[A-Za-z0-9_.+-]+' "$logfile" 2>/dev/null \
+  done < <(printf '%s\n' "$block" | grep -oE 'symbol PACKAGE_[A-Za-z0-9_.+-]+' 2>/dev/null \
              | sed 's/symbol PACKAGE_//' | sort -u)
   if [ -n "$removed" ]; then
     echo "$removed"
