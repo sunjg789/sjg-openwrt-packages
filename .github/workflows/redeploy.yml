@@ -1,0 +1,116 @@
+name: Redeploy from Run
+
+# 一次性/运维用途：从某次构建 Run 下载已编译的 repo-apk/repo-opkg 产物，
+# 在 CI 内完成「瘦身 → 重建索引+签名 → 推送 gh-pages」。
+# 用于：正式 Run 的编译 job 成功但 Deploy job 失败（artifact 只保留 7 天，无需重新编译）。
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: '源构建 Run ID（下载其 repo-apk / repo-opkg 产物）'
+        required: true
+        default: '37095022418'
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  redeploy:
+    name: Slim, reindex and deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 安装依赖
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq usign meson ninja-build wget file gawk gettext \
+            python3 rsync perl pkg-config libssl-dev zlib1g-dev liblua5.1-0-dev lua5.1
+
+      - name: 下载源 Run 的两个产物
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RID: ${{ github.event.inputs.run_id }}
+        run: |
+          set -e
+          gh run download "$RID" -R "$GITHUB_REPOSITORY" -n repo-apk -D dl/apk
+          gh run download "$RID" -R "$GITHUB_REPOSITORY" -n repo-opkg -D dl/opkg
+          echo "--- apk 产物 ---"; find dl/apk -maxdepth 3 -type d | sort
+          echo "--- opkg 产物 ---"; find dl/opkg -maxdepth 3 -type d | sort
+          test -d dl/apk/repo/apk/x86_64
+          test -d dl/opkg/repo/opkg/x86_64
+
+      - name: 瘦身（排除 firmware / kmod / 非中文 i18n）
+        run: |
+          bash scripts/slim-packages.sh "$PWD/dl/apk/repo/apk/x86_64"
+          bash scripts/slim-packages.sh "$PWD/dl/opkg/repo/opkg/x86_64"
+
+      - name: 重建 apk 索引 packages.adb 与签名（完整 apk-tools 3.0.5 mkndx）
+        run: |
+          set -e
+          APKS_DIR="$PWD/dl/apk/repo/apk/x86_64"
+          KEYS="$PWD/dl/apk/keys"
+          [ -f "$KEYS/secret.key" ] || { echo "!! artifact 内无签名密钥"; exit 1; }
+          # 与 ImmortalWrt 25.12.2 同源的 apk-tools 3.0.5（v3 包只能用 mkndx 建索引）
+          mkdir -p /tmp/apk-tools
+          curl -fsSL "https://codeload.github.com/alpinelinux/apk-tools/tar.gz/b5a31c0d865342ad80be10d68f1bb3d3ad9b0866" -o /tmp/apk-tools.tar.gz
+          tar -xzf /tmp/apk-tools.tar.gz -C /tmp/apk-tools --strip-components=1
+          cd /tmp/apk-tools
+          meson setup build -Ddocs=disabled -Dhelp=enabled -Dlua_version=5.1 \
+            -Ddefault_library=static -Durl_backend=wget -Dzstd=disabled \
+            -Dpython=disabled -Dtests=disabled -Dcrypto_backend=openssl
+          ninja -C build
+          APK_HOST="$(find /tmp/apk-tools/build -maxdepth 3 -name apk -type f | head -n1)"
+          cd "$APKS_DIR"
+          rm -f packages.adb packages.adb.sig
+          "$APK_HOST" mkndx --allow-untrusted --output packages.adb ./*.apk
+          usign -S -m packages.adb -s "$KEYS/secret.key"
+          ls -la packages.adb packages.adb.sig
+
+      - name: 重建 opkg 索引与签名
+        run: |
+          # 无 SDK：gen-index.sh 回退使用系统 usign（opkg 索引只依赖 sha256sum/gzip/usign）
+          bash scripts/gen-index.sh opkg \
+            "$PWD/dl/opkg/repo/opkg/x86_64" "$PWD/dl/opkg/keys" "$PWD"
+
+      - name: 核心插件双格式自检
+        run: |
+          set -e
+          A="$PWD/dl/apk/repo/apk/x86_64"
+          O="$PWD/dl/opkg/repo/opkg/x86_64"
+          for p in openclash passwall passwall2 lucky diskman dockerman adguardhome; do
+            echo "== $p =="
+            echo "  apk : $(ls "$A" | grep -i "$p" | head -4 | tr '\n' ' ')"
+            echo "  opkg: $(ls "$O" | grep -i "$p" | head -4 | tr '\n' ' ')"
+          done
+
+      - name: 推送 gh-pages
+        run: |
+          set -e
+          git config user.name "sjg-packages-bot"
+          git config user.email "actions@github.com"
+          mkdir -p stage
+          cp -r dl/apk/repo/apk   stage/apk
+          cp -r dl/opkg/repo/opkg stage/opkg
+          cp -r dl/apk/keys       stage/keys
+          git fetch origin gh-pages --depth 1 || true
+          if git rev-parse --verify origin/gh-pages >/dev/null 2>&1; then
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+          fi
+          # merged/ 为历史误提交目录，必须一并清除
+          rm -rf apk opkg keys merged .nojekyll
+          cp -r stage/apk stage/opkg stage/keys .
+          touch .nojekyll
+          echo "--- 发布内容统计 ---"
+          echo "apk : $(find apk -name '*.apk' | wc -l) 个, $(du -sh apk | cut -f1)"
+          echo "opkg: $(find opkg -name '*.ipk' | wc -l) 个, $(du -sh opkg | cut -f1)"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "无变更，跳过提交"
+          else
+            git commit -m "redeploy: slim + reindex packages from run ${{ github.event.inputs.run_id }}"
+            git push origin gh-pages
+          fi

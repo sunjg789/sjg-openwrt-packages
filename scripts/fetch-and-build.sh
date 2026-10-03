@@ -227,8 +227,29 @@ for entry in "${PLUGINS[@]}"; do
 done
 
 echo "==> 收集产物 -> $OUT_DIR"
-find bin/packages -type f \( -name '*.ipk' -o -name '*.apk' \) -exec cp -n {} "$OUT_DIR/" \; 2>/dev/null
-COUNT="$(ls -1 "$OUT_DIR" | wc -l)"
-echo "    共收集 $COUNT 个包文件"
-[ "$COUNT" -gt 0 ] || { echo "!! 未收集到任何包"; exit 1; }
+# 只收第三方插件（克隆在 package/ 根目录 → bin/packages/base feed）与非官方自定义 feed；
+# 官方 packages/luci feed 的包（上千个、含数百 MB x86 用不到的无线 firmware、
+# kmod、基础库、docker 等）由 Image Builder 环境与官方源提供，不收进本库。
+if [ -d bin/packages/base ]; then
+  find bin/packages/base -type f \( -name '*.ipk' -o -name '*.apk' \) \
+    -exec cp -n {} "$OUT_DIR/" \; 2>/dev/null
+fi
+for f in bin/packages/*/; do
+  bn="$(basename "$f")"
+  case "$bn" in
+    base|packages|luci|telephony|routing|freifunk)
+      # 官方 feed：跳过（base 已在上面收集）
+      ;;
+    *)
+      find "$f" -type f \( -name '*.ipk' -o -name '*.apk' \) \
+        -exec cp -n {} "$OUT_DIR/" \; 2>/dev/null
+      ;;
+  esac
+done
+# 双保险：无论哪个 feed，firmware/kmod 一律剔除（x86 软路由不需要，且 kmod 须与内核同源）
+find "$OUT_DIR" -type f \( -name '*-firmware-*' -o -name 'linux-firmware-*' -o -name 'kmod-*' \) \
+  -delete 2>/dev/null || true
+COUNT="$(find "$OUT_DIR" -maxdepth 1 -type f \( -name '*.ipk' -o -name '*.apk' \) | wc -l)"
+echo "    共收集 $COUNT 个包文件（仅第三方 feed，已排除 firmware/kmod）"
+[ "$COUNT" -gt 0 ] || { echo "!! 未收集到任何包（base feed 缺失？）"; exit 1; }
 echo "==> 完成"
