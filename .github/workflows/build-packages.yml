@@ -136,7 +136,10 @@ jobs:
         with:
           pattern: repo-*
           merge-multiple: true
-          path: merged
+          # 必须下载到仓库目录之外：gh-pages 历史上误提交过 merged/ 目录，
+          # 若下载到仓库内，git checkout gh-pages 会报
+          # "untracked working tree files would be overwritten by checkout" 并 Aborting。
+          path: ${{ runner.temp }}/merged
 
       - name: 合并并推送 gh-pages
         env:
@@ -151,9 +154,9 @@ jobs:
           else
             git checkout --orphan gh-pages
           fi
-          rm -rf apk opkg keys .nojekyll
-          cp -r merged/repo/* .
-          if [ -d merged/keys ]; then cp -r merged/keys .; fi
+          rm -rf apk opkg keys merged .nojekyll
+          cp -r "$RUNNER_TEMP/merged/repo/"* .
+          if [ -d "$RUNNER_TEMP/merged/keys" ]; then cp -r "$RUNNER_TEMP/merged/keys" .; fi
           touch .nojekyll
           echo "--- 发布内容预览 ---"
           find apk opkg keys -type f 2>/dev/null | head -n 60
