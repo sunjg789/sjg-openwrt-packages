@@ -2494,8 +2494,8 @@ Package: luci-app-fchomo
 Version: 0
 Architecture: all
 Filename: luci-app-fchomo_0_all.ipk
-Size: 304122
-SHA256sum: 99059568d275d77372452ab7842ac5a58b81d0ca935adefccb4d592efd3ad03d
+Size: 304958
+SHA256sum: 47ffded86297a29704d57d84456106975c110c8fc9bd200418967a1cc99fee45
 
 Package: luci-app-filebrowser
 Version: 1.1.0-r1
@@ -3439,15 +3439,15 @@ Package: luci-i18n-fchomo-zh-cn
 Version: 0
 Architecture: all
 Filename: luci-i18n-fchomo-zh-cn_0_all.ipk
-Size: 16473
-SHA256sum: 54627f90dde5754bc3b5e77f9ed3c06218ce5eb47a5909658d6b660cf854e485
+Size: 16544
+SHA256sum: 37d1d645287199b6b6b35b4c3c6d9ff593d325a2085022987312e8e915a904a1
 
 Package: luci-i18n-fchomo-zh-tw
 Version: 0
 Architecture: all
 Filename: luci-i18n-fchomo-zh-tw_0_all.ipk
-Size: 16542
-SHA256sum: adb860f8a6a953ace66b170118c97bbb279fd8564bc8d2bb2909b190d25b1d33
+Size: 16614
+SHA256sum: db2813eb8adfceb7b0a8a6ab445537424cb0b35cc94739165b7ec311a2469c88
 
 Package: luci-i18n-filebrowser-ar
 Version: 26.114.29114~adb3df4
@@ -4300,8 +4300,8 @@ Package: mihomo
 Version: 1.19.32-r1_x86
 Architecture: 64
 Filename: mihomo_1.19.32-r1_x86_64.ipk
-Size: 22546051
-SHA256sum: b982e7f2cd69e43d8ef6bf38da98a21b36c40046a047d59d9741f5ed817168de
+Size: 22546187
+SHA256sum: 01160041b076aa39d1d93e1200bcd956b8be522d116350fa3288ee8bab818085
 
 Package: miniupnpc
 Version: 2.2.8-r1_x86
