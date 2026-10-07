@@ -212,6 +212,22 @@ if [ "${DIAGNOSE:-0}" = "1" ]; then
       echo "==> 未检测到递归依赖（Kconfig 图干净）"
     fi
   fi
+  # ---- 破环试验：musl 下删除恒真 glibc 守卫，验证剩余环 ----
+  echo "===== [DIAG] Config-build.in base-files/busybox 完整生成块（1999-2100）====="
+  sed -n '1999,2100p' Config-build.in 2>/dev/null
+  if [ -f tmp/.config-package.in ]; then
+    n0=$(grep -cE 'depends on !\(.*USE_GLIBC.*\) \|\| USE_GLIBC' tmp/.config-package.in || true)
+    sed -i -E '/depends on !\(.*USE_GLIBC.*\) \|\| USE_GLIBC/d' tmp/.config-package.in
+    touch tmp/.config-package.in
+    echo "===== [DIAG] 已删除 musl 下恒真 glibc 守卫行数: $n0；重新 defconfig 验证 ====="
+    make defconfig >/tmp/diag-cyc.log 2>&1 || true
+    if grep -q "recursive dependency detected" /tmp/diag-cyc.log; then
+      echo "----- 删除 glibc 守卫后仍存在的环 -----"
+      awk '/recursive dependency detected!/{n++; print "\n### 剩余环 #" n " ###"; p=1} p{print} /For a resolution/{p=0}' /tmp/diag-cyc.log
+    else
+      echo "----- 删除 glibc 守卫后 Kconfig 图干净（破环成功）-----"
+    fi
+  fi
   echo "########## [DIAG] 诊断结束 ##########"
   exit 0
 fi
