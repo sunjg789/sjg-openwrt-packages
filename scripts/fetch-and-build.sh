@@ -9,6 +9,10 @@
 # ============================================================
 set -uo pipefail
 
+# 脚本自身所在目录（必须在任何 cd 之前解析为绝对路径，否则 cd 进 SDK 后
+# 相对路径会错误指向 SDK 内的 scripts）
+SELF_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 SDK_URL="${1:?用法: fetch-and-build.sh <SDK_URL> <OUT_DIR> <PLUGINS_CONF>}"
 OUT_DIR="${2:?缺少 OUT_DIR}"
 PLUGINS_CONF="${3:?缺少 PLUGINS_CONF}"
@@ -34,7 +38,7 @@ cd "$SDK_DIR"
 # 破环补丁：patch include/toplevel.mk，使 prepare-tmpinfo 每次重建
 # tmp/.config-package.in 时自动过滤 musl 下恒真的 glibc 条件依赖守卫
 # （master feed 快照 Kconfig 静态环的根因；诊断实测删 157 行后图干净）。
-SELF_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# SELF_DIR 已在脚本开头（cd 之前）解析为绝对路径。
 if command -v python3 >/dev/null 2>&1; then
   python3 "$SELF_DIR/patch_sdk_cycles.py" "$SDK_DIR" \
     || echo "    (破环补丁警告，继续，靠后续自愈兜底)"
