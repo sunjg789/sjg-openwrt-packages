@@ -168,17 +168,20 @@ make defconfig >/tmp/defconfig.log 2>&1 || {
 
 # dump_recursive <log>：打印递归块 + 报错行（path:line）前后实际文件内容
 dump_recursive() {
-  local log="$1"
-  awk '/recursive dependency detected!/{n++; print "\n########## 递归块 #" n " ##########"; p=1}
+  local log="$1" blk
+  # 只提取递归块文本，定位也只在块内做，避免混入 conf 处理时的其他 path:line
+  blk="$(awk '/recursive dependency detected!/{n++; print "\n########## 递归块 #" n " ##########"; p=1}
        p{print}
-       /For a resolution/{if(p){print "########## 块 #" n " 结束 ##########"}; p=0}' "$log"
-  echo "----- 报错行实际 Kconfig 内容（前3行/后3行，=> 标记报错行）-----"
-  grep -oE '(tmp/\.config-package\.in|feeds/[A-Za-z0-9_./-]+/Config[a-z0-9-]*\.in|Config-build\.in):[0-9]+' "$log" 2>/dev/null \
+       /For a resolution/{if(p){print "########## 块 #" n " 结束 ##########"}; p=0}' "$log")"
+  printf '%s\n' "$blk"
+  echo "----- 报错行实际 Kconfig 内容（前6行/后6行，=> 标记报错行）-----"
+  printf '%s\n' "$blk" \
+    | grep -oE '(tmp/\.config-package\.in|feeds/[A-Za-z0-9_./-]+/Config[a-z0-9-]*\.in|Config-build\.in):[0-9]+' 2>/dev/null \
     | sort -u | while read -r loc; do
-      local ln="${loc##*:}" f="${loc%:[0-9]*}" s e i
+      ln="${loc##*:}"; f="${loc%:[0-9]*}"
       if [ ! -f "$f" ]; then echo "  [$loc] 文件不存在"; continue; fi
-      s=$((ln-3)); [ "$s" -lt 1 ] && s=1
-      e=$((ln+3))
+      s=$((ln-6)); [ "$s" -lt 1 ] && s=1
+      e=$((ln+6))
       echo "  >>> $loc"
       i=$s
       while IFS= read -r line; do
