@@ -159,35 +159,55 @@ make defconfig >/tmp/defconfig.log 2>&1 || {
 
 # ============================================================
 # 诊断模式（DIAGNOSE=1）：强制重建「含全部第三方克隆包」的元数据索引，
-# 完整打印 Kconfig 递归依赖块后退出（不实际编译，几分钟出结果）。
+# 完整打印 Kconfig 递归依赖块 + 每个报错行的实际 Kconfig 文本后退出
+# （不实际编译，几分钟出结果）。
 # 背景：上面的 defconfig 复用了第三方包克隆前生成的陈旧 tmp/.config-package.in
 # （不含第三方包，所以不报错）；而编译单个包会删除并重建该索引、纳入全部
-# 第三方包，某个第三方插件引入的 Kconfig 递归环才在此刻暴露。
+# 第三方包，Kconfig 递归环才在此刻暴露。
 # ============================================================
+
+# dump_recursive <log>：打印递归块 + 报错行（path:line）前后实际文件内容
+dump_recursive() {
+  local log="$1"
+  awk '/recursive dependency detected!/{n++; print "\n########## 递归块 #" n " ##########"; p=1}
+       p{print}
+       /For a resolution/{if(p){print "########## 块 #" n " 结束 ##########"}; p=0}' "$log"
+  echo "----- 报错行实际 Kconfig 内容（前3行/后3行，=> 标记报错行）-----"
+  grep -oE '(tmp/\.config-package\.in|feeds/[A-Za-z0-9_./-]+/Config[a-z0-9-]*\.in|Config-build\.in):[0-9]+' "$log" 2>/dev/null \
+    | sort -u | while read -r loc; do
+      local ln="${loc##*:}" f="${loc%:[0-9]*}" s e i
+      if [ ! -f "$f" ]; then echo "  [$loc] 文件不存在"; continue; fi
+      s=$((ln-3)); [ "$s" -lt 1 ] && s=1
+      e=$((ln+3))
+      echo "  >>> $loc"
+      i=$s
+      while IFS= read -r line; do
+        if [ "$i" -eq "$ln" ]; then printf '      => %s\t%s\n' "$i" "$line"; else printf '         %s\t%s\n' "$i" "$line"; fi
+        i=$((i+1))
+      done < <(sed -n "${s},${e}p" "$f")
+    done
+}
+
 if [ "${DIAGNOSE:-0}" = "1" ]; then
   echo "########## [DIAG] 诊断开始：强制重建 package 元数据（含第三方包） ##########"
   echo "==> package/ 根目录清单（package/feeds=官方软链，其余=克隆的第三方包）："
   find package -maxdepth 1 -mindepth 1 | sort
   rm -f tmp/.config-package.in tmp/.packageinfo tmp/.packagedeps
-  echo "==> 触发完整 Config.in 扫描（make package/OpenClash/compile V=s，仅取配置阶段）"
+  echo "==> 探测 1/2：make package/OpenClash/compile V=s（取配置阶段）"
   make package/OpenClash/compile V=s >/tmp/diag.log 2>&1 || true
-  echo "===== 递归依赖块（完整，起 recursive / 止 For a resolution）====="
-  awk '/recursive dependency detected!/{n++; print "\n########## 递归块 #" n " ##########"; p=1}
-       p{print}
-       /For a resolution/{if(p){print "########## 块 #" n " 结束 ##########"}; p=0}' /tmp/diag.log
-  echo "===== 递归块输出结束 ===="
-  if ! grep -q "recursive dependency detected" /tmp/diag.log; then
-    echo "==> OpenClash 未触发递归，逐个第三方目录探测（package/feeds 除外）..."
-    for d in package/*/; do
-      bn="$(basename "$d")"
-      [ "$bn" = "feeds" ] && continue
-      rm -f tmp/.config-package.in
-      make "package/$bn/compile" V=s >"/tmp/diag-$bn.log" 2>&1 || true
-      if grep -q "recursive dependency detected" "/tmp/diag-$bn.log"; then
-        echo "########## 递归源候选目录: package/$bn ##########"
-        awk '/recursive dependency detected!/{p=1} p{print} /For a resolution/{p=0}' "/tmp/diag-$bn.log"
-      fi
-    done
+  if grep -q "recursive dependency detected" /tmp/diag.log; then
+    dump_recursive /tmp/diag.log
+  else
+    # 不逐个 compile（那会真实编译、极慢）；重建索引后跑 defconfig 即可一次性
+    # 触发 conf 的全量递归检测（defconfig 只做配置，不编译包，几分钟完成）。
+    echo "==> 探测 2/2：OpenClash 未触发，重建索引后 make defconfig（不编译，取全部环）"
+    rm -f tmp/.config-package.in tmp/.packageinfo tmp/.packagedeps
+    make defconfig V=s >/tmp/diag-def.log 2>&1 || true
+    if grep -q "recursive dependency detected" /tmp/diag-def.log; then
+      dump_recursive /tmp/diag-def.log
+    else
+      echo "==> 未检测到递归依赖（Kconfig 图干净）"
+    fi
   fi
   echo "########## [DIAG] 诊断结束 ##########"
   exit 0
