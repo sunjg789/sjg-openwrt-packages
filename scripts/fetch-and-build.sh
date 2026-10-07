@@ -321,6 +321,32 @@ heal_recursive() {
   return 1
 }
 
+# ===== 预编译 Rust host 工具链（含完整 LLVM）=====
+# 首次编译 rust 程序（shadowsocks-rust / tuic-client / shadow-tls）时，构建系统需先从源码
+# 编译 host 版 rustc + LLVM（约 3700 个目标，4 核 runner 约 80–150 分钟）。若不预热，该耗时
+# 会落到前几个触发 Rust 的包上，在单包 timeout(40min) 内编不完 LLVM 而被误判失败
+# （run #69 已证实：openclash/passwall 各耗 40 分钟只编完一半 LLVM，到 passwall2 才编完）。
+NEED_RUST=0
+if grep -qE 'CONFIG_PACKAGE_(shadowsocks-rust|tuic-client|shadow-tls)=y' .config 2>/dev/null; then
+  NEED_RUST=1
+fi
+RUST_HOST_DIR=""
+for d in package/feeds/packages/rust package/feeds/packages/lang/rust; do
+  if [ -d "$d" ]; then RUST_HOST_DIR="$d"; break; fi
+done
+if [ "$NEED_RUST" = "1" ] && [ -n "$RUST_HOST_DIR" ]; then
+  echo "==> 预编译 Rust host（含 LLVM，首次约 80–150 分钟，一次性完成避免分摊到单包超时）"
+  if timeout 10800 make -j"$(nproc)" "$RUST_HOST_DIR/host/compile" V=s >/tmp/build-rust-host.log 2>&1; then
+    echo "    ✓ rust/host 工具链就绪"
+  else
+    echo "    ! rust/host 预编译未在 180 分钟内完成，日志尾部："
+    tail -n 15 /tmp/build-rust-host.log
+    echo "    ! 继续逐个编译（若仍因 rust 失败，请增大预热 timeout 或减少 Rust 内核）"
+  fi
+else
+  echo "==> 未启用 Rust 内核（rust feed: ${RUST_HOST_DIR:-无}），跳过 rust/host 预编译"
+fi
+
 echo "==> [4/4] 逐个编译插件（递归依赖自动自愈，每包最多 30 轮）"
 for entry in "${PLUGINS[@]}"; do
   IFS='|' read -r dir url target note <<< "$entry"
@@ -337,7 +363,7 @@ for entry in "${PLUGINS[@]}"; do
   while :; do
     # 不再每轮删除 tmp 索引：循环前 defconfig 已全量纳入所有克隆包，复用索引
     # 可使每个包快速编译（每轮强删会导致全量重建 tmp，单包耗时 8-13 分钟）。
-    if timeout 2400 make -j"$(nproc)" "package/$target/compile" V=s >"/tmp/build-$target.log" 2>&1; then
+    if timeout 3600 make -j"$(nproc)" "package/$target/compile" V=s >"/tmp/build-$target.log" 2>&1; then
       if [ "$healed" -gt 0 ]; then
         echo "    ✓ $target 成功（经 $healed 轮递归自愈）"
       else
