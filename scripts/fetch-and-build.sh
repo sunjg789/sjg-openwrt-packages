@@ -164,7 +164,12 @@ for r in asterisk nginx gensio ifstat kadnode natmap openwrt-natmap oscam \
     -exec rm -rf {} + 2>/dev/null || true
 done
 
-echo "==> 生成默认 .config（make defconfig，避免无终端交互 menuconfig）"
+echo "==> 生成默认 .config（先清 tmp 强制全量重扫，纳入全部克隆包）"
+# feeds install 阶段生成过 tmp（不含随后克隆的第三方包）；必须彻底删除，
+# 否则 defconfig 复用陈旧 .packageinfo，编译时 package/<克隆包>/compile 目标缺失
+# （报 No rule to make target）。rm -rf tmp 后 defconfig 完整重扫 package/ 根，
+# 破环补丁在 .config-package.in 生成时自动过滤 glibc 守卫。
+rm -rf tmp
 export TERM=xterm
 make defconfig >/tmp/defconfig.log 2>&1 || {
   echo "!! defconfig 失败（多为某插件 Kconfig 递归依赖，见尾部）"
@@ -328,9 +333,10 @@ for entry in "${PLUGINS[@]}"; do
     continue
   fi
   echo "==> 编译 $target（$note）"
-  healed=0
+  healed=0; reindex=0
   while :; do
-    rm -f tmp/.config-package.in
+    # 不再每轮删除 tmp 索引：循环前 defconfig 已全量纳入所有克隆包，复用索引
+    # 可使每个包快速编译（每轮强删会导致全量重建 tmp，单包耗时 8-13 分钟）。
     if timeout 2400 make -j"$(nproc)" "package/$target/compile" V=s >"/tmp/build-$target.log" 2>&1; then
       if [ "$healed" -gt 0 ]; then
         echo "    ✓ $target 成功（经 $healed 轮递归自愈）"
@@ -339,25 +345,42 @@ for entry in "${PLUGINS[@]}"; do
       fi
       break
     fi
-    # 失败：递归错误才自愈，其余错误直接标记失败
-    if ! grep -q "recursive dependency detected" "/tmp/build-$target.log" 2>/dev/null; then
-      echo "    ✗ $target 失败（非递归错误，日志尾部见下）"
-      tail -n 15 "/tmp/build-$target.log"
-      break
+    # 1) 递归依赖错误：定位删除递归包 → 重建索引 → 重试
+    if grep -q "recursive dependency detected" "/tmp/build-$target.log" 2>/dev/null; then
+      healed=$((healed + 1))
+      if [ "$healed" -gt 30 ]; then
+        echo "    ✗ $target 失败（递归自愈超过 30 轮，日志尾部见下）"
+        tail -n 20 "/tmp/build-$target.log"
+        break
+      fi
+      removed="$(heal_recursive "/tmp/build-$target.log" "$target")"
+      if [ $? -ne 0 ] || [ -z "$removed" ]; then
+        echo "    ✗ $target 失败（递归但无法定位删除，日志尾部见下）"
+        tail -n 20 "/tmp/build-$target.log"
+        break
+      fi
+      echo "    ↻ 第 $healed 轮自愈: 删除递归包:$removed"
+      # 目录已改动，彻底重建 tmp 索引（破环补丁在重建时自动生效）
+      rm -rf tmp; make defconfig >/tmp/reindex.log 2>&1 || true
+      continue
     fi
-    healed=$((healed + 1))
-    if [ "$healed" -gt 30 ]; then
-      echo "    ✗ $target 失败（递归自愈超过 30 轮，日志尾部见下）"
-      tail -n 20 "/tmp/build-$target.log"
-      break
+    # 2) 索引未纳入该包（No rule to make target）：重建 tmp 后重试，限 2 次
+    if grep -q "No rule to make target" "/tmp/build-$target.log" 2>/dev/null; then
+      reindex=$((reindex + 1))
+      if [ "$reindex" -gt 2 ]; then
+        echo "    ✗ $target 失败（重建索引后仍无编译目标，日志尾部见下）"
+        tail -n 15 "/tmp/build-$target.log"
+        break
+      fi
+      echo "    ↻ 索引未纳入 $target，重建 tmp（第 $reindex 次）后重试"
+      rm -rf tmp
+      make defconfig >/tmp/reindex.log 2>&1 || tail -n 15 /tmp/reindex.log
+      continue
     fi
-    removed="$(heal_recursive "/tmp/build-$target.log" "$target")"
-    if [ $? -ne 0 ] || [ -z "$removed" ]; then
-      echo "    ✗ $target 失败（递归但无法定位删除，日志尾部见下）"
-      tail -n 20 "/tmp/build-$target.log"
-      break
-    fi
-    echo "    ↻ 第 $healed 轮自愈: 删除递归包:$removed"
+    # 3) 其余错误：直接标记失败
+    echo "    ✗ $target 失败（非递归错误，日志尾部见下）"
+    tail -n 15 "/tmp/build-$target.log"
+    break
   done
 done
 
