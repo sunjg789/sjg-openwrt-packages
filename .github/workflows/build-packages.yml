@@ -2,6 +2,12 @@ name: Build SJG Plugin Repo
 
 on:
   workflow_dispatch:          # 手动触发：仓库 Actions 页点 Run workflow
+    inputs:
+      diagnose:
+        description: '诊断模式：仅重建索引并完整打印 Kconfig 递归依赖块，不编译（几分钟出结果）'
+        required: false
+        type: boolean
+        default: false
   schedule:
     - cron: '0 2 * * 1'       # 每周一 02:00 UTC（自动更新到插件上游最新）
   push:
@@ -61,13 +67,15 @@ jobs:
           ls -la keys/
 
       - name: 编译插件包（SDK + 收录清单）
+        env:
+          DIAGNOSE: ${{ github.event.inputs.diagnose == 'true' && '1' || '0' }}
         run: |
           bash scripts/fetch-and-build.sh "${{ matrix.sdk }}" \
             "$PWD/repo/${{ matrix.fmt }}/x86_64" "$PWD/plugins.conf"
         timeout-minutes: 360
 
       - name: 生成 apk 索引 packages.adb 与签名（编译完整 apk-tools 3.0.5）
-        if: matrix.fmt == 'apk'
+        if: matrix.fmt == 'apk' && github.event.inputs.diagnose != 'true'
         run: |
           set -e
           ROOT="$PWD"
@@ -107,7 +115,7 @@ jobs:
           ls -la packages.adb packages.adb.sig
 
       - name: 生成索引与签名（opkg 走 gen-index.sh，SDK 原始工具）
-        if: matrix.fmt == 'opkg'
+        if: matrix.fmt == 'opkg' && github.event.inputs.diagnose != 'true'
         run: |
           # 注：SDK 的 usign 是动态链接（依赖 SDK 内 staging_dir/host/lib），
           # 不能 cp 到 /usr/local/bin（会破坏 ld 路径）；gen-index.sh 直接调用 SDK 原始路径。
@@ -115,6 +123,7 @@ jobs:
             "$PWD/repo/opkg/x86_64" "$PWD/keys" "$PWD"
 
       - name: 上传构建产物
+        if: github.event.inputs.diagnose != 'true'
         uses: actions/upload-artifact@v4
         with:
           name: repo-${{ matrix.fmt }}
@@ -127,6 +136,7 @@ jobs:
   deploy:
     name: Deploy to gh-pages
     needs: build
+    if: github.event.inputs.diagnose != 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -155,13 +165,15 @@ jobs:
           else
             git checkout --orphan gh-pages
           fi
-          rm -rf apk opkg keys merged .nojekyll
+          rm -rf apk opkg keys merged dl stage .nojekyll
           cp -r "$RUNNER_TEMP/merged/repo/"* .
           if [ -d "$RUNNER_TEMP/merged/keys" ]; then cp -r "$RUNNER_TEMP/merged/keys" .; fi
           touch .nojekyll
           echo "--- 发布内容预览 ---"
           find apk opkg keys -type f 2>/dev/null | head -n 60
-          git add -A
+          # 精确提交：只纳入 apk/opkg/keys/.nojekyll，以及历史脏目录 dl/stage 的删除；
+          # 不使用 git add -A，避免把工作区其他未跟踪文件或历史脏数据一并提交。
+          git add -A -- apk opkg keys .nojekyll dl stage
           if git diff --cached --quiet; then
             echo "无变更，跳过提交"
           else

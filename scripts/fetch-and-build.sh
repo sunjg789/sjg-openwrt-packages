@@ -158,39 +158,100 @@ make defconfig >/tmp/defconfig.log 2>&1 || {
 }
 
 # ============================================================
+# 诊断模式（DIAGNOSE=1）：强制重建「含全部第三方克隆包」的元数据索引，
+# 完整打印 Kconfig 递归依赖块后退出（不实际编译，几分钟出结果）。
+# 背景：上面的 defconfig 复用了第三方包克隆前生成的陈旧 tmp/.config-package.in
+# （不含第三方包，所以不报错）；而编译单个包会删除并重建该索引、纳入全部
+# 第三方包，某个第三方插件引入的 Kconfig 递归环才在此刻暴露。
+# ============================================================
+if [ "${DIAGNOSE:-0}" = "1" ]; then
+  echo "########## [DIAG] 诊断开始：强制重建 package 元数据（含第三方包） ##########"
+  echo "==> package/ 根目录清单（package/feeds=官方软链，其余=克隆的第三方包）："
+  find package -maxdepth 1 -mindepth 1 | sort
+  rm -f tmp/.config-package.in tmp/.packageinfo tmp/.packagedeps
+  echo "==> 触发完整 Config.in 扫描（make package/OpenClash/compile V=s，仅取配置阶段）"
+  make package/OpenClash/compile V=s >/tmp/diag.log 2>&1 || true
+  echo "===== 递归依赖块（完整，起 recursive / 止 For a resolution）====="
+  awk '/recursive dependency detected!/{n++; print "\n########## 递归块 #" n " ##########"; p=1}
+       p{print}
+       /For a resolution/{if(p){print "########## 块 #" n " 结束 ##########"}; p=0}' /tmp/diag.log
+  echo "===== 递归块输出结束 ===="
+  if ! grep -q "recursive dependency detected" /tmp/diag.log; then
+    echo "==> OpenClash 未触发递归，逐个第三方目录探测（package/feeds 除外）..."
+    for d in package/*/; do
+      bn="$(basename "$d")"
+      [ "$bn" = "feeds" ] && continue
+      rm -f tmp/.config-package.in
+      make "package/$bn/compile" V=s >"/tmp/diag-$bn.log" 2>&1 || true
+      if grep -q "recursive dependency detected" "/tmp/diag-$bn.log"; then
+        echo "########## 递归源候选目录: package/$bn ##########"
+        awk '/recursive dependency detected!/{p=1} p{print} /For a resolution/{p=0}' "/tmp/diag-$bn.log"
+      fi
+    done
+  fi
+  echo "########## [DIAG] 诊断结束 ##########"
+  exit 0
+fi
+
+# ============================================================
 # 递归依赖自愈函数：从编译日志中识别递归包并删除
 #   形式 A（depends 环）：feeds/.../Config.in:NN: symbol X depends on Y
 #   形式 B（select 环）：symbol PACKAGE_xxx is selected by ...（无 feeds 路径行）
 # 返回：0=已删除至少一个包；1=未能定位/删除
 # ============================================================
 heal_recursive() {
-  local logfile="$1" curtarget="$2" removed="" p pkg hits
-  # 只截取递归错误块（"recursive dependency detected!" → "For a resolution"），
-  # 避免从 V=s 全量日志的无关位置提取 symbol，误删 base-files/busybox 等核心包
+  local logfile="$1" curtarget="$2" removed="" p pkg bn
+  # 已知 feeds Kconfig bug 包（静态阶段已删，此处仅兜底）；其余官方 feeds 包全部受保护。
+  local BUGFEEDS=" asterisk nginx gensio ifstat kadnode natmap oscam rsyslog mutt tvheadend parted qemu "
+  # 只截取递归错误块（"recursive dependency detected!" → "For a resolution"）
   local block
   block="$(awk '/recursive dependency detected!/{f=1} f{print} /For a resolution/{f=0}' "$logfile" 2>/dev/null)"
-  # A) feeds Config.in 路径（depends 环里 symbol 所在的包目录）
+  # A) feeds Config.in 路径：仅当包属于已知 feeds bug 名单才删除，否则保护跳过
   while IFS= read -r p; do
     [ -n "$p" ] || continue
     pkg="$(basename "$p")"
-    rm -rf "$p" 2>/dev/null || true
-    find package/feeds -maxdepth 4 \( -type d -o -type l \) -name "$pkg" \
-      -exec rm -rf {} + 2>/dev/null || true
-    removed="$removed $p"
+    case "$BUGFEEDS" in
+      *" $pkg "*)
+        rm -rf "$p" 2>/dev/null || true
+        find package/feeds -maxdepth 4 \( -type d -o -type l \) -name "$pkg" \
+          -exec rm -rf {} + 2>/dev/null || true
+        removed="$removed $p"
+        ;;
+      *)
+        echo "    [保护] 跳过官方 feeds 包（依赖链无辜节点）: $pkg"
+        ;;
+    esac
   done < <(printf '%s\n' "$block" | grep -oE 'feeds/[A-Za-z0-9_./-]+/Config[a-z0-9-]*\.in' 2>/dev/null \
              | sed -E 's|/Config.*||' | sort -u)
-  # B) symbol PACKAGE_xxx（select 环，如 natmap；错误行不带 feeds 路径）
+  # B) symbol PACKAGE_xxx：
+  #    - 已知 feeds bug → 删 feeds / package/feeds
+  #    - 第三方克隆包  → 只在 package/ 根定位删除（按目录名或 Makefile 中 define Package/<pkg>）
+  #    - 其余官方核心包（busybox/base-files/curl/dovecot...）→ 一律不删
   while IFS= read -r pkg; do
     [ -n "$pkg" ] || continue
     [ "$pkg" = "$curtarget" ] && continue   # 绝不删除正在编译的目标自身
-    # 同时匹配合集变体目录名（small-package 的 openwrt-<pkg>）
-    hits="$(find feeds package/feeds package -maxdepth 6 \( -type d -o -type l \) \
-              \( -name "$pkg" -o -name "openwrt-$pkg" \) 2>/dev/null)"
-    if [ -n "$hits" ]; then
-      while IFS= read -r h; do rm -rf "$h" 2>/dev/null || true; done <<EOF
-$hits
-EOF
-      removed="$removed $pkg(find)"
+    case "$BUGFEEDS" in
+      *" $pkg "*)
+        find feeds package/feeds -maxdepth 6 \( -type d -o -type l \) \
+          \( -name "$pkg" -o -name "openwrt-$pkg" \) -exec rm -rf {} + 2>/dev/null || true
+        removed="$removed $pkg(feed)"
+        ;;
+    esac
+    # 第三方克隆包：package/ 根，精确目录名 / openwrt 变体 / Makefile 包名匹配
+    if [ -d "package/$pkg" ] || [ -d "package/openwrt-$pkg" ]; then
+      rm -rf "package/$pkg" "package/openwrt-$pkg" 2>/dev/null || true
+      removed="$removed $pkg(3rd)"
+    else
+      for d in package/*/; do
+        bn="$(basename "$d")"
+        [ "$bn" = "feeds" ] && continue
+        # define Package/<pkg> 行尾才算包定义（排除 /install、/config 等子段）
+        if grep -qsE "define Package/$pkg([^A-Za-z0-9_./+-]|$)" "$d/Makefile" 2>/dev/null; then
+          rm -rf "$d" 2>/dev/null || true
+          removed="$removed $bn->$pkg(3rd)"
+          break
+        fi
+      done
     fi
   done < <(printf '%s\n' "$block" | grep -oE 'symbol PACKAGE_[A-Za-z0-9_.+-]+' 2>/dev/null \
              | sed 's/symbol PACKAGE_//' | sort -u)
@@ -272,4 +333,18 @@ find "$OUT_DIR" -type f \( -name '*-firmware-*' -o -name 'linux-firmware-*' -o -
 COUNT="$(find "$OUT_DIR" -maxdepth 1 -type f \( -name '*.ipk' -o -name '*.apk' \) | wc -l)"
 echo "    共收集 $COUNT 个包文件（仅第三方 feed，已排除 firmware/kmod）"
 [ "$COUNT" -gt 0 ] || { echo "!! 未收集到任何包（base feed 缺失？）"; exit 1; }
+echo "==> 核心插件硬校验（缺失则判失败，避免 job 假成功）"
+MISSING=""
+for core in luci-app-openclash luci-app-passwall luci-app-passwall2 luci-app-lucky \
+            luci-app-diskman luci-app-dockerman luci-app-adguardhome; do
+  if ! ls "$OUT_DIR"/${core}_* >/dev/null 2>&1; then
+    MISSING="$MISSING $core"
+  fi
+done
+if [ -n "$MISSING" ]; then
+  echo "!! 核心插件主包缺失:$MISSING"
+  echo "!! 请向上查看对应包的编译失败日志（多为 Kconfig 递归或依赖缺失）"
+  exit 1
+fi
+echo "    ✓ 7 个核心插件主包齐全"
 echo "==> 完成"
